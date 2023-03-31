@@ -1,0 +1,10 @@
+# ninja log v5
+30	4705	7019387280487415	CMakeFiles/Poker.dir/Card.cpp.obj	71c9061f223f6bb7
+9	732	7019436490439397	build.ninja	6b49a97ca0bb0486
+14	4483	7019429070026411	CMakeFiles/Poker.dir/PokerHand.cpp.obj	bbfb47d77989b228
+9	5975	7019434996844023	CMakeFiles/Poker.dir/main.cpp.obj	97f600a3545289da
+8	318	7019435200554950	Poker.exe	cf1ddc8afb5a24b3
+9	25979	7019433561249297	CMakeFiles/Poker.dir/CardTest.cpp.obj	5c7e649d96df351b
+8	5320	7019438282433951	CMakeFiles/Poker.dir/PokerHand.cpp.obj	bbfb47d77989b228
+19	29422	7019438518606268	CMakeFiles/Poker.dir/CardTest.cpp.obj	5c7e649d96df351b
+29424	105343	7019439282688218	Poker.exe	f38ac15b7c6a3c36
