@@ -1,5 +1,7 @@
 //
-// Created by Lenovo on 4/2/2023.
+// This class will be used to create a player.
+// It will have money, a bet, a hand, and a vector of all cards.
+// Programmer ANDREW TAPIA
 //
 #include "Card.cpp"
 #include "PokerHand.cpp"
