@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Lenovo/CLionProjects/PokerGame/cmake-build-debug",
-		"source" : "C:/Users/Lenovo/CLionProjects/PokerGame"
+		"build" : "C:/Users/Lenovo/CLionProjects/CSC382/PokerGame/cmake-build-debug",
+		"source" : "C:/Users/Lenovo/CLionProjects/CSC382/PokerGame"
 	},
 	"version" : 
 	{
