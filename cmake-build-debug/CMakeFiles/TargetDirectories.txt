@@ -1,3 +1,0 @@
-C:/Users/Lenovo/CLionProjects/PokerGame/cmake-build-debug/CMakeFiles/PokerGame.dir
-C:/Users/Lenovo/CLionProjects/PokerGame/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Lenovo/CLionProjects/PokerGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
