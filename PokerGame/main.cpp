@@ -1,3 +1,8 @@
+/*
+ * Main file for AZ holdem game. Asks how many players
+ * and then plays a game of poker. Can also play multiple.
+ * Programmer ANDREW TAPIA
+ */
 #include <iostream>
 #include "playPoker.cpp"
 

@@ -1,8 +1,8 @@
-//
-// Created by Andrew on 3/29/2023.
+//  This class will represent a poker hand. It will be a vector of 5 cards.
+//  It will have a function to determine the best hand.
+//  Programmer ANDREW TAPIA
 //
 #include <vector>
-#include <iostream>
 #include <string>
 #include <algorithm>
 #include "Card.cpp"

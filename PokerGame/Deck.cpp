@@ -1,6 +1,7 @@
 //
-// Created by Lenovo on 4/1/2023.
-//
+// This class will be used to create a deck of cards.
+// It will have a vector of cards and will have methods to shuffle the deck and deal cards.
+// Programmer ANDREW TAPIA
 
 #include <random>
 #include <vector>
