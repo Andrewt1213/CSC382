@@ -1,10 +1,6 @@
 //
-//
-// This class is a poker game.
-// It will create a new deck every time it is called.
-// It will then shuffle the deck and deal the cards to the players.
-// It will then determine the best hand for each player and then determine the winner.
-// It will then pay out the winner.
+// This class is a poker game. It will create a new deck every time it is called. It will then shuffle the deck and deal the cards to the players.
+// It will then determine the best hand for each player and then determine the winner. It will then pay out the winner.
 // Programmer ANDREW TAPIA
 //
 #include <iostream>
