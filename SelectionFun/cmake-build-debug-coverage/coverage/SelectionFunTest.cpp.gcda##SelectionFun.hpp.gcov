@@ -1,0 +1,696 @@
+        -:    0:Source:C:/Users/lavab/CLionProjects/SelectionFun/SelectionFun.hpp
+        -:    0:Graph:C:\Users\lavab\CLionProjects\SelectionFun\cmake-build-debug-coverage\CMakeFiles\SelectionFun.dir\SelectionFunTest.cpp.gcno
+        -:    0:Data:C:\Users\lavab\CLionProjects\SelectionFun\cmake-build-debug-coverage\CMakeFiles\SelectionFun.dir\SelectionFunTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:/*
+        -:    2: * This file has 6 functions related by the fact that CSC 382 students are reviewing C,
+        -:    3: * functions, and selection algorithmic patterns such as Guarded Selection, Alternative
+        -:    4: * Selection, and Multiple Selection with C++. The C++ string type, new to some students,
+        -:    5: * is needed to complete this Assignment.
+        -:    6: *
+        -:    7: * The functions specifically use the if and if..else statements written in virtually all
+        -:    8: * languages because these algorithmic patterns occur so frequently while developing software.
+        -:    9: *
+        -:   10: * Programmers: Rick Mercer and Andrew Tapia
+        -:   11: */
+        -:   12:
+        -:   13:#include <string>
+        -:   14:
+        -:   15:using namespace std;
+        -:   16:
+        -:   17:/* Return the std::string "Monday" if the int argument
+        -:   18:passed to the parameter dayNumber is 1.
+        -:   19:return "Unknown" if the argument is not 1 through 7
+        -:   20:return "Tuesday" if the argument 2 and so on up
+        -:   21:through returning "Sunday" if argument == 7
+        -:   22:dayOfWeek(0) returns "Unknown"
+        -:   23:dayOfWeek(3) returns "Wednesday"
+        -:   24:*/
+function _Z9dayOfWeekB5cxx11i called 9 returned 100% blocks executed 64%
+        9:   25:string dayOfWeek(int day) {
+        9:   26:    if (day == 1)
+        9:   26-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 8
+        1:   27:        return "Monday";
+        1:   27-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   27-block  1
+call    4 returned 1
+    $$$$$:   27-block  2
+call    5 never executed
+    $$$$$:   27-block  3
+call    6 never executed
+        8:   28:    if (day == 2)
+        8:   28-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 7
+        1:   29:        return "Tuesday";
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  1
+call    4 returned 1
+    $$$$$:   29-block  2
+call    5 never executed
+    $$$$$:   29-block  3
+call    6 never executed
+        7:   30:    if (day == 3)
+        7:   30-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 6
+        1:   31:        return "Wednesday";
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   31-block  1
+call    4 returned 1
+    $$$$$:   31-block  2
+call    5 never executed
+    $$$$$:   31-block  3
+call    6 never executed
+        6:   32:    if (day == 4)
+        6:   32-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 5
+        1:   33:        return "Thursday";
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   33-block  1
+call    4 returned 1
+    $$$$$:   33-block  2
+call    5 never executed
+    $$$$$:   33-block  3
+call    6 never executed
+        5:   34:    if (day == 5)
+        5:   34-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 4
+        1:   35:        return "Friday";
+        1:   35-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   35-block  1
+call    4 returned 1
+    $$$$$:   35-block  2
+call    5 never executed
+    $$$$$:   35-block  3
+call    6 never executed
+        4:   36:    if (day == 6)
+        4:   36-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:   37:        return "Saturday";
+        1:   37-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   37-block  1
+call    4 returned 1
+    $$$$$:   37-block  2
+call    5 never executed
+    $$$$$:   37-block  3
+call    6 never executed
+        3:   38:    if (day == 7)
+        3:   38-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:   39:        return "Sunday";
+        1:   39-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   39-block  1
+call    4 returned 1
+    $$$$$:   39-block  2
+call    5 never executed
+    $$$$$:   39-block  3
+call    6 never executed
+        2:   40:    return "Unknown";
+        2:   40-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   40-block  1
+call    4 returned 2
+    $$$$$:   40-block  2
+call    5 never executed
+        -:   41:}
+        -:   42:
+        -:   43:// Complete the function salary that returns a salesperson’s salary
+        -:   44:// for the month according to the following policy:
+        -:   45://
+        -:   46:// Sales . . But
+        -:   47:// .Over . . Not Over . . Monthly Salary
+        -:   48:// ======= . ======== . . ==============
+        -:   49:// 0 . . . . 10,000 . . . Base salary = $1,500
+        -:   50:// 10,000 .. 20,000 . . . Base salary plus 5% of sales over 10,000
+        -:   51:// 20,000 .. 30,000 . . . Base salary plus 500.00 plus 8% of sales over 20,000
+        -:   52:// 30,000 .. . . . . . .. Base salary plus 1300.00 plus 12% of sales over 30,000
+        -:   53://
+        -:   54:// The base salary is $1,500.00, which means salary returns a value that
+        -:   55:// is never less than 1500.00. When sales are over $10,000, commission is
+        -:   56:// added to the base salary. For example, when sales equals 10001, the
+        -:   57:// monthly salary is $1,500.00 + 5% of $1.00 for a total of $1,500.05,
+        -:   58:// and when sales is 20001, the monthly salary is $1,500.00 + $500.00 + 8%
+        -:   59:// of $1.00 for a total of $2,000.08.
+        -:   60://
+        -:   61:// Precondition sales >= 0.0
+        -:   62://
+function _Z6salaryd called 7 returned 100% blocks executed 100%
+        7:   63:double salary(double sales) {
+        7:   64:    if (sales >= 30000) {
+        7:   64-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 6
+        1:   65:        return 2800 + (sales - 30000) * 0.12;
+        1:   65-block  0
+        6:   66:    } else if (sales >= 20000) {
+        6:   66-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 4
+        2:   67:        return 2000 + (sales - 20000) * 0.08;
+        2:   67-block  0
+        4:   68:    } else if (sales >= 10000) {
+        4:   68-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 1
+        3:   69:        return 1500 + (sales - 10000) * 0.05;
+        3:   69-block  0
+        -:   70:    }
+        1:   71:    return 1500;
+        1:   71-block  0
+        -:   72:}
+        -:   73:
+        -:   74:
+        -:   75:// You are given three string arguments. Return the string that alphabetically
+        -:   76:// precedes or is equal to the other two string arguments
+        -:   77://
+        -:   78:// string("a", "b", "c") returns "a"
+        -:   79:// string("X", "b", "c") returns "X"
+        -:   80:// string("123", "1232", "123 0") returns "123"
+        -:   81://
+        -:   82:// Use the ascii character set where  "A" < "a" and "1" < "A"
+        -:   83://
+function _Z8firstOf3RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_S6_ called 11 returned 100% blocks executed 90%
+       11:   84:string firstOf3(string const &a, string const &b, string const &c) {
+       11:   85:    int length_a = a.length();
+       11:   85-block  0
+call    0 returned 11
+       11:   86:    int length_b = b.length();
+call    0 returned 11
+       11:   87:    int length_c = c.length();
+call    0 returned 11
+       11:   88:    int min_length = length_a;
+       11:   89:    string return_string = a;
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0 (throw)
+       11:   90:    if (length_b < min_length) {
+       11:   90-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 10
+        1:   91:        min_length = length_b;
+        1:   92:        return_string = b;
+        1:   92-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   93:    }
+       11:   94:    if (length_c < min_length) {
+       11:   94-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 11
+    #####:   95:        min_length = length_c;
+    #####:   96:        return_string = c;
+    %%%%%:   96-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   97:    }
+       18:   98:    for (int i = 0; i < min_length; i++) {
+       11:   98-block  0
+        7:   98-block  1
+       18:   98-block  2
+branch  0 taken 13
+branch  1 taken 5 (fallthrough)
+       13:   99:        char a_char = a.at(i);
+       13:   99-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:  100:        char b_char = b.at(i);
+       13:  100-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:  101:        char c_char = c.at(i);
+       13:  101-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:  102:        char min_char = a_char;
+       13:  103:        if (b_char < min_char) {
+       13:  103-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 12
+        1:  104:            min_char = b_char;
+        1:  105:            return b;
+        1:  105-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  106:        }
+       12:  107:        if (c_char < min_char) {
+       12:  107-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 10
+        2:  108:            min_char = c_char;
+        2:  109:            return c;
+        2:  109-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  110:        }
+       10:  111:        if (a_char < b_char and a_char < c_char) { return a; }
+       10:  111-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 7
+        3:  111-block  1
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0
+        3:  111-block  2
+call    4 returned 3
+branch  5 taken 3 (fallthrough)
+branch  6 taken 0 (throw)
+        -:  112:    }
+        5:  113:    return return_string;
+        5:  113-block  0
+call    0 returned 5
+       11:  114:}
+       11:  114-block  0
+call    0 returned 11
+    $$$$$:  114-block  1
+call    1 never executed
+        -:  115:
+        -:  116:
+        -:  117:// You are given a string str.
+        -:  118:// If the string begins with "f" return "Fizz".
+        -:  119:// If the string ends with "b" return "Buzz".
+        -:  120:// If both the "f" and "b" conditions are true, return "FizzBuzz".
+        -:  121:// If neither the "f" and "b" conditions are true, return the string unchanged.
+        -:  122://
+        -:  123:// fizzBuzz("fig") returns "Fizz"
+        -:  124:// fizzBuzz("dib") returns "Buzz"
+        -:  125:// fizzBuzz("fib") returns "FizzBuzz"
+        -:  126:// fizzBuzz("abc") returns "abc"
+function _Z8fizzBuzzRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 8 returned 100% blocks executed 76%
+        8:  127:string fizzBuzz(string const &str) {
+        8:  128:    if (str.length() > 0) {
+        8:  128-block  0
+call    0 returned 8
+branch  1 taken 7 (fallthrough)
+branch  2 taken 1
+        7:  129:        if (str.at(0) == 'f') {
+        7:  129-block  0
+call    0 returned 7
+branch  1 taken 4 (fallthrough)
+branch  2 taken 3
+        4:  130:            if (str.at(str.length() - 1) == 'b') {
+        4:  130-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 2 (fallthrough)
+branch  3 taken 2
+        2:  131:                return "FizzBuzz";
+        2:  131-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  131-block  1
+call    4 returned 2
+    $$$$$:  131-block  2
+call    5 never executed
+    $$$$$:  131-block  3
+call    6 never executed
+        -:  132:            } else {
+        2:  133:                return "Fizz";
+        2:  133-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  133-block  1
+call    4 returned 2
+    $$$$$:  133-block  2
+call    5 never executed
+    $$$$$:  133-block  3
+call    6 never executed
+        -:  134:            }
+        -:  135:        }
+        3:  136:        if (str.at(str.length() - 1) == 'b') {
+        3:  136-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 2 (fallthrough)
+branch  3 taken 1
+        2:  137:            return "Buzz";
+        2:  137-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  137-block  1
+call    4 returned 2
+    $$$$$:  137-block  2
+call    5 never executed
+        -:  138:        }
+        -:  139:    }
+        2:  140:    return str;
+        2:  140-block  0
+call    0 returned 2
+        -:  141:}
+        -:  142:
+        -:  143:
+        -:  144:// Complete the free function isLeapYear that returns true if the integer
+        -:  145:// argument represents a leap year in which February has 29 days instead of 28 days.
+        -:  146:// This is done because there are actually close to 365.25 days on a year. A leap year
+        -:  147:// is a year after 1582 that is evenly divisible (no remainder after division) by 4
+        -:  148:// unless it is the end of a century. In this case, where the year is also evenly
+        -:  149:// divisible by 100—year must also be divisible by 400. For example, 2000 and 2400
+        -:  150:// are leap years but 1900 2100 are not. Let leapYear return true if the argument
+        -:  151:// represents a leap year or false if it's not.
+        -:  152://
+        -:  153://  isLeapYear(2024) returns true
+        -:  154://  isLeapYear(2100) returns false
+        -:  155://  isLeapYear(2400) returns true
+        -:  156://
+        -:  157://  Precondition: year > 1582
+        -:  158://
+function _Z10isLeapYeari called 15 returned 100% blocks executed 100%
+       15:  159:bool isLeapYear(int year) {
+       15:  160:    if (year > 1582) {
+       15:  160-block  0
+branch  0 taken 14 (fallthrough)
+branch  1 taken 1
+       14:  161:        if (year % 100 == 0) {
+       14:  161-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 10
+        4:  162:            return year % 400 == 0;
+        4:  162-block  0
+        -:  163:        }
+       10:  164:        return year % 4 == 0;
+       10:  164-block  0
+        -:  165:    }
+        1:  166:    return false;
+        1:  166-block  0
+        -:  167:}
+        -:  168:
+        -:  169:
+        -:  170:// Complete function dayNumber to return how many days a valid date is into the year.
+        -:  171://
+        -:  172:// dayNumber("01/03/2016") returns 3
+        -:  173:// dayNumber("12/31/2023") returns 365
+        -:  174:// dayNumber("12/31/2024") returns 366
+        -:  175://
+        -:  176:// Important precondition: The argument must in the format of MM/DD/YYYY"
+        -:  177:// where two forward slashes must be at indexes 3 and 6 and M, D, and Y must
+        -:  178:// be one of the digits 0..9 so "2019/02/01" and "1/9/2022" are not allowed.
+        -:  179://
+        -:  180:// Don't error check. We will not have any REQUIRE that violates any precondition!
+        -:  181://
+        -:  182://  std::stoi("12") returns 12
+        -:  183://
+        -:  184:// Precondtion: date is a vaild date. "13/32/-123" is wrong is three places
+function _Z9dayNumberRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 5 returned 100% blocks executed 66%
+        5:  185:int dayNumber(string const &date) {
+        5:  186:    int days = 0;
+        5:  187:    int months = stoi(date.substr(0, 2));
+        5:  187-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 5 (fallthrough)
+branch  3 taken 0 (throw)
+        5:  187-block  1
+call    4 returned 5
+    $$$$$:  187-block  2
+call    5 never executed
+    $$$$$:  187-block  3
+call    6 never executed
+        5:  188:    if (months == 12) { days = 334; }
+branch  0 taken 2 (fallthrough)
+branch  1 taken 3
+        2:  188-block  0
+        3:  189:    else if (months == 11) { days = 304; }
+        3:  189-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  189-block  1
+       2*:  190:    else if (months == 10) { days = 273; }
+        2:  190-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  190-block  1
+       2*:  191:    else if (months == 9) { days = 243; }
+        2:  191-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  191-block  1
+       2*:  192:    else if (months == 8) { days = 212; }
+        2:  192-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  192-block  1
+       2*:  193:    else if (months == 7) { days = 181; }
+        2:  193-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  193-block  1
+       2*:  194:    else if (months == 6) { days = 151; }
+        2:  194-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  194-block  1
+       2*:  195:    else if (months == 5) { days = 120; }
+        2:  195-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  195-block  1
+       2*:  196:    else if (months == 4) { days = 90; }
+        2:  196-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    %%%%%:  196-block  1
+        2:  197:    else if (months == 3) { days = 59; }
+        2:  197-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:  197-block  1
+       1*:  198:    else if (months == 2) { days = 31; }
+        1:  198-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  198-block  1
+        1:  199:    else if (months == 1) { days = 0; }
+        1:  199-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  199-block  1
+        -:  200:
+        5:  201:    days = days + stoi(date.substr(3, 2));
+        5:  201-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 5 (fallthrough)
+branch  3 taken 0 (throw)
+        5:  201-block  1
+call    4 returned 5
+    $$$$$:  201-block  2
+call    5 never executed
+    $$$$$:  201-block  3
+call    6 never executed
+        5:  202:    if (isLeapYear(stoi(date.substr(6, 4)))) { days += 1; }
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 5 (fallthrough)
+branch  3 taken 0 (throw)
+        5:  202-block  0
+call    4 returned 5
+call    5 returned 5
+branch  6 taken 1 (fallthrough)
+branch  7 taken 4
+        1:  202-block  1
+    $$$$$:  202-block  2
+call    8 never executed
+        5:  203:    return days;
+        5:  203-block  0
+        5:  203-block  1
+        -:  204:}
+        -:  205:
+        -:  206:
+        -:  207:// Complete free function validDate and return true if the string argument is a
+        -:  208:// valid calendar date. The arguments always take the form of month, day, and year
+        -:  209:// as positive integers separated by / as in "mm/dd/yyyy".
+        -:  210://
+        -:  211:// If the string argument does not express a proper date, return FALSE.
+        -:  212://
+        -:  213:// Use static function stoi(string possibleInt)
+        -:  214://    that returns the integer value of the string argument
+        -:  215://    with the precondition that the string argument is a valid integer.
+        -:  216://
+        -:  217:// Example of std::stoi:
+        -:  218:// std::stoi("08") returns 8 and stoi("2021") returns 2021.
+        -:  219://
+        -:  220:// Examples of valid function returns:
+        -:  221:// validDate("01/31/2016") returns true
+        -:  222:// validDate("12/31/2017") returns true
+        -:  223:// validDate("06/15/2018") returns true
+        -:  224:// validDate("02/28/2019") returns true
+        -:  225:// validDate("02/29/2019") returns false
+        -:  226://
+        -:  227:// Important precondition: The argument must in the format of "MM/DD/YYYY"
+        -:  228:// where two forward slashes must be at indexes 3 and 6 and M, D, and Y must
+        -:  229:// be one of the digits 0..9 so "2019/02/01" and "1/9/2022" are not allowed.
+        -:  230://
+        -:  231:// Don't error check. We will not have any REQUIRE that violates this precondition!
+        -:  232://
+function _Z9validDateRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 11 returned 100% blocks executed 69%
+       11:  233:bool validDate(string const &date) {
+       11:  234:    int month = stoi(date.substr(0, 2));
+       11:  234-block  0
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+       11:  234-block  1
+call    4 returned 11
+    $$$$$:  234-block  2
+call    5 never executed
+    $$$$$:  234-block  3
+call    6 never executed
+       11:  235:    int day = stoi(date.substr(3, 2));
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+       11:  235-block  0
+call    4 returned 11
+    $$$$$:  235-block  1
+call    5 never executed
+    $$$$$:  235-block  2
+call    6 never executed
+       11:  236:    int year = stoi(date.substr(6, 4));
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+       11:  236-block  0
+call    4 returned 11
+    $$$$$:  236-block  1
+call    5 never executed
+       11:  237:    if (month >= 1 and month <= 12) {
+branch  0 taken 10 (fallthrough)
+branch  1 taken 1
+       10:  237-block  0
+branch  2 taken 10 (fallthrough)
+branch  3 taken 0
+       10:  238:        if (year > 0) {
+       10:  238-block  0
+branch  0 taken 10 (fallthrough)
+branch  1 taken 0
+       10:  239:            if (day >= 1) {
+       10:  239-block  0
+branch  0 taken 9 (fallthrough)
+branch  1 taken 1
+       9*:  240:                if (month == 12) { return day <= 31; }
+        9:  240-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 9
+    %%%%%:  240-block  1
+        9:  241:                else if (month == 11) { return day <= 30; }
+        9:  241-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 8
+        1:  241-block  1
+       8*:  242:                else if (month == 10) { return day <= 31; }
+        8:  242-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 8
+    %%%%%:  242-block  1
+       8*:  243:                else if (month == 9) { return day <= 30; }
+        8:  243-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 8
+    %%%%%:  243-block  1
+       8*:  244:                else if (month == 8) { return day <= 31; }
+        8:  244-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 8
+    %%%%%:  244-block  1
+       8*:  245:                else if (month == 7) { return day <= 31; }
+        8:  245-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 8
+    %%%%%:  245-block  1
+        8:  246:                else if (month == 6) { return day <= 30; }
+        8:  246-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 7
+        1:  246-block  1
+       7*:  247:                else if (month == 5) { return day <= 31; }
+        7:  247-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 7
+    %%%%%:  247-block  1
+       7*:  248:                else if (month == 4) { return day <= 30; }
+        7:  248-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 7
+    %%%%%:  248-block  1
+       7*:  249:                else if (month == 3) { return day <= 31; }
+        7:  249-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 7
+    %%%%%:  249-block  1
+        7:  250:                else if (month == 2) {
+        7:  250-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 4
+        3:  251:                    if (isLeapYear(year)) { return day <= 29; }
+        3:  251-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        2:  251-block  1
+        1:  252:                    return day <= 28;
+        1:  252-block  0
+        4:  253:                } else if (month == 1) { return day <= 31; }
+        4:  253-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:  253-block  1
+        -:  254:            }
+        -:  255:        }
+        1:  256:        return false;
+        1:  256-block  0
+        -:  257:    }
+        1:  258:    return false;
+        1:  258-block  0
+        -:  259:}

@@ -1,0 +1,776 @@
+        -:    0:Source:C:/Users/lavab/CLionProjects/LinkedPriListFun/LinkedPriorityList.hpp
+        -:    0:Graph:C:\Users\lavab\CLionProjects\LinkedPriListFun\cmake-build-debug-coverage\CMakeFiles\LinkedPriListFun.dir\LinkedPriorityListTest.cpp.gcno
+        -:    0:Data:C:\Users\lavab\CLionProjects\LinkedPriListFun\cmake-build-debug-coverage\CMakeFiles\LinkedPriListFun.dir\LinkedPriorityListTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:/*
+        -:    2: * LinkedPriorityList.cpp
+        -:    3: *
+        -:    4: *  Author: Rick Mercer
+        -:    5: *
+        -:    6: * This class describes one implementation of the abstract base class PriorityList.
+        -:    7: * Like any container, there are insert and remove functions.  Indexes represent
+        -:    8: * priorities and the elements priorities can change in several ways. The element at
+        -:    9: * index 0 has the highest priority, the element at size()-1 has the lowest priority.
+        -:   10: */
+        -:   11:#include "PriorityList.h"
+        -:   12:#include <stdexcept> // for std::invalid_argument(string)
+        -:   13:#include <memory>    // for std::shared_ptr<T>
+        -:   14:#include <string>
+        -:   15:
+        -:   16:using namespace std;
+        -:   17:
+        -:   18:template<class Type>
+        -:   19:class LinkedPriorityList : public PriorityList<Type> {
+        -:   20:
+        -:   21:private:
+        -:   22:    // Add struct Node here.  Use std:shared_ptr
+        -:   23:    struct Node {
+        -:   24:        Type data;
+        -:   25:        shared_ptr<Node> next;
+        -:   26:
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4NodeC1ES5_St10shared_ptrIS7_E called 32 returned 100% blocks executed 67%
+       32:   27:        Node(Type element, shared_ptr<Node> nextRef) {
+       32:   27-block  0
+call    0 returned 32
+call    1 returned 32
+       32:   28:            data = element;
+call    0 returned 32
+branch  1 taken 32 (fallthrough)
+branch  2 taken 0 (throw)
+       32:   29:            next = nextRef;
+       32:   29-block  0
+call    0 returned 32
+       32:   30:        }
+    $$$$$:   30-block  0
+call    0 never executed
+    $$$$$:   30-block  1
+call    1 never executed
+        -:   31:    };
+        -:   32:
+        -:   33:    // Add other data members here
+        -:   34:    int numElements;
+        -:   35:    shared_ptr<Node> head = nullptr;
+        -:   36:public:
+        -:   37:
+        -:   38:    // Create an empty list with zero elements
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1Ev called 9 returned 100% blocks executed 100%
+        9:   39:    LinkedPriorityList() {
+        9:   39-block  0
+call    0 returned 9
+call    1 returned 9
+        9:   40:        numElements = 0;
+        9:   41:    }
+        -:   42:
+        -:   43:
+        -:   44:    // Return the number of elements currently in this PriorityList
+function _ZNK18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4sizeEv called 98 returned 100% blocks executed 100%
+       98:   45:    int size() const override {
+       98:   46:        return numElements;
+       98:   46-block  0
+        -:   47:    }
+        -:   48:
+        -:   49:    // Return true if there are zero elements in this PriorityList
+function _ZNK18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7isEmptyEv called 7 returned 100% blocks executed 100%
+        7:   50:    bool isEmpty() const override {
+        7:   51:        return numElements == 0;
+        7:   51-block  0
+        -:   52:    }
+        -:   53:
+        -:   54:    // If possible, return a reference to the element at the given index. If the
+        -:   55:    // index is out of range, throw an invalid_argument exception.
+        -:   56:    // When size is 2, the only possible indexes are 0 or 1.
+function _ZNK18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE12getElementAtEi called 38 returned 97% blocks executed 72%
+       38:   57:    Type getElementAt(int index) const override {
+       38:   58:        if (index < 0 || index > size()) {
+       38:   58-block  0
+branch  0 taken 37 (fallthrough)
+branch  1 taken 1
+       37:   58-block  1
+call    2 returned 37
+branch  3 taken 37 (fallthrough)
+branch  4 taken 0 (throw)
+       37:   58-block  2
+branch  5 taken 0 (fallthrough)
+branch  6 taken 37
+        1:   58-block  3
+       37:   58-block  4
+       38:   58-block  5
+branch  7 taken 1 (fallthrough)
+branch  8 taken 37
+        1:   59:            throw invalid_argument("In getElementAt, index was " + to_string(index));
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   59-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   59-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   59-block  3
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:   59-block  4
+call   13 never executed
+    $$$$$:   59-block  5
+    $$$$$:   59-block  6
+call   14 never executed
+    $$$$$:   59-block  7
+    $$$$$:   59-block  8
+call   15 never executed
+        -:   60:        }
+       37:   61:        shared_ptr<Node> temp = head;
+       37:   61-block  0
+call    0 returned 37
+       69:   62:        for (int i = 0; i < index; i++) {
+       69:   62-block  0
+branch  0 taken 32
+branch  1 taken 37 (fallthrough)
+       32:   63:            temp = temp->next;
+       32:   63-block  0
+call    0 returned 32
+call    1 returned 32
+        -:   64:        }
+       74:   65:        return temp->data;
+       37:   65-block  0
+call    0 returned 37
+call    1 returned 37
+branch  2 taken 37 (fallthrough)
+branch  3 taken 0 (throw)
+       37:   65-block  1
+       37:   66:    }
+       37:   66-block  0
+call    0 returned 37
+    $$$$$:   66-block  1
+call    1 never executed
+        -:   67:
+        -:   68:    /*
+        -:   69:   * If possible, insert the element at the given index. If index is out
+        -:   70:   * of the valid range of 0..size(), throw new IllegalArgumentException();
+        -:   71:   * When size is 3, the only possible values for index are 0, 1, 2, AND 3
+        -:   72:   * because you can add an element as the new last.
+        -:   73:   */
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE15insertElementAtEiRKS5_ called 35 returned 91% blocks executed 63%
+       35:   74:    void insertElementAt(int index, const Type &el) override {
+       35:   75:        if (index < 0 || index > size()) {
+       35:   75-block  0
+branch  0 taken 33 (fallthrough)
+branch  1 taken 2
+       33:   75-block  1
+call    2 returned 33
+branch  3 taken 1 (fallthrough)
+branch  4 taken 32
+        3:   75-block  2
+       32:   75-block  3
+       35:   75-block  4
+branch  5 taken 3 (fallthrough)
+branch  6 taken 32
+        3:   76:            throw invalid_argument("In insertElementAt, index was " + to_string(index));
+        3:   76-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:   76-block  1
+call    4 returned 3
+branch  5 taken 3 (fallthrough)
+branch  6 taken 0 (throw)
+        3:   76-block  2
+call    7 returned 3
+branch  8 taken 3 (fallthrough)
+branch  9 taken 0 (throw)
+        3:   76-block  3
+call   10 returned 3
+call   11 returned 3
+call   12 returned 0
+    $$$$$:   76-block  4
+call   13 never executed
+    $$$$$:   76-block  5
+    $$$$$:   76-block  6
+call   14 never executed
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+call   15 never executed
+        -:   77:        }
+       32:   78:        if (index == 0) {
+       32:   78-block  0
+branch  0 taken 15 (fallthrough)
+branch  1 taken 17
+       15:   79:            if (head == nullptr) {
+       15:   79-block  0
+call    0 returned 15
+branch  1 taken 8 (fallthrough)
+branch  2 taken 7
+        8:   80:                head = shared_ptr<Node>{new Node(el, nullptr)};
+        8:   80-block  0
+call    0 returned 8
+call    1 returned 8
+call    2 returned 8
+branch  3 taken 8 (fallthrough)
+branch  4 taken 0 (throw)
+        8:   80-block  1
+call    5 returned 8
+branch  6 taken 8 (fallthrough)
+branch  7 taken 0 (throw)
+        8:   80-block  2
+call    8 returned 8
+branch  9 taken 8 (fallthrough)
+branch 10 taken 0 (throw)
+        8:   80-block  3
+call   11 returned 8
+call   12 returned 8
+call   13 returned 8
+call   14 returned 8
+    $$$$$:   80-block  4
+call   15 never executed
+    $$$$$:   80-block  5
+call   16 never executed
+    $$$$$:   80-block  6
+    $$$$$:   80-block  7
+call   17 never executed
+    $$$$$:   80-block  8
+call   18 never executed
+        -:   81:            } else {
+        7:   82:                head = shared_ptr<Node>{new Node(el, head)};
+        7:   82-block  0
+call    0 returned 7
+call    1 returned 7
+call    2 returned 7
+branch  3 taken 7 (fallthrough)
+branch  4 taken 0 (throw)
+        7:   82-block  1
+call    5 returned 7
+branch  6 taken 7 (fallthrough)
+branch  7 taken 0 (throw)
+        7:   82-block  2
+call    8 returned 7
+branch  9 taken 7 (fallthrough)
+branch 10 taken 0 (throw)
+        7:   82-block  3
+call   11 returned 7
+call   12 returned 7
+call   13 returned 7
+call   14 returned 7
+    $$$$$:   82-block  4
+call   15 never executed
+    $$$$$:   82-block  5
+call   16 never executed
+    $$$$$:   82-block  6
+    $$$$$:   82-block  7
+call   17 never executed
+    $$$$$:   82-block  8
+call   18 never executed
+        -:   83:            }
+        -:   84:        } else {
+       17:   85:            shared_ptr<Node> prev = head;
+       17:   85-block  0
+call    0 returned 17
+       17:   86:            int prev_index = index - 1;
+       28:   87:            for (int i = 0; i < prev_index; i++) {
+       28:   87-block  0
+branch  0 taken 11
+branch  1 taken 17 (fallthrough)
+       11:   88:                prev = prev->next;
+       11:   88-block  0
+call    0 returned 11
+call    1 returned 11
+        -:   89:            }
+       17:   90:            prev->next = shared_ptr<Node>{new Node(el, prev->next)};
+       17:   90-block  0
+call    0 returned 17
+branch  1 taken 17 (fallthrough)
+branch  2 taken 0 (throw)
+       17:   90-block  1
+call    3 returned 17
+call    4 returned 17
+call    5 returned 17
+branch  6 taken 17 (fallthrough)
+branch  7 taken 0 (throw)
+       17:   90-block  2
+call    8 returned 17
+branch  9 taken 17 (fallthrough)
+branch 10 taken 0 (throw)
+       17:   90-block  3
+call   11 returned 17
+branch 12 taken 17 (fallthrough)
+branch 13 taken 0 (throw)
+       17:   90-block  4
+call   14 returned 17
+call   15 returned 17
+call   16 returned 17
+call   17 returned 17
+call   18 returned 17
+    $$$$$:   90-block  5
+call   19 never executed
+    $$$$$:   90-block  6
+call   20 never executed
+    $$$$$:   90-block  7
+    $$$$$:   90-block  8
+call   21 never executed
+    $$$$$:   90-block  9
+       17:   91:        }
+call    0 returned 17
+    $$$$$:   91-block  0
+call    1 never executed
+       32:   92:        numElements++;
+       32:   93:    }
+       32:   93-block  0
+        -:   94:
+        -:   95:    // If possible, remove the element at the given index.
+        -:   96:    // If the index is out of  range, throw an invalid_argument exception.
+        -:   97:    // When size is 3, the only possible insertion locations are 0, 1, and 2.
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE15removeElementAtEi called 10 returned 90% blocks executed 82%
+       10:   98:    void removeElementAt(int index) override {
+       10:   99:        if (index < 0 || index >= size()) {
+       10:   99-block  0
+branch  0 taken 10 (fallthrough)
+branch  1 taken 0
+       10:   99-block  1
+call    2 returned 10
+branch  3 taken 1 (fallthrough)
+branch  4 taken 9
+        1:   99-block  2
+        9:   99-block  3
+       10:   99-block  4
+branch  5 taken 1 (fallthrough)
+branch  6 taken 9
+        1:  100:            throw invalid_argument("In removeElementAt, index was " + to_string(index));
+        1:  100-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  100-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  100-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  100-block  3
+call   10 returned 1
+call   11 returned 1
+call   12 returned 0
+    $$$$$:  100-block  4
+call   13 never executed
+    $$$$$:  100-block  5
+    $$$$$:  100-block  6
+call   14 never executed
+    $$$$$:  100-block  7
+    $$$$$:  100-block  8
+call   15 never executed
+        -:  101:        }
+        9:  102:        if (index == 0) {
+        9:  102-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 6
+        3:  103:            head = head->next;
+        3:  103-block  0
+call    0 returned 3
+call    1 returned 3
+        -:  104:        } else {
+        6:  105:            shared_ptr<Node> prev = head;
+        6:  105-block  0
+call    0 returned 6
+        6:  106:            int prev_index = index - 1;
+        9:  107:            for (int i = 0; i < prev_index; i++) {
+        9:  107-block  0
+branch  0 taken 3
+branch  1 taken 6 (fallthrough)
+        3:  108:                prev = prev->next;
+        3:  108-block  0
+call    0 returned 3
+call    1 returned 3
+        -:  109:            }
+        6:  110:            shared_ptr<Node> curr = prev->next;
+        6:  110-block  0
+call    0 returned 6
+call    1 returned 6
+        6:  111:            prev->next = curr->next;
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+        6:  112:        }
+call    0 returned 6
+call    1 returned 6
+        9:  113:        numElements--;
+        9:  114:    }
+        9:  114-block  0
+        -:  115:
+        -:  116:    // If possible, move the element at index to index + 1.
+        -:  117:    // If the index is out of range, throw an invalid_argument exception.
+        -:  118:    // When size is 3, the only possible insertion locations are 0, 1, and 2.
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE15lowerPriorityOfEi called 4 returned 75% blocks executed 73%
+        4:  119:    void lowerPriorityOf(int index) override {
+        4:  120:        if (index < 0 || index >= size()) {
+        4:  120-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:  120-block  1
+call    2 returned 4
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0 (throw)
+        4:  120-block  2
+branch  5 taken 1 (fallthrough)
+branch  6 taken 3
+        1:  120-block  3
+        3:  120-block  4
+        4:  120-block  5
+branch  7 taken 1 (fallthrough)
+branch  8 taken 3
+        1:  121:            throw invalid_argument("In lowerPriorityOf, index was " + to_string(index));
+        1:  121-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  121-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  121-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  121-block  3
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:  121-block  4
+call   13 never executed
+    $$$$$:  121-block  5
+    $$$$$:  121-block  6
+call   14 never executed
+    $$$$$:  121-block  7
+    $$$$$:  121-block  8
+call   15 never executed
+        -:  122:        }
+        3:  123:        shared_ptr<Node> curr = head;
+        3:  123-block  0
+call    0 returned 3
+        6:  124:        for (int i = 0; i < index; i++) {
+        6:  124-block  0
+branch  0 taken 3
+branch  1 taken 3 (fallthrough)
+        3:  125:            curr = curr->next;
+        3:  125-block  0
+call    0 returned 3
+call    1 returned 3
+        -:  126:        }
+        3:  127:        if (curr->next != nullptr) {
+        3:  127-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 2 (fallthrough)
+branch  3 taken 1
+        2:  128:            Type temp = curr->data;
+        2:  128-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  129:            curr->data = curr->next->data;
+        2:  129-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  130:            curr->next->data = temp;
+        2:  130-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:  131:        }
+        2:  131-block  0
+call    0 returned 2
+    $$$$$:  131-block  1
+call    1 never executed
+        -:  132:
+        3:  133:    }
+        3:  133-block  0
+call    0 returned 3
+    $$$$$:  133-block  1
+call    1 never executed
+        -:  134:
+        -:  135:    // If possible, move the element at index to index - 1.
+        -:  136:    // If the index is out of range, throw an invalid_argument exception.
+        -:  137:    // When size is 3, the only possible insertion locations are 0, 1, and 2.
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE15raisePriorityOfEi called 2 returned 50% blocks executed 71%
+        2:  138:    void raisePriorityOf(int index) override {
+        2:  139:        if (index < 0 || index >= size()) {
+        2:  139-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:  139-block  1
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:  139-block  2
+branch  5 taken 1 (fallthrough)
+branch  6 taken 1
+        1:  139-block  3
+        1:  139-block  4
+        2:  139-block  5
+branch  7 taken 1 (fallthrough)
+branch  8 taken 1
+        1:  140:            throw invalid_argument("In raisePriorityOf, index was " + to_string(index));
+        1:  140-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  140-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  140-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  140-block  3
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:  140-block  4
+call   13 never executed
+    $$$$$:  140-block  5
+    $$$$$:  140-block  6
+call   14 never executed
+    $$$$$:  140-block  7
+    $$$$$:  140-block  8
+call   15 never executed
+        -:  141:        }
+        1:  142:        shared_ptr<Node> prev = head;
+        1:  142-block  0
+call    0 returned 1
+        1:  143:        int prev_index = index - 1;
+        2:  144:        for (int i = 0; i < prev_index; i++) {
+        2:  144-block  0
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:  145:            prev = prev->next;
+        1:  145-block  0
+call    0 returned 1
+call    1 returned 1
+        -:  146:        }
+        1:  147:        shared_ptr<Node> curr = prev->next;
+        1:  147-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  148:        if (curr != nullptr) {
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  149:            Type temp = curr->data;
+        1:  149-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  150:            curr->data = prev->data;
+        1:  150-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:  151:            prev->data = temp;
+        1:  151-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  152:        }
+        1:  152-block  0
+call    0 returned 1
+    $$$$$:  152-block  1
+call    1 never executed
+        1:  153:    }
+        1:  153-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:  153-block  1
+call    2 never executed
+    $$$$$:  153-block  2
+call    3 never executed
+        -:  154:
+        -:  155:    // If possible, move the element at the given index to the end of this list.
+        -:  156:    // If the index is  out of range, throw an invalid_argument exception.
+        -:  157:    // When size is 3, the only possible insertion locations are 0, 1, and 2.
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10moveToLastEi called 4 returned 75% blocks executed 72%
+        4:  158:    void moveToLast(int index) override {
+        4:  159:        if (index < 0 || index >= size()) {
+        4:  159-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:  159-block  1
+call    2 returned 4
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0 (throw)
+        4:  159-block  2
+branch  5 taken 1 (fallthrough)
+branch  6 taken 3
+        1:  159-block  3
+        3:  159-block  4
+        4:  159-block  5
+branch  7 taken 1 (fallthrough)
+branch  8 taken 3
+        1:  160:            throw invalid_argument("In moveToLast, index was " + to_string(index));
+        1:  160-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  160-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  160-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  160-block  3
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:  160-block  4
+call   13 never executed
+    $$$$$:  160-block  5
+    $$$$$:  160-block  6
+call   14 never executed
+    $$$$$:  160-block  7
+    $$$$$:  160-block  8
+call   15 never executed
+        -:  161:        }
+        3:  162:        shared_ptr<Node> temp = head;
+        3:  162-block  0
+call    0 returned 3
+        6:  163:        for (int i = 0; i < index; i++) {
+        6:  163-block  0
+branch  0 taken 3
+branch  1 taken 3 (fallthrough)
+        3:  164:            temp = temp->next;
+        3:  164-block  0
+call    0 returned 3
+call    1 returned 3
+        -:  165:        }
+        3:  166:        removeElementAt(index);
+        3:  166-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  167:        insertElementAt(size(), temp->data);
+        3:  167-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:  167-block  1
+call    4 returned 3
+branch  5 taken 3 (fallthrough)
+branch  6 taken 0 (throw)
+        3:  168:    }
+        3:  168-block  0
+call    0 returned 3
+    $$$$$:  168-block  1
+call    1 never executed
+        -:  169:
+        -:  170:    // If possible, move the element at the given index to the front of this
+        -:  171:    // list. If the index is out of range, throw an invalid_argument exception.
+        -:  172:    // When size is 3, the only possible insertion locations are 0, 1, and 2.
+function _ZN18LinkedPriorityListINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE9moveToTopEi called 4 returned 75% blocks executed 71%
+        4:  173:    void moveToTop(int index) override {
+        4:  174:        if (index < 0 || index >= size()) {
+        4:  174-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:  174-block  1
+call    2 returned 4
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0 (throw)
+        4:  174-block  2
+branch  5 taken 1 (fallthrough)
+branch  6 taken 3
+        1:  174-block  3
+        3:  174-block  4
+        4:  174-block  5
+branch  7 taken 1 (fallthrough)
+branch  8 taken 3
+        1:  175:            throw invalid_argument("In moveToTop, index was " + to_string(index));
+        1:  175-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  175-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  175-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  175-block  3
+call   10 returned 1
+call   11 returned 1
+call   12 returned 1
+    $$$$$:  175-block  4
+call   13 never executed
+    $$$$$:  175-block  5
+    $$$$$:  175-block  6
+call   14 never executed
+    $$$$$:  175-block  7
+    $$$$$:  175-block  8
+call   15 never executed
+        -:  176:        }
+        3:  177:        shared_ptr<Node> temp = head;
+        3:  177-block  0
+call    0 returned 3
+        6:  178:        for (int i = 0; i < index; i++) {
+        6:  178-block  0
+branch  0 taken 3
+branch  1 taken 3 (fallthrough)
+        3:  179:            temp = temp->next;
+        3:  179-block  0
+call    0 returned 3
+call    1 returned 3
+        -:  180:        }
+        3:  181:        removeElementAt(index);
+        3:  181-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  182:        insertElementAt(0, temp->data);
+        3:  182-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        3:  183:    }
+        3:  183-block  0
+call    0 returned 3
+    $$$$$:  183-block  1
+call    1 never executed
+        -:  184:
+        -:  185:    void printList() {
+        -:  186:        cout << "Printing list..." << endl;
+        -:  187:        shared_ptr<Node> temp = head;
+        -:  188:        for (int i = 0; i < size(); i++) {
+        -:  189:            cout << temp->data << " ";
+        -:  190:            temp = temp->next;
+        -:  191:        }
+        -:  192:        cout << endl;
+        -:  193:    }
+        -:  194:
+        -:  195:};
+        -:  196:

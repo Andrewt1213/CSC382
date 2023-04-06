@@ -1,0 +1,21 @@
+# ninja log v5
+16	263	6995942850728288	CMakeFiles/midterm.dir/PiggyBank.cpp.obj	626e7fa0c4b75f57
+6	833	6996003002103582	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+834	1061	6996003004320412	midterm.exe	83977fa90ee319eb
+6	1087	6996003293953197	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+1089	1327	6996003296292363	midterm.exe	83977fa90ee319eb
+5	906	6996003900251718	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+908	1137	6996003902487140	midterm.exe	83977fa90ee319eb
+7	2850	6996006207881610	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+6	2535	6996007352960259	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+2537	2782	6996007355362778	midterm.exe	83977fa90ee319eb
+6	2600	6996007511379946	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+2601	2847	6996007513792427	midterm.exe	83977fa90ee319eb
+8	3848	6996007600462345	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+3850	4188	6996007603799255	midterm.exe	83977fa90ee319eb
+8	986	6996009254508175	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+988	1313	6996009257711799	midterm.exe	83977fa90ee319eb
+8	1404	6996009481727774	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+1405	1709	6996009484726257	midterm.exe	83977fa90ee319eb
+7	935	6996009597358123	CMakeFiles/midterm.dir/main.cpp.obj	6a1e3f90eda2fcbe
+936	1195	6996009599911216	midterm.exe	83977fa90ee319eb

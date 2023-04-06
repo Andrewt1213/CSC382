@@ -1,0 +1,5 @@
+# ninja log v5
+38	1290	7010745292582051	build.ninja	d666b6aa041271d2
+8	1584	7010735984669015	CMakeFiles/LinkedPriListFun.dir/main.cpp.obj	34cc6c88ddd78864
+26507	102030	7010745095990646	LinkedPriListFun.exe	79f98ee0058d29e
+9	26505	7010744340384844	CMakeFiles/LinkedPriListFun.dir/LinkedPriorityListTest.cpp.obj	16bceba4e6074587

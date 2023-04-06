@@ -1,0 +1,3652 @@
+        -:    0:Source:C:/Users/lavab/CLionProjects/LinkedPriListFun/LinkedPriorityListTest.cpp
+        -:    0:Graph:C:\Users\lavab\CLionProjects\LinkedPriListFun\cmake-build-debug-coverage\CMakeFiles\LinkedPriListFun.dir\LinkedPriorityListTest.cpp.gcno
+        -:    0:Data:C:\Users\lavab\CLionProjects\LinkedPriListFun\cmake-build-debug-coverage\CMakeFiles\LinkedPriListFun.dir\LinkedPriorityListTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2://
+        -:    3:// Unit test for LinkedPriorityList
+        -:    4:// Make sure you test that all exceptions are thrown
+        -:    5://
+        -:    6:// Programmers Rick Mercer and Andrew Tapia
+        -:    7://
+        -:    8:
+        -:    9:#define CATCH_CONFIG_MAIN
+        -:   10:
+        -:   11:#include <catch.hpp>
+        -:   12:#include "LinkedPriorityList.hpp"
+        -:   13:#include <string>
+        -:   14:
+        -:   15:using namespace std;
+        -:   16:
+function _ZL19C_A_T_C_H_T_E_S_T_0v called 1 returned 100% blocks executed 41%
+        1:   17:TEST_CASE ("testGenericityInsertElementAtSizeIsEmpty") {
+        1:   18:    LinkedPriorityList<string> list3;
+        1:   18-block  0
+call    0 returned 1
+        1:   19:    REQUIRE(list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   19-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   19-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   19-block  2
+        1:   19-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   19-block  4
+call   16 returned 1
+    $$$$$:   19-block  5
+    $$$$$:   19-block  6
+    $$$$$:   19-block  7
+    $$$$$:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   19-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   19-block 13
+call   24 never executed
+    $$$$$:   19-block 14
+call   25 never executed
+        1:   20:    list3.insertElementAt(0, "1st");
+        1:   20-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   20-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   20-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   20-block  3
+call    9 never executed
+    $$$$$:   20-block  4
+    $$$$$:   20-block  5
+call   10 never executed
+    $$$$$:   20-block  6
+        1:   21:    REQUIRE(!list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   21-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   21-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   21-block  2
+        1:   21-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   21-block  4
+call   16 returned 1
+    $$$$$:   21-block  5
+    $$$$$:   21-block  6
+    $$$$$:   21-block  7
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   21-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   21-block 13
+call   24 never executed
+    $$$$$:   21-block 14
+call   25 never executed
+        1:   22:    list3.insertElementAt(0, "2nd");
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   22-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   22-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   22-block  3
+call    9 never executed
+    $$$$$:   22-block  4
+    $$$$$:   22-block  5
+call   10 never executed
+    $$$$$:   22-block  6
+        1:   23:    REQUIRE(2 == list3.size());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   23-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   23-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   23-block  2
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   23-block  3
+call   16 returned 1
+        1:   23-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   23-block  5
+call   20 returned 1
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+call   21 never executed
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+    $$$$$:   23-block 16
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   23-block 17
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   23-block 18
+call   29 never executed
+    $$$$$:   23-block 19
+call   30 never executed
+        1:   24:}
+        1:   24-block  0
+call    0 returned 1
+    $$$$$:   24-block  1
+call    1 never executed
+        -:   25:
+function _ZL19C_A_T_C_H_T_E_S_T_2v called 1 returned 100% blocks executed 44%
+        1:   26:TEST_CASE ("testGet") {
+        1:   27:    LinkedPriorityList<string> list3;
+        1:   27-block  0
+call    0 returned 1
+        1:   28:    REQUIRE(list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   28-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   28-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   28-block  2
+        1:   28-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   28-block  4
+call   16 returned 1
+    $$$$$:   28-block  5
+    $$$$$:   28-block  6
+    $$$$$:   28-block  7
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   28-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   28-block 13
+call   24 never executed
+    $$$$$:   28-block 14
+call   25 never executed
+        1:   29:    list3.insertElementAt(0, "1");
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   29-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   29-block  3
+call    9 never executed
+    $$$$$:   29-block  4
+    $$$$$:   29-block  5
+call   10 never executed
+    $$$$$:   29-block  6
+        1:   30:    list3.insertElementAt(1, "2");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   30-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   30-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   30-block  2
+call    9 never executed
+    $$$$$:   30-block  3
+    $$$$$:   30-block  4
+call   10 never executed
+    $$$$$:   30-block  5
+        1:   31:    list3.insertElementAt(2, "3");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   31-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   31-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   31-block  2
+call    9 never executed
+    $$$$$:   31-block  3
+    $$$$$:   31-block  4
+call   10 never executed
+    $$$$$:   31-block  5
+        -:   32:
+        1:   33:    REQUIRE(list3.getElementAt(0) == "1");
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   33-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   33-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   33-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   33-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   33-block  4
+call   18 returned 1
+call   19 returned 1
+        1:   33-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   33-block  6
+call   23 returned 1
+    $$$$$:   33-block  7
+    $$$$$:   33-block  8
+    $$$$$:   33-block  9
+    $$$$$:   33-block 10
+call   24 never executed
+    $$$$$:   33-block 11
+    $$$$$:   33-block 12
+    $$$$$:   33-block 13
+    $$$$$:   33-block 14
+call   25 never executed
+    $$$$$:   33-block 15
+    $$$$$:   33-block 16
+    $$$$$:   33-block 17
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   33-block 18
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   33-block 19
+call   33 never executed
+    $$$$$:   33-block 20
+call   34 never executed
+        1:   34:    REQUIRE(list3.getElementAt(1) == "2");
+        1:   34-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   34-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   34-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   34-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   34-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   34-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   34-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   34-block  7
+call   23 returned 1
+    $$$$$:   34-block  8
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+    $$$$$:   34-block 11
+call   24 never executed
+    $$$$$:   34-block 12
+    $$$$$:   34-block 13
+    $$$$$:   34-block 14
+    $$$$$:   34-block 15
+call   25 never executed
+    $$$$$:   34-block 16
+    $$$$$:   34-block 17
+    $$$$$:   34-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   34-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   34-block 20
+call   33 never executed
+    $$$$$:   34-block 21
+call   34 never executed
+        1:   35:    REQUIRE(list3.getElementAt(2) == "3");
+        1:   35-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   35-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   35-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   35-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   35-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   35-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   35-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   35-block  7
+call   23 returned 1
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+    $$$$$:   35-block 10
+    $$$$$:   35-block 11
+call   24 never executed
+    $$$$$:   35-block 12
+    $$$$$:   35-block 13
+    $$$$$:   35-block 14
+    $$$$$:   35-block 15
+call   25 never executed
+    $$$$$:   35-block 16
+    $$$$$:   35-block 17
+    $$$$$:   35-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   35-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   35-block 20
+call   33 never executed
+    $$$$$:   35-block 21
+call   34 never executed
+       3*:   36:    CHECK_THROWS(list3.insertElementAt(-1, "In getElementAt, index was -1"));
+        1:   36-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   36-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   36-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   36-block  3
+call   11 returned 1
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   36-block  4
+call   15 returned 1
+branch 16 taken 0 (fallthrough)
+branch 17 taken 1 (throw)
+    %%%%%:   36-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   36-block  6
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+        1:   36-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:   36-block  8
+call   29 returned 1
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
+        1:   36-block 12
+call   30 returned 1
+        1:   36-block 13
+        1:   36-block 14
+call   31 returned 1
+        1:   36-block 15
+        1:   36-block 16
+        1:   36-block 17
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   36-block 18
+call   36 returned 1
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0 (throw)
+    $$$$$:   36-block 19
+call   39 never executed
+    $$$$$:   36-block 20
+call   40 never executed
+       1*:   37:    CHECK_THROWS(list3.getElementAt(-1));
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   37-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   37-block  1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   37-block  2
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:   37-block  3
+call   14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   37-block  4
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+        1:   37-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   37-block  6
+call   24 returned 1
+    $$$$$:   37-block  7
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+        1:   37-block 10
+        1:   37-block 11
+call   25 returned 1
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:   37-block 12
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+    $$$$$:   37-block 13
+call   32 never executed
+    $$$$$:   37-block 14
+call   33 never executed
+        -:   38:
+        1:   39:}
+call    0 returned 1
+    $$$$$:   39-block  0
+call    1 never executed
+        -:   40:
+function _ZL19C_A_T_C_H_T_E_S_T_4v called 1 returned 100% blocks executed 42%
+        1:   41:TEST_CASE ("testRemove") {
+        1:   42:    LinkedPriorityList<string> list3;
+        1:   42-block  0
+call    0 returned 1
+        1:   43:    REQUIRE(list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   43-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   43-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   43-block  2
+        1:   43-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   43-block  4
+call   16 returned 1
+    $$$$$:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   43-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   43-block 13
+call   24 never executed
+    $$$$$:   43-block 14
+call   25 never executed
+        1:   44:    list3.insertElementAt(0, "1");
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   44-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   44-block  3
+call    9 never executed
+    $$$$$:   44-block  4
+    $$$$$:   44-block  5
+call   10 never executed
+    $$$$$:   44-block  6
+        1:   45:    list3.insertElementAt(1, "2");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   45-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   45-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   45-block  2
+call    9 never executed
+    $$$$$:   45-block  3
+    $$$$$:   45-block  4
+call   10 never executed
+    $$$$$:   45-block  5
+        1:   46:    list3.insertElementAt(2, "3");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   46-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   46-block  2
+call    9 never executed
+    $$$$$:   46-block  3
+    $$$$$:   46-block  4
+call   10 never executed
+    $$$$$:   46-block  5
+        -:   47:
+        1:   48:    list3.removeElementAt(0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   49:    REQUIRE(list3.getElementAt(0) == "2");
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   49-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   49-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   49-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   49-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   49-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   49-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   49-block  7
+call   23 returned 1
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+call   24 never executed
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+    $$$$$:   49-block 14
+    $$$$$:   49-block 15
+call   25 never executed
+    $$$$$:   49-block 16
+    $$$$$:   49-block 17
+    $$$$$:   49-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   49-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   49-block 20
+call   33 never executed
+    $$$$$:   49-block 21
+call   34 never executed
+        -:   50:
+        1:   51:    list3.insertElementAt(0, "1");
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   51-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   51-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   51-block  3
+call    9 never executed
+    $$$$$:   51-block  4
+    $$$$$:   51-block  5
+call   10 never executed
+    $$$$$:   51-block  6
+        1:   52:    list3.removeElementAt(1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   53:    REQUIRE(list3.getElementAt(0) == "1");
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   53-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   53-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   53-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   53-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   53-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   53-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   53-block  7
+call   23 returned 1
+    $$$$$:   53-block  8
+    $$$$$:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+call   24 never executed
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+    $$$$$:   53-block 15
+call   25 never executed
+    $$$$$:   53-block 16
+    $$$$$:   53-block 17
+    $$$$$:   53-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   53-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   53-block 20
+call   33 never executed
+    $$$$$:   53-block 21
+call   34 never executed
+        1:   54:    REQUIRE(list3.getElementAt(1) == "3");
+        1:   54-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   54-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   54-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   54-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   54-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   54-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   54-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   54-block  7
+call   23 returned 1
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+    $$$$$:   54-block 11
+call   24 never executed
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+    $$$$$:   54-block 14
+    $$$$$:   54-block 15
+call   25 never executed
+    $$$$$:   54-block 16
+    $$$$$:   54-block 17
+    $$$$$:   54-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   54-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   54-block 20
+call   33 never executed
+    $$$$$:   54-block 21
+call   34 never executed
+        -:   55:
+        1:   56:    list3.insertElementAt(1, "2");
+        1:   56-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   56-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   56-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   56-block  3
+call    9 never executed
+    $$$$$:   56-block  4
+    $$$$$:   56-block  5
+call   10 never executed
+    $$$$$:   56-block  6
+        1:   57:    list3.removeElementAt(2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58:    REQUIRE(list3.getElementAt(0) == "1");
+        1:   58-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   58-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   58-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   58-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   58-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   58-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   58-block  7
+call   23 returned 1
+    $$$$$:   58-block  8
+    $$$$$:   58-block  9
+    $$$$$:   58-block 10
+    $$$$$:   58-block 11
+call   24 never executed
+    $$$$$:   58-block 12
+    $$$$$:   58-block 13
+    $$$$$:   58-block 14
+    $$$$$:   58-block 15
+call   25 never executed
+    $$$$$:   58-block 16
+    $$$$$:   58-block 17
+    $$$$$:   58-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   58-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   58-block 20
+call   33 never executed
+    $$$$$:   58-block 21
+call   34 never executed
+        1:   59:    REQUIRE(list3.getElementAt(1) == "2");
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   59-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   59-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   59-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   59-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   59-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   59-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   59-block  7
+call   23 returned 1
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+call   24 never executed
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+    $$$$$:   59-block 14
+    $$$$$:   59-block 15
+call   25 never executed
+    $$$$$:   59-block 16
+    $$$$$:   59-block 17
+    $$$$$:   59-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   59-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   59-block 20
+call   33 never executed
+    $$$$$:   59-block 21
+call   34 never executed
+        -:   60:
+       1*:   61:    CHECK_THROWS(list3.removeElementAt(2));
+        1:   61-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   61-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   61-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:   61-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   61-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:   61-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   61-block  7
+call   23 returned 1
+    $$$$$:   61-block  8
+    $$$$$:   61-block  9
+    $$$$$:   61-block 10
+        1:   61-block 11
+        1:   61-block 12
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   61-block 13
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:   61-block 14
+call   31 never executed
+    $$$$$:   61-block 15
+call   32 never executed
+        -:   62:
+        1:   63:}
+call    0 returned 1
+    $$$$$:   63-block  0
+call    1 never executed
+        -:   64:
+function _ZL19C_A_T_C_H_T_E_S_T_6v called 1 returned 100% blocks executed 39%
+        1:   65:TEST_CASE ("testInsert") {
+        1:   66:    LinkedPriorityList<string> list3;
+        1:   66-block  0
+call    0 returned 1
+        1:   67:    REQUIRE(list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   67-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   67-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   67-block  2
+        1:   67-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   67-block  4
+call   16 returned 1
+    $$$$$:   67-block  5
+    $$$$$:   67-block  6
+    $$$$$:   67-block  7
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   67-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   67-block 13
+call   24 never executed
+    $$$$$:   67-block 14
+call   25 never executed
+        1:   68:    list3.insertElementAt(0, "1");
+        1:   68-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   68-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   68-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   68-block  3
+call    9 never executed
+    $$$$$:   68-block  4
+    $$$$$:   68-block  5
+call   10 never executed
+    $$$$$:   68-block  6
+        1:   69:    REQUIRE(list3.getElementAt(0) == "1");
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   69-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   69-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   69-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   69-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   69-block  4
+call   18 returned 1
+call   19 returned 1
+        1:   69-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   69-block  6
+call   23 returned 1
+    $$$$$:   69-block  7
+    $$$$$:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
+call   24 never executed
+    $$$$$:   69-block 11
+    $$$$$:   69-block 12
+    $$$$$:   69-block 13
+    $$$$$:   69-block 14
+call   25 never executed
+    $$$$$:   69-block 15
+    $$$$$:   69-block 16
+    $$$$$:   69-block 17
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   69-block 18
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   69-block 19
+call   33 never executed
+    $$$$$:   69-block 20
+call   34 never executed
+        1:   70:    list3.insertElementAt(0, "2");
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   70-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   70-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   70-block  3
+call    9 never executed
+    $$$$$:   70-block  4
+    $$$$$:   70-block  5
+call   10 never executed
+    $$$$$:   70-block  6
+        1:   71:    REQUIRE(list3.getElementAt(0) == "2");
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   71-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   71-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   71-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   71-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   71-block  4
+call   18 returned 1
+call   19 returned 1
+        1:   71-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   71-block  6
+call   23 returned 1
+    $$$$$:   71-block  7
+    $$$$$:   71-block  8
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+call   24 never executed
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+    $$$$$:   71-block 13
+    $$$$$:   71-block 14
+call   25 never executed
+    $$$$$:   71-block 15
+    $$$$$:   71-block 16
+    $$$$$:   71-block 17
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   71-block 18
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   71-block 19
+call   33 never executed
+    $$$$$:   71-block 20
+call   34 never executed
+        1:   72:    list3.insertElementAt(0, "3");
+        1:   72-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   72-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   72-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   72-block  3
+call    9 never executed
+    $$$$$:   72-block  4
+    $$$$$:   72-block  5
+call   10 never executed
+    $$$$$:   72-block  6
+        1:   73:    REQUIRE(list3.getElementAt(0) == "3");
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   73-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   73-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   73-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   73-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   73-block  4
+call   18 returned 1
+call   19 returned 1
+        1:   73-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   73-block  6
+call   23 returned 1
+    $$$$$:   73-block  7
+    $$$$$:   73-block  8
+    $$$$$:   73-block  9
+    $$$$$:   73-block 10
+call   24 never executed
+    $$$$$:   73-block 11
+    $$$$$:   73-block 12
+    $$$$$:   73-block 13
+    $$$$$:   73-block 14
+call   25 never executed
+    $$$$$:   73-block 15
+    $$$$$:   73-block 16
+    $$$$$:   73-block 17
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   73-block 18
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   73-block 19
+call   33 never executed
+    $$$$$:   73-block 20
+call   34 never executed
+        -:   74:    // 3, 2, 1
+        -:   75:
+        1:   76:    list3.insertElementAt(1, "4");
+        1:   76-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   76-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   76-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   76-block  3
+call    9 never executed
+    $$$$$:   76-block  4
+    $$$$$:   76-block  5
+call   10 never executed
+    $$$$$:   76-block  6
+        -:   77:    // 3 4 2 1
+        1:   78:    REQUIRE(list3.getElementAt(1) == "4");
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   78-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   78-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   78-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   78-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   78-block  4
+call   18 returned 1
+call   19 returned 1
+        1:   78-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   78-block  6
+call   23 returned 1
+    $$$$$:   78-block  7
+    $$$$$:   78-block  8
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+call   24 never executed
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+    $$$$$:   78-block 13
+    $$$$$:   78-block 14
+call   25 never executed
+    $$$$$:   78-block 15
+    $$$$$:   78-block 16
+    $$$$$:   78-block 17
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   78-block 18
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   78-block 19
+call   33 never executed
+    $$$$$:   78-block 20
+call   34 never executed
+        -:   79:
+        1:   80:    REQUIRE(list3.getElementAt(0) == "3");
+        1:   80-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   80-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   80-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   80-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   80-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   80-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   80-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   80-block  7
+call   23 returned 1
+    $$$$$:   80-block  8
+    $$$$$:   80-block  9
+    $$$$$:   80-block 10
+    $$$$$:   80-block 11
+call   24 never executed
+    $$$$$:   80-block 12
+    $$$$$:   80-block 13
+    $$$$$:   80-block 14
+    $$$$$:   80-block 15
+call   25 never executed
+    $$$$$:   80-block 16
+    $$$$$:   80-block 17
+    $$$$$:   80-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   80-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   80-block 20
+call   33 never executed
+    $$$$$:   80-block 21
+call   34 never executed
+        1:   81:    REQUIRE(list3.getElementAt(1) == "4");
+        1:   81-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   81-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   81-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   81-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   81-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   81-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   81-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   81-block  7
+call   23 returned 1
+    $$$$$:   81-block  8
+    $$$$$:   81-block  9
+    $$$$$:   81-block 10
+    $$$$$:   81-block 11
+call   24 never executed
+    $$$$$:   81-block 12
+    $$$$$:   81-block 13
+    $$$$$:   81-block 14
+    $$$$$:   81-block 15
+call   25 never executed
+    $$$$$:   81-block 16
+    $$$$$:   81-block 17
+    $$$$$:   81-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   81-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   81-block 20
+call   33 never executed
+    $$$$$:   81-block 21
+call   34 never executed
+        1:   82:    REQUIRE(list3.getElementAt(2) == "2");
+        1:   82-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   82-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   82-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   82-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   82-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   82-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   82-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   82-block  7
+call   23 returned 1
+    $$$$$:   82-block  8
+    $$$$$:   82-block  9
+    $$$$$:   82-block 10
+    $$$$$:   82-block 11
+call   24 never executed
+    $$$$$:   82-block 12
+    $$$$$:   82-block 13
+    $$$$$:   82-block 14
+    $$$$$:   82-block 15
+call   25 never executed
+    $$$$$:   82-block 16
+    $$$$$:   82-block 17
+    $$$$$:   82-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   82-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   82-block 20
+call   33 never executed
+    $$$$$:   82-block 21
+call   34 never executed
+        1:   83:    REQUIRE(list3.getElementAt(3) == "1");
+        1:   83-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   83-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   83-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   83-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   83-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   83-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   83-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   83-block  7
+call   23 returned 1
+    $$$$$:   83-block  8
+    $$$$$:   83-block  9
+    $$$$$:   83-block 10
+    $$$$$:   83-block 11
+call   24 never executed
+    $$$$$:   83-block 12
+    $$$$$:   83-block 13
+    $$$$$:   83-block 14
+    $$$$$:   83-block 15
+call   25 never executed
+    $$$$$:   83-block 16
+    $$$$$:   83-block 17
+    $$$$$:   83-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   83-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   83-block 20
+call   33 never executed
+    $$$$$:   83-block 21
+call   34 never executed
+        -:   84:
+        1:   85:    list3.insertElementAt(4, "5");
+        1:   85-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   85-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   85-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   85-block  3
+call    9 never executed
+    $$$$$:   85-block  4
+    $$$$$:   85-block  5
+call   10 never executed
+    $$$$$:   85-block  6
+        -:   86:    // 3 4 2 1 5
+        1:   87:    REQUIRE(list3.getElementAt(4) == "5");
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   87-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   87-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   87-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   87-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   87-block  4
+call   18 returned 1
+call   19 returned 1
+        1:   87-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   87-block  6
+call   23 returned 1
+    $$$$$:   87-block  7
+    $$$$$:   87-block  8
+    $$$$$:   87-block  9
+    $$$$$:   87-block 10
+call   24 never executed
+    $$$$$:   87-block 11
+    $$$$$:   87-block 12
+    $$$$$:   87-block 13
+    $$$$$:   87-block 14
+call   25 never executed
+    $$$$$:   87-block 15
+    $$$$$:   87-block 16
+    $$$$$:   87-block 17
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   87-block 18
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   87-block 19
+call   33 never executed
+    $$$$$:   87-block 20
+call   34 never executed
+        1:   88:}
+        1:   88-block  0
+call    0 returned 1
+    $$$$$:   88-block  1
+call    1 never executed
+        -:   89:
+function _ZL19C_A_T_C_H_T_E_S_T_8v called 1 returned 100% blocks executed 41%
+        1:   90:TEST_CASE ("test lower priority") {
+        1:   91:    LinkedPriorityList<string> list3;
+        1:   91-block  0
+call    0 returned 1
+        1:   92:    REQUIRE(list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   92-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   92-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   92-block  2
+        1:   92-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   92-block  4
+call   16 returned 1
+    $$$$$:   92-block  5
+    $$$$$:   92-block  6
+    $$$$$:   92-block  7
+    $$$$$:   92-block  8
+    $$$$$:   92-block  9
+    $$$$$:   92-block 10
+    $$$$$:   92-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   92-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   92-block 13
+call   24 never executed
+    $$$$$:   92-block 14
+call   25 never executed
+        1:   93:    list3.insertElementAt(0, "1");
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   93-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   93-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   93-block  3
+call    9 never executed
+    $$$$$:   93-block  4
+    $$$$$:   93-block  5
+call   10 never executed
+    $$$$$:   93-block  6
+        1:   94:    list3.insertElementAt(1, "2");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   94-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   94-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   94-block  2
+call    9 never executed
+    $$$$$:   94-block  3
+    $$$$$:   94-block  4
+call   10 never executed
+    $$$$$:   94-block  5
+        1:   95:    list3.insertElementAt(2, "3");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   95-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   95-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   95-block  2
+call    9 never executed
+    $$$$$:   95-block  3
+    $$$$$:   95-block  4
+call   10 never executed
+    $$$$$:   95-block  5
+        -:   96:
+        -:   97:    // 123 -> 213
+        1:   98:    list3.lowerPriorityOf(0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   99:    REQUIRE(list3.getElementAt(0) == "2");
+        1:   99-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   99-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   99-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   99-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   99-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   99-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   99-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   99-block  7
+call   23 returned 1
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+call   24 never executed
+    $$$$$:   99-block 12
+    $$$$$:   99-block 13
+    $$$$$:   99-block 14
+    $$$$$:   99-block 15
+call   25 never executed
+    $$$$$:   99-block 16
+    $$$$$:   99-block 17
+    $$$$$:   99-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   99-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   99-block 20
+call   33 never executed
+    $$$$$:   99-block 21
+call   34 never executed
+        -:  100:
+        -:  101:    // 213 -> 231
+        1:  102:    list3.lowerPriorityOf(1);
+        1:  102-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  103:    REQUIRE(list3.getElementAt(1) == "3");
+        1:  103-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  103-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  103-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  103-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  103-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  103-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  103-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  103-block  7
+call   23 returned 1
+    $$$$$:  103-block  8
+    $$$$$:  103-block  9
+    $$$$$:  103-block 10
+    $$$$$:  103-block 11
+call   24 never executed
+    $$$$$:  103-block 12
+    $$$$$:  103-block 13
+    $$$$$:  103-block 14
+    $$$$$:  103-block 15
+call   25 never executed
+    $$$$$:  103-block 16
+    $$$$$:  103-block 17
+    $$$$$:  103-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  103-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  103-block 20
+call   33 never executed
+    $$$$$:  103-block 21
+call   34 never executed
+        -:  104:
+        -:  105:    // 231 -> 231
+        1:  106:    list3.lowerPriorityOf(2); // 2 3 1
+        1:  106-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  107:    REQUIRE(list3.getElementAt(0) == "2");
+        1:  107-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  107-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  107-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  107-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  107-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  107-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  107-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  107-block  7
+call   23 returned 1
+    $$$$$:  107-block  8
+    $$$$$:  107-block  9
+    $$$$$:  107-block 10
+    $$$$$:  107-block 11
+call   24 never executed
+    $$$$$:  107-block 12
+    $$$$$:  107-block 13
+    $$$$$:  107-block 14
+    $$$$$:  107-block 15
+call   25 never executed
+    $$$$$:  107-block 16
+    $$$$$:  107-block 17
+    $$$$$:  107-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  107-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  107-block 20
+call   33 never executed
+    $$$$$:  107-block 21
+call   34 never executed
+        1:  108:    REQUIRE(list3.getElementAt(1) == "3");
+        1:  108-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  108-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  108-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  108-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  108-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  108-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  108-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  108-block  7
+call   23 returned 1
+    $$$$$:  108-block  8
+    $$$$$:  108-block  9
+    $$$$$:  108-block 10
+    $$$$$:  108-block 11
+call   24 never executed
+    $$$$$:  108-block 12
+    $$$$$:  108-block 13
+    $$$$$:  108-block 14
+    $$$$$:  108-block 15
+call   25 never executed
+    $$$$$:  108-block 16
+    $$$$$:  108-block 17
+    $$$$$:  108-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  108-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  108-block 20
+call   33 never executed
+    $$$$$:  108-block 21
+call   34 never executed
+        1:  109:    REQUIRE(list3.getElementAt(2) == "1");
+        1:  109-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  109-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  109-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  109-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  109-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  109-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  109-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  109-block  7
+call   23 returned 1
+    $$$$$:  109-block  8
+    $$$$$:  109-block  9
+    $$$$$:  109-block 10
+    $$$$$:  109-block 11
+call   24 never executed
+    $$$$$:  109-block 12
+    $$$$$:  109-block 13
+    $$$$$:  109-block 14
+    $$$$$:  109-block 15
+call   25 never executed
+    $$$$$:  109-block 16
+    $$$$$:  109-block 17
+    $$$$$:  109-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  109-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  109-block 20
+call   33 never executed
+    $$$$$:  109-block 21
+call   34 never executed
+        -:  110:
+       1*:  111:    CHECK_THROWS(list3.lowerPriorityOf(3));
+        1:  111-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  111-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  111-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  111-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:  111-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  111-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:  111-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  111-block  7
+call   23 returned 1
+    $$$$$:  111-block  8
+    $$$$$:  111-block  9
+    $$$$$:  111-block 10
+        1:  111-block 11
+        1:  111-block 12
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:  111-block 13
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:  111-block 14
+call   31 never executed
+    $$$$$:  111-block 15
+call   32 never executed
+        1:  112:}
+call    0 returned 1
+    $$$$$:  112-block  0
+call    1 never executed
+        -:  113:
+function _ZL20C_A_T_C_H_T_E_S_T_10v called 1 returned 100% blocks executed 43%
+        1:  114:TEST_CASE ("test move to top") {
+        1:  115:    LinkedPriorityList<string> list3;
+        1:  115-block  0
+call    0 returned 1
+        1:  116:    REQUIRE(list3.isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  116-block  0
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  116-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  116-block  2
+        1:  116-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  116-block  4
+call   16 returned 1
+    $$$$$:  116-block  5
+    $$$$$:  116-block  6
+    $$$$$:  116-block  7
+    $$$$$:  116-block  8
+    $$$$$:  116-block  9
+    $$$$$:  116-block 10
+    $$$$$:  116-block 11
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:  116-block 12
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:  116-block 13
+call   24 never executed
+    $$$$$:  116-block 14
+call   25 never executed
+        1:  117:    list3.insertElementAt(0, "1");
+        1:  117-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  117-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  117-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  117-block  3
+call    9 never executed
+    $$$$$:  117-block  4
+    $$$$$:  117-block  5
+call   10 never executed
+    $$$$$:  117-block  6
+        1:  118:    list3.insertElementAt(1, "2");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  118-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  118-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  118-block  2
+call    9 never executed
+    $$$$$:  118-block  3
+    $$$$$:  118-block  4
+call   10 never executed
+    $$$$$:  118-block  5
+        1:  119:    list3.insertElementAt(2, "3");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  119-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  119-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  119-block  2
+call    9 never executed
+    $$$$$:  119-block  3
+    $$$$$:  119-block  4
+call   10 never executed
+    $$$$$:  119-block  5
+        -:  120:
+        1:  121:    list3.moveToTop(0); //  123
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  122:    REQUIRE(list3.getElementAt(0) == "1");
+        1:  122-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  122-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  122-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  122-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  122-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  122-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  122-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  122-block  7
+call   23 returned 1
+    $$$$$:  122-block  8
+    $$$$$:  122-block  9
+    $$$$$:  122-block 10
+    $$$$$:  122-block 11
+call   24 never executed
+    $$$$$:  122-block 12
+    $$$$$:  122-block 13
+    $$$$$:  122-block 14
+    $$$$$:  122-block 15
+call   25 never executed
+    $$$$$:  122-block 16
+    $$$$$:  122-block 17
+    $$$$$:  122-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  122-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  122-block 20
+call   33 never executed
+    $$$$$:  122-block 21
+call   34 never executed
+        -:  123:
+        1:  124:    list3.moveToTop(1); // 2 1 3
+        1:  124-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  125:    REQUIRE(list3.getElementAt(0) == "2");
+        1:  125-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  125-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  125-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  125-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  125-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  125-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  125-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  125-block  7
+call   23 returned 1
+    $$$$$:  125-block  8
+    $$$$$:  125-block  9
+    $$$$$:  125-block 10
+    $$$$$:  125-block 11
+call   24 never executed
+    $$$$$:  125-block 12
+    $$$$$:  125-block 13
+    $$$$$:  125-block 14
+    $$$$$:  125-block 15
+call   25 never executed
+    $$$$$:  125-block 16
+    $$$$$:  125-block 17
+    $$$$$:  125-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  125-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  125-block 20
+call   33 never executed
+    $$$$$:  125-block 21
+call   34 never executed
+        -:  126:
+        1:  127:    list3.moveToTop(2); // 3 2 1
+        1:  127-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  128:    REQUIRE(list3.getElementAt(0) == "3");
+        1:  128-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  128-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  128-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  128-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  128-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  128-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  128-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  128-block  7
+call   23 returned 1
+    $$$$$:  128-block  8
+    $$$$$:  128-block  9
+    $$$$$:  128-block 10
+    $$$$$:  128-block 11
+call   24 never executed
+    $$$$$:  128-block 12
+    $$$$$:  128-block 13
+    $$$$$:  128-block 14
+    $$$$$:  128-block 15
+call   25 never executed
+    $$$$$:  128-block 16
+    $$$$$:  128-block 17
+    $$$$$:  128-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  128-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  128-block 20
+call   33 never executed
+    $$$$$:  128-block 21
+call   34 never executed
+        -:  129:
+       1*:  130:    CHECK_THROWS(list3.moveToTop(3));
+        1:  130-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  130-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  130-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  130-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:  130-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  130-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:  130-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  130-block  7
+call   23 returned 1
+    $$$$$:  130-block  8
+    $$$$$:  130-block  9
+    $$$$$:  130-block 10
+        1:  130-block 11
+        1:  130-block 12
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:  130-block 13
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:  130-block 14
+call   31 never executed
+    $$$$$:  130-block 15
+call   32 never executed
+        -:  131:
+        -:  132:
+        1:  133:}
+call    0 returned 1
+    $$$$$:  133-block  0
+call    1 never executed
+        -:  134:
+function _ZL20C_A_T_C_H_T_E_S_T_12v called 1 returned 100% blocks executed 40%
+        1:  135:TEST_CASE ("test raisePriority and moveToLast") {// raise with no change
+        1:  136:    LinkedPriorityList<string> list;
+        1:  136-block  0
+call    0 returned 1
+        1:  137:    list.insertElementAt(0, "1st");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  137-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  137-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  137-block  2
+call    9 never executed
+    $$$$$:  137-block  3
+    $$$$$:  137-block  4
+call   10 never executed
+    $$$$$:  137-block  5
+        1:  138:    list.insertElementAt(1, "2nd");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  138-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  138-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  138-block  2
+call    9 never executed
+    $$$$$:  138-block  3
+    $$$$$:  138-block  4
+call   10 never executed
+    $$$$$:  138-block  5
+        1:  139:    list.insertElementAt(2, "3rd");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  139-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  139-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  139-block  2
+call    9 never executed
+    $$$$$:  139-block  3
+    $$$$$:  139-block  4
+call   10 never executed
+    $$$$$:  139-block  5
+        1:  140:    list.raisePriorityOf(2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  141:    REQUIRE("1st" == list.getElementAt(0));
+        1:  141-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  141-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  141-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  141-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  141-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  141-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  141-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  141-block  7
+call   23 returned 1
+    $$$$$:  141-block  8
+    $$$$$:  141-block  9
+    $$$$$:  141-block 10
+    $$$$$:  141-block 11
+call   24 never executed
+    $$$$$:  141-block 12
+    $$$$$:  141-block 13
+    $$$$$:  141-block 14
+    $$$$$:  141-block 15
+call   25 never executed
+    $$$$$:  141-block 16
+    $$$$$:  141-block 17
+    $$$$$:  141-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  141-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  141-block 20
+call   33 never executed
+    $$$$$:  141-block 21
+call   34 never executed
+        1:  142:    REQUIRE("3rd" == list.getElementAt(1));
+        1:  142-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  142-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  142-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  142-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  142-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  142-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  142-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  142-block  7
+call   23 returned 1
+    $$$$$:  142-block  8
+    $$$$$:  142-block  9
+    $$$$$:  142-block 10
+    $$$$$:  142-block 11
+call   24 never executed
+    $$$$$:  142-block 12
+    $$$$$:  142-block 13
+    $$$$$:  142-block 14
+    $$$$$:  142-block 15
+call   25 never executed
+    $$$$$:  142-block 16
+    $$$$$:  142-block 17
+    $$$$$:  142-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  142-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  142-block 20
+call   33 never executed
+    $$$$$:  142-block 21
+call   34 never executed
+        1:  143:    REQUIRE("2nd" == list.getElementAt(2));
+        1:  143-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  143-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  143-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  143-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  143-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  143-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  143-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  143-block  7
+call   23 returned 1
+    $$$$$:  143-block  8
+    $$$$$:  143-block  9
+    $$$$$:  143-block 10
+    $$$$$:  143-block 11
+call   24 never executed
+    $$$$$:  143-block 12
+    $$$$$:  143-block 13
+    $$$$$:  143-block 14
+    $$$$$:  143-block 15
+call   25 never executed
+    $$$$$:  143-block 16
+    $$$$$:  143-block 17
+    $$$$$:  143-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  143-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  143-block 20
+call   33 never executed
+    $$$$$:  143-block 21
+call   34 never executed
+        1:  144:    list.moveToLast(0);
+        1:  144-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  145:    REQUIRE("3rd" == list.getElementAt(0));
+        1:  145-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  145-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  145-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  145-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  145-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  145-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  145-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  145-block  7
+call   23 returned 1
+    $$$$$:  145-block  8
+    $$$$$:  145-block  9
+    $$$$$:  145-block 10
+    $$$$$:  145-block 11
+call   24 never executed
+    $$$$$:  145-block 12
+    $$$$$:  145-block 13
+    $$$$$:  145-block 14
+    $$$$$:  145-block 15
+call   25 never executed
+    $$$$$:  145-block 16
+    $$$$$:  145-block 17
+    $$$$$:  145-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  145-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  145-block 20
+call   33 never executed
+    $$$$$:  145-block 21
+call   34 never executed
+        1:  146:    REQUIRE("2nd" == list.getElementAt(1));
+        1:  146-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  146-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  146-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  146-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  146-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  146-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  146-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  146-block  7
+call   23 returned 1
+    $$$$$:  146-block  8
+    $$$$$:  146-block  9
+    $$$$$:  146-block 10
+    $$$$$:  146-block 11
+call   24 never executed
+    $$$$$:  146-block 12
+    $$$$$:  146-block 13
+    $$$$$:  146-block 14
+    $$$$$:  146-block 15
+call   25 never executed
+    $$$$$:  146-block 16
+    $$$$$:  146-block 17
+    $$$$$:  146-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  146-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  146-block 20
+call   33 never executed
+    $$$$$:  146-block 21
+call   34 never executed
+        1:  147:    REQUIRE("1st" == list.getElementAt(2));
+        1:  147-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  147-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  147-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  147-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  147-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  147-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  147-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  147-block  7
+call   23 returned 1
+    $$$$$:  147-block  8
+    $$$$$:  147-block  9
+    $$$$$:  147-block 10
+    $$$$$:  147-block 11
+call   24 never executed
+    $$$$$:  147-block 12
+    $$$$$:  147-block 13
+    $$$$$:  147-block 14
+    $$$$$:  147-block 15
+call   25 never executed
+    $$$$$:  147-block 16
+    $$$$$:  147-block 17
+    $$$$$:  147-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  147-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  147-block 20
+call   33 never executed
+    $$$$$:  147-block 21
+call   34 never executed
+        -:  148:
+        1:  149:    list.moveToLast(1);
+        1:  149-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  150:    REQUIRE("3rd" == list.getElementAt(0));
+        1:  150-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  150-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  150-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  150-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  150-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  150-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  150-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  150-block  7
+call   23 returned 1
+    $$$$$:  150-block  8
+    $$$$$:  150-block  9
+    $$$$$:  150-block 10
+    $$$$$:  150-block 11
+call   24 never executed
+    $$$$$:  150-block 12
+    $$$$$:  150-block 13
+    $$$$$:  150-block 14
+    $$$$$:  150-block 15
+call   25 never executed
+    $$$$$:  150-block 16
+    $$$$$:  150-block 17
+    $$$$$:  150-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  150-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  150-block 20
+call   33 never executed
+    $$$$$:  150-block 21
+call   34 never executed
+        1:  151:    REQUIRE("1st" == list.getElementAt(1));
+        1:  151-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  151-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  151-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  151-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  151-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  151-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  151-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  151-block  7
+call   23 returned 1
+    $$$$$:  151-block  8
+    $$$$$:  151-block  9
+    $$$$$:  151-block 10
+    $$$$$:  151-block 11
+call   24 never executed
+    $$$$$:  151-block 12
+    $$$$$:  151-block 13
+    $$$$$:  151-block 14
+    $$$$$:  151-block 15
+call   25 never executed
+    $$$$$:  151-block 16
+    $$$$$:  151-block 17
+    $$$$$:  151-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  151-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  151-block 20
+call   33 never executed
+    $$$$$:  151-block 21
+call   34 never executed
+        1:  152:    REQUIRE("2nd" == list.getElementAt(2));
+        1:  152-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  152-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  152-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  152-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  152-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  152-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  152-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  152-block  7
+call   23 returned 1
+    $$$$$:  152-block  8
+    $$$$$:  152-block  9
+    $$$$$:  152-block 10
+    $$$$$:  152-block 11
+call   24 never executed
+    $$$$$:  152-block 12
+    $$$$$:  152-block 13
+    $$$$$:  152-block 14
+    $$$$$:  152-block 15
+call   25 never executed
+    $$$$$:  152-block 16
+    $$$$$:  152-block 17
+    $$$$$:  152-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  152-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  152-block 20
+call   33 never executed
+    $$$$$:  152-block 21
+call   34 never executed
+        -:  153:
+        1:  154:    list.moveToLast(2);
+        1:  154-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  155:    REQUIRE("3rd" == list.getElementAt(0));
+        1:  155-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  155-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  155-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  155-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  155-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  155-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  155-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  155-block  7
+call   23 returned 1
+    $$$$$:  155-block  8
+    $$$$$:  155-block  9
+    $$$$$:  155-block 10
+    $$$$$:  155-block 11
+call   24 never executed
+    $$$$$:  155-block 12
+    $$$$$:  155-block 13
+    $$$$$:  155-block 14
+    $$$$$:  155-block 15
+call   25 never executed
+    $$$$$:  155-block 16
+    $$$$$:  155-block 17
+    $$$$$:  155-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  155-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  155-block 20
+call   33 never executed
+    $$$$$:  155-block 21
+call   34 never executed
+        1:  156:    REQUIRE("1st" == list.getElementAt(1));
+        1:  156-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  156-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  156-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  156-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  156-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  156-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  156-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  156-block  7
+call   23 returned 1
+    $$$$$:  156-block  8
+    $$$$$:  156-block  9
+    $$$$$:  156-block 10
+    $$$$$:  156-block 11
+call   24 never executed
+    $$$$$:  156-block 12
+    $$$$$:  156-block 13
+    $$$$$:  156-block 14
+    $$$$$:  156-block 15
+call   25 never executed
+    $$$$$:  156-block 16
+    $$$$$:  156-block 17
+    $$$$$:  156-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  156-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  156-block 20
+call   33 never executed
+    $$$$$:  156-block 21
+call   34 never executed
+        1:  157:    REQUIRE("2nd" == list.getElementAt(2));
+        1:  157-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  157-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  157-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  157-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  157-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  157-block  5
+call   18 returned 1
+call   19 returned 1
+        1:  157-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  157-block  7
+call   23 returned 1
+    $$$$$:  157-block  8
+    $$$$$:  157-block  9
+    $$$$$:  157-block 10
+    $$$$$:  157-block 11
+call   24 never executed
+    $$$$$:  157-block 12
+    $$$$$:  157-block 13
+    $$$$$:  157-block 14
+    $$$$$:  157-block 15
+call   25 never executed
+    $$$$$:  157-block 16
+    $$$$$:  157-block 17
+    $$$$$:  157-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  157-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  157-block 20
+call   33 never executed
+    $$$$$:  157-block 21
+call   34 never executed
+       1*:  158:    CHECK_THROWS(list.raisePriorityOf(3));
+        1:  158-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  158-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  158-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  158-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:  158-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  158-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:  158-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  158-block  7
+call   23 returned 1
+    $$$$$:  158-block  8
+    $$$$$:  158-block  9
+    $$$$$:  158-block 10
+        1:  158-block 11
+        1:  158-block 12
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:  158-block 13
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:  158-block 14
+call   31 never executed
+    $$$$$:  158-block 15
+call   32 never executed
+       1*:  159:    CHECK_THROWS(list.moveToLast(3));
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  159-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  159-block  1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  159-block  2
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:  159-block  3
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  159-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+        1:  159-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:  159-block  6
+call   23 returned 1
+    $$$$$:  159-block  7
+    $$$$$:  159-block  8
+    $$$$$:  159-block  9
+        1:  159-block 10
+        1:  159-block 11
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:  159-block 12
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+    $$$$$:  159-block 13
+call   31 never executed
+    $$$$$:  159-block 14
+call   32 never executed
+        1:  160:}
+call    0 returned 1
+    $$$$$:  160-block  0
+call    1 never executed
+        -:  161:
+function _ZL20C_A_T_C_H_T_E_S_T_14v called 1 returned 100% blocks executed 60%
+        1:  162:TEST_CASE ("testInsertExceptLower") {
+        1:  163:    LinkedPriorityList<string> list;
+        1:  163-block  0
+call    0 returned 1
+       3*:  164:    CHECK_THROWS(list.insertElementAt(-1, "negative"));
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  164-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  164-block  1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  164-block  2
+call   11 returned 1
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  164-block  3
+call   15 returned 1
+branch 16 taken 0 (fallthrough)
+branch 17 taken 1 (throw)
+    %%%%%:  164-block  4
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:  164-block  5
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+        1:  164-block  6
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  164-block  7
+call   29 returned 1
+    $$$$$:  164-block  8
+    $$$$$:  164-block  9
+    $$$$$:  164-block 10
+        1:  164-block 11
+call   30 returned 1
+        1:  164-block 12
+        1:  164-block 13
+call   31 returned 1
+        1:  164-block 14
+        1:  164-block 15
+        1:  164-block 16
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:  164-block 17
+call   36 returned 1
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0 (throw)
+    $$$$$:  164-block 18
+call   39 never executed
+    $$$$$:  164-block 19
+call   40 never executed
+        1:  165:}
+call    0 returned 1
+    $$$$$:  165-block  0
+call    1 never executed
+        -:  166:
+        -:  167:///// Make sure all functions throw exceptions when they are supposed to !!!!!
+function _ZL20C_A_T_C_H_T_E_S_T_16v called 1 returned 100% blocks executed 55%
+        1:  168:TEST_CASE ("testInsertException") {
+        1:  169:LinkedPriorityList<string> list;
+        1:  169-block  0
+call    0 returned 1
+        1:  170:list.insertElementAt(0, "1st");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  170-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  170-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  170-block  2
+call    9 never executed
+    $$$$$:  170-block  3
+    $$$$$:  170-block  4
+call   10 never executed
+    $$$$$:  170-block  5
+        1:  171:list.insertElementAt(1, "2nd");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  171-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  171-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:  171-block  2
+call    9 never executed
+    $$$$$:  171-block  3
+    $$$$$:  171-block  4
+call   10 never executed
+    $$$$$:  171-block  5
+       3*:  172:CHECK_THROWS(list.insertElementAt(3, "One too many"));
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  172-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  172-block  1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  172-block  2
+call   11 returned 1
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  172-block  3
+call   15 returned 1
+branch 16 taken 0 (fallthrough)
+branch 17 taken 1 (throw)
+    %%%%%:  172-block  4
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:  172-block  5
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+        1:  172-block  6
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  172-block  7
+call   29 returned 1
+    $$$$$:  172-block  8
+    $$$$$:  172-block  9
+    $$$$$:  172-block 10
+        1:  172-block 11
+call   30 returned 1
+        1:  172-block 12
+        1:  172-block 13
+call   31 returned 1
+        1:  172-block 14
+        1:  172-block 15
+        1:  172-block 16
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:  172-block 17
+call   36 returned 1
+branch 37 taken 1 (fallthrough)
+branch 38 taken 0 (throw)
+    $$$$$:  172-block 18
+call   39 never executed
+    $$$$$:  172-block 19
+call   40 never executed
+        1:  173:}
+call    0 returned 1
+    $$$$$:  173-block  0
+call    1 never executed

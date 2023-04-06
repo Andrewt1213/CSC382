@@ -1,0 +1,6 @@
+# ninja log v5
+10	2666	7007311795211237	CMakeFiles/StackFun.dir/StackTest.cpp.obj	5103d69f10662218
+8	1857	7007351797145191	CMakeFiles/StackFun.dir/main.cpp.obj	8439138f602d6c16
+3	824	7007353732578785	build.ninja	ceb6891aa4285400
+35382	112453	7007353561374886	StackFun.exe	d8da5bcc9da9a464
+1	35373	7007352790217945	CMakeFiles/StackFun.dir/StacksTest.cpp.obj	197826d581a45fb9

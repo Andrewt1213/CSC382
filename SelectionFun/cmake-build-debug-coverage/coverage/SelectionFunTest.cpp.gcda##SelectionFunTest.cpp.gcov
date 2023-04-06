@@ -1,0 +1,3915 @@
+        -:    0:Source:C:/Users/lavab/CLionProjects/SelectionFun/SelectionFunTest.cpp
+        -:    0:Graph:C:\Users\lavab\CLionProjects\SelectionFun\cmake-build-debug-coverage\CMakeFiles\SelectionFun.dir\SelectionFunTest.cpp.gcno
+        -:    0:Data:C:\Users\lavab\CLionProjects\SelectionFun\cmake-build-debug-coverage\CMakeFiles\SelectionFun.dir\SelectionFunTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:/*
+        -:    2: * A unit test for the 11 functions in SelectionFun.hpp
+        -:    3: */
+        -:    4:// This #define tells Catch to provide a main() - only do this in one cpp file
+        -:    5:#define CATCH_CONFIG_MAIN
+        -:    6:
+        -:    7:#include "catch.hpp"
+        -:    8:
+        -:    9:#include <string>
+        -:   10:#include "SelectionFun.hpp"
+        -:   11:
+        -:   12:/*
+        -:   13: * This unit test has at least one test method for each of the 12 methods
+        -:   14: * in catch.hpp. However, they are incomplete and do not represent
+        -:   15: * 100% code coverage. This is meant to encourage you to think of other
+        -:   16: * needed test cases and add your own REQUIREs.
+        -:   17: *
+        -:   18: * We will run a unit test that is much, much larger than this starter unit test.
+        -:   19: *
+        -:   20: * Think of as many test cases as you can.
+        -:   21: *
+        -:   22: * Programmers: Rick Mercer and Andrew Tapia
+        -:   23: */
+        -:   24:
+function _ZL19C_A_T_C_H_T_E_S_T_0v called 1 returned 100% blocks executed 38%
+        1:   25:TEST_CASE("test dayOfWeek") {
+        1:   26:    REQUIRE(dayOfWeek(0) == "Unknown");
+        1:   26-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   26-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   26-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   26-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   26-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   26-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   26-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   26-block  7
+call   23 returned 1
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+    $$$$$:   26-block 10
+    $$$$$:   26-block 11
+call   24 never executed
+    $$$$$:   26-block 12
+    $$$$$:   26-block 13
+    $$$$$:   26-block 14
+    $$$$$:   26-block 15
+call   25 never executed
+    $$$$$:   26-block 16
+    $$$$$:   26-block 17
+    $$$$$:   26-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   26-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   26-block 20
+call   33 never executed
+    $$$$$:   26-block 21
+call   34 never executed
+        1:   27:    REQUIRE(dayOfWeek(1) == "Monday");
+        1:   27-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   27-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   27-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   27-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   27-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   27-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   27-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   27-block  7
+call   23 returned 1
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+call   24 never executed
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
+    $$$$$:   27-block 14
+    $$$$$:   27-block 15
+call   25 never executed
+    $$$$$:   27-block 16
+    $$$$$:   27-block 17
+    $$$$$:   27-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   27-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   27-block 20
+call   33 never executed
+    $$$$$:   27-block 21
+call   34 never executed
+        1:   28:    REQUIRE(dayOfWeek(2) == "Tuesday");
+        1:   28-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   28-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   28-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   28-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   28-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   28-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   28-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   28-block  7
+call   23 returned 1
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   24 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+    $$$$$:   28-block 14
+    $$$$$:   28-block 15
+call   25 never executed
+    $$$$$:   28-block 16
+    $$$$$:   28-block 17
+    $$$$$:   28-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   28-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   28-block 20
+call   33 never executed
+    $$$$$:   28-block 21
+call   34 never executed
+        1:   29:    REQUIRE(dayOfWeek(3) == "Wednesday");
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   29-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   29-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   29-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   29-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   29-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   29-block  7
+call   23 returned 1
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+call   24 never executed
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+    $$$$$:   29-block 14
+    $$$$$:   29-block 15
+call   25 never executed
+    $$$$$:   29-block 16
+    $$$$$:   29-block 17
+    $$$$$:   29-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   29-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   29-block 20
+call   33 never executed
+    $$$$$:   29-block 21
+call   34 never executed
+        1:   30:    REQUIRE(dayOfWeek(4) == "Thursday");
+        1:   30-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   30-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   30-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   30-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   30-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   30-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   30-block  7
+call   23 returned 1
+    $$$$$:   30-block  8
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+call   24 never executed
+    $$$$$:   30-block 12
+    $$$$$:   30-block 13
+    $$$$$:   30-block 14
+    $$$$$:   30-block 15
+call   25 never executed
+    $$$$$:   30-block 16
+    $$$$$:   30-block 17
+    $$$$$:   30-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   30-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   30-block 20
+call   33 never executed
+    $$$$$:   30-block 21
+call   34 never executed
+        1:   31:    REQUIRE(dayOfWeek(5) == "Friday");
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   31-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   31-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   31-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   31-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   31-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   31-block  7
+call   23 returned 1
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+call   24 never executed
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+    $$$$$:   31-block 15
+call   25 never executed
+    $$$$$:   31-block 16
+    $$$$$:   31-block 17
+    $$$$$:   31-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   31-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   31-block 20
+call   33 never executed
+    $$$$$:   31-block 21
+call   34 never executed
+        1:   32:    REQUIRE(dayOfWeek(6) == "Saturday");
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   32-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   32-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   32-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   32-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   32-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   32-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   32-block  7
+call   23 returned 1
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+call   24 never executed
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+    $$$$$:   32-block 15
+call   25 never executed
+    $$$$$:   32-block 16
+    $$$$$:   32-block 17
+    $$$$$:   32-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   32-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   32-block 20
+call   33 never executed
+    $$$$$:   32-block 21
+call   34 never executed
+        1:   33:    REQUIRE(dayOfWeek(7) == "Sunday");
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   33-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   33-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   33-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   33-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   33-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   33-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   33-block  7
+call   23 returned 1
+    $$$$$:   33-block  8
+    $$$$$:   33-block  9
+    $$$$$:   33-block 10
+    $$$$$:   33-block 11
+call   24 never executed
+    $$$$$:   33-block 12
+    $$$$$:   33-block 13
+    $$$$$:   33-block 14
+    $$$$$:   33-block 15
+call   25 never executed
+    $$$$$:   33-block 16
+    $$$$$:   33-block 17
+    $$$$$:   33-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   33-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   33-block 20
+call   33 never executed
+    $$$$$:   33-block 21
+call   34 never executed
+        1:   34:    REQUIRE(dayOfWeek(8) == "Unknown");
+        1:   34-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   34-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   34-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   34-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   34-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   34-block  5
+call   18 returned 1
+call   19 returned 1
+        1:   34-block  6
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   34-block  7
+call   23 returned 1
+    $$$$$:   34-block  8
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+    $$$$$:   34-block 11
+call   24 never executed
+    $$$$$:   34-block 12
+    $$$$$:   34-block 13
+    $$$$$:   34-block 14
+    $$$$$:   34-block 15
+call   25 never executed
+    $$$$$:   34-block 16
+    $$$$$:   34-block 17
+    $$$$$:   34-block 18
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   34-block 19
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   34-block 20
+call   33 never executed
+    $$$$$:   34-block 21
+call   34 never executed
+        -:   35:
+        1:   36:}
+        1:   36-block  0
+        -:   37:
+function _ZL19C_A_T_C_H_T_E_S_T_2v called 1 returned 100% blocks executed 38%
+        1:   38:TEST_CASE("test Salary") {
+        1:   39:    REQUIRE(salary(10000) == 1500);
+        1:   39-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   39-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   39-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   39-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   39-block  4
+call   16 returned 1
+        1:   39-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   39-block  6
+call   20 returned 1
+    $$$$$:   39-block  7
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+    $$$$$:   39-block 10
+call   21 never executed
+    $$$$$:   39-block 11
+    $$$$$:   39-block 12
+    $$$$$:   39-block 13
+    $$$$$:   39-block 14
+    $$$$$:   39-block 15
+    $$$$$:   39-block 16
+    $$$$$:   39-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   39-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   39-block 19
+call   29 never executed
+    $$$$$:   39-block 20
+call   30 never executed
+        1:   40:    REQUIRE(salary(10001) == 1500.05);
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   40-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   40-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   40-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   40-block  4
+call   16 returned 1
+        1:   40-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   40-block  6
+call   20 returned 1
+    $$$$$:   40-block  7
+    $$$$$:   40-block  8
+    $$$$$:   40-block  9
+    $$$$$:   40-block 10
+call   21 never executed
+    $$$$$:   40-block 11
+    $$$$$:   40-block 12
+    $$$$$:   40-block 13
+    $$$$$:   40-block 14
+    $$$$$:   40-block 15
+    $$$$$:   40-block 16
+    $$$$$:   40-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   40-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   40-block 19
+call   29 never executed
+    $$$$$:   40-block 20
+call   30 never executed
+        1:   41:    REQUIRE(salary(0.0) == 1500);
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   41-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   41-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   41-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   41-block  4
+call   16 returned 1
+        1:   41-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   41-block  6
+call   20 returned 1
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+call   21 never executed
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+    $$$$$:   41-block 13
+    $$$$$:   41-block 14
+    $$$$$:   41-block 15
+    $$$$$:   41-block 16
+    $$$$$:   41-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   41-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   41-block 19
+call   29 never executed
+    $$$$$:   41-block 20
+call   30 never executed
+        1:   42:    REQUIRE(salary(10500) == 1525);
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   42-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   42-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   42-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   42-block  4
+call   16 returned 1
+        1:   42-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   42-block  6
+call   20 returned 1
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+call   21 never executed
+    $$$$$:   42-block 11
+    $$$$$:   42-block 12
+    $$$$$:   42-block 13
+    $$$$$:   42-block 14
+    $$$$$:   42-block 15
+    $$$$$:   42-block 16
+    $$$$$:   42-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   42-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   42-block 19
+call   29 never executed
+    $$$$$:   42-block 20
+call   30 never executed
+        1:   43:    REQUIRE(salary(30000) == 2800);
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   43-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   43-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   43-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   43-block  4
+call   16 returned 1
+        1:   43-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   43-block  6
+call   20 returned 1
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+call   21 never executed
+    $$$$$:   43-block 11
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+    $$$$$:   43-block 16
+    $$$$$:   43-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   43-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   43-block 19
+call   29 never executed
+    $$$$$:   43-block 20
+call   30 never executed
+        1:   44:    REQUIRE(salary(20000) == 2000);
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   44-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   44-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   44-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   44-block  4
+call   16 returned 1
+        1:   44-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   44-block  6
+call   20 returned 1
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+call   21 never executed
+    $$$$$:   44-block 11
+    $$$$$:   44-block 12
+    $$$$$:   44-block 13
+    $$$$$:   44-block 14
+    $$$$$:   44-block 15
+    $$$$$:   44-block 16
+    $$$$$:   44-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   44-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   44-block 19
+call   29 never executed
+    $$$$$:   44-block 20
+call   30 never executed
+        1:   45:    REQUIRE(salary(20001) == 2000.08);
+        1:   45-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   45-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   45-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   45-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   45-block  4
+call   16 returned 1
+        1:   45-block  5
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   45-block  6
+call   20 returned 1
+    $$$$$:   45-block  7
+    $$$$$:   45-block  8
+    $$$$$:   45-block  9
+    $$$$$:   45-block 10
+call   21 never executed
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+    $$$$$:   45-block 13
+    $$$$$:   45-block 14
+    $$$$$:   45-block 15
+    $$$$$:   45-block 16
+    $$$$$:   45-block 17
+call   22 never executed
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   45-block 18
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+    $$$$$:   45-block 19
+call   29 never executed
+    $$$$$:   45-block 20
+call   30 never executed
+        1:   46:}
+        1:   46-block  0
+        -:   47:
+function _ZL19C_A_T_C_H_T_E_S_T_4v called 1 returned 100% blocks executed 39%
+        1:   48:TEST_CASE("test firstOfThree") {
+        1:   49:    REQUIRE("a" == firstOf3("a", "a", "b"));
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   49-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   49-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   49-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   49-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   49-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   49-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   49-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   49-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   49-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   49-block 10
+call   41 returned 1
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+    $$$$$:   49-block 14
+call   42 never executed
+    $$$$$:   49-block 15
+    $$$$$:   49-block 16
+    $$$$$:   49-block 17
+    $$$$$:   49-block 18
+call   43 never executed
+    $$$$$:   49-block 19
+    $$$$$:   49-block 20
+call   44 never executed
+    $$$$$:   49-block 21
+    $$$$$:   49-block 22
+call   45 never executed
+    $$$$$:   49-block 23
+    $$$$$:   49-block 24
+call   46 never executed
+    $$$$$:   49-block 25
+    $$$$$:   49-block 26
+call   47 never executed
+    $$$$$:   49-block 27
+    $$$$$:   49-block 28
+call   48 never executed
+    $$$$$:   49-block 29
+    $$$$$:   49-block 30
+call   49 never executed
+    $$$$$:   49-block 31
+    $$$$$:   49-block 32
+    $$$$$:   49-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   49-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   49-block 35
+call   57 never executed
+    $$$$$:   49-block 36
+call   58 never executed
+        1:   50:    REQUIRE("Ma" == firstOf3("Ma", "ma", "ma"));
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   50-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   50-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   50-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   50-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   50-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   50-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   50-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   50-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   50-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   50-block 10
+call   41 returned 1
+    $$$$$:   50-block 11
+    $$$$$:   50-block 12
+    $$$$$:   50-block 13
+    $$$$$:   50-block 14
+call   42 never executed
+    $$$$$:   50-block 15
+    $$$$$:   50-block 16
+    $$$$$:   50-block 17
+    $$$$$:   50-block 18
+call   43 never executed
+    $$$$$:   50-block 19
+    $$$$$:   50-block 20
+call   44 never executed
+    $$$$$:   50-block 21
+    $$$$$:   50-block 22
+call   45 never executed
+    $$$$$:   50-block 23
+    $$$$$:   50-block 24
+call   46 never executed
+    $$$$$:   50-block 25
+    $$$$$:   50-block 26
+call   47 never executed
+    $$$$$:   50-block 27
+    $$$$$:   50-block 28
+call   48 never executed
+    $$$$$:   50-block 29
+    $$$$$:   50-block 30
+call   49 never executed
+    $$$$$:   50-block 31
+    $$$$$:   50-block 32
+    $$$$$:   50-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   50-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   50-block 35
+call   57 never executed
+    $$$$$:   50-block 36
+call   58 never executed
+        1:   51:    REQUIRE(firstOf3("123", "123 0", "1232") == "123");
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   51-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   51-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   51-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   51-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   51-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   51-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   51-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   51-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   51-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   51-block 10
+call   41 returned 1
+    $$$$$:   51-block 11
+    $$$$$:   51-block 12
+    $$$$$:   51-block 13
+    $$$$$:   51-block 14
+call   42 never executed
+    $$$$$:   51-block 15
+    $$$$$:   51-block 16
+    $$$$$:   51-block 17
+    $$$$$:   51-block 18
+call   43 never executed
+    $$$$$:   51-block 19
+    $$$$$:   51-block 20
+call   44 never executed
+    $$$$$:   51-block 21
+    $$$$$:   51-block 22
+call   45 never executed
+    $$$$$:   51-block 23
+    $$$$$:   51-block 24
+call   46 never executed
+    $$$$$:   51-block 25
+    $$$$$:   51-block 26
+call   47 never executed
+    $$$$$:   51-block 27
+    $$$$$:   51-block 28
+call   48 never executed
+    $$$$$:   51-block 29
+    $$$$$:   51-block 30
+call   49 never executed
+    $$$$$:   51-block 31
+    $$$$$:   51-block 32
+    $$$$$:   51-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   51-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   51-block 35
+call   57 never executed
+    $$$$$:   51-block 36
+call   58 never executed
+        1:   52:    REQUIRE(firstOf3("AAA", "aaa", "bbb") == "AAA");
+        1:   52-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   52-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   52-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   52-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   52-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   52-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   52-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   52-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   52-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   52-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   52-block 10
+call   41 returned 1
+    $$$$$:   52-block 11
+    $$$$$:   52-block 12
+    $$$$$:   52-block 13
+    $$$$$:   52-block 14
+call   42 never executed
+    $$$$$:   52-block 15
+    $$$$$:   52-block 16
+    $$$$$:   52-block 17
+    $$$$$:   52-block 18
+call   43 never executed
+    $$$$$:   52-block 19
+    $$$$$:   52-block 20
+call   44 never executed
+    $$$$$:   52-block 21
+    $$$$$:   52-block 22
+call   45 never executed
+    $$$$$:   52-block 23
+    $$$$$:   52-block 24
+call   46 never executed
+    $$$$$:   52-block 25
+    $$$$$:   52-block 26
+call   47 never executed
+    $$$$$:   52-block 27
+    $$$$$:   52-block 28
+call   48 never executed
+    $$$$$:   52-block 29
+    $$$$$:   52-block 30
+call   49 never executed
+    $$$$$:   52-block 31
+    $$$$$:   52-block 32
+    $$$$$:   52-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   52-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   52-block 35
+call   57 never executed
+    $$$$$:   52-block 36
+call   58 never executed
+        1:   53:    REQUIRE(firstOf3("1234", "AAA", "aaa") == "1234");
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   53-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   53-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   53-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   53-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   53-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   53-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   53-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   53-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   53-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   53-block 10
+call   41 returned 1
+    $$$$$:   53-block 11
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+call   42 never executed
+    $$$$$:   53-block 15
+    $$$$$:   53-block 16
+    $$$$$:   53-block 17
+    $$$$$:   53-block 18
+call   43 never executed
+    $$$$$:   53-block 19
+    $$$$$:   53-block 20
+call   44 never executed
+    $$$$$:   53-block 21
+    $$$$$:   53-block 22
+call   45 never executed
+    $$$$$:   53-block 23
+    $$$$$:   53-block 24
+call   46 never executed
+    $$$$$:   53-block 25
+    $$$$$:   53-block 26
+call   47 never executed
+    $$$$$:   53-block 27
+    $$$$$:   53-block 28
+call   48 never executed
+    $$$$$:   53-block 29
+    $$$$$:   53-block 30
+call   49 never executed
+    $$$$$:   53-block 31
+    $$$$$:   53-block 32
+    $$$$$:   53-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   53-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   53-block 35
+call   57 never executed
+    $$$$$:   53-block 36
+call   58 never executed
+        1:   54:    REQUIRE(firstOf3("zxc", "zxcb", "zxcv") == "zxc");
+        1:   54-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   54-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   54-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   54-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   54-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   54-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   54-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   54-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   54-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   54-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   54-block 10
+call   41 returned 1
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+    $$$$$:   54-block 14
+call   42 never executed
+    $$$$$:   54-block 15
+    $$$$$:   54-block 16
+    $$$$$:   54-block 17
+    $$$$$:   54-block 18
+call   43 never executed
+    $$$$$:   54-block 19
+    $$$$$:   54-block 20
+call   44 never executed
+    $$$$$:   54-block 21
+    $$$$$:   54-block 22
+call   45 never executed
+    $$$$$:   54-block 23
+    $$$$$:   54-block 24
+call   46 never executed
+    $$$$$:   54-block 25
+    $$$$$:   54-block 26
+call   47 never executed
+    $$$$$:   54-block 27
+    $$$$$:   54-block 28
+call   48 never executed
+    $$$$$:   54-block 29
+    $$$$$:   54-block 30
+call   49 never executed
+    $$$$$:   54-block 31
+    $$$$$:   54-block 32
+    $$$$$:   54-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   54-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   54-block 35
+call   57 never executed
+    $$$$$:   54-block 36
+call   58 never executed
+        1:   55:    REQUIRE(firstOf3("", "", "") == "");
+        1:   55-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   55-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   55-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   55-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   55-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   55-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   55-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   55-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   55-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   55-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   55-block 10
+call   41 returned 1
+    $$$$$:   55-block 11
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+    $$$$$:   55-block 14
+call   42 never executed
+    $$$$$:   55-block 15
+    $$$$$:   55-block 16
+    $$$$$:   55-block 17
+    $$$$$:   55-block 18
+call   43 never executed
+    $$$$$:   55-block 19
+    $$$$$:   55-block 20
+call   44 never executed
+    $$$$$:   55-block 21
+    $$$$$:   55-block 22
+call   45 never executed
+    $$$$$:   55-block 23
+    $$$$$:   55-block 24
+call   46 never executed
+    $$$$$:   55-block 25
+    $$$$$:   55-block 26
+call   47 never executed
+    $$$$$:   55-block 27
+    $$$$$:   55-block 28
+call   48 never executed
+    $$$$$:   55-block 29
+    $$$$$:   55-block 30
+call   49 never executed
+    $$$$$:   55-block 31
+    $$$$$:   55-block 32
+    $$$$$:   55-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   55-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   55-block 35
+call   57 never executed
+    $$$$$:   55-block 36
+call   58 never executed
+        1:   56:    REQUIRE(firstOf3("121", "123", " 122") == " 122");
+        1:   56-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   56-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   56-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   56-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   56-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   56-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   56-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   56-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   56-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   56-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   56-block 10
+call   41 returned 1
+    $$$$$:   56-block 11
+    $$$$$:   56-block 12
+    $$$$$:   56-block 13
+    $$$$$:   56-block 14
+call   42 never executed
+    $$$$$:   56-block 15
+    $$$$$:   56-block 16
+    $$$$$:   56-block 17
+    $$$$$:   56-block 18
+call   43 never executed
+    $$$$$:   56-block 19
+    $$$$$:   56-block 20
+call   44 never executed
+    $$$$$:   56-block 21
+    $$$$$:   56-block 22
+call   45 never executed
+    $$$$$:   56-block 23
+    $$$$$:   56-block 24
+call   46 never executed
+    $$$$$:   56-block 25
+    $$$$$:   56-block 26
+call   47 never executed
+    $$$$$:   56-block 27
+    $$$$$:   56-block 28
+call   48 never executed
+    $$$$$:   56-block 29
+    $$$$$:   56-block 30
+call   49 never executed
+    $$$$$:   56-block 31
+    $$$$$:   56-block 32
+    $$$$$:   56-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   56-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   56-block 35
+call   57 never executed
+    $$$$$:   56-block 36
+call   58 never executed
+        1:   57:    REQUIRE(firstOf3("", "", " 1") == "");
+        1:   57-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   57-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   57-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   57-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   57-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   57-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   57-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   57-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   57-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   57-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   57-block 10
+call   41 returned 1
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+    $$$$$:   57-block 13
+    $$$$$:   57-block 14
+call   42 never executed
+    $$$$$:   57-block 15
+    $$$$$:   57-block 16
+    $$$$$:   57-block 17
+    $$$$$:   57-block 18
+call   43 never executed
+    $$$$$:   57-block 19
+    $$$$$:   57-block 20
+call   44 never executed
+    $$$$$:   57-block 21
+    $$$$$:   57-block 22
+call   45 never executed
+    $$$$$:   57-block 23
+    $$$$$:   57-block 24
+call   46 never executed
+    $$$$$:   57-block 25
+    $$$$$:   57-block 26
+call   47 never executed
+    $$$$$:   57-block 27
+    $$$$$:   57-block 28
+call   48 never executed
+    $$$$$:   57-block 29
+    $$$$$:   57-block 30
+call   49 never executed
+    $$$$$:   57-block 31
+    $$$$$:   57-block 32
+    $$$$$:   57-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   57-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   57-block 35
+call   57 never executed
+    $$$$$:   57-block 36
+call   58 never executed
+        1:   58:    REQUIRE(firstOf3("2", "1", "3") == "1");
+        1:   58-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   58-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   58-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   58-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   58-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   58-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   58-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   58-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   58-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   58-block 10
+call   41 returned 1
+    $$$$$:   58-block 11
+    $$$$$:   58-block 12
+    $$$$$:   58-block 13
+    $$$$$:   58-block 14
+call   42 never executed
+    $$$$$:   58-block 15
+    $$$$$:   58-block 16
+    $$$$$:   58-block 17
+    $$$$$:   58-block 18
+call   43 never executed
+    $$$$$:   58-block 19
+    $$$$$:   58-block 20
+call   44 never executed
+    $$$$$:   58-block 21
+    $$$$$:   58-block 22
+call   45 never executed
+    $$$$$:   58-block 23
+    $$$$$:   58-block 24
+call   46 never executed
+    $$$$$:   58-block 25
+    $$$$$:   58-block 26
+call   47 never executed
+    $$$$$:   58-block 27
+    $$$$$:   58-block 28
+call   48 never executed
+    $$$$$:   58-block 29
+    $$$$$:   58-block 30
+call   49 never executed
+    $$$$$:   58-block 31
+    $$$$$:   58-block 32
+    $$$$$:   58-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   58-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   58-block 35
+call   57 never executed
+    $$$$$:   58-block 36
+call   58 never executed
+        1:   59:    REQUIRE(firstOf3("2", "3", "1") == "1");
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   59-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   59-block  2
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   59-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   59-block  4
+call   18 returned 1
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0 (throw)
+        1:   59-block  5
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   59-block  6
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   59-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   59-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+call   34 returned 1
+call   35 returned 1
+call   36 returned 1
+call   37 returned 1
+        1:   59-block  9
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   59-block 10
+call   41 returned 1
+    $$$$$:   59-block 11
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+    $$$$$:   59-block 14
+call   42 never executed
+    $$$$$:   59-block 15
+    $$$$$:   59-block 16
+    $$$$$:   59-block 17
+    $$$$$:   59-block 18
+call   43 never executed
+    $$$$$:   59-block 19
+    $$$$$:   59-block 20
+call   44 never executed
+    $$$$$:   59-block 21
+    $$$$$:   59-block 22
+call   45 never executed
+    $$$$$:   59-block 23
+    $$$$$:   59-block 24
+call   46 never executed
+    $$$$$:   59-block 25
+    $$$$$:   59-block 26
+call   47 never executed
+    $$$$$:   59-block 27
+    $$$$$:   59-block 28
+call   48 never executed
+    $$$$$:   59-block 29
+    $$$$$:   59-block 30
+call   49 never executed
+    $$$$$:   59-block 31
+    $$$$$:   59-block 32
+    $$$$$:   59-block 33
+call   50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+    $$$$$:   59-block 34
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+    $$$$$:   59-block 35
+call   57 never executed
+    $$$$$:   59-block 36
+call   58 never executed
+        -:   60:
+        1:   61:}
+        1:   61-block  0
+        -:   62:
+        -:   63:
+function _ZL19C_A_T_C_H_T_E_S_T_6v called 1 returned 100% blocks executed 42%
+        1:   64:TEST_CASE("test isLeapYear") {
+        1:   65:    REQUIRE(isLeapYear(2020));
+        1:   65-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   65-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   65-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   65-block  3
+        1:   65-block  4
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   65-block  5
+call   16 returned 1
+    $$$$$:   65-block  6
+    $$$$$:   65-block  7
+    $$$$$:   65-block  8
+    $$$$$:   65-block  9
+    $$$$$:   65-block 10
+    $$$$$:   65-block 11
+    $$$$$:   65-block 12
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   65-block 13
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   65-block 14
+call   24 never executed
+    $$$$$:   65-block 15
+call   25 never executed
+        1:   66:    REQUIRE_FALSE(isLeapYear(2021));
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   66-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   66-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   66-block  3
+        1:   66-block  4
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   66-block  5
+call   17 returned 1
+    $$$$$:   66-block  6
+    $$$$$:   66-block  7
+    $$$$$:   66-block  8
+    $$$$$:   66-block  9
+    $$$$$:   66-block 10
+    $$$$$:   66-block 11
+    $$$$$:   66-block 12
+call   18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   66-block 13
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   66-block 14
+call   25 never executed
+    $$$$$:   66-block 15
+call   26 never executed
+        1:   67:    REQUIRE_FALSE(isLeapYear(2023));
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   67-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   67-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   67-block  3
+        1:   67-block  4
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   67-block  5
+call   17 returned 1
+    $$$$$:   67-block  6
+    $$$$$:   67-block  7
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+    $$$$$:   67-block 12
+call   18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   67-block 13
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   67-block 14
+call   25 never executed
+    $$$$$:   67-block 15
+call   26 never executed
+        1:   68:    REQUIRE_FALSE(isLeapYear(1900));
+        1:   68-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   68-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   68-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   68-block  3
+        1:   68-block  4
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   68-block  5
+call   17 returned 1
+    $$$$$:   68-block  6
+    $$$$$:   68-block  7
+    $$$$$:   68-block  8
+    $$$$$:   68-block  9
+    $$$$$:   68-block 10
+    $$$$$:   68-block 11
+    $$$$$:   68-block 12
+call   18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   68-block 13
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   68-block 14
+call   25 never executed
+    $$$$$:   68-block 15
+call   26 never executed
+        1:   69:    REQUIRE_FALSE(isLeapYear(2100));
+        1:   69-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   69-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   69-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   69-block  3
+        1:   69-block  4
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   69-block  5
+call   17 returned 1
+    $$$$$:   69-block  6
+    $$$$$:   69-block  7
+    $$$$$:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
+    $$$$$:   69-block 11
+    $$$$$:   69-block 12
+call   18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   69-block 13
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   69-block 14
+call   25 never executed
+    $$$$$:   69-block 15
+call   26 never executed
+        1:   70:    REQUIRE(isLeapYear(2000));
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   70-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   70-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   70-block  3
+        1:   70-block  4
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   70-block  5
+call   16 returned 1
+    $$$$$:   70-block  6
+    $$$$$:   70-block  7
+    $$$$$:   70-block  8
+    $$$$$:   70-block  9
+    $$$$$:   70-block 10
+    $$$$$:   70-block 11
+    $$$$$:   70-block 12
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    $$$$$:   70-block 13
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   70-block 14
+call   24 never executed
+    $$$$$:   70-block 15
+call   25 never executed
+        1:   71:    REQUIRE_FALSE(isLeapYear(0));
+        1:   71-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   71-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   71-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   71-block  3
+        1:   71-block  4
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   71-block  5
+call   17 returned 1
+    $$$$$:   71-block  6
+    $$$$$:   71-block  7
+    $$$$$:   71-block  8
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+call   18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   71-block 13
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   71-block 14
+call   25 never executed
+    $$$$$:   71-block 15
+call   26 never executed
+        -:   72:    // Add more assertions
+        1:   73:}
+        1:   73-block  0
+        -:   74:
+        -:   75:
+function _ZL19C_A_T_C_H_T_E_S_T_8v called 1 returned 100% blocks executed 38%
+        1:   76:TEST_CASE ("test dayNumber") {
+        1:   77:    REQUIRE(1 == dayNumber("01/01/2018"));
+        1:   77-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   77-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   77-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   77-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   77-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   77-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   77-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+        1:   77-block  7
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   77-block  8
+call   28 returned 1
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+call   29 never executed
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+    $$$$$:   77-block 15
+    $$$$$:   77-block 16
+    $$$$$:   77-block 17
+    $$$$$:   77-block 18
+call   30 never executed
+    $$$$$:   77-block 19
+    $$$$$:   77-block 20
+call   31 never executed
+    $$$$$:   77-block 21
+    $$$$$:   77-block 22
+    $$$$$:   77-block 23
+call   32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   77-block 24
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   77-block 25
+call   39 never executed
+    $$$$$:   77-block 26
+call   40 never executed
+        1:   78:    REQUIRE(31 + 28 + 1 == dayNumber("03/01/2017"));
+        1:   78-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   78-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   78-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   78-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   78-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   78-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   78-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+        1:   78-block  7
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   78-block  8
+call   28 returned 1
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+call   29 never executed
+    $$$$$:   78-block 13
+    $$$$$:   78-block 14
+    $$$$$:   78-block 15
+    $$$$$:   78-block 16
+    $$$$$:   78-block 17
+    $$$$$:   78-block 18
+call   30 never executed
+    $$$$$:   78-block 19
+    $$$$$:   78-block 20
+call   31 never executed
+    $$$$$:   78-block 21
+    $$$$$:   78-block 22
+    $$$$$:   78-block 23
+call   32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   78-block 24
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   78-block 25
+call   39 never executed
+    $$$$$:   78-block 26
+call   40 never executed
+        1:   79:    REQUIRE(31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 +
+        1:   79-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   79-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   79-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   79-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   79-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   79-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   79-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+        1:   79-block  7
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   79-block  8
+call   28 returned 1
+    $$$$$:   79-block  9
+    $$$$$:   79-block 10
+    $$$$$:   79-block 11
+    $$$$$:   79-block 12
+call   29 never executed
+    $$$$$:   79-block 13
+    $$$$$:   79-block 14
+    $$$$$:   79-block 15
+    $$$$$:   79-block 16
+    $$$$$:   79-block 17
+    $$$$$:   79-block 18
+call   30 never executed
+    $$$$$:   79-block 19
+    $$$$$:   79-block 20
+call   31 never executed
+    $$$$$:   79-block 21
+    $$$$$:   79-block 22
+    $$$$$:   79-block 23
+call   32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   79-block 24
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   79-block 25
+call   39 never executed
+    $$$$$:   79-block 26
+call   40 never executed
+        -:   80:            31 + 9
+        -:   81:            == dayNumber("11/09/2017"));
+        1:   82:    REQUIRE(31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 +
+        1:   82-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   82-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   82-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   82-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   82-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   82-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   82-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+        1:   82-block  7
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   82-block  8
+call   28 returned 1
+    $$$$$:   82-block  9
+    $$$$$:   82-block 10
+    $$$$$:   82-block 11
+    $$$$$:   82-block 12
+call   29 never executed
+    $$$$$:   82-block 13
+    $$$$$:   82-block 14
+    $$$$$:   82-block 15
+    $$$$$:   82-block 16
+    $$$$$:   82-block 17
+    $$$$$:   82-block 18
+call   30 never executed
+    $$$$$:   82-block 19
+    $$$$$:   82-block 20
+call   31 never executed
+    $$$$$:   82-block 21
+    $$$$$:   82-block 22
+    $$$$$:   82-block 23
+call   32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   82-block 24
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   82-block 25
+call   39 never executed
+    $$$$$:   82-block 26
+call   40 never executed
+        -:   83:            31 + 30 + 10
+        -:   84:            == dayNumber("12/10/2017"));
+        1:   85:    REQUIRE(31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 +
+        1:   85-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   85-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   85-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   85-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   85-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   85-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   85-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+        1:   85-block  7
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   85-block  8
+call   28 returned 1
+    $$$$$:   85-block  9
+    $$$$$:   85-block 10
+    $$$$$:   85-block 11
+    $$$$$:   85-block 12
+call   29 never executed
+    $$$$$:   85-block 13
+    $$$$$:   85-block 14
+    $$$$$:   85-block 15
+    $$$$$:   85-block 16
+    $$$$$:   85-block 17
+    $$$$$:   85-block 18
+call   30 never executed
+    $$$$$:   85-block 19
+    $$$$$:   85-block 20
+call   31 never executed
+    $$$$$:   85-block 21
+    $$$$$:   85-block 22
+    $$$$$:   85-block 23
+call   32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   85-block 24
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+    $$$$$:   85-block 25
+call   39 never executed
+    $$$$$:   85-block 26
+call   40 never executed
+        -:   86:            31 + 30 + 31
+        -:   87:            == dayNumber("12/31/2000"));
+        1:   88:}
+        1:   88-block  0
+        -:   89:
+        -:   90:
+function _ZL20C_A_T_C_H_T_E_S_T_10v called 1 returned 100% blocks executed 40%
+        1:   91:TEST_CASE ("test validDate when all dates are valid") {
+        1:   92:    REQUIRE(validDate("01/01/2018"));
+        1:   92-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   92-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   92-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   92-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   92-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   92-block  5
+call   19 returned 1
+call   20 returned 1
+        1:   92-block  6
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   92-block  7
+call   24 returned 1
+    $$$$$:   92-block  8
+    $$$$$:   92-block  9
+    $$$$$:   92-block 10
+    $$$$$:   92-block 11
+    $$$$$:   92-block 12
+    $$$$$:   92-block 13
+call   25 never executed
+    $$$$$:   92-block 14
+    $$$$$:   92-block 15
+call   26 never executed
+    $$$$$:   92-block 16
+    $$$$$:   92-block 17
+    $$$$$:   92-block 18
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   92-block 19
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   92-block 20
+call   34 never executed
+    $$$$$:   92-block 21
+call   35 never executed
+        1:   93:    REQUIRE(validDate("02/29/2024"));
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   93-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   93-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   93-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   93-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   93-block  5
+call   19 returned 1
+call   20 returned 1
+        1:   93-block  6
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   93-block  7
+call   24 returned 1
+    $$$$$:   93-block  8
+    $$$$$:   93-block  9
+    $$$$$:   93-block 10
+    $$$$$:   93-block 11
+    $$$$$:   93-block 12
+    $$$$$:   93-block 13
+call   25 never executed
+    $$$$$:   93-block 14
+    $$$$$:   93-block 15
+call   26 never executed
+    $$$$$:   93-block 16
+    $$$$$:   93-block 17
+    $$$$$:   93-block 18
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   93-block 19
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   93-block 20
+call   34 never executed
+    $$$$$:   93-block 21
+call   35 never executed
+        1:   94:    REQUIRE(validDate("01/31/2016"));
+        1:   94-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   94-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   94-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   94-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   94-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   94-block  5
+call   19 returned 1
+call   20 returned 1
+        1:   94-block  6
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   94-block  7
+call   24 returned 1
+    $$$$$:   94-block  8
+    $$$$$:   94-block  9
+    $$$$$:   94-block 10
+    $$$$$:   94-block 11
+    $$$$$:   94-block 12
+    $$$$$:   94-block 13
+call   25 never executed
+    $$$$$:   94-block 14
+    $$$$$:   94-block 15
+call   26 never executed
+    $$$$$:   94-block 16
+    $$$$$:   94-block 17
+    $$$$$:   94-block 18
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   94-block 19
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   94-block 20
+call   34 never executed
+    $$$$$:   94-block 21
+call   35 never executed
+        1:   95:    REQUIRE(validDate("06/15/2018"));
+        1:   95-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   95-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   95-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   95-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   95-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   95-block  5
+call   19 returned 1
+call   20 returned 1
+        1:   95-block  6
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   95-block  7
+call   24 returned 1
+    $$$$$:   95-block  8
+    $$$$$:   95-block  9
+    $$$$$:   95-block 10
+    $$$$$:   95-block 11
+    $$$$$:   95-block 12
+    $$$$$:   95-block 13
+call   25 never executed
+    $$$$$:   95-block 14
+    $$$$$:   95-block 15
+call   26 never executed
+    $$$$$:   95-block 16
+    $$$$$:   95-block 17
+    $$$$$:   95-block 18
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   95-block 19
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   95-block 20
+call   34 never executed
+    $$$$$:   95-block 21
+call   35 never executed
+        1:   96:    REQUIRE(validDate("02/28/2019"));
+        1:   96-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   96-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   96-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   96-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   96-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   96-block  5
+call   19 returned 1
+call   20 returned 1
+        1:   96-block  6
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   96-block  7
+call   24 returned 1
+    $$$$$:   96-block  8
+    $$$$$:   96-block  9
+    $$$$$:   96-block 10
+    $$$$$:   96-block 11
+    $$$$$:   96-block 12
+    $$$$$:   96-block 13
+call   25 never executed
+    $$$$$:   96-block 14
+    $$$$$:   96-block 15
+call   26 never executed
+    $$$$$:   96-block 16
+    $$$$$:   96-block 17
+    $$$$$:   96-block 18
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   96-block 19
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   96-block 20
+call   34 never executed
+    $$$$$:   96-block 21
+call   35 never executed
+        1:   97:    REQUIRE(validDate("01/01/0001"));
+        1:   97-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   97-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   97-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   97-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   97-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   97-block  5
+call   19 returned 1
+call   20 returned 1
+        1:   97-block  6
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   97-block  7
+call   24 returned 1
+    $$$$$:   97-block  8
+    $$$$$:   97-block  9
+    $$$$$:   97-block 10
+    $$$$$:   97-block 11
+    $$$$$:   97-block 12
+    $$$$$:   97-block 13
+call   25 never executed
+    $$$$$:   97-block 14
+    $$$$$:   97-block 15
+call   26 never executed
+    $$$$$:   97-block 16
+    $$$$$:   97-block 17
+    $$$$$:   97-block 18
+call   27 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   97-block 19
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   97-block 20
+call   34 never executed
+    $$$$$:   97-block 21
+call   35 never executed
+        1:   98:    REQUIRE_FALSE(validDate("01/32/2018"));
+        1:   98-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   98-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   98-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   98-block  3
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   98-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   98-block  5
+call   20 returned 1
+call   21 returned 1
+        1:   98-block  6
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:   98-block  7
+call   25 returned 1
+    $$$$$:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+    $$$$$:   98-block 11
+    $$$$$:   98-block 12
+    $$$$$:   98-block 13
+call   26 never executed
+    $$$$$:   98-block 14
+    $$$$$:   98-block 15
+call   27 never executed
+    $$$$$:   98-block 16
+    $$$$$:   98-block 17
+    $$$$$:   98-block 18
+call   28 never executed
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   98-block 19
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   98-block 20
+call   35 never executed
+    $$$$$:   98-block 21
+call   36 never executed
+        1:   99:    REQUIRE_FALSE(validDate("11/31/9999"));
+        1:   99-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   99-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   99-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   99-block  3
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:   99-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   99-block  5
+call   20 returned 1
+call   21 returned 1
+        1:   99-block  6
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:   99-block  7
+call   25 returned 1
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+    $$$$$:   99-block 12
+    $$$$$:   99-block 13
+call   26 never executed
+    $$$$$:   99-block 14
+    $$$$$:   99-block 15
+call   27 never executed
+    $$$$$:   99-block 16
+    $$$$$:   99-block 17
+    $$$$$:   99-block 18
+call   28 never executed
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   99-block 19
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   99-block 20
+call   35 never executed
+    $$$$$:   99-block 21
+call   36 never executed
+        -:  100:
+        1:  101:}
+        1:  101-block  0
+        -:  102:
+function _ZL20C_A_T_C_H_T_E_S_T_12v called 1 returned 100% blocks executed 42%
+        1:  103:TEST_CASE ("test validDate when all dates are NOT valid") {
+        1:  104:    REQUIRE_FALSE(validDate("00/32/2017"));
+        1:  104-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  104-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:  104-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:  104-block  3
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:  104-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  104-block  5
+call   20 returned 1
+call   21 returned 1
+        1:  104-block  6
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:  104-block  7
+call   25 returned 1
+    $$$$$:  104-block  8
+    $$$$$:  104-block  9
+    $$$$$:  104-block 10
+    $$$$$:  104-block 11
+    $$$$$:  104-block 12
+    $$$$$:  104-block 13
+call   26 never executed
+    $$$$$:  104-block 14
+    $$$$$:  104-block 15
+call   27 never executed
+    $$$$$:  104-block 16
+    $$$$$:  104-block 17
+    $$$$$:  104-block 18
+call   28 never executed
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:  104-block 19
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:  104-block 20
+call   35 never executed
+    $$$$$:  104-block 21
+call   36 never executed
+        1:  105:    REQUIRE_FALSE(validDate("02/30/2020"));
+        1:  105-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  105-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:  105-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:  105-block  3
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:  105-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  105-block  5
+call   20 returned 1
+call   21 returned 1
+        1:  105-block  6
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:  105-block  7
+call   25 returned 1
+    $$$$$:  105-block  8
+    $$$$$:  105-block  9
+    $$$$$:  105-block 10
+    $$$$$:  105-block 11
+    $$$$$:  105-block 12
+    $$$$$:  105-block 13
+call   26 never executed
+    $$$$$:  105-block 14
+    $$$$$:  105-block 15
+call   27 never executed
+    $$$$$:  105-block 16
+    $$$$$:  105-block 17
+    $$$$$:  105-block 18
+call   28 never executed
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:  105-block 19
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:  105-block 20
+call   35 never executed
+    $$$$$:  105-block 21
+call   36 never executed
+        1:  106:    REQUIRE_FALSE(validDate("12/00/2020"));
+        1:  106-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  106-block  1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:  106-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:  106-block  3
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+        1:  106-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  106-block  5
+call   20 returned 1
+call   21 returned 1
+        1:  106-block  6
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:  106-block  7
+call   25 returned 1
+    $$$$$:  106-block  8
+    $$$$$:  106-block  9
+    $$$$$:  106-block 10
+    $$$$$:  106-block 11
+    $$$$$:  106-block 12
+    $$$$$:  106-block 13
+call   26 never executed
+    $$$$$:  106-block 14
+    $$$$$:  106-block 15
+call   27 never executed
+    $$$$$:  106-block 16
+    $$$$$:  106-block 17
+    $$$$$:  106-block 18
+call   28 never executed
+call   29 never executed
+branch 30 never executed
+branch 31 never executed
+    $$$$$:  106-block 19
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:  106-block 20
+call   35 never executed
+    $$$$$:  106-block 21
+call   36 never executed
+        1:  107:}
+        1:  107-block  0
+        -:  108:
+        -:  109:
+function _ZL20C_A_T_C_H_T_E_S_T_14v called 1 returned 100% blocks executed 39%
+        1:  110:TEST_CASE("test fizzBuzz") {
+        1:  111:    REQUIRE("Fizz" == fizzBuzz("f"));
+        1:  111-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  111-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  111-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  111-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  111-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  111-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  111-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  111-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  111-block  8
+call   29 returned 1
+    $$$$$:  111-block  9
+    $$$$$:  111-block 10
+    $$$$$:  111-block 11
+    $$$$$:  111-block 12
+call   30 never executed
+    $$$$$:  111-block 13
+    $$$$$:  111-block 14
+    $$$$$:  111-block 15
+    $$$$$:  111-block 16
+call   31 never executed
+    $$$$$:  111-block 17
+    $$$$$:  111-block 18
+call   32 never executed
+    $$$$$:  111-block 19
+    $$$$$:  111-block 20
+call   33 never executed
+    $$$$$:  111-block 21
+    $$$$$:  111-block 22
+    $$$$$:  111-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  111-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  111-block 25
+call   41 never executed
+    $$$$$:  111-block 26
+call   42 never executed
+        1:  112:    REQUIRE("Buzz" == fizzBuzz("b"));
+        1:  112-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  112-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  112-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  112-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  112-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  112-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  112-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  112-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  112-block  8
+call   29 returned 1
+    $$$$$:  112-block  9
+    $$$$$:  112-block 10
+    $$$$$:  112-block 11
+    $$$$$:  112-block 12
+call   30 never executed
+    $$$$$:  112-block 13
+    $$$$$:  112-block 14
+    $$$$$:  112-block 15
+    $$$$$:  112-block 16
+call   31 never executed
+    $$$$$:  112-block 17
+    $$$$$:  112-block 18
+call   32 never executed
+    $$$$$:  112-block 19
+    $$$$$:  112-block 20
+call   33 never executed
+    $$$$$:  112-block 21
+    $$$$$:  112-block 22
+    $$$$$:  112-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  112-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  112-block 25
+call   41 never executed
+    $$$$$:  112-block 26
+call   42 never executed
+        1:  113:    REQUIRE("FizzBuzz" == fizzBuzz("fb"));
+        1:  113-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  113-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  113-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  113-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  113-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  113-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  113-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  113-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  113-block  8
+call   29 returned 1
+    $$$$$:  113-block  9
+    $$$$$:  113-block 10
+    $$$$$:  113-block 11
+    $$$$$:  113-block 12
+call   30 never executed
+    $$$$$:  113-block 13
+    $$$$$:  113-block 14
+    $$$$$:  113-block 15
+    $$$$$:  113-block 16
+call   31 never executed
+    $$$$$:  113-block 17
+    $$$$$:  113-block 18
+call   32 never executed
+    $$$$$:  113-block 19
+    $$$$$:  113-block 20
+call   33 never executed
+    $$$$$:  113-block 21
+    $$$$$:  113-block 22
+    $$$$$:  113-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  113-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  113-block 25
+call   41 never executed
+    $$$$$:  113-block 26
+call   42 never executed
+        1:  114:    REQUIRE("Fizz" == fizzBuzz("fbakvbavhahva"));
+        1:  114-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  114-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  114-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  114-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  114-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  114-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  114-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  114-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  114-block  8
+call   29 returned 1
+    $$$$$:  114-block  9
+    $$$$$:  114-block 10
+    $$$$$:  114-block 11
+    $$$$$:  114-block 12
+call   30 never executed
+    $$$$$:  114-block 13
+    $$$$$:  114-block 14
+    $$$$$:  114-block 15
+    $$$$$:  114-block 16
+call   31 never executed
+    $$$$$:  114-block 17
+    $$$$$:  114-block 18
+call   32 never executed
+    $$$$$:  114-block 19
+    $$$$$:  114-block 20
+call   33 never executed
+    $$$$$:  114-block 21
+    $$$$$:  114-block 22
+    $$$$$:  114-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  114-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  114-block 25
+call   41 never executed
+    $$$$$:  114-block 26
+call   42 never executed
+        1:  115:    REQUIRE("FizzBuzz" == fizzBuzz("fnagabvaivavab"));
+        1:  115-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  115-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  115-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  115-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  115-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  115-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  115-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  115-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  115-block  8
+call   29 returned 1
+    $$$$$:  115-block  9
+    $$$$$:  115-block 10
+    $$$$$:  115-block 11
+    $$$$$:  115-block 12
+call   30 never executed
+    $$$$$:  115-block 13
+    $$$$$:  115-block 14
+    $$$$$:  115-block 15
+    $$$$$:  115-block 16
+call   31 never executed
+    $$$$$:  115-block 17
+    $$$$$:  115-block 18
+call   32 never executed
+    $$$$$:  115-block 19
+    $$$$$:  115-block 20
+call   33 never executed
+    $$$$$:  115-block 21
+    $$$$$:  115-block 22
+    $$$$$:  115-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  115-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  115-block 25
+call   41 never executed
+    $$$$$:  115-block 26
+call   42 never executed
+        1:  116:    REQUIRE("Buzz" == fizzBuzz("kabkavkvaab"));
+        1:  116-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  116-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  116-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  116-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  116-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  116-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  116-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  116-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  116-block  8
+call   29 returned 1
+    $$$$$:  116-block  9
+    $$$$$:  116-block 10
+    $$$$$:  116-block 11
+    $$$$$:  116-block 12
+call   30 never executed
+    $$$$$:  116-block 13
+    $$$$$:  116-block 14
+    $$$$$:  116-block 15
+    $$$$$:  116-block 16
+call   31 never executed
+    $$$$$:  116-block 17
+    $$$$$:  116-block 18
+call   32 never executed
+    $$$$$:  116-block 19
+    $$$$$:  116-block 20
+call   33 never executed
+    $$$$$:  116-block 21
+    $$$$$:  116-block 22
+    $$$$$:  116-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  116-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  116-block 25
+call   41 never executed
+    $$$$$:  116-block 26
+call   42 never executed
+        1:  117:    REQUIRE("" == fizzBuzz(""));
+        1:  117-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  117-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  117-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  117-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  117-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  117-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  117-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  117-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  117-block  8
+call   29 returned 1
+    $$$$$:  117-block  9
+    $$$$$:  117-block 10
+    $$$$$:  117-block 11
+    $$$$$:  117-block 12
+call   30 never executed
+    $$$$$:  117-block 13
+    $$$$$:  117-block 14
+    $$$$$:  117-block 15
+    $$$$$:  117-block 16
+call   31 never executed
+    $$$$$:  117-block 17
+    $$$$$:  117-block 18
+call   32 never executed
+    $$$$$:  117-block 19
+    $$$$$:  117-block 20
+call   33 never executed
+    $$$$$:  117-block 21
+    $$$$$:  117-block 22
+    $$$$$:  117-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  117-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  117-block 25
+call   41 never executed
+    $$$$$:  117-block 26
+call   42 never executed
+        1:  118:    REQUIRE("abc" == fizzBuzz("abc"));
+        1:  118-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  118-block  1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  118-block  2
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  118-block  3
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  118-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  118-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:  118-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+        1:  118-block  7
+call   26 returned 1
+branch 27 taken 1 (fallthrough)
+branch 28 taken 0 (throw)
+        1:  118-block  8
+call   29 returned 1
+    $$$$$:  118-block  9
+    $$$$$:  118-block 10
+    $$$$$:  118-block 11
+    $$$$$:  118-block 12
+call   30 never executed
+    $$$$$:  118-block 13
+    $$$$$:  118-block 14
+    $$$$$:  118-block 15
+    $$$$$:  118-block 16
+call   31 never executed
+    $$$$$:  118-block 17
+    $$$$$:  118-block 18
+call   32 never executed
+    $$$$$:  118-block 19
+    $$$$$:  118-block 20
+call   33 never executed
+    $$$$$:  118-block 21
+    $$$$$:  118-block 22
+    $$$$$:  118-block 23
+call   34 never executed
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  118-block 24
+call   38 never executed
+branch 39 never executed
+branch 40 never executed
+    $$$$$:  118-block 25
+call   41 never executed
+    $$$$$:  118-block 26
+call   42 never executed
+        -:  119:
+        1:  120:}
+        1:  120-block  0

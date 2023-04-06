@@ -1,0 +1,5 @@
+# ninja log v5
+7	779	6992596605203170	CMakeFiles/ArraySetFun2.dir/main.cpp.obj	872041f1e8452f86
+779	1008	6992596607433530	ArraySetFun2.exe	d0332b4f8151ee16
+2	373	7007307731363363	build.ninja	55a05e043d4f0890
+16	756	6992596604920028	CMakeFiles/ArraySetFun2.dir/ArraySet.cpp.obj	63ab0617aa9d0622

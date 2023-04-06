@@ -1,0 +1,862 @@
+        -:    0:Source:C:/Users/lavab/CLionProjects/StackFun/StacksTest.cpp
+        -:    0:Graph:C:\Users\lavab\CLionProjects\StackFun\cmake-build-debug-coverage\CMakeFiles\StackFun.dir\StacksTest.cpp.gcno
+        -:    0:Data:C:\Users\lavab\CLionProjects\StackFun\cmake-build-debug-coverage\CMakeFiles\StackFun.dir\StacksTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Andrew on 3/16/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "Stacks.hpp"
+        -:    6:// This #define tells Catch to provide a main(). Only do this once
+        -:    7:#define CATCH_CONFIG_MAIN
+        -:    8:
+        -:    9:#include <catch.hpp>
+        -:   10:#include <iostream>
+        -:   11:
+        -:   12:/**
+        -:   13: *  Unit test for Game Of Life.
+        -:   14: */
+function _ZL19C_A_T_C_H_T_E_S_T_0v called 1 returned 100% blocks executed 40%
+        1:   15:TEST_CASE("vector") {
+        1:   16:    VectorStack<int> *pAbs = new VectorStack<int>;
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   17:    REQUIRE(pAbs->isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   17-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   17-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   17-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   17-block  3
+        1:   17-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   17-block  5
+call   18 returned 1
+    $$$$$:   17-block  6
+    $$$$$:   17-block  7
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+    $$$$$:   17-block 12
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   17-block 13
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   17-block 14
+call   26 never executed
+    $$$$$:   17-block 15
+call   27 never executed
+        1:   18:    pAbs->push(1);
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   18-block  1
+call    3 never executed
+        1:   19:    REQUIRE(not pAbs->isEmpty());
+        1:   19-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   19-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   19-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   19-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   19-block  4
+        1:   19-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   19-block  6
+call   18 returned 1
+    $$$$$:   19-block  7
+    $$$$$:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+    $$$$$:   19-block 13
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   19-block 14
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   19-block 15
+call   26 never executed
+    $$$$$:   19-block 16
+call   27 never executed
+        1:   20:    pAbs->push(2);
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   20-block  1
+call    3 never executed
+        1:   21:    REQUIRE(pAbs->top() == 2);
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   21-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   21-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   21-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   21-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   21-block  5
+call   18 returned 1
+        1:   21-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   21-block  7
+call   22 returned 1
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+call   23 never executed
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+    $$$$$:   21-block 14
+    $$$$$:   21-block 15
+    $$$$$:   21-block 16
+    $$$$$:   21-block 17
+    $$$$$:   21-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   21-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   21-block 20
+call   31 never executed
+    $$$$$:   21-block 21
+call   32 never executed
+        1:   22:    REQUIRE(pAbs->pop() == 2);
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   22-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   22-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   22-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   22-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   22-block  5
+call   18 returned 1
+        1:   22-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   22-block  7
+call   22 returned 1
+    $$$$$:   22-block  8
+    $$$$$:   22-block  9
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+call   23 never executed
+    $$$$$:   22-block 12
+    $$$$$:   22-block 13
+    $$$$$:   22-block 14
+    $$$$$:   22-block 15
+    $$$$$:   22-block 16
+    $$$$$:   22-block 17
+    $$$$$:   22-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   22-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   22-block 20
+call   31 never executed
+    $$$$$:   22-block 21
+call   32 never executed
+        1:   23:    REQUIRE(pAbs->top() == 1);
+        1:   23-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   23-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   23-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   23-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   23-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   23-block  5
+call   18 returned 1
+        1:   23-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   23-block  7
+call   22 returned 1
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+call   23 never executed
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+    $$$$$:   23-block 16
+    $$$$$:   23-block 17
+    $$$$$:   23-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   23-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   23-block 20
+call   31 never executed
+    $$$$$:   23-block 21
+call   32 never executed
+        1:   24:}
+        1:   24-block  0
+function _ZL19C_A_T_C_H_T_E_S_T_2v called 1 returned 100% blocks executed 40%
+        1:   25:TEST_CASE("array list") {
+        1:   26:    ArrayStack<int> *pAbs = new ArrayStack<int>;
+        1:   26-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   27:    REQUIRE(pAbs->isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   27-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   27-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   27-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   27-block  3
+        1:   27-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   27-block  5
+call   18 returned 1
+    $$$$$:   27-block  6
+    $$$$$:   27-block  7
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+    $$$$$:   27-block 12
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   27-block 13
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   27-block 14
+call   26 never executed
+    $$$$$:   27-block 15
+call   27 never executed
+        1:   28:    pAbs->push(1);
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   28-block  1
+call    3 never executed
+        1:   29:    REQUIRE(not pAbs->isEmpty());
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   29-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   29-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   29-block  4
+        1:   29-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   29-block  6
+call   18 returned 1
+    $$$$$:   29-block  7
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   29-block 14
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   29-block 15
+call   26 never executed
+    $$$$$:   29-block 16
+call   27 never executed
+        1:   30:    pAbs->push(2);
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   30-block  1
+call    3 never executed
+        1:   31:    REQUIRE(pAbs->top() == 2);
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   31-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   31-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   31-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   31-block  5
+call   18 returned 1
+        1:   31-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   31-block  7
+call   22 returned 1
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+call   23 never executed
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+    $$$$$:   31-block 15
+    $$$$$:   31-block 16
+    $$$$$:   31-block 17
+    $$$$$:   31-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   31-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   31-block 20
+call   31 never executed
+    $$$$$:   31-block 21
+call   32 never executed
+        1:   32:    REQUIRE(pAbs->pop() == 2);
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   32-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   32-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   32-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   32-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   32-block  5
+call   18 returned 1
+        1:   32-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   32-block  7
+call   22 returned 1
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+call   23 never executed
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+    $$$$$:   32-block 15
+    $$$$$:   32-block 16
+    $$$$$:   32-block 17
+    $$$$$:   32-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   32-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   32-block 20
+call   31 never executed
+    $$$$$:   32-block 21
+call   32 never executed
+        1:   33:    REQUIRE(pAbs->top() == 1);
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   33-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   33-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   33-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   33-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   33-block  5
+call   18 returned 1
+        1:   33-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   33-block  7
+call   22 returned 1
+    $$$$$:   33-block  8
+    $$$$$:   33-block  9
+    $$$$$:   33-block 10
+    $$$$$:   33-block 11
+call   23 never executed
+    $$$$$:   33-block 12
+    $$$$$:   33-block 13
+    $$$$$:   33-block 14
+    $$$$$:   33-block 15
+    $$$$$:   33-block 16
+    $$$$$:   33-block 17
+    $$$$$:   33-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   33-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   33-block 20
+call   31 never executed
+    $$$$$:   33-block 21
+call   32 never executed
+        1:   34:}
+        1:   34-block  0
+        -:   35:
+function _ZL19C_A_T_C_H_T_E_S_T_4v called 1 returned 100% blocks executed 40%
+        1:   36:TEST_CASE("linked list") {
+        1:   37:    LinkedStack<int> *pAbs = new LinkedStack<int>;
+        1:   37-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   38:    REQUIRE(pAbs->isEmpty());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   38-block  0
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   38-block  1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   38-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   38-block  3
+        1:   38-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   38-block  5
+call   18 returned 1
+    $$$$$:   38-block  6
+    $$$$$:   38-block  7
+    $$$$$:   38-block  8
+    $$$$$:   38-block  9
+    $$$$$:   38-block 10
+    $$$$$:   38-block 11
+    $$$$$:   38-block 12
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   38-block 13
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   38-block 14
+call   26 never executed
+    $$$$$:   38-block 15
+call   27 never executed
+        1:   39:    pAbs->push(1);
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   39-block  1
+call    3 never executed
+        1:   40:    REQUIRE(not pAbs->isEmpty());
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   40-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   40-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   40-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   40-block  4
+        1:   40-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   40-block  6
+call   18 returned 1
+    $$$$$:   40-block  7
+    $$$$$:   40-block  8
+    $$$$$:   40-block  9
+    $$$$$:   40-block 10
+    $$$$$:   40-block 11
+    $$$$$:   40-block 12
+    $$$$$:   40-block 13
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   40-block 14
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   40-block 15
+call   26 never executed
+    $$$$$:   40-block 16
+call   27 never executed
+        1:   41:    pAbs->push(2);
+        1:   41-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   41-block  1
+call    3 never executed
+        1:   42:    REQUIRE(pAbs->top() == 2);
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   42-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   42-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   42-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   42-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   42-block  5
+call   18 returned 1
+        1:   42-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   42-block  7
+call   22 returned 1
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+    $$$$$:   42-block 11
+call   23 never executed
+    $$$$$:   42-block 12
+    $$$$$:   42-block 13
+    $$$$$:   42-block 14
+    $$$$$:   42-block 15
+    $$$$$:   42-block 16
+    $$$$$:   42-block 17
+    $$$$$:   42-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   42-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   42-block 20
+call   31 never executed
+    $$$$$:   42-block 21
+call   32 never executed
+        1:   43:    REQUIRE(pAbs->pop() == 2);
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   43-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   43-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   43-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   43-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   43-block  5
+call   18 returned 1
+        1:   43-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   43-block  7
+call   22 returned 1
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+call   23 never executed
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+    $$$$$:   43-block 16
+    $$$$$:   43-block 17
+    $$$$$:   43-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   43-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   43-block 20
+call   31 never executed
+    $$$$$:   43-block 21
+call   32 never executed
+        1:   44:    REQUIRE(pAbs->top() == 1);
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   44-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   44-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   44-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   44-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   44-block  5
+call   18 returned 1
+        1:   44-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   44-block  7
+call   22 returned 1
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+call   23 never executed
+    $$$$$:   44-block 12
+    $$$$$:   44-block 13
+    $$$$$:   44-block 14
+    $$$$$:   44-block 15
+    $$$$$:   44-block 16
+    $$$$$:   44-block 17
+    $$$$$:   44-block 18
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   44-block 19
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   44-block 20
+call   31 never executed
+    $$$$$:   44-block 21
+call   32 never executed
+        1:   45:}
+        1:   45-block  0

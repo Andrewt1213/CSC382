@@ -1,0 +1,723 @@
+        -:    0:Source:C:/Users/lavab/CLionProjects/LoopFun/LoopFun.hpp
+        -:    0:Graph:C:\Users\lavab\CLionProjects\LoopFun\cmake-build-debug-coverage\CMakeFiles\LoopFun.dir\LoopFunTest.cpp.gcno
+        -:    0:Data:C:\Users\lavab\CLionProjects\LoopFun\cmake-build-debug-coverage\CMakeFiles\LoopFun.dir\LoopFunTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Richard H. Mercer on 9/6/22.
+        -:    3://
+        -:    4:// Author: Andrew Tapia
+        -:    5:
+        -:    6:/*
+        -:    7: * AlgorithmicPatterns.cpp
+        -:    8: *
+        -:    9: * LoopFun.cpp contains twelve free functions all of which require a while or a for loop.
+        -:   10: * Do NOT use recursion!
+        -:   11: *
+        -:   12: * Programmer Rick Mercer and Andrew Tapia
+        -:   13: */
+        -:   14:#ifndef LOOPFUN_HPP_
+        -:   15:#define LOOPFUN_HPP_
+        -:   16:
+        -:   17:#include <string>
+        -:   18:#include<cmath>
+        -:   19:
+        -:   20:using namespace std;
+        -:   21:
+        -:   22:// bool isPrime(int)
+        -:   23://
+        -:   24:// One evening, while listening intently at the Very Large Array (VLA)
+        -:   25:// radio astronomy observatory 50 miles west of Socorro New Mexico, Ellie
+        -:   26:// hears a powerful signal: a prime number pattern emanating from the
+        -:   27:// star Vega, confirmed by others the world over, undeniable and strong
+        -:   28:// in its pulsing power. What Ellie recognized was the repeating series
+        -:   29:// of the first 26 prime numbers. This is someone near Vega trying to
+        -:   30:// contact anyone who is listening:
+        -:   31://
+        -:   32://  2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+        -:   33://
+        -:   34:// A prime number is a natural number greater than 1 that has no positive
+        -:   35:// divisors other than 1 and itself. Complete function isPrime that returns
+        -:   36:// true if the argument is a prime number. Hint: Consider writing a loop
+        -:   37:// that divides the argument num by every integer from 2 to num-1, returning
+        -:   38:// false if num was found to be evenly divisible by any one of those.
+        -:   39://
+function _Z7isPrimei called 4 returned 100% blocks executed 100%
+        4:   40:bool isPrime(int num) {
+        4:   41:    int divisor = num - 1;
+       16:   42:    while (divisor > 1) {
+        4:   42-block  0
+       16:   42-block  1
+branch  0 taken 14
+branch  1 taken 2 (fallthrough)
+       14:   43:        if (num % divisor == 0) { return false; }
+       14:   43-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 12
+        2:   43-block  1
+       12:   44:        divisor -= 1;
+       12:   44-block  0
+        -:   45:    }
+        2:   46:    return true;
+        2:   46-block  0
+        -:   47:}
+        -:   48:
+        -:   49:
+        -:   50:// fibonacci(int)
+        -:   51://
+        -:   52:// In the movie "The Da Vinci Code" with Tom Hanks, this password
+        -:   53:// used to unlock a much sought after artifact: 1 2 3 5 8 13 21.
+        -:   54:// These are the 2nd through 8th Fibonacci numbers. Fibonacci numbers
+        -:   55:// have so much interest, there exists a Fibonacci Quarterly
+        -:   56://
+        -:   57://   http://www.fq.math.ca/
+        -:   58://
+        -:   59:// Implement function fibonacci that returns the nth Fibonacci number.
+        -:   60:// Fibonnaci numbers can be computed as the sum of the preceeding two.
+        -:   61:// You will find it useful to keep track the two previous Fibonacci
+        -:   62:// numbers. This is harder than it looks.
+        -:   63://
+        -:   64://  fibonacci(1) returns 1
+        -:   65://  fibonacci(2) returns 1
+        -:   66://  fibonacci(3) returns 2
+        -:   67://  fibonacci(4) returns 3
+        -:   68://  fibonacci(5) returns 5
+        -:   69://  fibonacci(6) returns 8
+        -:   70://
+        -:   71:// Precondition: n >= 1
+function _Z9fibonaccii called 2 returned 100% blocks executed 100%
+        2:   72:int fibonacci(int n) {
+        2:   73:    int previous_num = 1;
+        2:   74:    int current_num = 1;
+        2:   75:    int i = 2;
+        -:   76:    int temp;
+       39:   77:    while (i < n) {
+        2:   77-block  0
+       39:   77-block  1
+branch  0 taken 37
+branch  1 taken 2 (fallthrough)
+       37:   78:        temp = current_num;
+       37:   79:        current_num = previous_num + current_num;
+       37:   80:        previous_num = temp;
+       37:   81:        i++;
+       37:   81-block  0
+        -:   82:    }
+        2:   83:    return current_num;
+        2:   83-block  0
+        -:   84:}
+        -:   85:
+        -:   86:// int factorial(int)
+        -:   87://
+        -:   88:// Given an integer argument return n factorial, which is written as n!.
+        -:   89:// 5! = 5*4*3*2*1 or in general, n! = n*(n-1)*(n-2) …*2*1. Use a for loop.
+        -:   90://
+        -:   91:// factorial(0) returns 1
+        -:   92:// factorial(1) returns 1
+        -:   93:// factorial(2) returns 2, which is 2 * 1
+        -:   94:// factorial(3) returns 6, which is 3 * 2 * 1
+        -:   95:// factorial(4) returns 24, which is 4 * 3 * 2 * 1
+        -:   96://
+        -:   97:// Precondition: n >= 0
+        -:   98://
+function _Z9factoriali called 2 returned 100% blocks executed 100%
+        2:   99:int factorial(int n) {
+        2:  100:    int return_value = 1;
+        7:  101:    while (n > 0) {
+        2:  101-block  0
+        7:  101-block  1
+branch  0 taken 5
+branch  1 taken 2 (fallthrough)
+        5:  102:        return_value = return_value * n;
+        5:  103:        n--;
+        5:  103-block  0
+        -:  104:    }
+        2:  105:    return return_value;
+        2:  105-block  0
+        -:  106:}
+        -:  107:
+        -:  108:
+        -:  109:// 4) vowelCount
+        -:  110://
+        -:  111:// "How much wood could a woodchuck chuck" contains 11 vowels.  How do we
+        -:  112:// know? Five of the 26 English alphabet letters are vowels: a, e, i, o,
+        -:  113:// and u. By looking at each letter in the woodchuck string, we find
+        -:  114:// 11 vowels. Complete function vowelCount that returns the number of vowels
+        -:  115:// in the given std::string argument. This is case insensitive. Upper and lower
+        -:  116:// case vowels count. We do not consider y to be a vowel.
+        -:  117://
+        -:  118:// vowelCount("a e i o u A E I O U") returns 10
+        -:  119:// vowelCount("y+_x1Y2x!y") returns 0
+        -:  120://
+function _Z10vowelCountNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:  121:int vowelCount(std::string str) {
+        1:  122:    int counter = 0;
+       20:  123:    for (int i = 0; i < str.length(); i++) {
+        1:  123-block  0
+       19:  123-block  1
+       20:  123-block  2
+call    0 returned 20
+branch  1 taken 19
+branch  2 taken 1 (fallthrough)
+       36:  124:        if (tolower(str.at(i)) == 'a' or tolower(str.at(i)) == 'e'
+       19:  124-block  0
+call    0 returned 19
+       17:  124-block  1
+call    1 returned 17
+branch  2 taken 15 (fallthrough)
+branch  3 taken 2
+       36:  125:            or tolower(str.at(i)) == 'i' or tolower(str.at(i)) == 'o' or tolower(str.at(i)) == 'u') {
+branch  0 taken 17 (fallthrough)
+branch  1 taken 2
+       15:  125-block  0
+call    2 returned 15
+branch  3 taken 13 (fallthrough)
+branch  4 taken 2
+       13:  125-block  1
+call    5 returned 13
+branch  6 taken 11 (fallthrough)
+branch  7 taken 2
+       11:  125-block  2
+call    8 returned 11
+branch  9 taken 2 (fallthrough)
+branch 10 taken 9
+       10:  125-block  3
+        9:  125-block  4
+       19:  125-block  5
+branch 11 taken 10 (fallthrough)
+branch 12 taken 9
+       10:  126:            counter++;
+       10:  126-block  0
+        -:  127:        }
+        -:  128:    }
+        1:  129:    return counter;
+        1:  129-block  0
+        -:  130:}
+        -:  131:
+        -:  132:
+        -:  133:// 5) numberOfPairs
+        -:  134://
+        -:  135:// Return the number of times two consecutive characters occur in str.
+        -:  136://
+        -:  137://   numberOfPairs ("") returns 0
+        -:  138://   numberOfPairs ("abc") returns 0
+        -:  139://   numberOfPairs ("aabbcc") returns 3
+        -:  140://   numberOfPairs ("!!!") returns 2
+        -:  141://   numberOfPairs ("mmmm") returns 3
+        -:  142://   numberOfPairs ("mmOmm") returns 2
+        -:  143://
+        -:  144:int numberOfPairs(std::string str);
+        -:  145:
+function _Z13numberOfPairsNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 100%
+        2:  146:int numberOfPairs(std::string str) {
+        2:  147:    int counter = 0;
+        2:  148:    int i = 1;
+        -:  149:    char previous_letter;
+        -:  150:    char current_letter;
+        2:  151:    if (str.length() > 0) {
+        2:  151-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0
+        2:  152:        previous_letter = str.at(0);
+        2:  152-block  0
+call    0 returned 2
+        -:  153:    }
+       10:  154:    while (i < str.length()) {
+        2:  154-block  0
+       10:  154-block  1
+call    0 returned 10
+branch  1 taken 8
+branch  2 taken 2 (fallthrough)
+        8:  155:        current_letter = str.at(i);
+        8:  155-block  0
+call    0 returned 8
+        8:  156:        if (current_letter == previous_letter) {
+branch  0 taken 2 (fallthrough)
+branch  1 taken 6
+        2:  157:            counter++;
+        2:  157-block  0
+        -:  158:        }
+        8:  159:        previous_letter = current_letter;
+        8:  160:        i++;
+        8:  160-block  0
+        -:  161:    }
+        2:  162:    return counter;
+        2:  162-block  0
+        -:  163:}
+        -:  164:
+        -:  165:
+        -:  166:// 6) howSwedish
+        -:  167://
+        -:  168:// ABBA is a band, they have many songs including Dancing Queen, and
+        -:  169:// Fernando. ABBA is actually a Swedish band, so if we wanted to find
+        -:  170:// out howSwedish a std::string is, we could simply find out how many times
+        -:  171:// the std::string contains the std::string "abba".  We want to look for this
+        -:  172:// str::string in a case insensitive manner. So "abba" counts, and so
+        -:  173:// does "aBbA". We also want to check for overlapping abba's such as
+        -:  174:// in the std::string "abbAbba" that contains "abba" twice.
+        -:  175://
+        -:  176://  howSwedish("") returns 0
+        -:  177://  howSwedish("ABB") returns 0
+        -:  178://  howSwedish("AbBa") returns 1
+        -:  179://  howSwedish("AbBa a B b a") returns 1
+        -:  180://  howSwedish("!abbABba!") returns 2
+        -:  181://  howSwedish("abbAbba") returns 2
+        -:  182://
+function _Z10howSwedishNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 97%
+        2:  183:int howSwedish(std::string str) {
+        2:  184:    int counter = 0;
+        2:  185:    int i = 0;
+       17:  186:    while (i < str.length()) {
+        2:  186-block  0
+       17:  186-block  1
+call    0 returned 17
+branch  1 taken 15
+branch  2 taken 2 (fallthrough)
+       15:  187:        if (tolower(str.at(i)) == 'a') {
+       15:  187-block  0
+call    0 returned 15
+branch  1 taken 6 (fallthrough)
+branch  2 taken 9
+        6:  188:            if (i + 1 < str.length() and ::towlower(str.at(i + 1)) == 'b') {
+        6:  188-block  0
+call    0 returned 6
+branch  1 taken 4 (fallthrough)
+branch  2 taken 2
+        4:  188-block  1
+call    3 returned 4
+branch  4 taken 3 (fallthrough)
+branch  5 taken 1
+        3:  188-block  2
+        3:  188-block  3
+        6:  188-block  4
+branch  6 taken 3 (fallthrough)
+branch  7 taken 3
+       3*:  189:                if (i + 2 < str.length() and ::towlower(str.at(i + 2)) == 'b') {
+        3:  189-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0
+        3:  189-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0
+        3:  189-block  2
+    %%%%%:  189-block  3
+        3:  189-block  4
+branch  6 taken 3 (fallthrough)
+branch  7 taken 0
+        3:  190:                    if (i + 3 < str.length() and ::towlower(str.at(i + 3)) == 'a') {
+        3:  190-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0
+        3:  190-block  1
+call    3 returned 3
+branch  4 taken 1 (fallthrough)
+branch  5 taken 2
+        1:  190-block  2
+        2:  190-block  3
+        3:  190-block  4
+branch  6 taken 1 (fallthrough)
+branch  7 taken 2
+        1:  191:                        counter++;
+        1:  191-block  0
+        -:  192:                    }
+        -:  193:                }
+        -:  194:            }
+        -:  195:        }
+       15:  196:        i++;
+       15:  196-block  0
+        -:  197:    }
+        2:  198:    return counter;
+        2:  198-block  0
+        -:  199:}
+        -:  200:
+        -:  201:
+        -:  202:// 7) allAsLeft
+        -:  203://
+        -:  204:// Given a String, return the same characters in the std::string in the same
+        -:  205:// order except all upper case 'A's are to the left.
+        -:  206://
+        -:  207://  allAsLeft("") returns ""
+        -:  208://  allAsLeft("A") returns "A"
+        -:  209://  allAsLeft("G") returns "G"
+        -:  210://  allAsLeft("AB") returns "AB"
+        -:  211://  allAsLeft("BA") returns "AB"
+        -:  212://  allAsLeft("ABCaDEFGaA") returns "AABCaDEFGa";
+        -:  213://
+function _Z9allAsLeftNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 87%
+        1:  214:string allAsLeft(string str) {
+        1:  215:    int i = 0;
+        1:  216:    string return_string = "";
+        1:  216-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  216-block  1
+call    4 never executed
+        7:  217:    while (i < str.length()) {
+        7:  217-block  0
+call    0 returned 7
+branch  1 taken 6
+branch  2 taken 1 (fallthrough)
+        6:  218:        if (str.at(i) == 'A') {
+        6:  218-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  218-block  1
+branch  3 taken 3 (fallthrough)
+branch  4 taken 3
+        3:  219:            return_string = return_string + "A";
+        3:  219-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  219-block  1
+call    3 returned 3
+call    4 returned 3
+        -:  220:        }
+        6:  221:        i++;
+        6:  221-block  0
+        -:  222:    }
+        1:  223:    i = 0;
+        7:  224:    while (i < str.length()) {
+        1:  224-block  0
+        7:  224-block  1
+call    0 returned 7
+branch  1 taken 6
+branch  2 taken 1 (fallthrough)
+        6:  225:        if (str.at(i) != 'A') {
+        6:  225-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  225-block  1
+branch  3 taken 3 (fallthrough)
+branch  4 taken 3
+        3:  226:            return_string = return_string + str.at(i);
+        3:  226-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  226-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:  226-block  2
+call    6 returned 3
+call    7 returned 3
+        -:  227:        }
+        6:  228:        i++;
+        6:  228-block  0
+        -:  229:    }
+        1:  230:    return return_string;
+        1:  230-block  0
+        1:  230-block  1
+    =====:  231:}
+    $$$$$:  231-block  0
+call    0 never executed
+        -:  232:
+        -:  233:// 8) bool isSorted(string)
+        -:  234://
+        -:  235:// Given a String, return true if the characters are in ascending order.
+        -:  236:// Note:  'a' < 'b' and  '5' < '8'
+        -:  237://
+        -:  238://   isSorted("") returns true
+        -:  239://   isSorted("a") returns true
+        -:  240://   isSorted("abbcddef") returns true
+        -:  241://   isSorted("123456") returns true
+        -:  242://   isSorted("12321") returns false
+        -:  243://
+function _Z8isSortedNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 100%
+        2:  244:bool isSorted(string str) {
+        2:  245:    if (str.length() > 0) {
+        2:  245-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0
+        2:  246:        char previous_letter = str.at(0);
+        2:  246-block  0
+call    0 returned 2
+        9:  247:        for (int i = 1; i < str.length(); i++) {
+        9:  247-block  0
+call    0 returned 9
+branch  1 taken 8
+branch  2 taken 1 (fallthrough)
+        8:  248:            if (str.at(i) < previous_letter) {
+        8:  248-block  0
+call    0 returned 8
+branch  1 taken 1 (fallthrough)
+branch  2 taken 7
+        1:  249:                return false;
+        1:  249-block  0
+        -:  250:            }
+        7:  251:            previous_letter = str.at(i);
+        7:  251-block  0
+call    0 returned 7
+        -:  252:        }
+        -:  253:    }
+        1:  254:    return true;
+        1:  254-block  0
+        -:  255:}
+        -:  256:
+        -:  257:
+        -:  258:// 9) string mirrorEnds(string)
+        -:  259://
+        -:  260:// Given a string, look for a mirror image (backwards) string at both the beginning
+        -:  261:// and end of the given string. In other words, zero or more characters at the very
+        -:  262:// beginning of the given string, and at the very end of the string in reverse order
+        -:  263:// (possibly overlapping). For example, the string "abXYZba" has the mirror end "ab".
+        -:  264://
+        -:  265:// mirrorEnds("abXYZba") return "ab"
+        -:  266:// mirrorEnds("abca") returns "a"
+        -:  267:// mirrorEnds("aba") returns "aba"
+        -:  268://
+function _Z10mirrorEndsNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 76%
+        2:  269:string mirrorEnds(string str) {
+        2:  270:    string return_string = "";
+        2:  270-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  270-block  1
+        2:  271:    int left_index = 0;
+        2:  272:    int right_index = str.length() - 1;
+call    0 returned 2
+        7:  273:    while (left_index <= right_index) {
+        7:  273-block  0
+branch  0 taken 7
+branch  1 taken 0 (fallthrough)
+        7:  274:        if (str.at(left_index) == str.at(right_index)) {
+        7:  274-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:  274-block  1
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        7:  274-block  2
+branch  6 taken 6 (fallthrough)
+branch  7 taken 1
+        6:  275:            return_string += str.at(left_index);
+        6:  275-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  275-block  1
+call    3 returned 6
+branch  4 taken 6 (fallthrough)
+branch  5 taken 0 (throw)
+        6:  276:            if (left_index == right_index) {
+        6:  276-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 5
+        1:  277:                return str;
+        1:  277-block  0
+call    0 returned 1
+        -:  278:            }
+        -:  279:        } else {
+        1:  280:            return return_string;
+        1:  280-block  0
+call    0 returned 1
+        -:  281:        }
+        5:  282:        left_index++;
+        5:  283:        right_index--;
+        5:  283-block  0
+        -:  284:    }
+        -:  285:
+    #####:  286:    return return_string;
+    %%%%%:  286-block  0
+call    0 never executed
+        2:  287:}
+        2:  287-block  0
+call    0 returned 2
+    $$$$$:  287-block  1
+call    1 never executed
+        -:  288:
+        -:  289:
+        -:  290:// 10) string starOut(string)
+        -:  291://
+        -:  292:// Return a version of the given string, where for every star (*) in the string
+        -:  293:// the star and the chars immediately to its left and right are gone.
+        -:  294:// So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
+        -:  295://
+        -:  296://starOut("ab*cd") returns "ad"
+        -:  297://starOut("ab**cd") returns "ad"
+        -:  298://starOut("sm*eilly") returns "silly"
+        -:  299://
+function _Z7starOutNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 89%
+        2:  300:string starOut(string str) {
+        2:  301:    string return_string = "";
+        2:  301-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  301-block  1
+call    4 never executed
+       13:  302:    for (int i = 0; i <= str.length() - 1; i++) {
+       11:  302-block  0
+       13:  302-block  1
+call    0 returned 13
+branch  1 taken 11
+branch  2 taken 2 (fallthrough)
+       11:  303:        if (i < str.length()) {
+       11:  303-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0
+       11:  304:            if (str.at(i) == '*') {
+       11:  304-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0 (throw)
+       11:  304-block  1
+branch  3 taken 2 (fallthrough)
+branch  4 taken 9
+        2:  305:                int j = i;
+        4:  306:                while (i < str.length() and str.at(i) == '*') {
+        2:  306-block  0
+        4:  306-block  1
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0
+        4:  306-block  2
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:  306-block  3
+branch  6 taken 2 (fallthrough)
+branch  7 taken 2
+        2:  306-block  4
+        2:  306-block  5
+        4:  306-block  6
+branch  8 taken 2
+branch  9 taken 2 (fallthrough)
+        2:  307:                    i++;
+        2:  307-block  0
+        -:  308:                }
+        2:  309:                return_string = return_string.substr(0, j - 1);
+        2:  309-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  309-block  1
+call    3 returned 2
+call    4 returned 2
+        -:  310:            } else {
+        9:  311:                return_string = return_string + str.at(i);
+        9:  311-block  0
+call    0 returned 9
+branch  1 taken 9 (fallthrough)
+branch  2 taken 0 (throw)
+        9:  311-block  1
+call    3 returned 9
+branch  4 taken 9 (fallthrough)
+branch  5 taken 0 (throw)
+        9:  311-block  2
+call    6 returned 9
+call    7 returned 9
+        -:  312:            }
+        -:  313:        }
+        -:  314:    }
+        2:  315:    return return_string;
+        2:  315-block  0
+        2:  315-block  1
+    =====:  316:}
+    $$$$$:  316-block  0
+call    0 never executed
+        -:  317:
+        -:  318:// 11) int GCD(int, int)
+        -:  319://
+        -:  320:// In mathematics, the greatest common divisor (GCD) of two or more
+        -:  321:// integers, which are not all zero, is the largest positive integer
+        -:  322:// that divides each of the integers. For example, GCD(2, 12) is 4.
+        -:  323://
+        -:  324:// Euclid's solution to finding the GCD is refuted to be the first
+        -:  325:// algorithm known to mankind. It is definitely old.
+        -:  326://
+        -:  327:// GCD(a, b) can be computed as follows:
+        -:  328://
+        -:  329:// while(b != 0):
+        -:  330:// .. other = a
+        -:  331:// .. a = b
+        -:  332:// .. b = other % b
+        -:  333:// a is the GCD
+        -:  334://
+        -:  335:// GCD(378, 378) returns 378
+        -:  336:// GCD(378, 0) returns 378
+        -:  337:// GCD(0, 378) returns 378
+        -:  338:// GCD(3, 2) returns 1
+        -:  339:// GCD(10, 5) returns 5
+        -:  340:// GCD(15, 25) returns 5
+        -:  341:// GCD(25, 10) returns 5
+        -:  342:// GCD(-25, 10) returns 5
+        -:  343:// GCD(-25, -10) returns 5
+        -:  344:// GCD(25, -10) returns 5
+        -:  345://
+        -:  346:// Either argument may be < 0
+        -:  347://
+        -:  348:// Precondition: a and or b can be 0, but not both
+        -:  349:// GCD(0, 0) is undefined. We do not have an assert for GCD(0,0).
+        -:  350://
+function _Z3GCDii called 2 returned 100% blocks executed 100%
+        2:  351:int GCD(int a, int b) {
+        2:  352:    a = abs(a);
+        2:  353:    b = abs(b);
+        -:  354:    int other;
+        6:  355:    while (b != 0) {
+        2:  355-block  0
+        6:  355-block  1
+branch  0 taken 4
+branch  1 taken 2 (fallthrough)
+        4:  356:        other = a;
+        4:  357:        a = b;
+        4:  358:        b = other % b;
+        4:  358-block  0
+        -:  359:    }
+        2:  360:    return a;
+        2:  360-block  0
+        -:  361:}
+        -:  362:
+        -:  363:// 12) double square_root(double, double)
+        -:  364://
+        -:  365:// The square root of a number >= 0 can be found by making successful
+        -:  366:// guesses until it is "close enough". Starting with a guess, make each
+        -:  367:// guess like this until the square_root(x) is within the precision specified.
+        -:  368://
+        -:  369:// n = 0
+        -:  370:// guess[n] = x / 2 // A good first guess is to divide x by 2.0
+        -:  371:// guess[n+1] = ( guess[n] + x / guess[n] ) / 2.0
+        -:  372:// guess[n+2] = ( guess[n+1] + x / guess[n+1] ) / 2.0
+        -:  373://
+        -:  374:// If x = 16.0
+        -:  375:// guess[0] = 16.0 / 2; == 8.0
+        -:  376:// guess[1] = (8.0 + 16.0 / 8.0) / 2.0 == 5.0
+        -:  377:// guess[2] = (5.0 + 16.0 / 5.0) / 2.0 == 4.1
+        -:  378://
+        -:  379:// Precondition x >= 0.0 and precision <= 1e-10
+        -:  380://
+function _Z11square_rootdd called 7 returned 100% blocks executed 100%
+        7:  381:double square_root(double x, double precision) {
+        7:  382:    double guess = x / 2;
+        7:  383:    double difference = ::abs(sqrt(x) - guess);
+        7:  383-block  0
+call    0 returned 7
+       40:  384:    while (difference > precision) {
+       40:  384-block  0
+branch  0 taken 33
+branch  1 taken 7 (fallthrough)
+       33:  385:        guess = (guess + (x / guess)) / 2;
+       33:  386:        difference = ::abs(sqrt(x) - guess);
+       33:  386-block  0
+call    0 returned 33
+        -:  387:    }
+        7:  388:    return guess;
+        7:  388-block  0
+        -:  389:}
+        -:  390:
+        -:  391:#endif

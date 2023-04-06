@@ -1,0 +1,9 @@
+CSc335 Joe
+Math141 Joe
+CSc335 Chris
+Math141 Chris
+CSc335 Kim
+Eng101 Kim
+Math141 Devon
+CSc335 Devon
+Eng101 Devon

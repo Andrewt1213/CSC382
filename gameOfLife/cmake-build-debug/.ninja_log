@@ -1,0 +1,14 @@
+# ninja log v5
+20	1064	6984443253065365	CMakeFiles/GameOfLife23.dir/GameOfLife.cpp.obj	bdf97803cc941aee
+23	46646	6984430551754880	CMakeFiles/GameOfLife23.dir/GameOfLifeTest.cpp.obj	1361a5ab1f9b82db
+1304	1555	6984443257914515	GameOfLife23.exe	47470abee9cca19e
+7	1303	6984443255446904	CMakeFiles/GameOfLife23.dir/main.cpp.obj	d80d619a71adaadb
+8	1870	6984470859253469	CMakeFiles/GameOfLife.cpp.dir/main.cpp.obj	bd9fd16f7548efa
+1872	2289	6984470863333200	GameOfLife.cpp.exe	21b736980d8aa45d
+6	26401	6984471511125327	CMakeFiles/GameOfLife.cpp.dir/GameOfLifeTest.cpp.obj	7d78c48d384b15ae
+11	822	6984474108329235	CMakeFiles/GameOfLife23.dir/GameOfLife.cpp.obj	bdf97803cc941aee
+1	32751	6984474427094998	CMakeFiles/GameOfLife23.dir/GameOfLifeTest.cpp.obj	1361a5ab1f9b82db
+32756	137307	6984475473002164	GameOfLife23.exe	b8da3eb1e05ce0c9
+17	3276	6984476407509675	CMakeFiles/GameOfLife23.dir/GameOfLife.cpp.obj	bdf97803cc941aee
+8	30630	6984476683920373	CMakeFiles/GameOfLife23.dir/GameOfLifeTest.cpp.obj	1361a5ab1f9b82db
+30630	115760	6984477535528123	GameOfLife23.exe	b8da3eb1e05ce0c9
