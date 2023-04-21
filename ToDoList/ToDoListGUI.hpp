@@ -133,8 +133,6 @@ private:
         int row = index.row();
         if (row < list->size() and row >= 0) {
             list->removeElementAt(row);
-            QModelIndex currentIndex = myModel.index(row);
-            listView->setCurrentIndex(currentIndex);
             myModel.listChanged();
         }
     }
