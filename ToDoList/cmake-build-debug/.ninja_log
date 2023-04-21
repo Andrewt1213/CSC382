@@ -1,0 +1,10 @@
+# ninja log v5
+8	2904	7037400000871613	CMakeFiles/ToDoList.dir/main.cpp.obj	41497e5f88c8cb63
+5060	5452	7037401593372648	ToDoList.exe	92b0b1ac4baaa87c
+14	5059	7037401589411696	CMakeFiles/ToDoList.dir/mymodel.cpp.obj	57b7f9fdac25ce37
+8	2457	7037403100111548	CMakeFiles/ToDoList.dir/mymodel.cpp.obj	57b7f9fdac25ce37
+2458	2740	7037403102901727	ToDoList.exe	92b0b1ac4baaa87c
+0	14	0	clean	f5ff37c02e4507d2
+16	3465	7037403216691824	CMakeFiles/ToDoList.dir/mymodel.cpp.obj	57b7f9fdac25ce37
+8	4563	7037403227678125	CMakeFiles/ToDoList.dir/main.cpp.obj	41497e5f88c8cb63
+4564	4926	7037403231250140	ToDoList.exe	92b0b1ac4baaa87c
