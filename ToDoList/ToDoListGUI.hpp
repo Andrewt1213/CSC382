@@ -22,15 +22,11 @@ private:
     QListView *listView = new QListView();
     QPushButton *buttonAdd = new QPushButton{"Add before"};
     QPushButton *buttonLower = new QPushButton{"Lower priority"};
-
     // TODO: Add four more button data members
     QPushButton *buttonRemove = new QPushButton{"Remove"};
     QPushButton *buttonRaise = new QPushButton{"Raise priority"};
     QPushButton *buttonTop = new QPushButton{"Move to top"};
     QPushButton *buttonLast = new QPushButton{"Move to last"};
-
-
-
 
 public:
     ToDoListGUI() {
@@ -46,7 +42,10 @@ private:
         layout->addWidget(buttonLower);
 
         // TODO: Add four more buttons to the same layout
-
+        layout->addWidget(buttonRemove);
+        layout->addWidget(buttonRaise);
+        layout->addWidget(buttonTop);
+        layout->addWidget(buttonLast);
 
         // Add the QListView horizontally, below the buttons
         layout->addWidget(listView);
