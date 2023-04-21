@@ -3,4 +3,6 @@ project(TicTacToe)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(TicTacToe main.cpp)
+include_directories(C:/Users/Lenovo/CLionProjects/CSC382)
+
+add_executable(TicTacToe myModel.cpp TicTacToeTests.cpp myController.cpp myController.cpp)

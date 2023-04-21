@@ -1,0 +1,5 @@
+# ninja log v5
+5	1195	7037614300238196	CMakeFiles/TicTacToe.dir/main.cpp.obj	c8a5b0b793144bc2
+21910	77851	7037623775957707	TicTacToe.exe	e3b844f197721eb7
+8	25960	7037628381918604	CMakeFiles/TicTacToe.dir/TicTacToeTests.cpp.obj	687e5cb126295dd5
+4	762	7037616139074194	CMakeFiles/TicTacToe.dir/myModel.cpp.obj	7fd9dc514118b652
