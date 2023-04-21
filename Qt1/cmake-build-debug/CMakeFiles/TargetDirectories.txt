@@ -1,0 +1,3 @@
+C:/Users/Lenovo/CLionProjects/CSC382/Qt1/cmake-build-debug/CMakeFiles/Qt1.dir
+C:/Users/Lenovo/CLionProjects/CSC382/Qt1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Lenovo/CLionProjects/CSC382/Qt1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
