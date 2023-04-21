@@ -24,6 +24,12 @@ private:
     QPushButton *buttonLower = new QPushButton{"Lower priority"};
 
     // TODO: Add four more button data members
+    QPushButton *buttonRemove = new QPushButton{"Remove"};
+    QPushButton *buttonRaise = new QPushButton{"Raise priority"};
+    QPushButton *buttonTop = new QPushButton{"Move to top"};
+    QPushButton *buttonLast = new QPushButton{"Move to last"};
+
+
 
 
 public:
