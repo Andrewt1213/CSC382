@@ -85,7 +85,14 @@ private:
                          this, &ToDoListGUI::lower);
 
         // TODO: Add four more connections
-
+        QObject::connect(buttonRemove, &QPushButton::clicked,
+                         this, &ToDoListGUI::remove);
+        QObject::connect(buttonRaise, &QPushButton::clicked,
+                            this, &ToDoListGUI::raise);
+        QObject::connect(buttonTop, &QPushButton::clicked,
+                            this, &ToDoListGUI::top);
+        QObject::connect(buttonLast, &QPushButton::clicked,
+                            this, &ToDoListGUI::last);
     }
 
     void addToDo() {
@@ -120,5 +127,51 @@ private:
     }
 
     // TODO: Add four more slots as void functions inside this class
+    void remove() {
+        QModelIndex index = listView->currentIndex();
+        auto list = myModel.getList();
+        int row = index.row();
+        if (row < list->size() and row >= 0) {
+            list->removeElementAt(row);
+            QModelIndex currentIndex = myModel.index(row);
+            listView->setCurrentIndex(currentIndex);
+            myModel.listChanged();
+        }
+    }
 
+    void raise() {
+        QModelIndex index = listView->currentIndex();
+        auto list = myModel.getList();
+        int row = index.row();
+        if (row < list->size() and row > 0) {
+            list->raisePriorityOf(row);
+            QModelIndex currentIndex = myModel.index(row - 1);
+            listView->setCurrentIndex(currentIndex);
+            myModel.listChanged();
+        }
+    }
+
+    void top() {
+        QModelIndex index = listView->currentIndex();
+        auto list = myModel.getList();
+        int row = index.row();
+        if (row < list->size() and row > 0) {
+            list->moveToTop(row);
+            QModelIndex currentIndex = myModel.index(0);
+            listView->setCurrentIndex(currentIndex);
+            myModel.listChanged();
+        }
+    }
+
+    void last() {
+        QModelIndex index = listView->currentIndex();
+        auto list = myModel.getList();
+        int row = index.row();
+        if (row < list->size() and row >= 0) {
+            list->moveToLast(row);
+            QModelIndex currentIndex = myModel.index(list->size() - 1);
+            listView->setCurrentIndex(currentIndex);
+            myModel.listChanged();
+        }
+    }
 };
