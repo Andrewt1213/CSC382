@@ -56,8 +56,8 @@ build CMakeFiles/TicTacToe.dir/myModel.cpp.obj: CXX_COMPILER__TicTacToe_Debug C$
   OBJECT_DIR = CMakeFiles\TicTacToe.dir
   OBJECT_FILE_DIR = CMakeFiles\TicTacToe.dir
 
-build CMakeFiles/TicTacToe.dir/TicTacToeTests.cpp.obj: CXX_COMPILER__TicTacToe_Debug C$:/Users/Lenovo/CLionProjects/CSC382/TicTacToe/TicTacToeTests.cpp || cmake_object_order_depends_target_TicTacToe
-  DEP_FILE = CMakeFiles\TicTacToe.dir\TicTacToeTests.cpp.obj.d
+build CMakeFiles/TicTacToe.dir/main.cpp.obj: CXX_COMPILER__TicTacToe_Debug C$:/Users/Lenovo/CLionProjects/CSC382/TicTacToe/main.cpp || cmake_object_order_depends_target_TicTacToe
+  DEP_FILE = CMakeFiles\TicTacToe.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Lenovo/CLionProjects/CSC382
   OBJECT_DIR = CMakeFiles\TicTacToe.dir
@@ -78,7 +78,7 @@ build CMakeFiles/TicTacToe.dir/myController.cpp.obj: CXX_COMPILER__TicTacToe_Deb
 #############################################
 # Link the executable TicTacToe.exe
 
-build TicTacToe.exe: CXX_EXECUTABLE_LINKER__TicTacToe_Debug CMakeFiles/TicTacToe.dir/myModel.cpp.obj CMakeFiles/TicTacToe.dir/TicTacToeTests.cpp.obj CMakeFiles/TicTacToe.dir/myController.cpp.obj
+build TicTacToe.exe: CXX_EXECUTABLE_LINKER__TicTacToe_Debug CMakeFiles/TicTacToe.dir/myModel.cpp.obj CMakeFiles/TicTacToe.dir/main.cpp.obj CMakeFiles/TicTacToe.dir/myController.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TicTacToe.dir

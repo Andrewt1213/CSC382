@@ -7,9 +7,9 @@ public:
     myController(){
         MyModel model;
         cout << "Play a game of Tic Tac Toe" << endl;
-        model.printBoard();
         while (!model.gameOver()) {
             do {
+                model.printBoard();
                 cout << "Enter row and column: ";
                 int x, y;
                 cin >> x >> y;
@@ -19,6 +19,9 @@ public:
                 }
                 cout << "Invalid move" << endl;
             } while (true);
+            model.computerRandomMove();
         }
+        cout << "Game over" << endl;
+        model.printBoard();
     }
 };

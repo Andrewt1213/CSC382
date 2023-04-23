@@ -17,87 +17,24 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Coverage" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27bd982c-0d9b-4e9f-9042-0af4a6db32e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/cache-v2-cfd56575040d935e34d7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-739cf50e421f763cf307.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CMakeRCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/compiler_depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/compiler_depend.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/includes_CXX.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/linkLibs.rsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/objects1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/LinkedPriListFun.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myModel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaProject/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LambdaProject/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/cache-v2-5eb5c587127b1d55cf4d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-e939a30d651a2475dbe9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f9479981496e72645607.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-21T04-02-09-0522.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/target-LinkedPriListFun-Debug-776eb000931ca14c9a2c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-561666ebc7bc8e05dce9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/LinkedPriorityListTest.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/LinkedPriorityListTest.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/LinkedPriListFun.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/LinkedPriListFun.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/LinkedPriListFun.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedPriListFun/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-904dfffe4150541782a6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-258039e64d69be2d0b8d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-21T05-16-30-0362.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-TicTacToe-Debug-266a9f9167a4e0d9612b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-201952ffc7617929d3e0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-21T06-48-01-0837.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-TicTacToe-Debug-dca19d777fcde75fda9f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TicTacToe.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TicTacToe.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDoList/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myModel.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +44,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Coverage" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -137,7 +74,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Catch.Test validMove">
+  <component name="RunManager" selected="CMake Application.TicTacToe">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -172,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682057101667</updated>
-      <workItem from="1682057103913" duration="2792000" />
+      <workItem from="1682057103913" duration="6156000" />
     </task>
     <servers />
   </component>
@@ -184,5 +121,19 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/myController.cpp</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="../../../../CLionProjects/CSC382/TicTacToe/cmake-build-debug-coverage" NAME="Test validMove Coverage Results" MODIFIED="1682108159404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

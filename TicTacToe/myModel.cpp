@@ -5,7 +5,7 @@
 using namespace std;
 class MyModel {
 private:
-    int board[3][3];
+    int board[3][3]{};
     /*winning combinations
     int win[8][3] = {
             {0, 1, 2},
@@ -20,6 +20,27 @@ private:
     */
 public:
     MyModel() {
+        newGame();
+    }
+
+    void computerRandomMove(){
+        int i = 0;
+        do {
+            int x = rand() % 3;
+            int y = rand() % 3;
+            if (validMove(x, y)) {
+                setBoard(x, y, 2);
+                break;
+            }
+            i++;
+        } while (i < 10000);
+        // error since more than 1000 loops to make a valid move
+        if (i == 10000) {
+            cout << "Error: computerRandomMove() failed" << endl;
+        }
+    }
+
+    void newGame() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 board[i][j] = 0;

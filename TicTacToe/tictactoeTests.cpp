@@ -32,6 +32,48 @@ TEST_CASE("Test gameOver") {
     model.setBoard(0, 1, 1);
     model.setBoard(0, 2, 1);
     REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(0, 0, 1);
+    model.setBoard(1, 0, 1);
+    model.setBoard(2, 0, 1);
+    REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(0, 0, 1);
+    model.setBoard(1, 1, 1);
+    model.setBoard(2, 2, 1);
+    REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(0, 2, 1);
+    model.setBoard(1, 1, 1);
+    model.setBoard(2, 0, 1);
+    REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(1, 0, 1);
+    model.setBoard(1, 1, 1);
+    model.setBoard(1, 2, 1);
+    REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(2, 0, 1);
+    model.setBoard(2, 1, 1);
+    model.setBoard(2, 2, 1);
+    REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(0, 1, 1);
+    model.setBoard(1, 1, 1);
+    model.setBoard(2, 1, 1);
+    REQUIRE(model.gameOver() == true);
+
+    model.newGame();
+    model.setBoard(0, 2, 1);
+    model.setBoard(1, 2, 1);
+    model.setBoard(2, 2, 1);
+    REQUIRE(model.gameOver() == true);
 }
 
 
