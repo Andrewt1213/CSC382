@@ -19,7 +19,8 @@ public:
                 }
                 cout << "Invalid move" << endl;
             } while (true);
-            model.computerRandomMove();
+            if (!model.gameOver())
+                model.computerRandomMove();
         }
         cout << "Game over" << endl;
         model.printBoard();
