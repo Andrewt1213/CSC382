@@ -632,14 +632,14 @@ call    0 never executed
         -:  530:      // 3076. basic_string CTAD ambiguity
         -:  531:      template<typename = _RequireAllocator<_Alloc>>
         -:  532:#endif
-     182*:  533:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
-     182*:  534:      : _M_dataplus(_M_local_data(), __a)
+     120*:  533:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+     120*:  534:      : _M_dataplus(_M_local_data(), __a)
         -:  535:      {
-     182*:  536:	const _CharT* __end = __s ? __s + traits_type::length(__s)
+     120*:  536:	const _CharT* __end = __s ? __s + traits_type::length(__s)
         -:  537:	  // We just need a non-null pointer here to get an exception:
         -:  538:	  : reinterpret_cast<const _CharT*>(__alignof__(_CharT));
-     182*:  539:	_M_construct(__s, __end, random_access_iterator_tag());
-     182*:  540:      }
+     120*:  539:	_M_construct(__s, __end, random_access_iterator_tag());
+     120*:  540:      }
 ------------------
 _ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEC1IS3_EEPKwRKS3_:
 function _ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEC1IS3_EEPKwRKS3_ called 0 returned 0% blocks executed 0%
@@ -672,32 +672,32 @@ branch  2 never executed
 call    0 never executed
 ------------------
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_:
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_ called 182 returned 100% blocks executed 73%
-      182:  533:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
-      182:  534:      : _M_dataplus(_M_local_data(), __a)
-      182:  534-block  0
-call    0 returned 182
-call    1 returned 182
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_ called 120 returned 100% blocks executed 73%
+      120:  533:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+      120:  534:      : _M_dataplus(_M_local_data(), __a)
+      120:  534-block  0
+call    0 returned 120
+call    1 returned 120
         -:  535:      {
-     182*:  536:	const _CharT* __end = __s ? __s + traits_type::length(__s)
-branch  0 taken 182 (fallthrough)
+     120*:  536:	const _CharT* __end = __s ? __s + traits_type::length(__s)
+branch  0 taken 120 (fallthrough)
 branch  1 taken 0
-      182:  536-block  0
-call    2 returned 182
-branch  3 taken 182 (fallthrough)
+      120:  536-block  0
+call    2 returned 120
+branch  3 taken 120 (fallthrough)
 branch  4 taken 0 (throw)
-      182:  536-block  1
+      120:  536-block  1
     %%%%%:  536-block  2
         -:  537:	  // We just need a non-null pointer here to get an exception:
         -:  538:	  : reinterpret_cast<const _CharT*>(__alignof__(_CharT));
-      182:  539:	_M_construct(__s, __end, random_access_iterator_tag());
-      182:  539-block  0
-call    0 returned 182
-branch  1 taken 182 (fallthrough)
+      120:  539:	_M_construct(__s, __end, random_access_iterator_tag());
+      120:  539-block  0
+call    0 returned 120
+branch  1 taken 120 (fallthrough)
 branch  2 taken 0 (throw)
     $$$$$:  539-block  1
-      182:  540:      }
-      182:  540-block  0
+      120:  540:      }
+      120:  540-block  0
     $$$$$:  540-block  1
 call    0 never executed
 ------------------
@@ -713,17 +713,17 @@ call    0 never executed
         -:  550:      // 3076. basic_string CTAD ambiguity
         -:  551:      template<typename = _RequireAllocator<_Alloc>>
         -:  552:#endif
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEycRKS3_ called 0 returned 0% blocks executed 0%
-    #####:  553:      basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
-    #####:  554:      : _M_dataplus(_M_local_data(), __a)
-    %%%%%:  554-block  0
-call    0 never executed
-call    1 never executed
-    #####:  555:      { _M_construct(__n, __c); }
-call    0 never executed
-branch  1 never executed
-branch  2 never executed
-    %%%%%:  555-block  0
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEycRKS3_ called 3 returned 100% blocks executed 83%
+        3:  553:      basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+        3:  554:      : _M_dataplus(_M_local_data(), __a)
+        3:  554-block  0
+call    0 returned 3
+call    1 returned 3
+        3:  555:      { _M_construct(__n, __c); }
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  555-block  0
     $$$$$:  555-block  1
 call    3 never executed
         -:  556:
@@ -6538,27 +6538,27 @@ call    2 never executed
         -: 6230:  template<typename _CharT>
         -: 6231:    inline
         -: 6232:    typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value, bool>::__type
-function _ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS3_St11char_traitsIS3_ESaIS3_EEESE_ called 82 returned 100% blocks executed 100%
-       82: 6233:    operator==(const basic_string<_CharT>& __lhs,
+function _ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS3_St11char_traitsIS3_ESaIS3_EEESE_ called 0 returned 0% blocks executed 0%
+    #####: 6233:    operator==(const basic_string<_CharT>& __lhs,
         -: 6234:	       const basic_string<_CharT>& __rhs) _GLIBCXX_NOEXCEPT
-       82: 6235:    { return (__lhs.size() == __rhs.size()
-       82: 6235-block  0
-call    0 returned 82
-call    1 returned 82
-       82: 6236:	      && !std::char_traits<_CharT>::compare(__lhs.data(), __rhs.data(),
-branch  0 taken 27 (fallthrough)
-branch  1 taken 55
-       27: 6236-block  0
-call    2 returned 27
-call    3 returned 27
-call    4 returned 27
-call    5 returned 27
-branch  6 taken 3 (fallthrough)
-branch  7 taken 24
-        3: 6236-block  1
-       79: 6236-block  2
-       82: 6237:						    __lhs.size())); }
-       82: 6237-block  0
+    #####: 6235:    { return (__lhs.size() == __rhs.size()
+    %%%%%: 6235-block  0
+call    0 never executed
+call    1 never executed
+    #####: 6236:	      && !std::char_traits<_CharT>::compare(__lhs.data(), __rhs.data(),
+branch  0 never executed
+branch  1 never executed
+    %%%%%: 6236-block  0
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%: 6236-block  1
+    %%%%%: 6236-block  2
+    #####: 6237:						    __lhs.size())); }
+    %%%%%: 6237-block  0
         -: 6238:
         -: 6239:  /**
         -: 6240:   *  @brief  Test equivalence of string and C string.
@@ -6568,12 +6568,12 @@ branch  7 taken 24
         -: 6244:   */
         -: 6245:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6246:    inline bool
-function _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_ called 4 returned 100% blocks executed 100%
-        4: 6247:    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+function _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_ called 0 returned 0% blocks executed 0%
+    #####: 6247:    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
         -: 6248:	       const _CharT* __rhs)
-        4: 6249:    { return __lhs.compare(__rhs) == 0; }
-        4: 6249-block  0
-call    0 returned 4
+    #####: 6249:    { return __lhs.compare(__rhs) == 0; }
+    %%%%%: 6249-block  0
+call    0 never executed
         -: 6250:
         -: 6251:#if __cpp_lib_three_way_comparison
         -: 6252:  /**
@@ -6672,13 +6672,13 @@ call    0 never executed
         -: 6336:   */
         -: 6337:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6338:    inline bool
-function _ZStltIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EESA_ called 22 returned 100% blocks executed 100%
-       22: 6339:    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+function _ZStltIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EESA_ called 16 returned 100% blocks executed 100%
+       16: 6339:    operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
         -: 6340:	      const basic_string<_CharT, _Traits, _Alloc>& __rhs)
         -: 6341:    _GLIBCXX_NOEXCEPT
-       22: 6342:    { return __lhs.compare(__rhs) < 0; }
-       22: 6342-block  0
-call    0 returned 22
+       16: 6342:    { return __lhs.compare(__rhs) < 0; }
+       16: 6342-block  0
+call    0 returned 16
         -: 6343:
         -: 6344:  /**
         -: 6345:   *  @brief  Test if string precedes C string.

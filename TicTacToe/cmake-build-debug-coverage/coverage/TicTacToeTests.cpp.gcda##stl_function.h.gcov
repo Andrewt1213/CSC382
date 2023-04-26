@@ -386,8 +386,8 @@
         -:  382:    {
         -:  383:      _GLIBCXX14_CONSTEXPR
         -:  384:      bool
-      23*:  385:      operator()(const _Tp& __x, const _Tp& __y) const
-      23*:  386:      { return __x < __y; }
+      18*:  385:      operator()(const _Tp& __x, const _Tp& __y) const
+      18*:  386:      { return __x < __y; }
 ------------------
 _ZNKSt4lessIlEclERKlS2_:
 function _ZNKSt4lessIlEclERKlS2_ called 0 returned 0% blocks executed 0%
@@ -409,11 +409,11 @@ function _ZNKSt4lessIN5Catch8TestCaseEEclERKS1_S4_ called 2 returned 100% blocks
 call    0 returned 2
 ------------------
 _ZNKSt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_S8_:
-function _ZNKSt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_S8_ called 19 returned 100% blocks executed 100%
-       19:  385:      operator()(const _Tp& __x, const _Tp& __y) const
-       19:  386:      { return __x < __y; }
-       19:  386-block  0
-call    0 returned 19
+function _ZNKSt4lessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_S8_ called 14 returned 100% blocks executed 100%
+       14:  385:      operator()(const _Tp& __x, const _Tp& __y) const
+       14:  386:      { return __x < __y; }
+       14:  386-block  0
+call    0 returned 14
 ------------------
         -:  387:    };
         -:  388:
@@ -1211,8 +1211,8 @@ function _ZNKSt9_IdentityINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEc
         -: 1152:      { return __x.first; }
         -: 1153:
         -: 1154:      const typename _Pair::first_type&
-      26*: 1155:      operator()(const _Pair& __x) const
-      26*: 1156:      { return __x.first; }
+      21*: 1155:      operator()(const _Pair& __x) const
+      21*: 1156:      { return __x.first; }
 ------------------
 _ZNKSt10_Select1stISt4pairIKllEEclERKS2_:
 function _ZNKSt10_Select1stISt4pairIKllEEclERKS2_ called 0 returned 0% blocks executed 0%
@@ -1227,10 +1227,10 @@ function _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsI
     %%%%%: 1156-block  0
 ------------------
 _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEEclERKSC_:
-function _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEEclERKSC_ called 26 returned 100% blocks executed 100%
-       26: 1155:      operator()(const _Pair& __x) const
-       26: 1156:      { return __x.first; }
-       26: 1156-block  0
+function _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEEclERKSC_ called 21 returned 100% blocks executed 100%
+       21: 1155:      operator()(const _Pair& __x) const
+       21: 1156:      { return __x.first; }
+       21: 1156-block  0
 ------------------
 _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch7TagInfoEEEclERKSA_:
 function _ZNKSt10_Select1stISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch7TagInfoEEEclERKSA_ called 0 returned 0% blocks executed 0%

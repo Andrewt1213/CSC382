@@ -72,12 +72,12 @@
         -:   68:
         -:   69:      // Number of elements.
         -:   70:      constexpr size_type
-       1*:   71:      size() const noexcept { return _M_len; }
+       2*:   71:      size() const noexcept { return _M_len; }
 ------------------
 _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE4sizeEv:
-function _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE4sizeEv called 0 returned 0% blocks executed 0%
-    #####:   71:      size() const noexcept { return _M_len; }
-    %%%%%:   71-block  0
+function _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE4sizeEv called 1 returned 100% blocks executed 100%
+        1:   71:      size() const noexcept { return _M_len; }
+        1:   71-block  0
 ------------------
 _ZNKSt16initializer_listIN5Catch9VerbosityEE4sizeEv:
 function _ZNKSt16initializer_listIN5Catch9VerbosityEE4sizeEv called 1 returned 100% blocks executed 100%
@@ -97,12 +97,12 @@ function _ZNKSt16initializer_listINSt7__cxx1112basic_stringIcSt11char_traitsIcES
         -:   72:
         -:   73:      // First element.
         -:   74:      constexpr const_iterator
-       2*:   75:      begin() const noexcept { return _M_array; }
+       4*:   75:      begin() const noexcept { return _M_array; }
 ------------------
 _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE5beginEv:
-function _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE5beginEv called 0 returned 0% blocks executed 0%
-    #####:   75:      begin() const noexcept { return _M_array; }
-    %%%%%:   75-block  0
+function _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE5beginEv called 2 returned 100% blocks executed 100%
+        2:   75:      begin() const noexcept { return _M_array; }
+        2:   75-block  0
 ------------------
 _ZNKSt16initializer_listIN5Catch9VerbosityEE5beginEv:
 function _ZNKSt16initializer_listIN5Catch9VerbosityEE5beginEv called 2 returned 100% blocks executed 100%
@@ -122,14 +122,14 @@ function _ZNKSt16initializer_listINSt7__cxx1112basic_stringIcSt11char_traitsIcES
         -:   76:
         -:   77:      // One past the last element.
         -:   78:      constexpr const_iterator
-       1*:   79:      end() const noexcept { return begin() + size(); }
+       2*:   79:      end() const noexcept { return begin() + size(); }
 ------------------
 _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE3endEv:
-function _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE3endEv called 0 returned 0% blocks executed 0%
-    #####:   79:      end() const noexcept { return begin() + size(); }
-    %%%%%:   79-block  0
-call    0 never executed
-call    1 never executed
+function _ZNKSt16initializer_listIN5Catch12_GLOBAL__N_110ColumnInfoEE3endEv called 1 returned 100% blocks executed 100%
+        1:   79:      end() const noexcept { return begin() + size(); }
+        1:   79-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
 _ZNKSt16initializer_listIN5Catch9VerbosityEE3endEv:
 function _ZNKSt16initializer_listIN5Catch9VerbosityEE3endEv called 1 returned 100% blocks executed 100%

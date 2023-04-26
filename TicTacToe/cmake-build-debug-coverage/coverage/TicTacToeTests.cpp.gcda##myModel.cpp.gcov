@@ -28,132 +28,152 @@ function _ZN7MyModelC1Ev called 2 returned 100% blocks executed 100%
         2:   23:        newGame();
         2:   23-block  0
 call    0 returned 2
-        2:   24:    }
-        -:   25:
+        2:   24:        srand(time(0));
+call    0 returned 2
+call    1 returned 2
+        2:   25:    }
+        -:   26:
+        -:   27:    void computerRandomMove(){
+        -:   28:        int i = 0;
+        -:   29:        do {
+        -:   30:            int x = rand() % 3;
+        -:   31:            int y = rand() % 3;
+        -:   32:            if (validMove(x, y)) {
+        -:   33:                setBoard(x, y, 2);
+        -:   34:                break;
+        -:   35:            }
+        -:   36:            i++;
+        -:   37:        } while (i < 10000);
+        -:   38:        // error since more than 1000 loops to make a valid move
+        -:   39:        if (i == 10000) {
+        -:   40:            cout << "Error: computerRandomMove() failed" << endl;
+        -:   41:        }
+        -:   42:    }
+        -:   43:
 function _ZN7MyModel7newGameEv called 9 returned 100% blocks executed 100%
-        9:   26:    void newGame() {
-       36:   27:        for (int i = 0; i < 3; i++) {
-        9:   27-block  0
-       27:   27-block  1
-       36:   27-block  2
+        9:   44:    void newGame() {
+       36:   45:        for (int i = 0; i < 3; i++) {
+        9:   45-block  0
+       27:   45-block  1
+       36:   45-block  2
 branch  0 taken 27
 branch  1 taken 9 (fallthrough)
-      108:   28:            for (int j = 0; j < 3; j++) {
-       27:   28-block  0
-      108:   28-block  1
+      108:   46:            for (int j = 0; j < 3; j++) {
+       27:   46-block  0
+      108:   46-block  1
 branch  0 taken 81
 branch  1 taken 27 (fallthrough)
-       81:   29:                board[i][j] = 0;
-       81:   29-block  0
-        -:   30:            }
-        -:   31:        }
-        9:   32:    }
-        -:   33:
+       81:   47:                board[i][j] = 0;
+       81:   47-block  0
+        -:   48:            }
+        -:   49:        }
+        9:   50:    }
+        -:   51:
 function _ZN7MyModel8gameOverEv called 8 returned 100% blocks executed 95%
-        8:   34:    bool gameOver() {
-       20:   35:        for (int i = 0; i < 3; i++) {
-        8:   35-block  0
-       12:   35-block  1
-       20:   35-block  2
+        8:   52:    bool gameOver() {
+       20:   53:        for (int i = 0; i < 3; i++) {
+        8:   53-block  0
+       12:   53-block  1
+       20:   53-block  2
 branch  0 taken 18
 branch  1 taken 2 (fallthrough)
-       18:   36:            if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != 0) {
-       18:   36-block  0
+       18:   54:            if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != 0) {
+       18:   54-block  0
 branch  0 taken 11 (fallthrough)
 branch  1 taken 7
-       11:   36-block  1
+       11:   54-block  1
 branch  2 taken 6 (fallthrough)
 branch  3 taken 5
-        6:   36-block  2
+        6:   54-block  2
 branch  4 taken 3 (fallthrough)
 branch  5 taken 3
-        3:   37:                return true;
-        3:   37-block  0
-        -:   38:            }
-       15:   39:            if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != 0) {
-       15:   39-block  0
+        3:   55:                return true;
+        3:   55-block  0
+        -:   56:            }
+       15:   57:            if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != 0) {
+       15:   57-block  0
 branch  0 taken 10 (fallthrough)
 branch  1 taken 5
-       10:   39-block  1
+       10:   57-block  1
 branch  2 taken 6 (fallthrough)
 branch  3 taken 4
-        6:   39-block  2
+        6:   57-block  2
 branch  4 taken 3 (fallthrough)
 branch  5 taken 3
-        3:   40:                return true;
-        3:   40-block  0
-        -:   41:            }
-        -:   42:        }
-        2:   43:        if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != 0) {
-        2:   43-block  0
+        3:   58:                return true;
+        3:   58-block  0
+        -:   59:            }
+        -:   60:        }
+        2:   61:        if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != 0) {
+        2:   61-block  0
 branch  0 taken 1 (fallthrough)
 branch  1 taken 1
-        1:   43-block  1
+        1:   61-block  1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0
-        1:   43-block  2
+        1:   61-block  2
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0
-        1:   44:            return true;
-        1:   44-block  0
-        -:   45:        }
-        1:   46:        if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != 0) {
-        1:   46-block  0
+        1:   62:            return true;
+        1:   62-block  0
+        -:   63:        }
+        1:   64:        if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != 0) {
+        1:   64-block  0
 branch  0 taken 1 (fallthrough)
 branch  1 taken 0
-        1:   46-block  1
+        1:   64-block  1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0
-        1:   46-block  2
+        1:   64-block  2
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0
-        1:   47:            return true;
-        1:   47-block  0
-        -:   48:        }
-    #####:   49:        return false;
-    %%%%%:   49-block  0
-        -:   50:    }
-        -:   51:
+        1:   65:            return true;
+        1:   65-block  0
+        -:   66:        }
+    #####:   67:        return false;
+    %%%%%:   67-block  0
+        -:   68:    }
+        -:   69:
 function _ZN7MyModel9validMoveEii called 11 returned 100% blocks executed 89%
-       11:   52:    bool validMove(int x, int y) {
-       11:   53:        if (x < 0 || x > 2 || y < 0 || y > 2) {
-       11:   53-block  0
+       11:   70:    bool validMove(int x, int y) {
+       11:   71:        if (x < 0 || x > 2 || y < 0 || y > 2) {
+       11:   71-block  0
 branch  0 taken 10 (fallthrough)
 branch  1 taken 1
-       10:   53-block  1
+       10:   71-block  1
 branch  2 taken 9 (fallthrough)
 branch  3 taken 1
-        9:   53-block  2
+        9:   71-block  2
 branch  4 taken 9 (fallthrough)
 branch  5 taken 0
-        9:   53-block  3
+        9:   71-block  3
 branch  6 taken 0 (fallthrough)
 branch  7 taken 9
-        2:   54:            return false;
-        2:   54-block  0
-        -:   55:        }
-        9:   56:        if (board[x][y] == 0) {
-        9:   56-block  0
+        2:   72:            return false;
+        2:   72-block  0
+        -:   73:        }
+        9:   74:        if (board[x][y] == 0) {
+        9:   74-block  0
 branch  0 taken 9 (fallthrough)
 branch  1 taken 0
-        9:   57:            return true;
-        9:   57-block  0
-        -:   58:        }
-    #####:   59:        return false;
-    %%%%%:   59-block  0
-        -:   60:    }
-        -:   61:
+        9:   75:            return true;
+        9:   75-block  0
+        -:   76:        }
+    #####:   77:        return false;
+    %%%%%:   77-block  0
+        -:   78:    }
+        -:   79:
 function _ZN7MyModel8setBoardEiii called 24 returned 100% blocks executed 100%
-       24:   62:    void setBoard(int x, int y, int value) {
-       24:   63:        board[x][y] = value;
-       24:   64:    }
-        -:   65:
-        -:   66:    void printBoard() {
-        -:   67:        for (int i = 0; i < 3; i++) {
-        -:   68:            for (int j = 0; j < 3; j++) {
-        -:   69:                cout << board[i][j] << " ";
-        -:   70:            }
-        -:   71:            cout << endl;
-        -:   72:        }
-        -:   73:    }
-        -:   74:};
+       24:   80:    void setBoard(int x, int y, int value) {
+       24:   81:        board[x][y] = value;
+       24:   82:    }
+        -:   83:
+        -:   84:    void printBoard() {
+        -:   85:        for (int i = 0; i < 3; i++) {
+        -:   86:            for (int j = 0; j < 3; j++) {
+        -:   87:                cout << board[i][j] << " ";
+        -:   88:            }
+        -:   89:            cout << endl;
+        -:   90:        }
+        -:   91:    }
+        -:   92:};

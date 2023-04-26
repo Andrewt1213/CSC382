@@ -231,10 +231,10 @@
         -:  227:static __inline time_t __CRTDECL mktime(struct tm *_Tm) { return _mktime32(_Tm); }
         -:  228:static __inline time_t __CRTDECL _mkgmtime(struct tm *_Tm) { return _mkgmtime32(_Tm); }
         -:  229:#else
-function time called 0 returned 0% blocks executed 0%
-    #####:  230:static __inline time_t __CRTDECL time(time_t *_Time) { return _time64(_Time); }
-    %%%%%:  230-block  0
-call    0 never executed
+function time called 2 returned 100% blocks executed 100%
+        2:  230:static __inline time_t __CRTDECL time(time_t *_Time) { return _time64(_Time); }
+        2:  230-block  0
+call    0 returned 2
         -:  231:static __inline double __CRTDECL difftime(time_t _Time1,time_t _Time2) { return _difftime64(_Time1,_Time2); }
         -:  232:static __inline struct tm *__CRTDECL localtime(const time_t *_Time) { return _localtime64(_Time); }
         -:  233:static __inline errno_t __CRTDECL localtime_s(struct tm *_Tm,const time_t *_Time) { return _localtime64_s(_Tm,_Time); }

@@ -109,8 +109,8 @@
         -:  105:#if __cplusplus >= 201103L
         -:  106:  template<typename _Tp, typename... _Args>
         -:  107:    inline void
-    3236*:  108:    _Construct(_Tp* __p, _Args&&... __args)
-    3236*:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
+    3022*:  108:    _Construct(_Tp* __p, _Args&&... __args)
+    3022*:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
 ------------------
 _ZSt10_ConstructIN5Catch8TestSpec11FilterMatchEJEEvPT_DpOT0_:
 function _ZSt10_ConstructIN5Catch8TestSpec11FilterMatchEJEEvPT_DpOT0_ called 0 returned 0% blocks executed 0%
@@ -134,16 +134,16 @@ branch  4 never executed
 call    5 never executed
 ------------------
 _ZSt10_ConstructIN5Catch5clara6detail5TokenEJRKS3_EEvPT_DpOT0_:
-function _ZSt10_ConstructIN5Catch5clara6detail5TokenEJRKS3_EEvPT_DpOT0_ called 212 returned 100% blocks executed 83%
-      212:  108:    _Construct(_Tp* __p, _Args&&... __args)
-      212:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
-      212:  109-block  0
-call    0 returned 212
-call    1 returned 212
-call    2 returned 212
-branch  3 taken 212 (fallthrough)
-branch  4 taken 0 (throw)
-      212:  109-block  1
+function _ZSt10_ConstructIN5Catch5clara6detail5TokenEJRKS3_EEvPT_DpOT0_ called 0 returned 0% blocks executed 0%
+    #####:  108:    _Construct(_Tp* __p, _Args&&... __args)
+    #####:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
+    %%%%%:  109-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  109-block  1
     $$$$$:  109-block  2
 call    5 never executed
 ------------------
@@ -246,18 +246,18 @@ branch  4 never executed
 call    5 never executed
 ------------------
 _ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKPKcEEvPT_DpOT0_:
-function _ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKPKcEEvPT_DpOT0_ called 6 returned 100% blocks executed 64%
-        6:  108:    _Construct(_Tp* __p, _Args&&... __args)
-        6:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
-        6:  109-block  0
-call    0 returned 6
-call    1 returned 6
-call    2 returned 6
-call    3 returned 6
-branch  4 taken 6 (fallthrough)
-branch  5 taken 0 (throw)
-        6:  109-block  1
-call    6 returned 6
+function _ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKPKcEEvPT_DpOT0_ called 0 returned 0% blocks executed 0%
+    #####:  108:    _Construct(_Tp* __p, _Args&&... __args)
+    #####:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
+    %%%%%:  109-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  109-block  1
+call    6 never executed
     $$$$$:  109-block  2
 call    7 never executed
     $$$$$:  109-block  3
@@ -327,16 +327,16 @@ branch  4 never executed
 call    5 never executed
 ------------------
 _ZSt10_ConstructIN5Catch12_GLOBAL__N_110ColumnInfoEJRKS2_EEvPT_DpOT0_:
-function _ZSt10_ConstructIN5Catch12_GLOBAL__N_110ColumnInfoEJRKS2_EEvPT_DpOT0_ called 0 returned 0% blocks executed 0%
-    #####:  108:    _Construct(_Tp* __p, _Args&&... __args)
-    #####:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
-    %%%%%:  109-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-branch  3 never executed
-branch  4 never executed
-    %%%%%:  109-block  1
+function _ZSt10_ConstructIN5Catch12_GLOBAL__N_110ColumnInfoEJRKS2_EEvPT_DpOT0_ called 4 returned 100% blocks executed 83%
+        4:  108:    _Construct(_Tp* __p, _Args&&... __args)
+        4:  109:    { ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...); }
+        4:  109-block  0
+call    0 returned 4
+call    1 returned 4
+call    2 returned 4
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0 (throw)
+        4:  109-block  1
     $$$$$:  109-block  2
 call    5 never executed
 ------------------
@@ -487,14 +487,14 @@ call    1 never executed
         -:  132:   */
         -:  133:  template<typename _Tp>
         -:  134:    _GLIBCXX14_CONSTEXPR inline void
-    3331*:  135:    _Destroy(_Tp* __pointer)
+    3109*:  135:    _Destroy(_Tp* __pointer)
         -:  136:    {
         -:  137:#if __cplusplus > 201703L
         -:  138:      std::destroy_at(__pointer);
         -:  139:#else
-    3331*:  140:      __pointer->~_Tp();
+    3109*:  140:      __pointer->~_Tp();
         -:  141:#endif
-    3331*:  142:    }
+    3109*:  142:    }
 ------------------
 _ZSt8_DestroyIN5Catch8TestSpec11FilterMatchEEvPT_:
 function _ZSt8_DestroyIN5Catch8TestSpec11FilterMatchEEvPT_ called 0 returned 0% blocks executed 0%
@@ -510,17 +510,17 @@ call    0 never executed
     #####:  142:    }
 ------------------
 _ZSt8_DestroyINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvPT_:
-function _ZSt8_DestroyINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvPT_ called 2049 returned 100% blocks executed 100%
-     2049:  135:    _Destroy(_Tp* __pointer)
+function _ZSt8_DestroyINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvPT_ called 2043 returned 100% blocks executed 100%
+     2043:  135:    _Destroy(_Tp* __pointer)
         -:  136:    {
         -:  137:#if __cplusplus > 201703L
         -:  138:      std::destroy_at(__pointer);
         -:  139:#else
-     2049:  140:      __pointer->~_Tp();
-     2049:  140-block  0
-call    0 returned 2049
+     2043:  140:      __pointer->~_Tp();
+     2043:  140-block  0
+call    0 returned 2043
         -:  141:#endif
-     2049:  142:    }
+     2043:  142:    }
 ------------------
 _ZSt8_DestroyIN5Catch5clara8TextFlow6ColumnEEvPT_:
 function _ZSt8_DestroyIN5Catch5clara8TextFlow6ColumnEEvPT_ called 0 returned 0% blocks executed 0%
@@ -536,17 +536,17 @@ call    0 never executed
     #####:  142:    }
 ------------------
 _ZSt8_DestroyIN5Catch5clara6detail5TokenEEvPT_:
-function _ZSt8_DestroyIN5Catch5clara6detail5TokenEEvPT_ called 218 returned 100% blocks executed 100%
-      218:  135:    _Destroy(_Tp* __pointer)
+function _ZSt8_DestroyIN5Catch5clara6detail5TokenEEvPT_ called 0 returned 0% blocks executed 0%
+    #####:  135:    _Destroy(_Tp* __pointer)
         -:  136:    {
         -:  137:#if __cplusplus > 201703L
         -:  138:      std::destroy_at(__pointer);
         -:  139:#else
-      218:  140:      __pointer->~_Tp();
-      218:  140-block  0
-call    0 returned 218
+    #####:  140:      __pointer->~_Tp();
+    %%%%%:  140-block  0
+call    0 never executed
         -:  141:#endif
-      218:  142:    }
+    #####:  142:    }
 ------------------
 _ZSt8_DestroyIN5Catch5clara6detail11HelpColumnsEEvPT_:
 function _ZSt8_DestroyIN5Catch5clara6detail11HelpColumnsEEvPT_ called 0 returned 0% blocks executed 0%
@@ -731,17 +731,17 @@ call    0 never executed
     #####:  142:    }
 ------------------
 _ZSt8_DestroyIN5Catch12_GLOBAL__N_110ColumnInfoEEvPT_:
-function _ZSt8_DestroyIN5Catch12_GLOBAL__N_110ColumnInfoEEvPT_ called 0 returned 0% blocks executed 0%
-    #####:  135:    _Destroy(_Tp* __pointer)
+function _ZSt8_DestroyIN5Catch12_GLOBAL__N_110ColumnInfoEEvPT_ called 4 returned 100% blocks executed 100%
+        4:  135:    _Destroy(_Tp* __pointer)
         -:  136:    {
         -:  137:#if __cplusplus > 201703L
         -:  138:      std::destroy_at(__pointer);
         -:  139:#else
-    #####:  140:      __pointer->~_Tp();
-    %%%%%:  140-block  0
-call    0 never executed
+        4:  140:      __pointer->~_Tp();
+        4:  140-block  0
+call    0 returned 4
         -:  141:#endif
-    #####:  142:    }
+        4:  142:    }
 ------------------
 _ZSt8_DestroyIN5Catch13SummaryColumnEEvPT_:
 function _ZSt8_DestroyIN5Catch13SummaryColumnEEvPT_ called 0 returned 0% blocks executed 0%
@@ -874,17 +874,17 @@ call    0 never executed
     #####:  142:    }
 ------------------
 _ZSt8_DestroyISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EEEvPT_:
-function _ZSt8_DestroyISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EEEvPT_ called 2 returned 100% blocks executed 100%
-        2:  135:    _Destroy(_Tp* __pointer)
+function _ZSt8_DestroyISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EEEvPT_ called 0 returned 0% blocks executed 0%
+    #####:  135:    _Destroy(_Tp* __pointer)
         -:  136:    {
         -:  137:#if __cplusplus > 201703L
         -:  138:      std::destroy_at(__pointer);
         -:  139:#else
-        2:  140:      __pointer->~_Tp();
-        2:  140-block  0
-call    0 returned 2
+    #####:  140:      __pointer->~_Tp();
+    %%%%%:  140-block  0
+call    0 never executed
         -:  141:#endif
-        2:  142:    }
+    #####:  142:    }
 ------------------
 _ZSt8_DestroyISt4pairIlSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS2_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISE_EEEEvPT_:
 function _ZSt8_DestroyISt4pairIlSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS2_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISE_EEEEvPT_ called 0 returned 0% blocks executed 0%
@@ -918,11 +918,11 @@ call    0 never executed
         -:  146:    {
         -:  147:      template<typename _ForwardIterator>
         -:  148:	static _GLIBCXX20_CONSTEXPR void
-    2013*:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+    1768*:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-    5344*:  151:	  for (; __first != __last; ++__first)
-    3331*:  152:	    std::_Destroy(std::__addressof(*__first));
-    2013*:  153:	}
+    4877*:  151:	  for (; __first != __last; ++__first)
+    3109*:  152:	    std::_Destroy(std::__addressof(*__first));
+    1768*:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrIKN5Catch20IExceptionTranslatorESt14default_deleteIS5_EEEEvT_SA_:
 function _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrIKN5Catch20IExceptionTranslatorESt14default_deleteIS5_EEEEvT_SA_ called 1 returned 100% blocks executed 50%
@@ -1033,34 +1033,34 @@ call    1 never executed
         1:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch8TestCaseEEEvT_S5_:
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch8TestCaseEEEvT_S5_ called 5 returned 100% blocks executed 100%
-        5:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch8TestCaseEEEvT_S5_ called 4 returned 100% blocks executed 100%
+        4:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-        9:  151:	  for (; __first != __last; ++__first)
-        5:  151-block  0
-        9:  151-block  1
+        8:  151:	  for (; __first != __last; ++__first)
+        4:  151-block  0
+        8:  151-block  1
 branch  0 taken 4
-branch  1 taken 5 (fallthrough)
+branch  1 taken 4 (fallthrough)
         4:  152:	    std::_Destroy(std::__addressof(*__first));
         4:  152-block  0
 call    0 returned 4
 call    1 returned 4
-        5:  153:	}
+        4:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch11MessageInfoEEEvT_S5_:
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch11MessageInfoEEEvT_S5_ called 20 returned 100% blocks executed 50%
-       20:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch11MessageInfoEEEvT_S5_ called 1 returned 100% blocks executed 50%
+        1:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-      20*:  151:	  for (; __first != __last; ++__first)
-       20:  151-block  0
-       20:  151-block  1
+       1*:  151:	  for (; __first != __last; ++__first)
+        1:  151-block  0
+        1:  151-block  1
 branch  0 taken 0
-branch  1 taken 20 (fallthrough)
+branch  1 taken 1 (fallthrough)
     #####:  152:	    std::_Destroy(std::__addressof(*__first));
     %%%%%:  152-block  0
 call    0 never executed
 call    1 never executed
-       20:  153:	}
+        1:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIN9__gnu_cxx17__normal_iteratorIPN5Catch5clara6detail3OptESt6vectorIS7_SaIS7_EEEEEEvT_SD_:
 function _ZNSt12_Destroy_auxILb0EE9__destroyIN9__gnu_cxx17__normal_iteratorIPN5Catch5clara6detail3OptESt6vectorIS7_SaIS7_EEEEEEvT_SD_ called 0 returned 0% blocks executed 0%
@@ -1156,19 +1156,19 @@ call    1 never executed
     #####:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch5clara6detail5TokenEEEvT_S7_:
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch5clara6detail5TokenEEEvT_S7_ called 224 returned 100% blocks executed 100%
-      224:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch5clara6detail5TokenEEEvT_S7_ called 5 returned 100% blocks executed 50%
+        5:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-      442:  151:	  for (; __first != __last; ++__first)
-      224:  151-block  0
-      442:  151-block  1
-branch  0 taken 218
-branch  1 taken 224 (fallthrough)
-      218:  152:	    std::_Destroy(std::__addressof(*__first));
-      218:  152-block  0
-call    0 returned 218
-call    1 returned 218
-      224:  153:	}
+       5*:  151:	  for (; __first != __last; ++__first)
+        5:  151-block  0
+        5:  151-block  1
+branch  0 taken 0
+branch  1 taken 5 (fallthrough)
+    #####:  152:	    std::_Destroy(std::__addressof(*__first));
+    %%%%%:  152-block  0
+call    0 never executed
+call    1 never executed
+        5:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch5clara8TextFlow6ColumnEEEvT_S7_:
 function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch5clara8TextFlow6ColumnEEEvT_S7_ called 0 returned 0% blocks executed 0%
@@ -1186,19 +1186,19 @@ call    1 never executed
     #####:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_:
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_ called 1606 returned 100% blocks executed 100%
-     1606:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_ called 1599 returned 100% blocks executed 100%
+     1599:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-     3655:  151:	  for (; __first != __last; ++__first)
-     1606:  151-block  0
-     3655:  151-block  1
-branch  0 taken 2049
-branch  1 taken 1606 (fallthrough)
-     2049:  152:	    std::_Destroy(std::__addressof(*__first));
-     2049:  152-block  0
-call    0 returned 2049
-call    1 returned 2049
-     1606:  153:	}
+     3642:  151:	  for (; __first != __last; ++__first)
+     1599:  151-block  0
+     3642:  151-block  1
+branch  0 taken 2043
+branch  1 taken 1599 (fallthrough)
+     2043:  152:	    std::_Destroy(std::__addressof(*__first));
+     2043:  152-block  0
+call    0 returned 2043
+call    1 returned 2043
+     1599:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10shared_ptrIN5Catch22CumulativeReporterBaseINS3_13JunitReporterEE4NodeINS3_14TestGroupStatsENS7_INS3_13TestCaseStatsENS6_11SectionNodeEEEEEEEEvT_SF_:
 function _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10shared_ptrIN5Catch22CumulativeReporterBaseINS3_13JunitReporterEE4NodeINS3_14TestGroupStatsENS7_INS3_13TestCaseStatsENS6_11SectionNodeEEEEEEEEvT_SF_ called 0 returned 0% blocks executed 0%
@@ -1246,19 +1246,19 @@ call    1 never executed
     #####:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS8_EEEEvT_SD_:
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS8_EEEEvT_SD_ called 1 returned 100% blocks executed 100%
-        1:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS8_EEEEvT_SD_ called 0 returned 0% blocks executed 0%
+    #####:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-        3:  151:	  for (; __first != __last; ++__first)
-        1:  151-block  0
-        3:  151-block  1
-branch  0 taken 2
-branch  1 taken 1 (fallthrough)
-        2:  152:	    std::_Destroy(std::__addressof(*__first));
-        2:  152-block  0
-call    0 returned 2
-call    1 returned 2
-        1:  153:	}
+    #####:  151:	  for (; __first != __last; ++__first)
+    %%%%%:  151-block  0
+    %%%%%:  151-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  152:	    std::_Destroy(std::__addressof(*__first));
+    %%%%%:  152-block  0
+call    0 never executed
+call    1 never executed
+    #####:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrIN5Catch6Detail8EnumInfoESt14default_deleteIS5_EEEEvT_SA_:
 function _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrIN5Catch6Detail8EnumInfoESt14default_deleteIS5_EEEEvT_SA_ called 1 returned 100% blocks executed 50%
@@ -1411,19 +1411,19 @@ call    1 never executed
     #####:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEEvT_S6_:
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEEvT_S6_ called 0 returned 0% blocks executed 0%
-    #####:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEEvT_S6_ called 2 returned 100% blocks executed 100%
+        2:  149:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  150:	{
-    #####:  151:	  for (; __first != __last; ++__first)
-    %%%%%:  151-block  0
-    %%%%%:  151-block  1
-branch  0 never executed
-branch  1 never executed
-    #####:  152:	    std::_Destroy(std::__addressof(*__first));
-    %%%%%:  152-block  0
-call    0 never executed
-call    1 never executed
-    #####:  153:	}
+        6:  151:	  for (; __first != __last; ++__first)
+        2:  151-block  0
+        6:  151-block  1
+branch  0 taken 4
+branch  1 taken 2 (fallthrough)
+        4:  152:	    std::_Destroy(std::__addressof(*__first));
+        4:  152-block  0
+call    0 returned 4
+call    1 returned 4
+        2:  153:	}
 ------------------
 _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch11SectionInfoEEEvT_S5_:
 function _ZNSt12_Destroy_auxILb0EE9__destroyIPN5Catch11SectionInfoEEEvT_S5_ called 1 returned 100% blocks executed 50%
@@ -1465,7 +1465,7 @@ call    2 never executed
         -:  158:    {
         -:  159:      template<typename _ForwardIterator>
         -:  160:        static void
-       4*:  161:        __destroy(_ForwardIterator, _ForwardIterator) { }
+       3*:  161:        __destroy(_ForwardIterator, _ForwardIterator) { }
 ------------------
 _ZNSt12_Destroy_auxILb1EE9__destroyIPNSt7__cxx1112regex_traitsIcE10_RegexMaskEEEvT_S7_:
 function _ZNSt12_Destroy_auxILb1EE9__destroyIPNSt7__cxx1112regex_traitsIcE10_RegexMaskEEEvT_S7_ called 0 returned 0% blocks executed 0%
@@ -1516,8 +1516,8 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch9StringRefEEEvT_S5_ called 
     #####:  161:        __destroy(_ForwardIterator, _ForwardIterator) { }
 ------------------
 _ZNSt12_Destroy_auxILb1EE9__destroyIPyEEvT_S3_:
-function _ZNSt12_Destroy_auxILb1EE9__destroyIPyEEvT_S3_ called 2 returned 100% blocks executed 100%
-        2:  161:        __destroy(_ForwardIterator, _ForwardIterator) { }
+function _ZNSt12_Destroy_auxILb1EE9__destroyIPyEEvT_S3_ called 1 returned 100% blocks executed 100%
+        1:  161:        __destroy(_ForwardIterator, _ForwardIterator) { }
 ------------------
 _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch5clara8TextFlow6Column8iteratorEEEvT_S8_:
 function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch5clara8TextFlow6Column8iteratorEEEvT_S8_ called 0 returned 0% blocks executed 0%
@@ -1532,7 +1532,7 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch5clara8TextFlow6Column8iter
         -:  168:   */
         -:  169:  template<typename _ForwardIterator>
         -:  170:    _GLIBCXX20_CONSTEXPR inline void
-    2017*:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+    1771*:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -1546,8 +1546,8 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyIPN5Catch5clara8TextFlow6Column8iter
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-    2017*:  185:	__destroy(__first, __last);
-    2017*:  186:    }
+    1771*:  185:	__destroy(__first, __last);
+    1771*:  186:    }
 ------------------
 _ZSt8_DestroyIPSt4pairIiN5Catch9StringRefEEEvT_S5_:
 function _ZSt8_DestroyIPSt4pairIiN5Catch9StringRefEEEvT_S5_ called 0 returned 0% blocks executed 0%
@@ -1760,8 +1760,8 @@ call    0 returned 1
         1:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch8TestCaseEEvT_S3_:
-function _ZSt8_DestroyIPN5Catch8TestCaseEEvT_S3_ called 5 returned 100% blocks executed 100%
-        5:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPN5Catch8TestCaseEEvT_S3_ called 4 returned 100% blocks executed 100%
+        4:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -1775,14 +1775,14 @@ function _ZSt8_DestroyIPN5Catch8TestCaseEEvT_S3_ called 5 returned 100% blocks e
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        5:  185:	__destroy(__first, __last);
-        5:  185-block  0
-call    0 returned 5
-        5:  186:    }
+        4:  185:	__destroy(__first, __last);
+        4:  185-block  0
+call    0 returned 4
+        4:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch11MessageInfoEEvT_S3_:
-function _ZSt8_DestroyIPN5Catch11MessageInfoEEvT_S3_ called 20 returned 100% blocks executed 100%
-       20:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPN5Catch11MessageInfoEEvT_S3_ called 1 returned 100% blocks executed 100%
+        1:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -1796,10 +1796,10 @@ function _ZSt8_DestroyIPN5Catch11MessageInfoEEvT_S3_ called 20 returned 100% blo
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-       20:  185:	__destroy(__first, __last);
-       20:  185-block  0
-call    0 returned 20
-       20:  186:    }
+        1:  185:	__destroy(__first, __last);
+        1:  185-block  0
+call    0 returned 1
+        1:  186:    }
 ------------------
 _ZSt8_DestroyIPSt10unique_ptrIKN5Catch20IExceptionTranslatorESt14default_deleteIS3_EEEvT_S8_:
 function _ZSt8_DestroyIPSt10unique_ptrIKN5Catch20IExceptionTranslatorESt14default_deleteIS3_EEEvT_S8_ called 1 returned 100% blocks executed 100%
@@ -1886,8 +1886,8 @@ call    0 returned 1
         1:  186:    }
 ------------------
 _ZSt8_DestroyIPyEvT_S1_:
-function _ZSt8_DestroyIPyEvT_S1_ called 2 returned 100% blocks executed 100%
-        2:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPyEvT_S1_ called 1 returned 100% blocks executed 100%
+        1:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -1901,10 +1901,10 @@ function _ZSt8_DestroyIPyEvT_S1_ called 2 returned 100% blocks executed 100%
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        2:  185:	__destroy(__first, __last);
-        2:  185-block  0
-call    0 returned 2
-        2:  186:    }
+        1:  185:	__destroy(__first, __last);
+        1:  185-block  0
+call    0 returned 1
+        1:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch8TestSpec6FilterEEvT_S4_:
 function _ZSt8_DestroyIPN5Catch8TestSpec6FilterEEvT_S4_ called 4 returned 100% blocks executed 100%
@@ -1991,8 +1991,8 @@ call    0 never executed
     #####:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch5clara6detail5TokenEEvT_S5_:
-function _ZSt8_DestroyIPN5Catch5clara6detail5TokenEEvT_S5_ called 224 returned 100% blocks executed 100%
-      224:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPN5Catch5clara6detail5TokenEEvT_S5_ called 5 returned 100% blocks executed 100%
+        5:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -2006,10 +2006,10 @@ function _ZSt8_DestroyIPN5Catch5clara6detail5TokenEEvT_S5_ called 224 returned 1
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-      224:  185:	__destroy(__first, __last);
-      224:  185-block  0
-call    0 returned 224
-      224:  186:    }
+        5:  185:	__destroy(__first, __last);
+        5:  185-block  0
+call    0 returned 5
+        5:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch5clara8TextFlow6ColumnEEvT_S5_:
 function _ZSt8_DestroyIPN5Catch5clara8TextFlow6ColumnEEvT_S5_ called 0 returned 0% blocks executed 0%
@@ -2054,8 +2054,8 @@ call    0 never executed
     #####:  186:    }
 ------------------
 _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_:
-function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_ called 1606 returned 100% blocks executed 100%
-     1606:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_ called 1599 returned 100% blocks executed 100%
+     1599:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -2069,10 +2069,10 @@ function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-     1606:  185:	__destroy(__first, __last);
-     1606:  185-block  0
-call    0 returned 1606
-     1606:  186:    }
+     1599:  185:	__destroy(__first, __last);
+     1599:  185-block  0
+call    0 returned 1599
+     1599:  186:    }
 ------------------
 _ZSt8_DestroyIPSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS2_EEEvT_S7_:
 function _ZSt8_DestroyIPSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS2_EEEvT_S7_ called 0 returned 0% blocks executed 0%
@@ -2222,8 +2222,8 @@ call    0 never executed
     #####:  186:    }
 ------------------
 _ZSt8_DestroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EEEvT_SB_:
-function _ZSt8_DestroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EEEvT_SB_ called 1 returned 100% blocks executed 100%
-        1:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EEEvT_SB_ called 0 returned 0% blocks executed 0%
+    #####:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -2237,10 +2237,10 @@ function _ZSt8_DestroyIPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11cha
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-        1:  185:	__destroy(__first, __last);
-        1:  185-block  0
-call    0 returned 1
-        1:  186:    }
+    #####:  185:	__destroy(__first, __last);
+    %%%%%:  185-block  0
+call    0 never executed
+    #####:  186:    }
 ------------------
 _ZSt8_DestroyIPcEvT_S1_:
 function _ZSt8_DestroyIPcEvT_S1_ called 0 returned 0% blocks executed 0%
@@ -2495,8 +2495,8 @@ call    0 never executed
     #####:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEvT_S4_:
-function _ZSt8_DestroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEvT_S4_ called 0 returned 0% blocks executed 0%
-    #####:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEvT_S4_ called 2 returned 100% blocks executed 100%
+        2:  171:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  172:    {
         -:  173:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  174:                       _Value_type;
@@ -2510,10 +2510,10 @@ function _ZSt8_DestroyIPN5Catch12_GLOBAL__N_110ColumnInfoEEvT_S4_ called 0 retur
         -:  182:	return _Destroy_aux<false>::__destroy(__first, __last);
         -:  183:#endif
         -:  184:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-    #####:  185:	__destroy(__first, __last);
-    %%%%%:  185-block  0
-call    0 never executed
-    #####:  186:    }
+        2:  185:	__destroy(__first, __last);
+        2:  185-block  0
+call    0 returned 2
+        2:  186:    }
 ------------------
 _ZSt8_DestroyIPN5Catch11SectionInfoEEvT_S3_:
 function _ZSt8_DestroyIPN5Catch11SectionInfoEEvT_S3_ called 1 returned 100% blocks executed 100%

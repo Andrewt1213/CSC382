@@ -239,14 +239,14 @@
         -:  235:  template<typename _Iter>
         -:  236:    inline _GLIBCXX_CONSTEXPR
         -:  237:    typename iterator_traits<_Iter>::iterator_category
-     186*:  238:    __iterator_category(const _Iter&)
-     186*:  239:    { return typename iterator_traits<_Iter>::iterator_category(); }
+     125*:  238:    __iterator_category(const _Iter&)
+     125*:  239:    { return typename iterator_traits<_Iter>::iterator_category(); }
 ------------------
 _ZSt19__iterator_categoryIPKN5Catch12_GLOBAL__N_110ColumnInfoEENSt15iterator_traitsIT_E17iterator_categoryERKS6_:
-function _ZSt19__iterator_categoryIPKN5Catch12_GLOBAL__N_110ColumnInfoEENSt15iterator_traitsIT_E17iterator_categoryERKS6_ called 0 returned 0% blocks executed 0%
-    #####:  238:    __iterator_category(const _Iter&)
-    #####:  239:    { return typename iterator_traits<_Iter>::iterator_category(); }
-    %%%%%:  239-block  0
+function _ZSt19__iterator_categoryIPKN5Catch12_GLOBAL__N_110ColumnInfoEENSt15iterator_traitsIT_E17iterator_categoryERKS6_ called 1 returned 100% blocks executed 100%
+        1:  238:    __iterator_category(const _Iter&)
+        1:  239:    { return typename iterator_traits<_Iter>::iterator_category(); }
+        1:  239-block  0
 ------------------
 _ZSt19__iterator_categoryIPKPKcENSt15iterator_traitsIT_E17iterator_categoryERKS5_:
 function _ZSt19__iterator_categoryIPKPKcENSt15iterator_traitsIT_E17iterator_categoryERKS5_ called 2 returned 100% blocks executed 100%
@@ -267,10 +267,10 @@ function _ZSt19__iterator_categoryIN9__gnu_cxx17__normal_iteratorIPKN5Catch11Mes
     %%%%%:  239-block  0
 ------------------
 _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_:
-function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ called 182 returned 100% blocks executed 100%
-      182:  238:    __iterator_category(const _Iter&)
-      182:  239:    { return typename iterator_traits<_Iter>::iterator_category(); }
-      182:  239-block  0
+function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ called 120 returned 100% blocks executed 100%
+      120:  238:    __iterator_category(const _Iter&)
+      120:  239:    { return typename iterator_traits<_Iter>::iterator_category(); }
+      120:  239-block  0
 ------------------
 _ZSt19__iterator_categoryIPKN5Catch5clara6detail11HelpColumnsEENSt15iterator_traitsIT_E17iterator_categoryERKS7_:
 function _ZSt19__iterator_categoryIPKN5Catch5clara6detail11HelpColumnsEENSt15iterator_traitsIT_E17iterator_categoryERKS7_ called 0 returned 0% blocks executed 0%

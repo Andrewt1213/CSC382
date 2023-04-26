@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(C:/Users/Lenovo/CLionProjects/CSC382)
 
-add_executable(TicTacToe myModel.cpp main.cpp myController.cpp myController.cpp)
+add_executable(TicTacToe myModel.cpp myController.cpp myController.cpp TicTacToeTests.cpp)

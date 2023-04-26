@@ -2624,20 +2624,20 @@ call    0 never executed
         -: 1816:  template<typename _RandomAccessIterator, typename _Compare>
         -: 1817:    _GLIBCXX20_CONSTEXPR
         -: 1818:    void
-       1*: 1819:    __insertion_sort(_RandomAccessIterator __first,
+    #####: 1819:    __insertion_sort(_RandomAccessIterator __first,
         -: 1820:		     _RandomAccessIterator __last, _Compare __comp)
         -: 1821:    {
-       1*: 1822:      if (__first == __last) return;
+    #####: 1822:      if (__first == __last) return;
         -: 1823:
-       2*: 1824:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+    #####: 1824:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
         -: 1825:	{
-       1*: 1826:	  if (__comp(__i, __first))
+    #####: 1826:	  if (__comp(__i, __first))
         -: 1827:	    {
         -: 1828:	      typename iterator_traits<_RandomAccessIterator>::value_type
-       1*: 1829:		__val = _GLIBCXX_MOVE(*__i);
-       1*: 1830:	      _GLIBCXX_MOVE_BACKWARD3(__first, __i, __i + 1);
-       1*: 1831:	      *__first = _GLIBCXX_MOVE(__val);
-       1*: 1832:	    }
+    #####: 1829:		__val = _GLIBCXX_MOVE(*__i);
+    #####: 1830:	      _GLIBCXX_MOVE_BACKWARD3(__first, __i, __i + 1);
+    #####: 1831:	      *__first = _GLIBCXX_MOVE(__val);
+    #####: 1832:	    }
         -: 1833:	  else
     #####: 1834:	    std::__unguarded_linear_insert(__i,
     #####: 1835:				__gnu_cxx::__ops::__val_comp_iter(__comp));
@@ -2757,51 +2757,51 @@ branch  5 never executed
         -: 1837:    }
 ------------------
 _ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_:
-function _ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_ called 1 returned 100% blocks executed 78%
-        1: 1819:    __insertion_sort(_RandomAccessIterator __first,
+function _ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1819:    __insertion_sort(_RandomAccessIterator __first,
         -: 1820:		     _RandomAccessIterator __last, _Compare __comp)
         -: 1821:    {
-       1*: 1822:      if (__first == __last) return;
-        1: 1822-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 1822:      if (__first == __last) return;
+    %%%%%: 1822-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
     %%%%%: 1822-block  1
         -: 1823:
-        2: 1824:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
-        1: 1824-block  0
-call    0 returned 1
-        1: 1824-block  1
-call    1 returned 1
-        2: 1824-block  2
-call    2 returned 2
-branch  3 taken 1
-branch  4 taken 1 (fallthrough)
+    #####: 1824:      for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+    %%%%%: 1824-block  0
+call    0 never executed
+    %%%%%: 1824-block  1
+call    1 never executed
+    %%%%%: 1824-block  2
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
         -: 1825:	{
-        1: 1826:	  if (__comp(__i, __first))
-        1: 1826-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0
+    #####: 1826:	  if (__comp(__i, __first))
+    %%%%%: 1826-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
         -: 1827:	    {
         -: 1828:	      typename iterator_traits<_RandomAccessIterator>::value_type
-        1: 1829:		__val = _GLIBCXX_MOVE(*__i);
-        1: 1829-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-        1: 1830:	      _GLIBCXX_MOVE_BACKWARD3(__first, __i, __i + 1);
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1: 1831:	      *__first = _GLIBCXX_MOVE(__val);
-        1: 1831-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-        1: 1832:	    }
-call    0 returned 1
+    #####: 1829:		__val = _GLIBCXX_MOVE(*__i);
+    %%%%%: 1829-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####: 1830:	      _GLIBCXX_MOVE_BACKWARD3(__first, __i, __i + 1);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####: 1831:	      *__first = _GLIBCXX_MOVE(__val);
+    %%%%%: 1831-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####: 1832:	    }
+call    0 never executed
     $$$$$: 1832-block  0
 call    1 never executed
         -: 1833:	  else
@@ -2993,18 +2993,18 @@ call    0 never executed
         -: 1858:  template<typename _RandomAccessIterator, typename _Compare>
         -: 1859:    _GLIBCXX20_CONSTEXPR
         -: 1860:    void
-       1*: 1861:    __final_insertion_sort(_RandomAccessIterator __first,
+    #####: 1861:    __final_insertion_sort(_RandomAccessIterator __first,
         -: 1862:			   _RandomAccessIterator __last, _Compare __comp)
         -: 1863:    {
-       1*: 1864:      if (__last - __first > int(_S_threshold))
+    #####: 1864:      if (__last - __first > int(_S_threshold))
         -: 1865:	{
     #####: 1866:	  std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
     #####: 1867:	  std::__unguarded_insertion_sort(__first + int(_S_threshold), __last,
         -: 1868:					  __comp);
         -: 1869:	}
         -: 1870:      else
-       1*: 1871:	std::__insertion_sort(__first, __last, __comp);
-       1*: 1872:    }
+    #####: 1871:	std::__insertion_sort(__first, __last, __comp);
+    #####: 1872:    }
 ------------------
 _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_:
 function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_ called 0 returned 0% blocks executed 0%
@@ -3059,15 +3059,15 @@ call    0 never executed
     #####: 1872:    }
 ------------------
 _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_:
-function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_ called 1 returned 100% blocks executed 50%
-        1: 1861:    __final_insertion_sort(_RandomAccessIterator __first,
+function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1861:    __final_insertion_sort(_RandomAccessIterator __first,
         -: 1862:			   _RandomAccessIterator __last, _Compare __comp)
         -: 1863:    {
-        1: 1864:      if (__last - __first > int(_S_threshold))
-        1: 1864-block  0
-call    0 returned 1
-branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+    #####: 1864:      if (__last - __first > int(_S_threshold))
+    %%%%%: 1864-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
         -: 1865:	{
     #####: 1866:	  std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
     %%%%%: 1866-block  0
@@ -3079,10 +3079,10 @@ call    1 never executed
         -: 1868:					  __comp);
         -: 1869:	}
         -: 1870:      else
-        1: 1871:	std::__insertion_sort(__first, __last, __comp);
-        1: 1871-block  0
-call    0 returned 1
-        1: 1872:    }
+    #####: 1871:	std::__insertion_sort(__first, __last, __comp);
+    %%%%%: 1871-block  0
+call    0 never executed
+    #####: 1872:    }
 ------------------
 _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops15_Iter_less_iterEEvT_SF_T0_:
 function _ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops15_Iter_less_iterEEvT_SF_T0_ called 0 returned 0% blocks executed 0%
@@ -3497,11 +3497,11 @@ call    0 never executed
         -: 1922:  template<typename _RandomAccessIterator, typename _Size, typename _Compare>
         -: 1923:    _GLIBCXX20_CONSTEXPR
         -: 1924:    void
-       1*: 1925:    __introsort_loop(_RandomAccessIterator __first,
+    #####: 1925:    __introsort_loop(_RandomAccessIterator __first,
         -: 1926:		     _RandomAccessIterator __last,
         -: 1927:		     _Size __depth_limit, _Compare __comp)
         -: 1928:    {
-       1*: 1929:      while (__last - __first > int(_S_threshold))
+    #####: 1929:      while (__last - __first > int(_S_threshold))
         -: 1930:	{
     #####: 1931:	  if (__depth_limit == 0)
         -: 1932:	    {
@@ -3603,17 +3603,17 @@ branch  2 never executed
         -: 1942:    }
 ------------------
 _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEExNS0_5__ops15_Iter_less_iterEEvT_SB_T0_T1_:
-function _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEExNS0_5__ops15_Iter_less_iterEEvT_SB_T0_T1_ called 1 returned 100% blocks executed 45%
-        1: 1925:    __introsort_loop(_RandomAccessIterator __first,
+function _ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEExNS0_5__ops15_Iter_less_iterEEvT_SB_T0_T1_ called 0 returned 0% blocks executed 0%
+    #####: 1925:    __introsort_loop(_RandomAccessIterator __first,
         -: 1926:		     _RandomAccessIterator __last,
         -: 1927:		     _Size __depth_limit, _Compare __comp)
         -: 1928:    {
-        1: 1929:      while (__last - __first > int(_S_threshold))
-        1: 1929-block  0
-        1: 1929-block  1
-call    0 returned 1
-branch  1 taken 0
-branch  2 taken 1 (fallthrough)
+    #####: 1929:      while (__last - __first > int(_S_threshold))
+    %%%%%: 1929-block  0
+    %%%%%: 1929-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
         -: 1930:	{
     #####: 1931:	  if (__depth_limit == 0)
     %%%%%: 1931-block  0
@@ -3694,17 +3694,17 @@ branch  2 never executed
         -: 1946:  template<typename _RandomAccessIterator, typename _Compare>
         -: 1947:    _GLIBCXX20_CONSTEXPR
         -: 1948:    inline void
-       3*: 1949:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+       2*: 1949:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 1950:	   _Compare __comp)
         -: 1951:    {
-       3*: 1952:      if (__first != __last)
+       2*: 1952:      if (__first != __last)
         -: 1953:	{
-       1*: 1954:	  std::__introsort_loop(__first, __last,
-       1*: 1955:				std::__lg(__last - __first) * 2,
+    #####: 1954:	  std::__introsort_loop(__first, __last,
+    #####: 1955:				std::__lg(__last - __first) * 2,
         -: 1956:				__comp);
-       1*: 1957:	  std::__final_insertion_sort(__first, __last, __comp);
+    #####: 1957:	  std::__final_insertion_sort(__first, __last, __comp);
         -: 1958:	}
-       3*: 1959:    }
+       2*: 1959:    }
 ------------------
 _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_:
 function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_ called 0 returned 0% blocks executed 0%
@@ -3753,27 +3753,27 @@ call    0 never executed
     #####: 1959:    }
 ------------------
 _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_:
-function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_ called 1 returned 100% blocks executed 100%
-        1: 1949:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_less_iterEEvT_SB_T0_ called 0 returned 0% blocks executed 0%
+    #####: 1949:    __sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 1950:	   _Compare __comp)
         -: 1951:    {
-        1: 1952:      if (__first != __last)
-        1: 1952-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0
+    #####: 1952:      if (__first != __last)
+    %%%%%: 1952-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
         -: 1953:	{
-        1: 1954:	  std::__introsort_loop(__first, __last,
-call    0 returned 1
-        1: 1955:				std::__lg(__last - __first) * 2,
-        1: 1955-block  0
-call    0 returned 1
-call    1 returned 1
+    #####: 1954:	  std::__introsort_loop(__first, __last,
+call    0 never executed
+    #####: 1955:				std::__lg(__last - __first) * 2,
+    %%%%%: 1955-block  0
+call    0 never executed
+call    1 never executed
         -: 1956:				__comp);
-        1: 1957:	  std::__final_insertion_sort(__first, __last, __comp);
-call    0 returned 1
+    #####: 1957:	  std::__final_insertion_sort(__first, __last, __comp);
+call    0 never executed
         -: 1958:	}
-        1: 1959:    }
+    #####: 1959:    }
 ------------------
 _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops15_Iter_less_iterEEvT_SF_T0_:
 function _ZSt6__sortIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops15_Iter_less_iterEEvT_SF_T0_ called 2 returned 100% blocks executed 43%
@@ -6246,7 +6246,7 @@ call    1 never executed
         -: 4282:	   typename _UnaryOperation>
         -: 4283:    _GLIBCXX20_CONSTEXPR
         -: 4284:    _OutputIterator
-        3: 4285:    transform(_InputIterator __first, _InputIterator __last,
+       1*: 4285:    transform(_InputIterator __first, _InputIterator __last,
         -: 4286:	      _OutputIterator __result, _UnaryOperation __unary_op)
         -: 4287:    {
         -: 4288:      // concept requirements
@@ -6256,9 +6256,9 @@ call    1 never executed
         -: 4292:	    __typeof__(__unary_op(*__first))>)
         -: 4293:      __glibcxx_requires_valid_range(__first, __last);
         -: 4294:
-       9*: 4295:      for (; __first != __last; ++__first, (void)++__result)
-       6*: 4296:	*__result = __unary_op(*__first);
-        3: 4297:      return __result;
+       1*: 4295:      for (; __first != __last; ++__first, (void)++__result)
+    #####: 4296:	*__result = __unary_op(*__first);
+       1*: 4297:      return __result;
         -: 4298:    }
 ------------------
 _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPKN5Catch8TestSpec6FilterESt6vectorIS4_SaIS4_EEEENS1_IPNS3_11FilterMatchES7_ISB_SaISB_EEEEZNKS3_15matchesByFilterERKS7_INS2_8TestCaseESaISG_EERKNS2_7IConfigEEUlRS5_E_ET0_T_SR_SQ_T1_:
@@ -6293,8 +6293,8 @@ call    5 never executed
         -: 4298:    }
 ------------------
 _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_PFccEET0_T_SD_SC_T1_:
-function _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_PFccEET0_T_SD_SC_T1_ called 1 returned 100% blocks executed 100%
-        1: 4285:    transform(_InputIterator __first, _InputIterator __last,
+function _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_PFccEET0_T_SD_SC_T1_ called 0 returned 0% blocks executed 0%
+    #####: 4285:    transform(_InputIterator __first, _InputIterator __last,
         -: 4286:	      _OutputIterator __result, _UnaryOperation __unary_op)
         -: 4287:    {
         -: 4288:      // concept requirements
@@ -6304,26 +6304,26 @@ function _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stri
         -: 4292:	    __typeof__(__unary_op(*__first))>)
         -: 4293:      __glibcxx_requires_valid_range(__first, __last);
         -: 4294:
-        4: 4295:      for (; __first != __last; ++__first, (void)++__result)
-        1: 4295-block  0
-call    0 returned 3
-        4: 4295-block  1
-call    1 returned 4
-branch  2 taken 3
-branch  3 taken 1 (fallthrough)
-        3: 4296:	*__result = __unary_op(*__first);
-        3: 4296-block  0
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-call    3 returned 3
-        1: 4297:      return __result;
-        1: 4297-block  0
+    #####: 4295:      for (; __first != __last; ++__first, (void)++__result)
+    %%%%%: 4295-block  0
+call    0 never executed
+    %%%%%: 4295-block  1
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####: 4296:	*__result = __unary_op(*__first);
+    %%%%%: 4296-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####: 4297:      return __result;
+    %%%%%: 4297-block  0
         -: 4298:    }
 ------------------
 _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_ZN5Catch5clara6detail11convertIntoERKS8_RbEUlhE_ET0_T_SI_SH_T1_:
-function _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_ZN5Catch5clara6detail11convertIntoERKS8_RbEUlhE_ET0_T_SI_SH_T1_ called 1 returned 100% blocks executed 100%
-        1: 4285:    transform(_InputIterator __first, _InputIterator __last,
+function _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEES9_ZN5Catch5clara6detail11convertIntoERKS8_RbEUlhE_ET0_T_SI_SH_T1_ called 0 returned 0% blocks executed 0%
+    #####: 4285:    transform(_InputIterator __first, _InputIterator __last,
         -: 4286:	      _OutputIterator __result, _UnaryOperation __unary_op)
         -: 4287:    {
         -: 4288:      // concept requirements
@@ -6333,21 +6333,21 @@ function _ZSt9transformIN9__gnu_cxx17__normal_iteratorIPcNSt7__cxx1112basic_stri
         -: 4292:	    __typeof__(__unary_op(*__first))>)
         -: 4293:      __glibcxx_requires_valid_range(__first, __last);
         -: 4294:
-        4: 4295:      for (; __first != __last; ++__first, (void)++__result)
-        1: 4295-block  0
-call    0 returned 3
-        4: 4295-block  1
-call    1 returned 4
-branch  2 taken 3
-branch  3 taken 1 (fallthrough)
-        3: 4296:	*__result = __unary_op(*__first);
-        3: 4296-block  0
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-call    3 returned 3
-        1: 4297:      return __result;
-        1: 4297-block  0
+    #####: 4295:      for (; __first != __last; ++__first, (void)++__result)
+    %%%%%: 4295-block  0
+call    0 never executed
+    %%%%%: 4295-block  1
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####: 4296:	*__result = __unary_op(*__first);
+    %%%%%: 4296-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####: 4297:      return __result;
+    %%%%%: 4297-block  0
         -: 4298:    }
 ------------------
         -: 4299:
@@ -6883,7 +6883,7 @@ call    3 returned 3
         -: 4829:  template<typename _RandomAccessIterator>
         -: 4830:    _GLIBCXX20_CONSTEXPR
         -: 4831:    inline void
-       3*: 4832:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+       2*: 4832:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
         -: 4833:    {
         -: 4834:      // concept requirements
         -: 4835:      __glibcxx_function_requires(_Mutable_RandomAccessIteratorConcept<
@@ -6893,8 +6893,8 @@ call    3 returned 3
         -: 4839:      __glibcxx_requires_valid_range(__first, __last);
         -: 4840:      __glibcxx_requires_irreflexive(__first, __last);
         -: 4841:
-       3*: 4842:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_less_iter());
-       3*: 4843:    }
+       2*: 4842:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_less_iter());
+       2*: 4843:    }
 ------------------
 _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEEEvT_S7_:
 function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEEEvT_S7_ called 0 returned 0% blocks executed 0%
@@ -6915,8 +6915,8 @@ call    1 never executed
     #####: 4843:    }
 ------------------
 _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEEEvT_S9_:
-function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEEEvT_S9_ called 1 returned 100% blocks executed 100%
-        1: 4832:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEEEvT_S9_ called 0 returned 0% blocks executed 0%
+    #####: 4832:    sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
         -: 4833:    {
         -: 4834:      // concept requirements
         -: 4835:      __glibcxx_function_requires(_Mutable_RandomAccessIteratorConcept<
@@ -6926,11 +6926,11 @@ function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3
         -: 4839:      __glibcxx_requires_valid_range(__first, __last);
         -: 4840:      __glibcxx_requires_irreflexive(__first, __last);
         -: 4841:
-        1: 4842:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_less_iter());
-        1: 4842-block  0
-call    0 returned 1
-call    1 returned 1
-        1: 4843:    }
+    #####: 4842:      std::__sort(__first, __last, __gnu_cxx::__ops::__iter_less_iter());
+    %%%%%: 4842-block  0
+call    0 never executed
+call    1 never executed
+    #####: 4843:    }
 ------------------
 _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEEvT_SD_:
 function _ZSt4sortIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEEvT_SD_ called 2 returned 100% blocks executed 100%

@@ -86,15 +86,15 @@
         -:   82:    {
         -:   83:      template<typename _InputIterator, typename _ForwardIterator>
         -:   84:        static _ForwardIterator
-    1450*:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
+    1219*:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:   86:		      _ForwardIterator __result)
         -:   87:        {
-    1450*:   88:	  _ForwardIterator __cur = __result;
+    1219*:   88:	  _ForwardIterator __cur = __result;
         -:   89:	  __try
         -:   90:	    {
-    4686*:   91:	      for (; __first != __last; ++__first, (void)++__cur)
-    3236*:   92:		std::_Construct(std::__addressof(*__cur), *__first);
-    1450*:   93:	      return __cur;
+    4241*:   91:	      for (; __first != __last; ++__first, (void)++__cur)
+    3022*:   92:		std::_Construct(std::__addressof(*__cur), *__first);
+    1219*:   93:	      return __cur;
         -:   94:	    }
     =====:   95:	  __catch(...)
         -:   96:	    {
@@ -192,31 +192,31 @@ call    0 never executed
         -:  100:	}
 ------------------
 _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS7_SaIS7_EEEEPS7_EET0_T_SG_SF_:
-function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS7_SaIS7_EEEEPS7_EET0_T_SG_SF_ called 217 returned 100% blocks executed 69%
-      217:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
+function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS7_SaIS7_EEEEPS7_EET0_T_SG_SF_ called 4 returned 100% blocks executed 38%
+        4:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:   86:		      _ForwardIterator __result)
         -:   87:        {
-      217:   88:	  _ForwardIterator __cur = __result;
+        4:   88:	  _ForwardIterator __cur = __result;
         -:   89:	  __try
         -:   90:	    {
-      429:   91:	      for (; __first != __last; ++__first, (void)++__cur)
-      217:   91-block  0
-      212:   91-block  1
-call    0 returned 212
-      429:   91-block  2
-call    1 returned 429
-branch  2 taken 212
-branch  3 taken 217 (fallthrough)
-      212:   92:		std::_Construct(std::__addressof(*__cur), *__first);
-      212:   92-block  0
-call    0 returned 212
-call    1 returned 212
-call    2 returned 212
-branch  3 taken 212 (fallthrough)
-branch  4 taken 0 (throw)
-      217:   93:	      return __cur;
-      217:   93-block  0
-      217:   93-block  1
+       4*:   91:	      for (; __first != __last; ++__first, (void)++__cur)
+        4:   91-block  0
+    %%%%%:   91-block  1
+call    0 never executed
+        4:   91-block  2
+call    1 returned 4
+branch  2 taken 0
+branch  3 taken 4 (fallthrough)
+    #####:   92:		std::_Construct(std::__addressof(*__cur), *__first);
+    %%%%%:   92-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+        4:   93:	      return __cur;
+        4:   93-block  0
+        4:   93-block  1
         -:   94:	    }
     =====:   95:	  __catch(...)
     $$$$$:   95-block  0
@@ -280,21 +280,21 @@ call    0 never executed
         -:  100:	}
 ------------------
 _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_:
-function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_ called 19 returned 100% blocks executed 38%
-       19:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
+function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+    #####:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:   86:		      _ForwardIterator __result)
         -:   87:        {
-       19:   88:	  _ForwardIterator __cur = __result;
+    #####:   88:	  _ForwardIterator __cur = __result;
         -:   89:	  __try
         -:   90:	    {
-      19*:   91:	      for (; __first != __last; ++__first, (void)++__cur)
-       19:   91-block  0
+    #####:   91:	      for (; __first != __last; ++__first, (void)++__cur)
+    %%%%%:   91-block  0
     %%%%%:   91-block  1
 call    0 never executed
-       19:   91-block  2
-call    1 returned 19
-branch  2 taken 0
-branch  3 taken 19 (fallthrough)
+    %%%%%:   91-block  2
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
     #####:   92:		std::_Construct(std::__addressof(*__cur), *__first);
     %%%%%:   92-block  0
 call    0 never executed
@@ -302,9 +302,9 @@ call    1 never executed
 call    2 never executed
 branch  3 never executed
 branch  4 never executed
-       19:   93:	      return __cur;
-       19:   93-block  0
-       19:   93-block  1
+    #####:   93:	      return __cur;
+    %%%%%:   93-block  0
+    %%%%%:   93-block  1
         -:   94:	    }
     =====:   95:	  __catch(...)
     $$$$$:   95-block  0
@@ -535,25 +535,25 @@ call    0 never executed
         -:  100:	}
 ------------------
 _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET0_T_SE_SD_:
-function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET0_T_SE_SD_ called 1 returned 100% blocks executed 62%
+function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET0_T_SE_SD_ called 1 returned 100% blocks executed 38%
         1:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:   86:		      _ForwardIterator __result)
         -:   87:        {
         1:   88:	  _ForwardIterator __cur = __result;
         -:   89:	  __try
         -:   90:	    {
-        7:   91:	      for (; __first != __last; ++__first, (void)++__cur)
+       1*:   91:	      for (; __first != __last; ++__first, (void)++__cur)
         1:   91-block  0
-        6:   91-block  1
-        7:   91-block  2
-branch  0 taken 6
+    %%%%%:   91-block  1
+        1:   91-block  2
+branch  0 taken 0
 branch  1 taken 1 (fallthrough)
-        6:   92:		std::_Construct(std::__addressof(*__cur), *__first);
-        6:   92-block  0
-call    0 returned 6
-call    1 returned 6
-branch  2 taken 6 (fallthrough)
-branch  3 taken 0 (throw)
+    #####:   92:		std::_Construct(std::__addressof(*__cur), *__first);
+    %%%%%:   92-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
         1:   93:	      return __cur;
         1:   93-block  0
         1:   93-block  1
@@ -746,28 +746,28 @@ call    0 never executed
         -:  100:	}
 ------------------
 _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS4_EET0_T_S9_S8_:
-function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS4_EET0_T_S9_S8_ called 0 returned 0% blocks executed 0%
-    #####:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
+function _ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS4_EET0_T_S9_S8_ called 1 returned 100% blocks executed 62%
+        1:   85:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:   86:		      _ForwardIterator __result)
         -:   87:        {
-    #####:   88:	  _ForwardIterator __cur = __result;
+        1:   88:	  _ForwardIterator __cur = __result;
         -:   89:	  __try
         -:   90:	    {
-    #####:   91:	      for (; __first != __last; ++__first, (void)++__cur)
-    %%%%%:   91-block  0
-    %%%%%:   91-block  1
-    %%%%%:   91-block  2
-branch  0 never executed
-branch  1 never executed
-    #####:   92:		std::_Construct(std::__addressof(*__cur), *__first);
-    %%%%%:   92-block  0
-call    0 never executed
-call    1 never executed
-branch  2 never executed
-branch  3 never executed
-    #####:   93:	      return __cur;
-    %%%%%:   93-block  0
-    %%%%%:   93-block  1
+        5:   91:	      for (; __first != __last; ++__first, (void)++__cur)
+        1:   91-block  0
+        4:   91-block  1
+        5:   91-block  2
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+        4:   92:		std::_Construct(std::__addressof(*__cur), *__first);
+        4:   92-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   93:	      return __cur;
+        1:   93-block  0
+        1:   93-block  1
         -:   94:	    }
     =====:   95:	  __catch(...)
     $$$$$:   95-block  0
@@ -1252,7 +1252,7 @@ call    0 never executed
         -:  123:  */
         -:  124:  template<typename _InputIterator, typename _ForwardIterator>
         -:  125:    inline _ForwardIterator
-    1450*:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
+    1219*:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
         -:  127:		       _ForwardIterator __result)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_InputIterator>::value_type
@@ -1271,18 +1271,18 @@ call    0 never executed
         -:  142:      typedef typename iterator_traits<_ForwardIterator>::reference _RefType2;
         -:  143:      // Trivial types can have deleted assignment, so using std::copy
         -:  144:      // would be ill-formed. Require assignability before using std::copy:
-    1450*:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
+    1219*:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
         -:  146:#endif
         -:  147:
         -:  148:      return std::__uninitialized_copy<__is_trivial(_ValueType1)
         -:  149:				       && __is_trivial(_ValueType2)
         -:  150:				       && __assignable>::
-    1450*:  151:	__uninit_copy(__first, __last, __result);
+    1219*:  151:	__uninit_copy(__first, __last, __result);
         -:  152:    }
 ------------------
 _ZSt18uninitialized_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_ET0_T_S7_S6_:
-function _ZSt18uninitialized_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_ET0_T_S7_S6_ called 0 returned 0% blocks executed 0%
-    #####:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
+function _ZSt18uninitialized_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_ET0_T_S7_S6_ called 1 returned 100% blocks executed 100%
+        1:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
         -:  127:		       _ForwardIterator __result)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_InputIterator>::value_type
@@ -1301,15 +1301,15 @@ function _ZSt18uninitialized_copyIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_ET0_T_
         -:  142:      typedef typename iterator_traits<_ForwardIterator>::reference _RefType2;
         -:  143:      // Trivial types can have deleted assignment, so using std::copy
         -:  144:      // would be ill-formed. Require assignability before using std::copy:
-    #####:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
+        1:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
         -:  146:#endif
         -:  147:
         -:  148:      return std::__uninitialized_copy<__is_trivial(_ValueType1)
         -:  149:				       && __is_trivial(_ValueType2)
         -:  150:				       && __assignable>::
-    #####:  151:	__uninit_copy(__first, __last, __result);
-    %%%%%:  151-block  0
-call    0 never executed
+        1:  151:	__uninit_copy(__first, __last, __result);
+        1:  151-block  0
+call    0 returned 1
         -:  152:    }
 ------------------
 _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara8TextFlow6ColumnESt6vectorIS5_SaIS5_EEEEPS5_ET0_T_SE_SD_:
@@ -1345,8 +1345,8 @@ call    0 never executed
         -:  152:    }
 ------------------
 _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS5_SaIS5_EEEEPS5_ET0_T_SE_SD_:
-function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS5_SaIS5_EEEEPS5_ET0_T_SE_SD_ called 217 returned 100% blocks executed 100%
-      217:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
+function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS5_SaIS5_EEEEPS5_ET0_T_SE_SD_ called 4 returned 100% blocks executed 100%
+        4:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
         -:  127:		       _ForwardIterator __result)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_InputIterator>::value_type
@@ -1365,15 +1365,15 @@ function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara
         -:  142:      typedef typename iterator_traits<_ForwardIterator>::reference _RefType2;
         -:  143:      // Trivial types can have deleted assignment, so using std::copy
         -:  144:      // would be ill-formed. Require assignability before using std::copy:
-      217:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
+        4:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
         -:  146:#endif
         -:  147:
         -:  148:      return std::__uninitialized_copy<__is_trivial(_ValueType1)
         -:  149:				       && __is_trivial(_ValueType2)
         -:  150:				       && __assignable>::
-      217:  151:	__uninit_copy(__first, __last, __result);
-      217:  151-block  0
-call    0 returned 217
+        4:  151:	__uninit_copy(__first, __last, __result);
+        4:  151-block  0
+call    0 returned 4
         -:  152:    }
 ------------------
 _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPS7_ET0_T_SG_SF_:
@@ -1409,8 +1409,8 @@ call    0 returned 1079
         -:  152:    }
 ------------------
 _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_:
-function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_ called 19 returned 100% blocks executed 100%
-       19:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
+function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS3_SaIS3_EEEEPS3_ET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
+    #####:  126:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
         -:  127:		       _ForwardIterator __result)
         -:  128:    {
         -:  129:      typedef typename iterator_traits<_InputIterator>::value_type
@@ -1429,15 +1429,15 @@ function _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKN5Catch11Mess
         -:  142:      typedef typename iterator_traits<_ForwardIterator>::reference _RefType2;
         -:  143:      // Trivial types can have deleted assignment, so using std::copy
         -:  144:      // would be ill-formed. Require assignability before using std::copy:
-       19:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
+    #####:  145:      const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
         -:  146:#endif
         -:  147:
         -:  148:      return std::__uninitialized_copy<__is_trivial(_ValueType1)
         -:  149:				       && __is_trivial(_ValueType2)
         -:  150:				       && __assignable>::
-       19:  151:	__uninit_copy(__first, __last, __result);
-       19:  151-block  0
-call    0 returned 19
+    #####:  151:	__uninit_copy(__first, __last, __result);
+    %%%%%:  151-block  0
+call    0 never executed
         -:  152:    }
 ------------------
 _ZSt18uninitialized_copyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ET0_T_S8_S7_:
@@ -2462,17 +2462,17 @@ call    0 never executed
         -:  328:
         -:  329:  template<typename _InputIterator, typename _ForwardIterator, typename _Tp>
         -:  330:    inline _ForwardIterator
-    1450*:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+    1219*:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
         -:  332:			   _ForwardIterator __result, allocator<_Tp>&)
-    1450*:  333:    { return std::uninitialized_copy(__first, __last, __result); }
+    1219*:  333:    { return std::uninitialized_copy(__first, __last, __result); }
 ------------------
 _ZSt22__uninitialized_copy_aIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_S2_ET0_T_S7_S6_RSaIT1_E:
-function _ZSt22__uninitialized_copy_aIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_S2_ET0_T_S7_S6_RSaIT1_E called 0 returned 0% blocks executed 0%
-    #####:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+function _ZSt22__uninitialized_copy_aIPKN5Catch12_GLOBAL__N_110ColumnInfoEPS2_S2_ET0_T_S7_S6_RSaIT1_E called 1 returned 100% blocks executed 100%
+        1:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
         -:  332:			   _ForwardIterator __result, allocator<_Tp>&)
-    #####:  333:    { return std::uninitialized_copy(__first, __last, __result); }
-    %%%%%:  333-block  0
-call    0 never executed
+        1:  333:    { return std::uninitialized_copy(__first, __last, __result); }
+        1:  333-block  0
+call    0 returned 1
 ------------------
 _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara8TextFlow6ColumnESt6vectorIS5_SaIS5_EEEEPS5_S5_ET0_T_SE_SD_RSaIT1_E:
 function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara8TextFlow6ColumnESt6vectorIS5_SaIS5_EEEEPS5_S5_ET0_T_SE_SD_RSaIT1_E called 0 returned 0% blocks executed 0%
@@ -2483,12 +2483,12 @@ function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch5c
 call    0 never executed
 ------------------
 _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS5_SaIS5_EEEEPS5_S5_ET0_T_SE_SD_RSaIT1_E:
-function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS5_SaIS5_EEEEPS5_S5_ET0_T_SE_SD_RSaIT1_E called 217 returned 100% blocks executed 100%
-      217:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch5clara6detail5TokenESt6vectorIS5_SaIS5_EEEEPS5_S5_ET0_T_SE_SD_RSaIT1_E called 4 returned 100% blocks executed 100%
+        4:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
         -:  332:			   _ForwardIterator __result, allocator<_Tp>&)
-      217:  333:    { return std::uninitialized_copy(__first, __last, __result); }
-      217:  333-block  0
-call    0 returned 217
+        4:  333:    { return std::uninitialized_copy(__first, __last, __result); }
+        4:  333-block  0
+call    0 returned 4
 ------------------
 _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPS7_S7_ET0_T_SG_SF_RSaIT1_E:
 function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPS7_S7_ET0_T_SG_SF_RSaIT1_E called 1079 returned 100% blocks executed 100%
@@ -2499,12 +2499,12 @@ function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx
 call    0 returned 1079
 ------------------
 _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS3_SaIS3_EEEEPS3_S3_ET0_T_SC_SB_RSaIT1_E:
-function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS3_SaIS3_EEEEPS3_S3_ET0_T_SC_SB_RSaIT1_E called 19 returned 100% blocks executed 100%
-       19:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+function _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKN5Catch11MessageInfoESt6vectorIS3_SaIS3_EEEEPS3_S3_ET0_T_SC_SB_RSaIT1_E called 0 returned 0% blocks executed 0%
+    #####:  331:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
         -:  332:			   _ForwardIterator __result, allocator<_Tp>&)
-       19:  333:    { return std::uninitialized_copy(__first, __last, __result); }
-       19:  333-block  0
-call    0 returned 19
+    #####:  333:    { return std::uninitialized_copy(__first, __last, __result); }
+    %%%%%:  333-block  0
+call    0 never executed
 ------------------
 _ZSt22__uninitialized_copy_aIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_S5_ET0_T_S8_S7_RSaIT1_E:
 function _ZSt22__uninitialized_copy_aIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_S5_ET0_T_S8_S7_RSaIT1_E called 0 returned 0% blocks executed 0%
@@ -3649,7 +3649,7 @@ call    0 never executed
         -:  983:
         -:  984:  template<typename _Tp, typename _Up, typename _Allocator>
         -:  985:    inline void
-     491*:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
+     487*:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
         -:  987:			_Allocator& __alloc)
         -:  988:    noexcept(noexcept(std::allocator_traits<_Allocator>::construct(__alloc,
         -:  989:			 __dest, std::move(*__orig)))
@@ -3657,9 +3657,9 @@ call    0 never executed
         -:  991:			    __alloc, std::__addressof(*__orig))))
         -:  992:    {
         -:  993:      typedef std::allocator_traits<_Allocator> __traits;
-     491*:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
-     491*:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
-     491*:  996:    }
+     487*:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
+     487*:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
+     487*:  996:    }
 ------------------
 _ZSt19__relocate_object_aIN5Catch8TestSpec6FilterES2_SaIS2_EEvPT_PT0_RT1_:
 function _ZSt19__relocate_object_aIN5Catch8TestSpec6FilterES2_SaIS2_EEvPT_PT0_RT1_ called 0 returned 0% blocks executed 0%
@@ -3776,8 +3776,8 @@ call    1 returned 1
         1:  996:    }
 ------------------
 _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_EEvPT_PT0_RT1_:
-function _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_EEvPT_PT0_RT1_ called 24 returned 100% blocks executed 100%
-       24:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
+function _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_EEvPT_PT0_RT1_ called 21 returned 100% blocks executed 100%
+       21:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
         -:  987:			_Allocator& __alloc)
         -:  988:    noexcept(noexcept(std::allocator_traits<_Allocator>::construct(__alloc,
         -:  989:			 __dest, std::move(*__orig)))
@@ -3785,14 +3785,14 @@ function _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcE
         -:  991:			    __alloc, std::__addressof(*__orig))))
         -:  992:    {
         -:  993:      typedef std::allocator_traits<_Allocator> __traits;
-       24:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
-       24:  994-block  0
-call    0 returned 24
-call    1 returned 24
-       24:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
-call    0 returned 24
-call    1 returned 24
-       24:  996:    }
+       21:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
+       21:  994-block  0
+call    0 returned 21
+call    1 returned 21
+       21:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
+call    0 returned 21
+call    1 returned 21
+       21:  996:    }
 ------------------
 _ZSt19__relocate_object_aIN5Catch5clara8TextFlow6ColumnES3_SaIS3_EEvPT_PT0_RT1_:
 function _ZSt19__relocate_object_aIN5Catch5clara8TextFlow6ColumnES3_SaIS3_EEvPT_PT0_RT1_ called 0 returned 0% blocks executed 0%
@@ -4042,8 +4042,8 @@ call    1 never executed
     #####:  996:    }
 ------------------
 _ZSt19__relocate_object_aISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EES9_SaIS9_EEvPT_PT0_RT1_:
-function _ZSt19__relocate_object_aISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EES9_SaIS9_EEvPT_PT0_RT1_ called 1 returned 100% blocks executed 100%
-        1:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
+function _ZSt19__relocate_object_aISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EES9_SaIS9_EEvPT_PT0_RT1_ called 0 returned 0% blocks executed 0%
+    #####:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
         -:  987:			_Allocator& __alloc)
         -:  988:    noexcept(noexcept(std::allocator_traits<_Allocator>::construct(__alloc,
         -:  989:			 __dest, std::move(*__orig)))
@@ -4051,14 +4051,14 @@ function _ZSt19__relocate_object_aISt10unique_ptrINSt7__cxx1119basic_ostringstre
         -:  991:			    __alloc, std::__addressof(*__orig))))
         -:  992:    {
         -:  993:      typedef std::allocator_traits<_Allocator> __traits;
-        1:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
-        1:  994-block  0
-call    0 returned 1
-call    1 returned 1
-        1:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
-call    0 returned 1
-call    1 returned 1
-        1:  996:    }
+    #####:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
+    %%%%%:  994-block  0
+call    0 never executed
+call    1 never executed
+    #####:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
+call    0 never executed
+call    1 never executed
+    #####:  996:    }
 ------------------
 _ZSt19__relocate_object_aIN5Catch11SectionInfoES1_SaIS1_EEvPT_PT0_RT1_:
 function _ZSt19__relocate_object_aIN5Catch11SectionInfoES1_SaIS1_EEvPT_PT0_RT1_ called 0 returned 0% blocks executed 0%
@@ -4259,13 +4259,13 @@ call    1 never executed
         -: 1003:
         -: 1004:  template <typename _Tp, typename _Up>
         -: 1005:    inline __enable_if_t<std::__is_bitwise_relocatable<_Tp>::value, _Tp*>
-       8*: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+       2*: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-       8*: 1009:      ptrdiff_t __count = __last - __first;
-       8*: 1010:      if (__count > 0)
-       2*: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
-       8*: 1012:      return __result + __count;
+       2*: 1009:      ptrdiff_t __count = __last - __first;
+       2*: 1010:      if (__count > 0)
+    #####: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+       2*: 1012:      return __result + __count;
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IccENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E:
@@ -4317,42 +4317,42 @@ branch  1 never executed
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IyyENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E:
-function _ZSt14__relocate_a_1IyyENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E called 4 returned 100% blocks executed 100%
-        4: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+function _ZSt14__relocate_a_1IyyENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E called 0 returned 0% blocks executed 0%
+    #####: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-        4: 1009:      ptrdiff_t __count = __last - __first;
-        4: 1010:      if (__count > 0)
-        4: 1010-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 3
-        1: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
-        1: 1011-block  0
-        4: 1012:      return __result + __count;
-        4: 1012-block  0
+    #####: 1009:      ptrdiff_t __count = __last - __first;
+    #####: 1010:      if (__count > 0)
+    %%%%%: 1010-block  0
+branch  0 never executed
+branch  1 never executed
+    #####: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+    %%%%%: 1011-block  0
+    #####: 1012:      return __result + __count;
+    %%%%%: 1012-block  0
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch10ISingletonES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E:
-function _ZSt14__relocate_a_1IPN5Catch10ISingletonES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 4 returned 100% blocks executed 100%
-        4: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+function _ZSt14__relocate_a_1IPN5Catch10ISingletonES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 2 returned 100% blocks executed 75%
+        2: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-        4: 1009:      ptrdiff_t __count = __last - __first;
-        4: 1010:      if (__count > 0)
-        4: 1010-block  0
-branch  0 taken 1 (fallthrough)
-branch  1 taken 3
-        1: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
-        1: 1011-block  0
-        4: 1012:      return __result + __count;
-        4: 1012-block  0
+        2: 1009:      ptrdiff_t __count = __last - __first;
+        2: 1010:      if (__count > 0)
+        2: 1010-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+    %%%%%: 1011-block  0
+        2: 1012:      return __result + __count;
+        2: 1012-block  0
         -: 1013:    }
 ------------------
         -: 1014:
         -: 1015:  template <typename _InputIterator, typename _ForwardIterator,
         -: 1016:	    typename _Allocator>
         -: 1017:    inline _ForwardIterator
-     188*: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+     176*: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1019:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1020:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1021:					       std::addressof(*__first),
@@ -4364,11 +4364,11 @@ branch  1 taken 3
         -: 1027:	_ValueType2;
         -: 1028:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1029:	  "relocation is only possible for values of the same type");
-     188*: 1030:      _ForwardIterator __cur = __result;
-     679*: 1031:      for (; __first != __last; ++__first, (void)++__cur)
-     491*: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
+     176*: 1030:      _ForwardIterator __cur = __result;
+     663*: 1031:      for (; __first != __last; ++__first, (void)++__cur)
+     487*: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
         -: 1033:				 std::__addressof(*__first), __alloc);
-     188*: 1034:      return __cur;
+     176*: 1034:      return __cur;
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch8TestSpec6FilterES3_SaIS2_EET0_T_S6_S5_RT1_:
@@ -4552,8 +4552,8 @@ call    2 returned 1
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_:
-function _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_ called 108 returned 100% blocks executed 100%
-      108: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+function _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_ called 102 returned 100% blocks executed 100%
+      102: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1019:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1020:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1021:					       std::addressof(*__first),
@@ -4565,20 +4565,20 @@ function _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIc
         -: 1027:	_ValueType2;
         -: 1028:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1029:	  "relocation is only possible for values of the same type");
-      108: 1030:      _ForwardIterator __cur = __result;
-      132: 1031:      for (; __first != __last; ++__first, (void)++__cur)
-      108: 1031-block  0
-      132: 1031-block  1
-branch  0 taken 24
-branch  1 taken 108 (fallthrough)
-       24: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
-       24: 1032-block  0
-call    0 returned 24
-call    1 returned 24
-call    2 returned 24
+      102: 1030:      _ForwardIterator __cur = __result;
+      123: 1031:      for (; __first != __last; ++__first, (void)++__cur)
+      102: 1031-block  0
+      123: 1031-block  1
+branch  0 taken 21
+branch  1 taken 102 (fallthrough)
+       21: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
+       21: 1032-block  0
+call    0 returned 21
+call    1 returned 21
+call    2 returned 21
         -: 1033:				 std::__addressof(*__first), __alloc);
-      108: 1034:      return __cur;
-      108: 1034-block  0
+      102: 1034:      return __cur;
+      102: 1034-block  0
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch5clara8TextFlow6ColumnES4_SaIS3_EET0_T_S7_S6_RT1_:
@@ -4612,8 +4612,8 @@ call    2 never executed
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch5clara6detail5TokenES4_SaIS3_EET0_T_S7_S6_RT1_:
-function _ZSt14__relocate_a_1IPN5Catch5clara6detail5TokenES4_SaIS3_EET0_T_S7_S6_RT1_ called 2 returned 100% blocks executed 50%
-        2: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+function _ZSt14__relocate_a_1IPN5Catch5clara6detail5TokenES4_SaIS3_EET0_T_S7_S6_RT1_ called 0 returned 0% blocks executed 0%
+    #####: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1019:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1020:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1021:					       std::addressof(*__first),
@@ -4625,20 +4625,20 @@ function _ZSt14__relocate_a_1IPN5Catch5clara6detail5TokenES4_SaIS3_EET0_T_S7_S6_
         -: 1027:	_ValueType2;
         -: 1028:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1029:	  "relocation is only possible for values of the same type");
-        2: 1030:      _ForwardIterator __cur = __result;
-       2*: 1031:      for (; __first != __last; ++__first, (void)++__cur)
-        2: 1031-block  0
-        2: 1031-block  1
-branch  0 taken 0
-branch  1 taken 2 (fallthrough)
+    #####: 1030:      _ForwardIterator __cur = __result;
+    #####: 1031:      for (; __first != __last; ++__first, (void)++__cur)
+    %%%%%: 1031-block  0
+    %%%%%: 1031-block  1
+branch  0 never executed
+branch  1 never executed
     #####: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
     %%%%%: 1032-block  0
 call    0 never executed
 call    1 never executed
 call    2 never executed
         -: 1033:				 std::__addressof(*__first), __alloc);
-        2: 1034:      return __cur;
-        2: 1034-block  0
+    #####: 1034:      return __cur;
+    %%%%%: 1034-block  0
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch5clara6detail3ArgES4_SaIS3_EET0_T_S7_S6_RT1_:
@@ -4972,8 +4972,8 @@ call    2 never executed
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EESA_SaIS9_EET0_T_SD_SC_RT1_:
-function _ZSt14__relocate_a_1IPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EESA_SaIS9_EET0_T_SD_SC_RT1_ called 4 returned 100% blocks executed 100%
-        4: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+function _ZSt14__relocate_a_1IPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS6_EESA_SaIS9_EET0_T_SD_SC_RT1_ called 0 returned 0% blocks executed 0%
+    #####: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1019:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1020:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1021:					       std::addressof(*__first),
@@ -4985,20 +4985,20 @@ function _ZSt14__relocate_a_1IPSt10unique_ptrINSt7__cxx1119basic_ostringstreamIc
         -: 1027:	_ValueType2;
         -: 1028:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1029:	  "relocation is only possible for values of the same type");
-        4: 1030:      _ForwardIterator __cur = __result;
-        5: 1031:      for (; __first != __last; ++__first, (void)++__cur)
-        4: 1031-block  0
-        5: 1031-block  1
-branch  0 taken 1
-branch  1 taken 4 (fallthrough)
-        1: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
-        1: 1032-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+    #####: 1030:      _ForwardIterator __cur = __result;
+    #####: 1031:      for (; __first != __last; ++__first, (void)++__cur)
+    %%%%%: 1031-block  0
+    %%%%%: 1031-block  1
+branch  0 never executed
+branch  1 never executed
+    #####: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
+    %%%%%: 1032-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -: 1033:				 std::__addressof(*__first), __alloc);
-        4: 1034:      return __cur;
-        4: 1034-block  0
+    #####: 1034:      return __cur;
+    %%%%%: 1034-block  0
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPN5Catch11SectionInfoES2_SaIS1_EET0_T_S5_S4_RT1_:
@@ -5305,15 +5305,15 @@ call    2 never executed
         -: 1037:  template <typename _InputIterator, typename _ForwardIterator,
         -: 1038:	    typename _Allocator>
         -: 1039:    inline _ForwardIterator
-     196*: 1040:    __relocate_a(_InputIterator __first, _InputIterator __last,
+     178*: 1040:    __relocate_a(_InputIterator __first, _InputIterator __last,
         -: 1041:		 _ForwardIterator __result, _Allocator& __alloc)
         -: 1042:    noexcept(noexcept(__relocate_a_1(std::__niter_base(__first),
         -: 1043:				     std::__niter_base(__last),
         -: 1044:				     std::__niter_base(__result), __alloc)))
         -: 1045:    {
-     196*: 1046:      return __relocate_a_1(std::__niter_base(__first),
+     178*: 1046:      return __relocate_a_1(std::__niter_base(__first),
         -: 1047:			    std::__niter_base(__last),
-     196*: 1048:			    std::__niter_base(__result), __alloc);
+     178*: 1048:			    std::__niter_base(__result), __alloc);
         -: 1049:    }
         -: 1050:
         -: 1051:  /// @endcond

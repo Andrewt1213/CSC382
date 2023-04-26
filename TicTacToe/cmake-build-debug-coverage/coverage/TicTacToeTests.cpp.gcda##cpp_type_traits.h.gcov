@@ -561,8 +561,8 @@
         -:  557:  template<typename _Iterator>
         -:  558:    _GLIBCXX20_CONSTEXPR
         -:  559:    inline _Iterator
-       2*:  560:    __miter_base(_Iterator __it)
-       2*:  561:    { return __it; }
+    #####:  560:    __miter_base(_Iterator __it)
+    #####:  561:    { return __it; }
 ------------------
 _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPN5Catch5clara6detail11HelpColumnsESt6vectorIS5_SaIS5_EEEEET_SB_:
 function _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPN5Catch5clara6detail11HelpColumnsESt6vectorIS5_SaIS5_EEEEET_SB_ called 0 returned 0% blocks executed 0%
@@ -643,10 +643,10 @@ function _ZSt12__miter_baseIPcET_S1_ called 0 returned 0% blocks executed 0%
     %%%%%:  561-block  0
 ------------------
 _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEEET_S9_:
-function _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEEET_S9_ called 2 returned 100% blocks executed 100%
-        2:  560:    __miter_base(_Iterator __it)
-        2:  561:    { return __it; }
-        2:  561-block  0
+function _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS3_SaIS3_EEEEET_S9_ called 0 returned 0% blocks executed 0%
+    #####:  560:    __miter_base(_Iterator __it)
+    #####:  561:    { return __it; }
+    %%%%%:  561-block  0
 ------------------
 _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPSt4pairIyPKN5Catch8TestCaseEESt6vectorIS7_SaIS7_EEEEET_SD_:
 function _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPSt4pairIyPKN5Catch8TestCaseEESt6vectorIS7_SaIS7_EEEEET_SD_ called 0 returned 0% blocks executed 0%

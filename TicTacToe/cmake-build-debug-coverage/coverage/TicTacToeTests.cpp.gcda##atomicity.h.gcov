@@ -55,11 +55,11 @@
         -:   51:#elif __has_include(<sys/single_threaded.h>)
         -:   52:    return ::__libc_single_threaded;
         -:   53:#else
-     2542:   54:    return !__gthread_active_p();
-     1224:   54-block  0
-call    0 returned 1224
-     1271:   54-block  1
-call    1 returned 1271
+     2546:   54:    return !__gthread_active_p();
+     1226:   54-block  0
+call    0 returned 1226
+     1273:   54-block  1
+call    1 returned 1273
 call    2 returned 47
         -:   55:#endif
         -:   56:  }
@@ -72,15 +72,15 @@ call    2 returned 47
         -:   63:  inline _Atomic_word
         -:   64:  __attribute__((__always_inline__))
         -:   65:  __exchange_and_add(volatile _Atomic_word* __mem, int __val)
-     1318:   66:  { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
-     1271:   66-block  0
+     1320:   66:  { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     1273:   66-block  0
        47:   66-block  1
         -:   67:
         -:   68:  inline void
         -:   69:  __attribute__((__always_inline__))
         -:   70:  __atomic_add(volatile _Atomic_word* __mem, int __val)
-     1224:   71:  { __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
-     1224:   71-block  0
+     1226:   71:  { __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     1226:   71-block  0
         -:   72:#else
         -:   73:  _Atomic_word
         -:   74:  __exchange_and_add(volatile _Atomic_word*, int) _GLIBCXX_NOTHROW;
@@ -110,10 +110,10 @@ call    2 returned 47
         -:   95:  __attribute__ ((__always_inline__))
         -:   96:  __exchange_and_add_dispatch(_Atomic_word* __mem, int __val)
         -:   97:  {
-     1318:   98:    if (__is_single_threaded())
-     1271:   98-block  0
+     1320:   98:    if (__is_single_threaded())
+     1273:   98-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 1271
+branch  1 taken 1273
        47:   98-block  1
 branch  2 taken 0 (fallthrough)
 branch  3 taken 47
@@ -121,8 +121,8 @@ branch  3 taken 47
     %%%%%:   99-block  0
     %%%%%:   99-block  1
         -:  100:    else
-     1318:  101:      return __exchange_and_add(__mem, __val);
-     1271:  101-block  0
+     1320:  101:      return __exchange_and_add(__mem, __val);
+     1273:  101-block  0
        47:  101-block  1
         -:  102:  }
         -:  103:
@@ -130,15 +130,15 @@ branch  3 taken 47
         -:  105:  __attribute__ ((__always_inline__))
         -:  106:  __atomic_add_dispatch(_Atomic_word* __mem, int __val)
         -:  107:  {
-     1224:  108:    if (__is_single_threaded())
-     1224:  108-block  0
+     1226:  108:    if (__is_single_threaded())
+     1226:  108-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 1224
+branch  1 taken 1226
         -:  109:      __atomic_add_single(__mem, __val);
         -:  110:    else
         -:  111:      __atomic_add(__mem, __val);
-     1224:  112:  }
-     1224:  112-block  0
+     1226:  112:  }
+     1226:  112-block  0
         -:  113:
         -:  114:_GLIBCXX_END_NAMESPACE_VERSION
         -:  115:} // namespace

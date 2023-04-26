@@ -45,8 +45,8 @@
         -:   41:    template<typename _Iterator1, typename _Iterator2>
         -:   42:      _GLIBCXX14_CONSTEXPR
         -:   43:      bool
-       1*:   44:      operator()(_Iterator1 __it1, _Iterator2 __it2) const
-       1*:   45:      { return *__it1 < *__it2; }
+    #####:   44:      operator()(_Iterator1 __it1, _Iterator2 __it2) const
+    #####:   45:      { return *__it1 < *__it2; }
 ------------------
 _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPcSt6vectorIcSaIcEEEES8_EEbT_T0_:
 function _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPcSt6vectorIcSaIcEEEES8_EEbT_T0_ called 0 returned 0% blocks executed 0%
@@ -57,13 +57,13 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS5_SaIS5_EEEESA_EEbT_T0_:
-function _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS5_SaIS5_EEEESA_EEbT_T0_ called 1 returned 100% blocks executed 100%
-        1:   44:      operator()(_Iterator1 __it1, _Iterator2 __it2) const
-        1:   45:      { return *__it1 < *__it2; }
-        1:   45-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+function _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPN5Catch8TestCaseESt6vectorIS5_SaIS5_EEEESA_EEbT_T0_ called 0 returned 0% blocks executed 0%
+    #####:   44:      operator()(_Iterator1 __it1, _Iterator2 __it2) const
+    #####:   45:      { return *__it1 < *__it2; }
+    %%%%%:   45-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
 ------------------
 _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS9_SaIS9_EEEESE_EEbT_T0_:
 function _ZNK9__gnu_cxx5__ops15_Iter_less_iterclINS_17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS9_SaIS9_EEEESE_EEbT_T0_ called 0 returned 0% blocks executed 0%
@@ -78,10 +78,10 @@ call    2 never executed
         -:   47:
         -:   48:  _GLIBCXX14_CONSTEXPR
         -:   49:  inline _Iter_less_iter
-function _ZN9__gnu_cxx5__ops16__iter_less_iterEv called 3 returned 100% blocks executed 100%
-        3:   50:  __iter_less_iter()
-        3:   51:  { return _Iter_less_iter(); }
-        3:   51-block  0
+function _ZN9__gnu_cxx5__ops16__iter_less_iterEv called 2 returned 100% blocks executed 100%
+        2:   50:  __iter_less_iter()
+        2:   51:  { return _Iter_less_iter(); }
+        2:   51-block  0
         -:   52:
         -:   53:  struct _Iter_less_val
         -:   54:  {

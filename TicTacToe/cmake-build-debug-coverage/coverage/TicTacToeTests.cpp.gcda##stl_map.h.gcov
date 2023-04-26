@@ -479,8 +479,8 @@ call    0 never executed
         -:  380:       *  the keys.
         -:  381:       */
         -:  382:      const_iterator
-       2*:  383:      end() const _GLIBCXX_NOEXCEPT
-       2*:  384:      { return _M_t.end(); }
+       1*:  383:      end() const _GLIBCXX_NOEXCEPT
+       1*:  384:      { return _M_t.end(); }
 ------------------
 _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE3endEv:
 function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE3endEv called 0 returned 0% blocks executed 0%
@@ -490,11 +490,11 @@ function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8
 call    0 never executed
 ------------------
 _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEESt4lessIS5_ESaISt4pairIKS5_S9_EEE3endEv:
-function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEESt4lessIS5_ESaISt4pairIKS5_S9_EEE3endEv called 2 returned 100% blocks executed 100%
-        2:  383:      end() const _GLIBCXX_NOEXCEPT
-        2:  384:      { return _M_t.end(); }
-        2:  384-block  0
-call    0 returned 2
+function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEESt4lessIS5_ESaISt4pairIKS5_S9_EEE3endEv called 1 returned 100% blocks executed 100%
+        1:  383:      end() const _GLIBCXX_NOEXCEPT
+        1:  384:      { return _M_t.end(); }
+        1:  384-block  0
+call    0 returned 1
 ------------------
         -:  385:
         -:  386:      /**
@@ -1399,8 +1399,8 @@ call    0 never executed
         -: 1191:       */
         -: 1192:
         -: 1193:      const_iterator
-       2*: 1194:      find(const key_type& __x) const
-       2*: 1195:      { return _M_t.find(__x); }
+       1*: 1194:      find(const key_type& __x) const
+       1*: 1195:      { return _M_t.find(__x); }
 ------------------
 _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE4findERSB_:
 function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasESt4lessIS5_ESaISt4pairIKS5_S7_EEE4findERSB_ called 0 returned 0% blocks executed 0%
@@ -1410,11 +1410,11 @@ function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8
 call    0 never executed
 ------------------
 _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEESt4lessIS5_ESaISt4pairIKS5_S9_EEE4findERSD_:
-function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEESt4lessIS5_ESaISt4pairIKS5_S9_EEE4findERSD_ called 2 returned 100% blocks executed 100%
-        2: 1194:      find(const key_type& __x) const
-        2: 1195:      { return _M_t.find(__x); }
-        2: 1195-block  0
-call    0 returned 2
+function _ZNKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEESt4lessIS5_ESaISt4pairIKS5_S9_EEE4findERSD_ called 1 returned 100% blocks executed 100%
+        1: 1194:      find(const key_type& __x) const
+        1: 1195:      { return _M_t.find(__x); }
+        1: 1195-block  0
+call    0 returned 1
 ------------------
         -: 1196:
         -: 1197:#if __cplusplus > 201103L

@@ -301,11 +301,11 @@
         -:  297:#else /* not hppa-hpux */
         -:  298:
         -:  299:static inline int
-function _ZL18__gthread_active_pv called 2542 returned 100% blocks executed 100%
-     2542:  300:__gthread_active_p (void)
+function _ZL18__gthread_active_pv called 2546 returned 100% blocks executed 100%
+     2546:  300:__gthread_active_p (void)
         -:  301:{
-     2542:  302:  return 1;
-     2542:  302-block  0
+     2546:  302:  return 1;
+     2546:  302-block  0
         -:  303:}
         -:  304:
         -:  305:#endif /* hppa-hpux */

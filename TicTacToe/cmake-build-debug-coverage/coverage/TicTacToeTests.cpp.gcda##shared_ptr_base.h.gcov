@@ -156,11 +156,11 @@ call    2 never executed
         -:  144:      _M_get_deleter(const std::type_info&) noexcept = 0;
         -:  145:
         -:  146:      void
-function _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE15_M_add_ref_copyEv called 1224 returned 100% blocks executed 80%
-     1224:  147:      _M_add_ref_copy()
-     1224:  148:      { __gnu_cxx::__atomic_add_dispatch(&_M_use_count, 1); }
-     1224:  148-block  0
-call    0 returned 1224
+function _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE15_M_add_ref_copyEv called 1226 returned 100% blocks executed 80%
+     1226:  147:      _M_add_ref_copy()
+     1226:  148:      { __gnu_cxx::__atomic_add_dispatch(&_M_use_count, 1); }
+     1226:  148-block  0
+call    0 returned 1226
         -:  149:
         -:  150:      void
         -:  151:      _M_add_ref_lock()
@@ -173,17 +173,17 @@ call    0 returned 1224
         -:  158:      _M_add_ref_lock_nothrow() noexcept;
         -:  159:
         -:  160:      void
-function _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv called 1271 returned 100% blocks executed 76%
-     1271:  161:      _M_release() noexcept
+function _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv called 1273 returned 100% blocks executed 76%
+     1273:  161:      _M_release() noexcept
         -:  162:      {
         -:  163:        // Be race-detector-friendly.  For more info see bits/c++config.
         -:  164:        _GLIBCXX_SYNCHRONIZATION_HAPPENS_BEFORE(&_M_use_count);
-     2542:  165:	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
-     1271:  165-block  0
-call    0 returned 1271
-     1271:  165-block  1
+     2546:  165:	if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+     1273:  165-block  0
+call    0 returned 1273
+     1273:  165-block  1
 branch  1 taken 47 (fallthrough)
-branch  2 taken 1224
+branch  2 taken 1226
         -:  166:	  {
         -:  167:            _GLIBCXX_SYNCHRONIZATION_HAPPENS_AFTER(&_M_use_count);
        47:  168:	    _M_dispose();
@@ -213,7 +213,7 @@ branch  1 taken 0
 call    0 returned 47
         -:  185:              }
         -:  186:	  }
-     1271:  187:      }
+     1273:  187:      }
         -:  188:
         -:  189:      void
         -:  190:      _M_weak_add_ref() noexcept
@@ -5194,9 +5194,9 @@ call    0 returned 3
         -:  584:	struct __not_alloc_shared_tag<_Sp_alloc_shared_tag<_Tp>> { };
         -:  585:
         -:  586:    public:
-function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC1Ev called 522 returned 100% blocks executed 100%
-      522:  587:      constexpr __shared_count() noexcept : _M_pi(0)
-      522:  588:      { }
+function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC1Ev called 519 returned 100% blocks executed 100%
+      519:  587:      constexpr __shared_count() noexcept : _M_pi(0)
+      519:  588:      { }
         -:  589:
         -:  590:      template<typename _Ptr>
         -:  591:        explicit
@@ -6882,30 +6882,30 @@ call    2 never executed
         -:  699:      explicit
         -:  700:      __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept;
         -:  701:
-function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EED1Ev called 1793 returned 100% blocks executed 100%
-     1793:  702:      ~__shared_count() noexcept
+function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EED1Ev called 1792 returned 100% blocks executed 100%
+     1792:  702:      ~__shared_count() noexcept
         -:  703:      {
-     1793:  704:	if (_M_pi != nullptr)
-     1793:  704-block  0
-branch  0 taken 1270 (fallthrough)
-branch  1 taken 523
-     1270:  705:	  _M_pi->_M_release();
-     1270:  705-block  0
-call    0 returned 1270
-     1793:  706:      }
+     1792:  704:	if (_M_pi != nullptr)
+     1792:  704-block  0
+branch  0 taken 1272 (fallthrough)
+branch  1 taken 520
+     1272:  705:	  _M_pi->_M_release();
+     1272:  705-block  0
+call    0 returned 1272
+     1792:  706:      }
         -:  707:
-function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC1ERKS2_ called 1222 returned 100% blocks executed 100%
-     1222:  708:      __shared_count(const __shared_count& __r) noexcept
-     1222:  709:      : _M_pi(__r._M_pi)
+function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC1ERKS2_ called 1224 returned 100% blocks executed 100%
+     1224:  708:      __shared_count(const __shared_count& __r) noexcept
+     1224:  709:      : _M_pi(__r._M_pi)
         -:  710:      {
-     1222:  711:	if (_M_pi != nullptr)
-     1222:  711-block  0
-branch  0 taken 1221 (fallthrough)
+     1224:  711:	if (_M_pi != nullptr)
+     1224:  711-block  0
+branch  0 taken 1223 (fallthrough)
 branch  1 taken 1
-     1221:  712:	  _M_pi->_M_add_ref_copy();
-     1221:  712-block  0
-call    0 returned 1221
-     1222:  713:      }
+     1223:  712:	  _M_pi->_M_add_ref_copy();
+     1223:  712-block  0
+call    0 returned 1223
+     1224:  713:      }
         -:  714:
         -:  715:      __shared_count&
 function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEaSERKS2_ called 4 returned 100% blocks executed 100%
@@ -6939,13 +6939,13 @@ call    0 returned 1
         -:  728:      }
         -:  729:
         -:  730:      void
-function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EE7_M_swapERS2_ called 524 returned 100% blocks executed 100%
-      524:  731:      _M_swap(__shared_count& __r) noexcept
+function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EE7_M_swapERS2_ called 519 returned 100% blocks executed 100%
+      519:  731:      _M_swap(__shared_count& __r) noexcept
         -:  732:      {
-      524:  733:	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
-      524:  734:	__r._M_pi = _M_pi;
-      524:  735:	_M_pi = __tmp;
-      524:  736:      }
+      519:  733:	_Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+      519:  734:	__r._M_pi = _M_pi;
+      519:  735:	_M_pi = __tmp;
+      519:  736:      }
         -:  737:
         -:  738:      long
         -:  739:      _M_get_use_count() const noexcept
@@ -7186,10 +7186,10 @@ function _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EE7_M_swapERS2_ calle
         -:  974:      using element_type = _Tp;
         -:  975:
         -:  976:      element_type&
-      11*:  977:      operator*() const noexcept
+      13*:  977:      operator*() const noexcept
         -:  978:      {
-      11*:  979:	__glibcxx_assert(_M_get() != nullptr);
-      11*:  980:	return *_M_get();
+      13*:  979:	__glibcxx_assert(_M_get() != nullptr);
+      13*:  980:	return *_M_get();
         -:  981:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIKNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEdeEv:
@@ -7289,19 +7289,19 @@ call    0 returned 2
         -:  981:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEdeEv:
-function _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEdeEv called 2 returned 100% blocks executed 80%
-        2:  977:      operator*() const noexcept
-        2:  977-block  0
+function _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEdeEv called 4 returned 100% blocks executed 80%
+        4:  977:      operator*() const noexcept
+        4:  977-block  0
         -:  978:      {
-       2*:  979:	__glibcxx_assert(_M_get() != nullptr);
-        2:  979-block  0
+       4*:  979:	__glibcxx_assert(_M_get() != nullptr);
+        4:  979-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 2
+branch  1 taken 4
     %%%%%:  979-block  1
 call    2 never executed
-        2:  980:	return *_M_get();
-        2:  980-block  0
-call    0 returned 2
+        4:  980:	return *_M_get();
+        4:  980-block  0
+call    0 returned 4
         -:  981:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch16TestCaseTracking8ITrackerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEdeEv:
@@ -7370,10 +7370,10 @@ call    0 returned 1
 ------------------
         -:  982:
         -:  983:      element_type*
-     148*:  984:      operator->() const noexcept
+      32*:  984:      operator->() const noexcept
         -:  985:      {
         -:  986:	_GLIBCXX_DEBUG_PEDASSERT(_M_get() != nullptr);
-     148*:  987:	return _M_get();
+      32*:  987:	return _M_get();
         -:  988:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv:
@@ -7507,13 +7507,13 @@ call    0 returned 1
         -:  988:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv:
-function _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv called 92 returned 100% blocks executed 100%
-       92:  984:      operator->() const noexcept
+function _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv called 0 returned 0% blocks executed 0%
+    #####:  984:      operator->() const noexcept
         -:  985:      {
         -:  986:	_GLIBCXX_DEBUG_PEDASSERT(_M_get() != nullptr);
-       92:  987:	return _M_get();
-       92:  987-block  0
-call    0 returned 92
+    #####:  987:	return _M_get();
+    %%%%%:  987-block  0
+call    0 never executed
         -:  988:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail17BoundValueRefBaseELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv:
@@ -7527,20 +7527,20 @@ call    0 returned 1
         -:  988:      }
 ------------------
 _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv:
-function _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv called 39 returned 100% blocks executed 100%
-       39:  984:      operator->() const noexcept
+function _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv called 15 returned 100% blocks executed 100%
+       15:  984:      operator->() const noexcept
         -:  985:      {
         -:  986:	_GLIBCXX_DEBUG_PEDASSERT(_M_get() != nullptr);
-       39:  987:	return _M_get();
-       39:  987-block  0
-call    0 returned 39
+       15:  987:	return _M_get();
+       15:  987-block  0
+call    0 returned 15
         -:  988:      }
 ------------------
         -:  989:
         -:  990:    private:
         -:  991:      element_type*
-     159*:  992:      _M_get() const noexcept
-     159*:  993:      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
+      45*:  992:      _M_get() const noexcept
+      45*:  993:      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv:
 function _ZNKSt19__shared_ptr_accessIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 2 returned 100% blocks executed 100%
@@ -7550,11 +7550,11 @@ function _ZNKSt19__shared_ptr_accessIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_p
 call    0 returned 2
 ------------------
 _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv:
-function _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 41 returned 100% blocks executed 100%
-       41:  992:      _M_get() const noexcept
-       41:  993:      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
-       41:  993-block  0
-call    0 returned 41
+function _ZNKSt19__shared_ptr_accessIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 19 returned 100% blocks executed 100%
+       19:  992:      _M_get() const noexcept
+       19:  993:      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
+       19:  993-block  0
+call    0 returned 19
 ------------------
 _ZNKSt19__shared_ptr_accessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv:
 function _ZNKSt19__shared_ptr_accessINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 1 returned 100% blocks executed 100%
@@ -7571,11 +7571,11 @@ function _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail17BoundValueRefBaseELN9
 call    0 returned 1
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv:
-function _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 92 returned 100% blocks executed 100%
-       92:  992:      _M_get() const noexcept
-       92:  993:      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
-       92:  993-block  0
-call    0 returned 92
+function _ZNKSt19__shared_ptr_accessIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 0 returned 0% blocks executed 0%
+    #####:  992:      _M_get() const noexcept
+    #####:  993:      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
+    %%%%%:  993-block  0
+call    0 never executed
 ------------------
 _ZNKSt19__shared_ptr_accessIN5Catch16IReporterFactoryELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv:
 function _ZNKSt19__shared_ptr_accessIN5Catch16IReporterFactoryELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv called 1 returned 100% blocks executed 100%
@@ -7907,7 +7907,7 @@ call    0 never executed
         -: 1149:	  __r._M_ptr = nullptr;
         -: 1150:	}
         -: 1151:
-    1217*: 1152:      __shared_ptr(const __shared_ptr&) noexcept = default;
+    1219*: 1152:      __shared_ptr(const __shared_ptr&) noexcept = default;
 ------------------
 _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEELN9__gnu_cxx12_Lock_policyE2EEC2ERKSE_:
 function _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEELN9__gnu_cxx12_Lock_policyE2EEC2ERKSE_ called 0 returned 0% blocks executed 0%
@@ -7982,10 +7982,10 @@ function _ZNSt12__shared_ptrIN5Catch6ConfigELN9__gnu_cxx12_Lock_policyE2EEC2ERKS
 call    0 returned 1
 ------------------
 _ZNSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EEC2ERKS5_:
-function _ZNSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EEC2ERKS5_ called 3 returned 100% blocks executed 100%
-        3: 1152:      __shared_ptr(const __shared_ptr&) noexcept = default;
-        3: 1152-block  0
-call    0 returned 3
+function _ZNSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EEC2ERKS5_ called 5 returned 100% blocks executed 100%
+        5: 1152:      __shared_ptr(const __shared_ptr&) noexcept = default;
+        5: 1152-block  0
+call    0 returned 5
 ------------------
        4*: 1153:      __shared_ptr& operator=(const __shared_ptr&) noexcept = default;
 ------------------
@@ -8019,7 +8019,7 @@ function _ZNSt12__shared_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE
         1: 1153-block  0
 call    0 returned 1
 ------------------
-    1793*: 1154:      ~__shared_ptr() = default;
+    1792*: 1154:      ~__shared_ptr() = default;
 ------------------
 _ZNSt12__shared_ptrIN5Catch6ConfigELN9__gnu_cxx12_Lock_policyE2EED2Ev:
 function _ZNSt12__shared_ptrIN5Catch6ConfigELN9__gnu_cxx12_Lock_policyE2EED2Ev called 3 returned 100% blocks executed 100%
@@ -8082,16 +8082,16 @@ function _ZNSt12__shared_ptrIN5Catch16TestCaseTracking14SectionTrackerELN9__gnu_
 call    0 returned 6
 ------------------
 _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EED1Ev:
-function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EED1Ev called 2 returned 100% blocks executed 100%
-        2: 1154:      ~__shared_ptr() = default;
-        2: 1154-block  0
-call    0 returned 2
+function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EED1Ev called 0 returned 0% blocks executed 0%
+    #####: 1154:      ~__shared_ptr() = default;
+    %%%%%: 1154-block  0
+call    0 never executed
 ------------------
 _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EED2Ev:
-function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EED2Ev called 10 returned 100% blocks executed 100%
-       10: 1154:      ~__shared_ptr() = default;
-       10: 1154-block  0
-call    0 returned 10
+function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EED2Ev called 9 returned 100% blocks executed 100%
+        9: 1154:      ~__shared_ptr() = default;
+        9: 1154-block  0
+call    0 returned 9
 ------------------
 _ZNSt12__shared_ptrIN5Catch6ConfigELN9__gnu_cxx12_Lock_policyE2EED1Ev:
 function _ZNSt12__shared_ptrIN5Catch6ConfigELN9__gnu_cxx12_Lock_policyE2EED1Ev called 2 returned 100% blocks executed 100%
@@ -8130,10 +8130,10 @@ function _ZNSt12__shared_ptrIN5Catch10Generators16GeneratorTrackerELN9__gnu_cxx1
 call    0 never executed
 ------------------
 _ZNSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EED2Ev:
-function _ZNSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EED2Ev called 7 returned 100% blocks executed 100%
-        7: 1154:      ~__shared_ptr() = default;
-        7: 1154-block  0
-call    0 returned 7
+function _ZNSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EED2Ev called 9 returned 100% blocks executed 100%
+        9: 1154:      ~__shared_ptr() = default;
+        9: 1154-block  0
+call    0 returned 9
 ------------------
 _ZNSt12__shared_ptrIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2EED2Ev:
 function _ZNSt12__shared_ptrIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2EED2Ev called 1566 returned 100% blocks executed 100%
@@ -8358,12 +8358,12 @@ call    0 returned 3
         3: 1159:	{ }
 ------------------
         -: 1160:
-     474*: 1161:      __shared_ptr(__shared_ptr&& __r) noexcept
-     474*: 1162:      : _M_ptr(__r._M_ptr), _M_refcount()
+     471*: 1161:      __shared_ptr(__shared_ptr&& __r) noexcept
+     471*: 1162:      : _M_ptr(__r._M_ptr), _M_refcount()
         -: 1163:      {
-     474*: 1164:	_M_refcount._M_swap(__r._M_refcount);
-     474*: 1165:	__r._M_ptr = nullptr;
-     474*: 1166:      }
+     471*: 1164:	_M_refcount._M_swap(__r._M_refcount);
+     471*: 1165:	__r._M_ptr = nullptr;
+     471*: 1166:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEELN9__gnu_cxx12_Lock_policyE2EEC2EOSE_:
 function _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEELN9__gnu_cxx12_Lock_policyE2EEC2EOSE_ called 0 returned 0% blocks executed 0%
@@ -8510,28 +8510,28 @@ call    0 never executed
     #####: 1166:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEC1EOS4_:
-function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEC1EOS4_ called 2 returned 100% blocks executed 100%
-        2: 1161:      __shared_ptr(__shared_ptr&& __r) noexcept
-        2: 1162:      : _M_ptr(__r._M_ptr), _M_refcount()
-        2: 1162-block  0
-call    0 returned 2
+function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEC1EOS4_ called 0 returned 0% blocks executed 0%
+    #####: 1161:      __shared_ptr(__shared_ptr&& __r) noexcept
+    #####: 1162:      : _M_ptr(__r._M_ptr), _M_refcount()
+    %%%%%: 1162-block  0
+call    0 never executed
         -: 1163:      {
-        2: 1164:	_M_refcount._M_swap(__r._M_refcount);
-call    0 returned 2
-        2: 1165:	__r._M_ptr = nullptr;
-        2: 1166:      }
+    #####: 1164:	_M_refcount._M_swap(__r._M_refcount);
+call    0 never executed
+    #####: 1165:	__r._M_ptr = nullptr;
+    #####: 1166:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEC2EOS4_:
-function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEC2EOS4_ called 2 returned 100% blocks executed 100%
-        2: 1161:      __shared_ptr(__shared_ptr&& __r) noexcept
-        2: 1162:      : _M_ptr(__r._M_ptr), _M_refcount()
-        2: 1162-block  0
-call    0 returned 2
+function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEC2EOS4_ called 1 returned 100% blocks executed 100%
+        1: 1161:      __shared_ptr(__shared_ptr&& __r) noexcept
+        1: 1162:      : _M_ptr(__r._M_ptr), _M_refcount()
+        1: 1162-block  0
+call    0 returned 1
         -: 1163:      {
-        2: 1164:	_M_refcount._M_swap(__r._M_refcount);
-call    0 returned 2
-        2: 1165:	__r._M_ptr = nullptr;
-        2: 1166:      }
+        1: 1164:	_M_refcount._M_swap(__r._M_refcount);
+call    0 returned 1
+        1: 1165:	__r._M_ptr = nullptr;
+        1: 1166:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch5clara6detail17BoundValueRefBaseELN9__gnu_cxx12_Lock_policyE2EEC1EOS6_:
 function _ZNSt12__shared_ptrIN5Catch5clara6detail17BoundValueRefBaseELN9__gnu_cxx12_Lock_policyE2EEC1EOS6_ called 1 returned 100% blocks executed 100%
@@ -8975,10 +8975,10 @@ call    0 returned 1
         -: 1245:#endif
         -: 1246:
         -: 1247:      __shared_ptr&
-       7*: 1248:      operator=(__shared_ptr&& __r) noexcept
+       5*: 1248:      operator=(__shared_ptr&& __r) noexcept
         -: 1249:      {
-       7*: 1250:	__shared_ptr(std::move(__r)).swap(*this);
-       7*: 1251:	return *this;
+       5*: 1250:	__shared_ptr(std::move(__r)).swap(*this);
+       5*: 1251:	return *this;
         -: 1252:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE11SectionNodeELN9__gnu_cxx12_Lock_policyE2EEaSEOS7_:
@@ -8995,16 +8995,16 @@ call    3 never executed
         -: 1252:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEaSEOS4_:
-function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEaSEOS4_ called 2 returned 100% blocks executed 100%
-        2: 1248:      operator=(__shared_ptr&& __r) noexcept
+function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EEaSEOS4_ called 0 returned 0% blocks executed 0%
+    #####: 1248:      operator=(__shared_ptr&& __r) noexcept
         -: 1249:      {
-        2: 1250:	__shared_ptr(std::move(__r)).swap(*this);
-        2: 1250-block  0
-call    0 returned 2
-call    1 returned 2
-call    2 returned 2
-call    3 returned 2
-        2: 1251:	return *this;
+    #####: 1250:	__shared_ptr(std::move(__r)).swap(*this);
+    %%%%%: 1250-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####: 1251:	return *this;
         -: 1252:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch16TestCaseTracking14SectionTrackerELN9__gnu_cxx12_Lock_policyE2EEaSEOS5_:
@@ -9182,8 +9182,8 @@ call    2 returned 1
         -: 1292:
         -: 1293:      /// Return the stored pointer.
         -: 1294:      element_type*
-     164*: 1295:      get() const noexcept
-     164*: 1296:      { return _M_ptr; }
+      47*: 1295:      get() const noexcept
+      47*: 1296:      { return _M_ptr; }
 ------------------
 _ZNKSt12__shared_ptrIN5Catch10Generators16GeneratorTrackerELN9__gnu_cxx12_Lock_policyE2EE3getEv:
 function _ZNKSt12__shared_ptrIN5Catch10Generators16GeneratorTrackerELN9__gnu_cxx12_Lock_policyE2EE3getEv called 0 returned 0% blocks executed 0%
@@ -9192,10 +9192,10 @@ function _ZNKSt12__shared_ptrIN5Catch10Generators16GeneratorTrackerELN9__gnu_cxx
     %%%%%: 1296-block  0
 ------------------
 _ZNKSt12__shared_ptrIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2EE3getEv:
-function _ZNKSt12__shared_ptrIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2EE3getEv called 95 returned 100% blocks executed 100%
-       95: 1295:      get() const noexcept
-       95: 1296:      { return _M_ptr; }
-       95: 1296-block  0
+function _ZNKSt12__shared_ptrIN5Catch5clara6detail8BoundRefELN9__gnu_cxx12_Lock_policyE2EE3getEv called 0 returned 0% blocks executed 0%
+    #####: 1295:      get() const noexcept
+    #####: 1296:      { return _M_ptr; }
+    %%%%%: 1296-block  0
 ------------------
 _ZNKSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EE3getEv:
 function _ZNKSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EE3getEv called 2 returned 100% blocks executed 100%
@@ -9210,10 +9210,10 @@ function _ZNKSt12__shared_ptrIN5Catch16TestCaseTracking8ITrackerELN9__gnu_cxx12_
         4: 1296-block  0
 ------------------
 _ZNKSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EE3getEv:
-function _ZNKSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EE3getEv called 41 returned 100% blocks executed 100%
-       41: 1295:      get() const noexcept
-       41: 1296:      { return _M_ptr; }
-       41: 1296-block  0
+function _ZNKSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EE3getEv called 19 returned 100% blocks executed 100%
+       19: 1295:      get() const noexcept
+       19: 1296:      { return _M_ptr; }
+       19: 1296-block  0
 ------------------
 _ZNKSt12__shared_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELN9__gnu_cxx12_Lock_policyE2EE3getEv:
 function _ZNKSt12__shared_ptrINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELN9__gnu_cxx12_Lock_policyE2EE3getEv called 1 returned 100% blocks executed 100%
@@ -9289,8 +9289,8 @@ function _ZNKSt12__shared_ptrINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEEL
 ------------------
         -: 1297:
         -: 1298:      /// Return true if the stored pointer is not null.
-       4*: 1299:      explicit operator bool() const noexcept
-       4*: 1300:      { return _M_ptr != nullptr; }
+       5*: 1299:      explicit operator bool() const noexcept
+       5*: 1300:      { return _M_ptr != nullptr; }
 ------------------
 _ZNKSt12__shared_ptrIKNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEELN9__gnu_cxx12_Lock_policyE2EEcvbEv:
 function _ZNKSt12__shared_ptrIKNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEELN9__gnu_cxx12_Lock_policyE2EEcvbEv called 0 returned 0% blocks executed 0%
@@ -9317,10 +9317,10 @@ function _ZNKSt12__shared_ptrIN5Catch16TestCaseTracking8ITrackerELN9__gnu_cxx12_
         2: 1300-block  0
 ------------------
 _ZNKSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EEcvbEv:
-function _ZNKSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EEcvbEv called 0 returned 0% blocks executed 0%
-    #####: 1299:      explicit operator bool() const noexcept
-    #####: 1300:      { return _M_ptr != nullptr; }
-    %%%%%: 1300-block  0
+function _ZNKSt12__shared_ptrIKN5Catch7IConfigELN9__gnu_cxx12_Lock_policyE2EEcvbEv called 1 returned 100% blocks executed 100%
+        1: 1299:      explicit operator bool() const noexcept
+        1: 1300:      { return _M_ptr != nullptr; }
+        1: 1300-block  0
 ------------------
 _ZNKSt12__shared_ptrIN5Catch5clara6detail17BoundValueRefBaseELN9__gnu_cxx12_Lock_policyE2EEcvbEv:
 function _ZNKSt12__shared_ptrIN5Catch5clara6detail17BoundValueRefBaseELN9__gnu_cxx12_Lock_policyE2EEcvbEv called 1 returned 100% blocks executed 100%
@@ -9341,22 +9341,22 @@ function _ZNKSt12__shared_ptrIN5Catch5clara6detail17BoundValueRefBaseELN9__gnu_c
         -: 1311:
         -: 1312:      /// Exchange both the owned pointer and the stored pointer.
         -: 1313:      void
-      11*: 1314:      swap(__shared_ptr<_Tp, _Lp>& __other) noexcept
+       9*: 1314:      swap(__shared_ptr<_Tp, _Lp>& __other) noexcept
         -: 1315:      {
-      11*: 1316:	std::swap(_M_ptr, __other._M_ptr);
-      11*: 1317:	_M_refcount._M_swap(__other._M_refcount);
-      11*: 1318:      }
+       9*: 1316:	std::swap(_M_ptr, __other._M_ptr);
+       9*: 1317:	_M_refcount._M_swap(__other._M_refcount);
+       9*: 1318:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EE4swapERS4_:
-function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EE4swapERS4_ called 2 returned 100% blocks executed 100%
-        2: 1314:      swap(__shared_ptr<_Tp, _Lp>& __other) noexcept
+function _ZNSt12__shared_ptrIN5Catch12ITestInvokerELN9__gnu_cxx12_Lock_policyE2EE4swapERS4_ called 0 returned 0% blocks executed 0%
+    #####: 1314:      swap(__shared_ptr<_Tp, _Lp>& __other) noexcept
         -: 1315:      {
-        2: 1316:	std::swap(_M_ptr, __other._M_ptr);
-        2: 1316-block  0
-call    0 returned 2
-        2: 1317:	_M_refcount._M_swap(__other._M_refcount);
-call    0 returned 2
-        2: 1318:      }
+    #####: 1316:	std::swap(_M_ptr, __other._M_ptr);
+    %%%%%: 1316-block  0
+call    0 never executed
+    #####: 1317:	_M_refcount._M_swap(__other._M_refcount);
+call    0 never executed
+    #####: 1318:      }
 ------------------
 _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE11SectionNodeELN9__gnu_cxx12_Lock_policyE2EE4swapERS7_:
 function _ZNSt12__shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE11SectionNodeELN9__gnu_cxx12_Lock_policyE2EE4swapERS7_ called 0 returned 0% blocks executed 0%

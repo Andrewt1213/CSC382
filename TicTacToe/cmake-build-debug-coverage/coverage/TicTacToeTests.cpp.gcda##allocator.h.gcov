@@ -169,7 +169,7 @@
         -:  165:      // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  166:      // 3035. std::allocator's constructors should be constexpr
         -:  167:      _GLIBCXX20_CONSTEXPR
-     126*:  168:      allocator() _GLIBCXX_NOTHROW { }
+     124*:  168:      allocator() _GLIBCXX_NOTHROW { }
 ------------------
 _ZNSaIPKN5Catch8TestCaseEEC2Ev:
 function _ZNSaIPKN5Catch8TestCaseEEC2Ev called 0 returned 0% blocks executed 0%
@@ -316,10 +316,10 @@ function _ZNSaIN5Catch5clara6detail13BoundValueRefINSt7__cxx1112basic_stringIcSt
 call    0 returned 3
 ------------------
 _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev:
-function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev called 46 returned 100% blocks executed 100%
-       46:  168:      allocator() _GLIBCXX_NOTHROW { }
-       46:  168-block  0
-call    0 returned 46
+function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2Ev called 45 returned 100% blocks executed 100%
+       45:  168:      allocator() _GLIBCXX_NOTHROW { }
+       45:  168-block  0
+call    0 returned 45
 ------------------
 _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1Ev:
 function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1Ev called 4 returned 100% blocks executed 100%
@@ -358,10 +358,10 @@ function _ZNSaIN5Catch9VerbosityEEC1Ev called 1 returned 100% blocks executed 10
 call    0 returned 1
 ------------------
 _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEEC2Ev:
-function _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEEC2Ev called 0 returned 0% blocks executed 0%
-    #####:  168:      allocator() _GLIBCXX_NOTHROW { }
-    %%%%%:  168-block  0
-call    0 never executed
+function _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEEC2Ev called 1 returned 100% blocks executed 100%
+        1:  168:      allocator() _GLIBCXX_NOTHROW { }
+        1:  168-block  0
+call    0 returned 1
 ------------------
 _ZNSaIN5Catch5clara8TextFlow6Column8iteratorEEC2Ev:
 function _ZNSaIN5Catch5clara8TextFlow6Column8iteratorEEC2Ev called 0 returned 0% blocks executed 0%
@@ -424,10 +424,10 @@ function _ZNSaISt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESa
 call    0 never executed
 ------------------
 _ZNSaIyEC2Ev:
-function _ZNSaIyEC2Ev called 2 returned 100% blocks executed 100%
-        2:  168:      allocator() _GLIBCXX_NOTHROW { }
-        2:  168-block  0
-call    0 returned 2
+function _ZNSaIyEC2Ev called 1 returned 100% blocks executed 100%
+        1:  168:      allocator() _GLIBCXX_NOTHROW { }
+        1:  168-block  0
+call    0 returned 1
 ------------------
 _ZNSaIN5Catch11MessageInfoEEC2Ev:
 function _ZNSaIN5Catch11MessageInfoEEC2Ev called 1 returned 100% blocks executed 100%
@@ -514,10 +514,10 @@ function _ZNSaISt10unique_ptrIN5Catch6Detail8EnumInfoESt14default_deleteIS2_EEEC
 call    0 returned 1
 ------------------
 _ZNSaISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev:
-function _ZNSaISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev called 1 returned 100% blocks executed 100%
-        1:  168:      allocator() _GLIBCXX_NOTHROW { }
-        1:  168-block  0
-call    0 returned 1
+function _ZNSaISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  168:      allocator() _GLIBCXX_NOTHROW { }
+    %%%%%:  168-block  0
+call    0 never executed
 ------------------
 _ZNSaIN5Catch5clara6detail11BoundLambdaIZNS_21makeCommandLineParserERNS_10ConfigDataEEUlRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4_EEEC2Ev:
 function _ZNSaIN5Catch5clara6detail11BoundLambdaIZNS_21makeCommandLineParserERNS_10ConfigDataEEUlRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE4_EEEC2Ev called 1 returned 100% blocks executed 100%
@@ -725,8 +725,8 @@ call    0 returned 1
 ------------------
         -:  169:
         -:  170:      _GLIBCXX20_CONSTEXPR
-    3537*:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-    3537*:  172:      : __allocator_base<_Tp>(__a) { }
+    3065*:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+    3065*:  172:      : __allocator_base<_Tp>(__a) { }
 ------------------
 _ZNSaIN5Catch6ConfigEEC2ERKS1_:
 function _ZNSaIN5Catch6ConfigEEC2ERKS1_ called 1 returned 100% blocks executed 100%
@@ -813,11 +813,11 @@ function _ZNSaIN5Catch10Generators16GeneratorTrackerEEC1ERKS2_ called 0 returned
 call    0 never executed
 ------------------
 _ZNSaIN5Catch11MessageInfoEEC1ERKS1_:
-function _ZNSaIN5Catch11MessageInfoEEC1ERKS1_ called 19 returned 100% blocks executed 100%
-       19:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-       19:  172:      : __allocator_base<_Tp>(__a) { }
-       19:  172-block  0
-call    0 returned 19
+function _ZNSaIN5Catch11MessageInfoEEC1ERKS1_ called 0 returned 0% blocks executed 0%
+    #####:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+    #####:  172:      : __allocator_base<_Tp>(__a) { }
+    %%%%%:  172-block  0
+call    0 never executed
 ------------------
 _ZNSaIN5Catch6ConfigEEC1ERKS1_:
 function _ZNSaIN5Catch6ConfigEEC1ERKS1_ called 2 returned 100% blocks executed 100%
@@ -960,25 +960,25 @@ function _ZNSaIN5Catch5clara6detail3ArgEEC1ERKS3_ called 67 returned 100% blocks
 call    0 returned 67
 ------------------
 _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS5_:
-function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS5_ called 1563 returned 100% blocks executed 100%
-     1563:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-     1563:  172:      : __allocator_base<_Tp>(__a) { }
-     1563:  172-block  0
-call    0 returned 1563
+function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2ERKS5_ called 1557 returned 100% blocks executed 100%
+     1557:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+     1557:  172:      : __allocator_base<_Tp>(__a) { }
+     1557:  172-block  0
+call    0 returned 1557
 ------------------
 _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1ERKS5_:
-function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1ERKS5_ called 1093 returned 100% blocks executed 100%
-     1093:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-     1093:  172:      : __allocator_base<_Tp>(__a) { }
-     1093:  172-block  0
-call    0 returned 1093
+function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC1ERKS5_ called 1089 returned 100% blocks executed 100%
+     1089:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+     1089:  172:      : __allocator_base<_Tp>(__a) { }
+     1089:  172-block  0
+call    0 returned 1089
 ------------------
 _ZNSaIN5Catch8TestCaseEEC2ERKS1_:
-function _ZNSaIN5Catch8TestCaseEEC2ERKS1_ called 3 returned 100% blocks executed 100%
-        3:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-        3:  172:      : __allocator_base<_Tp>(__a) { }
-        3:  172-block  0
-call    0 returned 3
+function _ZNSaIN5Catch8TestCaseEEC2ERKS1_ called 2 returned 100% blocks executed 100%
+        2:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+        2:  172:      : __allocator_base<_Tp>(__a) { }
+        2:  172-block  0
+call    0 returned 2
 ------------------
 _ZNSaIN5Catch5clara6detail15BoundFlagLambdaIZNS_21makeCommandLineParserERNS_10ConfigDataEEUlbE7_EEEC2ERKS7_:
 function _ZNSaIN5Catch5clara6detail15BoundFlagLambdaIZNS_21makeCommandLineParserERNS_10ConfigDataEEUlbE7_EEEC2ERKS7_ called 3 returned 100% blocks executed 100%
@@ -1009,11 +1009,11 @@ function _ZNSaIN5Catch9VerbosityEEC1ERKS1_ called 1 returned 100% blocks execute
 call    0 returned 1
 ------------------
 _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEEC2ERKS2_:
-function _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEEC2ERKS2_ called 0 returned 0% blocks executed 0%
-    #####:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-    #####:  172:      : __allocator_base<_Tp>(__a) { }
-    %%%%%:  172-block  0
-call    0 never executed
+function _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEEC2ERKS2_ called 3 returned 100% blocks executed 100%
+        3:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+        3:  172:      : __allocator_base<_Tp>(__a) { }
+        3:  172-block  0
+call    0 returned 3
 ------------------
 _ZNSaISt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2ERKS7_:
 function _ZNSaISt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2ERKS7_ called 0 returned 0% blocks executed 0%
@@ -1023,18 +1023,18 @@ function _ZNSaISt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESa
 call    0 never executed
 ------------------
 _ZNSaIN5Catch5clara6detail5TokenEEC2ERKS3_:
-function _ZNSaIN5Catch5clara6detail5TokenEEC2ERKS3_ called 217 returned 100% blocks executed 100%
-      217:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-      217:  172:      : __allocator_base<_Tp>(__a) { }
-      217:  172-block  0
-call    0 returned 217
+function _ZNSaIN5Catch5clara6detail5TokenEEC2ERKS3_ called 4 returned 100% blocks executed 100%
+        4:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+        4:  172:      : __allocator_base<_Tp>(__a) { }
+        4:  172-block  0
+call    0 returned 4
 ------------------
 _ZNSaIN5Catch5clara6detail5TokenEEC1ERKS3_:
-function _ZNSaIN5Catch5clara6detail5TokenEEC1ERKS3_ called 217 returned 100% blocks executed 100%
-      217:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-      217:  172:      : __allocator_base<_Tp>(__a) { }
-      217:  172-block  0
-call    0 returned 217
+function _ZNSaIN5Catch5clara6detail5TokenEEC1ERKS3_ called 4 returned 100% blocks executed 100%
+        4:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+        4:  172:      : __allocator_base<_Tp>(__a) { }
+        4:  172-block  0
+call    0 returned 4
 ------------------
 _ZNSaIN5Catch8TestSpec6FilterEEC2ERKS2_:
 function _ZNSaIN5Catch8TestSpec6FilterEEC2ERKS2_ called 2 returned 100% blocks executed 100%
@@ -1051,11 +1051,11 @@ function _ZNSaIN5Catch8TestSpec6FilterEEC1ERKS2_ called 2 returned 100% blocks e
 call    0 returned 2
 ------------------
 _ZNSaIN5Catch11MessageInfoEEC2ERKS1_:
-function _ZNSaIN5Catch11MessageInfoEEC2ERKS1_ called 19 returned 100% blocks executed 100%
-       19:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-       19:  172:      : __allocator_base<_Tp>(__a) { }
-       19:  172-block  0
-call    0 returned 19
+function _ZNSaIN5Catch11MessageInfoEEC2ERKS1_ called 0 returned 0% blocks executed 0%
+    #####:  171:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
+    #####:  172:      : __allocator_base<_Tp>(__a) { }
+    %%%%%:  172-block  0
+call    0 never executed
 ------------------
 _ZNSaISt4pairIlSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEEEC2ERKSH_:
 function _ZNSaISt4pairIlSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEEEC2ERKSH_ called 0 returned 0% blocks executed 0%
@@ -1628,7 +1628,7 @@ call    0 returned 2
         -:  183:#if __cpp_constexpr_dynamic_alloc
         -:  184:      constexpr
         -:  185:#endif
-    3754*:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+    3280*:  186:      ~allocator() _GLIBCXX_NOTHROW { }
 ------------------
 _ZNSaIN5Catch10Generators16GeneratorTrackerEED1Ev:
 function _ZNSaIN5Catch10Generators16GeneratorTrackerEED1Ev called 0 returned 0% blocks executed 0%
@@ -1781,10 +1781,10 @@ function _ZNSaIN5Catch17ReporterRegistrarINS_15CompactReporterEE15ReporterFactor
 call    0 returned 1
 ------------------
 _ZNSaISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEED2Ev:
-function _ZNSaISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEED2Ev called 1 returned 100% blocks executed 100%
-        1:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-        1:  186-block  0
-call    0 returned 1
+function _ZNSaISt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEED2Ev called 0 returned 0% blocks executed 0%
+    #####:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+    %%%%%:  186-block  0
+call    0 never executed
 ------------------
 _ZNSaISt10unique_ptrIN5Catch6Detail8EnumInfoESt14default_deleteIS2_EEED2Ev:
 function _ZNSaISt10unique_ptrIN5Catch6Detail8EnumInfoESt14default_deleteIS2_EEED2Ev called 1 returned 100% blocks executed 100%
@@ -1889,10 +1889,10 @@ function _ZNSaIN5Catch5clara6detail3OptEED2Ev called 69 returned 100% blocks exe
 call    0 returned 69
 ------------------
 _ZNSaIyED2Ev:
-function _ZNSaIyED2Ev called 2 returned 100% blocks executed 100%
-        2:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-        2:  186-block  0
-call    0 returned 2
+function _ZNSaIyED2Ev called 1 returned 100% blocks executed 100%
+        1:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+        1:  186-block  0
+call    0 returned 1
 ------------------
 _ZNSaISt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEED2Ev:
 function _ZNSaISt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEED2Ev called 0 returned 0% blocks executed 0%
@@ -1949,10 +1949,10 @@ function _ZNSaIN5Catch5clara6detail3OptEED1Ev called 67 returned 100% blocks exe
 call    0 returned 67
 ------------------
 _ZNSaIN5Catch11MessageInfoEED2Ev:
-function _ZNSaIN5Catch11MessageInfoEED2Ev called 20 returned 100% blocks executed 100%
-       20:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-       20:  186-block  0
-call    0 returned 20
+function _ZNSaIN5Catch11MessageInfoEED2Ev called 1 returned 100% blocks executed 100%
+        1:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+        1:  186-block  0
+call    0 returned 1
 ------------------
 _ZNSaIN5Catch5clara6detail11HelpColumnsEED1Ev:
 function _ZNSaIN5Catch5clara6detail11HelpColumnsEED1Ev called 0 returned 0% blocks executed 0%
@@ -1967,16 +1967,16 @@ function _ZNSaIN5Catch5clara6detail11HelpColumnsEED2Ev called 0 returned 0% bloc
 call    0 never executed
 ------------------
 _ZNSaIN5Catch5clara6detail5TokenEED1Ev:
-function _ZNSaIN5Catch5clara6detail5TokenEED1Ev called 217 returned 100% blocks executed 100%
-      217:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-      217:  186-block  0
-call    0 returned 217
+function _ZNSaIN5Catch5clara6detail5TokenEED1Ev called 4 returned 100% blocks executed 100%
+        4:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+        4:  186-block  0
+call    0 returned 4
 ------------------
 _ZNSaIN5Catch5clara6detail5TokenEED2Ev:
-function _ZNSaIN5Catch5clara6detail5TokenEED2Ev called 218 returned 100% blocks executed 100%
-      218:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-      218:  186-block  0
-call    0 returned 218
+function _ZNSaIN5Catch5clara6detail5TokenEED2Ev called 5 returned 100% blocks executed 100%
+        5:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+        5:  186-block  0
+call    0 returned 5
 ------------------
 _ZNSaIN5Catch5clara8TextFlow6ColumnEED1Ev:
 function _ZNSaIN5Catch5clara8TextFlow6ColumnEED1Ev called 0 returned 0% blocks executed 0%
@@ -1997,16 +1997,16 @@ function _ZNSaIN5Catch5clara8TextFlow6Column8iteratorEED2Ev called 0 returned 0%
 call    0 never executed
 ------------------
 _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED1Ev:
-function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED1Ev called 1097 returned 100% blocks executed 100%
-     1097:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-     1097:  186-block  0
-call    0 returned 1097
+function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED1Ev called 1093 returned 100% blocks executed 100%
+     1093:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+     1093:  186-block  0
+call    0 returned 1093
 ------------------
 _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev:
-function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev called 1609 returned 100% blocks executed 100%
-     1609:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-     1609:  186-block  0
-call    0 returned 1609
+function _ZNSaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev called 1602 returned 100% blocks executed 100%
+     1602:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+     1602:  186-block  0
+call    0 returned 1602
 ------------------
 _ZNSaIN5Catch8TestCaseEED1Ev:
 function _ZNSaIN5Catch8TestCaseEED1Ev called 2 returned 100% blocks executed 100%
@@ -2015,10 +2015,10 @@ function _ZNSaIN5Catch8TestCaseEED1Ev called 2 returned 100% blocks executed 100
 call    0 returned 2
 ------------------
 _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEED2Ev:
-function _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEED2Ev called 0 returned 0% blocks executed 0%
-    #####:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-    %%%%%:  186-block  0
-call    0 never executed
+function _ZNSaIN5Catch12_GLOBAL__N_110ColumnInfoEED2Ev called 4 returned 100% blocks executed 100%
+        4:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+        4:  186-block  0
+call    0 returned 4
 ------------------
 _ZNSaIN5Catch9VerbosityEED1Ev:
 function _ZNSaIN5Catch9VerbosityEED1Ev called 2 returned 100% blocks executed 100%
@@ -2075,10 +2075,10 @@ function _ZNSaIN5Catch17ReporterRegistrarINS_15ConsoleReporterEE15ReporterFactor
 call    0 returned 3
 ------------------
 _ZNSaIN5Catch8TestCaseEED2Ev:
-function _ZNSaIN5Catch8TestCaseEED2Ev called 5 returned 100% blocks executed 100%
-        5:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-        5:  186-block  0
-call    0 returned 5
+function _ZNSaIN5Catch8TestCaseEED2Ev called 4 returned 100% blocks executed 100%
+        4:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+        4:  186-block  0
+call    0 returned 4
 ------------------
 _ZNSaIPN5Catch10ISingletonEED2Ev:
 function _ZNSaIPN5Catch10ISingletonEED2Ev called 1 returned 100% blocks executed 100%
@@ -2123,10 +2123,10 @@ function _ZNSaIN5Catch13ScopedMessageEED2Ev called 1 returned 100% blocks execut
 call    0 returned 1
 ------------------
 _ZNSaIN5Catch11MessageInfoEED1Ev:
-function _ZNSaIN5Catch11MessageInfoEED1Ev called 19 returned 100% blocks executed 100%
-       19:  186:      ~allocator() _GLIBCXX_NOTHROW { }
-       19:  186-block  0
-call    0 returned 19
+function _ZNSaIN5Catch11MessageInfoEED1Ev called 0 returned 0% blocks executed 0%
+    #####:  186:      ~allocator() _GLIBCXX_NOTHROW { }
+    %%%%%:  186-block  0
+call    0 never executed
 ------------------
 _ZNSaISt23_Sp_counted_ptr_inplaceIN5Catch17ReporterRegistrarINS0_11XmlReporterEE15ReporterFactoryESaIS4_ELN9__gnu_cxx12_Lock_policyE2EEED1Ev:
 function _ZNSaISt23_Sp_counted_ptr_inplaceIN5Catch17ReporterRegistrarINS0_11XmlReporterEE15ReporterFactoryESaIS4_ELN9__gnu_cxx12_Lock_policyE2EEED1Ev called 2 returned 100% blocks executed 100%

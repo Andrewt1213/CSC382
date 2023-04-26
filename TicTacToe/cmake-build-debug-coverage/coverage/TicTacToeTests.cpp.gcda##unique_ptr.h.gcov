@@ -83,28 +83,28 @@ function _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_15CompactRepo
     #####:   75:        default_delete(const default_delete<_Up>&) noexcept { }
 ------------------
 _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_15ConsoleReporterEvEERKS_IT_E:
-function _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_15ConsoleReporterEvEERKS_IT_E called 0 returned 0% blocks executed 0%
-    #####:   75:        default_delete(const default_delete<_Up>&) noexcept { }
+function _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_15ConsoleReporterEvEERKS_IT_E called 1 returned 100% blocks executed 100%
+        1:   75:        default_delete(const default_delete<_Up>&) noexcept { }
 ------------------
 _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_13JunitReporterEvEERKS_IT_E:
 function _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_13JunitReporterEvEERKS_IT_E called 0 returned 0% blocks executed 0%
     #####:   75:        default_delete(const default_delete<_Up>&) noexcept { }
 ------------------
 _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_11XmlReporterEvEERKS_IT_E:
-function _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_11XmlReporterEvEERKS_IT_E called 1 returned 100% blocks executed 100%
-        1:   75:        default_delete(const default_delete<_Up>&) noexcept { }
+function _ZNSt14default_deleteIN5Catch18IStreamingReporterEEC1INS0_11XmlReporterEvEERKS_IT_E called 0 returned 0% blocks executed 0%
+    #####:   75:        default_delete(const default_delete<_Up>&) noexcept { }
 ------------------
         -:   76:
         -:   77:      /// Calls `delete __ptr`
         -:   78:      void
-       4*:   79:      operator()(_Tp* __ptr) const
+       3*:   79:      operator()(_Tp* __ptr) const
         -:   80:      {
         -:   81:	static_assert(!is_void<_Tp>::value,
         -:   82:		      "can't delete pointer to incomplete type");
         -:   83:	static_assert(sizeof(_Tp)>0,
         -:   84:		      "can't delete pointer to incomplete type");
-       4*:   85:	delete __ptr;
-       4*:   86:      }
+       3*:   85:	delete __ptr;
+       3*:   86:      }
 ------------------
 _ZNKSt14default_deleteIN5Catch15CompactReporterEEclEPS1_:
 function _ZNKSt14default_deleteIN5Catch15CompactReporterEEclEPS1_ called 0 returned 0% blocks executed 0%
@@ -171,7 +171,24 @@ call    2 never executed
     #####:   86:      }
 ------------------
 _ZNKSt14default_deleteIN5Catch12TablePrinterEEclEPS1_:
-function _ZNKSt14default_deleteIN5Catch12TablePrinterEEclEPS1_ called 0 returned 0% blocks executed 0%
+function _ZNKSt14default_deleteIN5Catch12TablePrinterEEclEPS1_ called 1 returned 100% blocks executed 100%
+        1:   79:      operator()(_Tp* __ptr) const
+        -:   80:      {
+        -:   81:	static_assert(!is_void<_Tp>::value,
+        -:   82:		      "can't delete pointer to incomplete type");
+        -:   83:	static_assert(sizeof(_Tp)>0,
+        -:   84:		      "can't delete pointer to incomplete type");
+        1:   85:	delete __ptr;
+        1:   85-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   85-block  1
+call    2 returned 1
+call    3 returned 1
+        1:   86:      }
+------------------
+_ZNKSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEclEPS5_:
+function _ZNKSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEclEPS5_ called 0 returned 0% blocks executed 0%
     #####:   79:      operator()(_Tp* __ptr) const
         -:   80:      {
         -:   81:	static_assert(!is_void<_Tp>::value,
@@ -184,24 +201,7 @@ branch  0 never executed
 branch  1 never executed
     %%%%%:   85-block  1
 call    2 never executed
-call    3 never executed
     #####:   86:      }
-------------------
-_ZNKSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEclEPS5_:
-function _ZNKSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEclEPS5_ called 2 returned 100% blocks executed 100%
-        2:   79:      operator()(_Tp* __ptr) const
-        -:   80:      {
-        -:   81:	static_assert(!is_void<_Tp>::value,
-        -:   82:		      "can't delete pointer to incomplete type");
-        -:   83:	static_assert(sizeof(_Tp)>0,
-        -:   84:		      "can't delete pointer to incomplete type");
-        2:   85:	delete __ptr;
-        2:   85-block  0
-branch  0 taken 2 (fallthrough)
-branch  1 taken 0
-        2:   85-block  1
-call    2 returned 2
-        2:   86:      }
 ------------------
 _ZNKSt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEEEclEPS5_:
 function _ZNKSt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEEEclEPS5_ called 0 returned 0% blocks executed 0%
@@ -387,7 +387,7 @@ function _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS
     %%%%%:  154-block  0
 call    0 never executed
 ------------------
-       4*:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
+       3*:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_EEC2EPS1_:
 function _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_EEC2EPS1_ called 0 returned 0% blocks executed 0%
@@ -397,11 +397,11 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EEC2EPS1_:
-function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EEC2EPS1_ called 0 returned 0% blocks executed 0%
-    #####:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
-    %%%%%:  155-block  0
-call    0 never executed
-call    1 never executed
+function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EEC2EPS1_ called 1 returned 100% blocks executed 100%
+        1:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
+        1:  155-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EEC2EPS1_:
 function _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EEC2EPS1_ called 0 returned 0% blocks executed 0%
@@ -411,11 +411,11 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EEC2EPS1_:
-function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EEC2EPS1_ called 1 returned 100% blocks executed 100%
-        1:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
-        1:  155-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EEC2EPS1_ called 0 returned 0% blocks executed 0%
+    #####:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
+    %%%%%:  155-block  0
+call    0 never executed
+call    1 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEEC2EPb:
 function _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEEC2EPb called 0 returned 0% blocks executed 0%
@@ -425,18 +425,18 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EEC2EPS1_:
-function _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EEC2EPS1_ called 0 returned 0% blocks executed 0%
+function _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EEC2EPS1_ called 1 returned 100% blocks executed 100%
+        1:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
+        1:  155-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EPS5_:
+function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EPS5_ called 0 returned 0% blocks executed 0%
     #####:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
     %%%%%:  155-block  0
 call    0 never executed
 call    1 never executed
-------------------
-_ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EPS5_:
-function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EPS5_ called 2 returned 100% blocks executed 100%
-        2:  155:      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
-        2:  155-block  0
-call    0 returned 2
-call    1 returned 2
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEC2EPS5_:
 function _ZNSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEC2EPS5_ called 0 returned 0% blocks executed 0%
@@ -487,12 +487,12 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_15ConsoleReporterEEEEPS1_OT_:
-function _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_15ConsoleReporterEEEEPS1_OT_ called 0 returned 0% blocks executed 0%
-    #####:  158:      __uniq_ptr_impl(pointer __p, _Del&& __d)
-    #####:  159:	: _M_t(__p, std::forward<_Del>(__d)) { }
-    %%%%%:  159-block  0
-call    0 never executed
-call    1 never executed
+function _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_15ConsoleReporterEEEEPS1_OT_ called 1 returned 100% blocks executed 100%
+        1:  158:      __uniq_ptr_impl(pointer __p, _Del&& __d)
+        1:  159:	: _M_t(__p, std::forward<_Del>(__d)) { }
+        1:  159-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_13JunitReporterEEEEPS1_OT_:
 function _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_13JunitReporterEEEEPS1_OT_ called 0 returned 0% blocks executed 0%
@@ -503,27 +503,27 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_11XmlReporterEEEEPS1_OT_:
-function _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_11XmlReporterEEEEPS1_OT_ called 1 returned 100% blocks executed 100%
-        1:  158:      __uniq_ptr_impl(pointer __p, _Del&& __d)
-        1:  159:	: _M_t(__p, std::forward<_Del>(__d)) { }
-        1:  159-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC2IS2_INS0_11XmlReporterEEEEPS1_OT_ called 0 returned 0% blocks executed 0%
+    #####:  158:      __uniq_ptr_impl(pointer __p, _Del&& __d)
+    #####:  159:	: _M_t(__p, std::forward<_Del>(__d)) { }
+    %%%%%:  159-block  0
+call    0 never executed
+call    1 never executed
 ------------------
         -:  160:
-       4*:  161:      __uniq_ptr_impl(__uniq_ptr_impl&& __u) noexcept
-       4*:  162:      : _M_t(std::move(__u._M_t))
-       4*:  163:      { __u._M_ptr() = nullptr; }
+       1*:  161:      __uniq_ptr_impl(__uniq_ptr_impl&& __u) noexcept
+       1*:  162:      : _M_t(std::move(__u._M_t))
+       1*:  163:      { __u._M_ptr() = nullptr; }
 ------------------
 _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EOS8_:
-function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EOS8_ called 3 returned 100% blocks executed 100%
-        3:  161:      __uniq_ptr_impl(__uniq_ptr_impl&& __u) noexcept
-        3:  162:      : _M_t(std::move(__u._M_t))
-        3:  162-block  0
-call    0 returned 3
-call    1 returned 3
-        3:  163:      { __u._M_ptr() = nullptr; }
-call    0 returned 3
+function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC2EOS8_ called 0 returned 0% blocks executed 0%
+    #####:  161:      __uniq_ptr_impl(__uniq_ptr_impl&& __u) noexcept
+    #####:  162:      : _M_t(std::move(__u._M_t))
+    %%%%%:  162-block  0
+call    0 never executed
+call    1 never executed
+    #####:  163:      { __u._M_ptr() = nullptr; }
+call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEC2EOS5_:
 function _ZNSt15__uniq_ptr_implIKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEC2EOS5_ called 0 returned 0% blocks executed 0%
@@ -594,7 +594,7 @@ call    2 never executed
         -:  170:      }
 ------------------
         -:  171:
-      19*:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
+      11*:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_EE6_M_ptrEv:
 function _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -603,10 +603,10 @@ function _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_E
 call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE6_M_ptrEv:
-function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
-    #####:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
-    %%%%%:  172-block  0
-call    0 never executed
+function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE6_M_ptrEv called 4 returned 100% blocks executed 100%
+        4:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
+        4:  172-block  0
+call    0 returned 4
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE6_M_ptrEv:
 function _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -615,10 +615,10 @@ function _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE6
 call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE6_M_ptrEv:
-function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE6_M_ptrEv called 4 returned 100% blocks executed 100%
-        4:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
-        4:  172-block  0
-call    0 returned 4
+function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
+    #####:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
+    %%%%%:  172-block  0
+call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEE6_M_ptrEv:
 function _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -627,16 +627,16 @@ function _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEE6_M_ptrEv called 0 retu
 call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE6_M_ptrEv:
-function _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
+function _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE6_M_ptrEv called 2 returned 100% blocks executed 100%
+        2:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
+        2:  172-block  0
+call    0 returned 2
+------------------
+_ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv:
+function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
     #####:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
     %%%%%:  172-block  0
 call    0 never executed
-------------------
-_ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv:
-function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv called 10 returned 100% blocks executed 100%
-       10:  172:      pointer&   _M_ptr() { return std::get<0>(_M_t); }
-       10:  172-block  0
-call    0 returned 10
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE6_M_ptrEv:
 function _ZNSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -674,7 +674,7 @@ function _ZNSt15__uniq_ptr_implIKN5Catch7IStreamESt14default_deleteIS2_EE6_M_ptr
         2:  172-block  0
 call    0 returned 2
 ------------------
-      99*:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
+      42*:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
 ------------------
 _ZNKSt15__uniq_ptr_implIbSt14default_deleteIA_bEE6_M_ptrEv:
 function _ZNKSt15__uniq_ptr_implIbSt14default_deleteIA_bEE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -683,16 +683,16 @@ function _ZNKSt15__uniq_ptr_implIbSt14default_deleteIA_bEE6_M_ptrEv called 0 ret
 call    0 never executed
 ------------------
 _ZNKSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE6_M_ptrEv:
-function _ZNKSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
-    #####:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
-    %%%%%:  173-block  0
-call    0 never executed
+function _ZNKSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE6_M_ptrEv called 6 returned 100% blocks executed 100%
+        6:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
+        6:  173-block  0
+call    0 returned 6
 ------------------
 _ZNKSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EE6_M_ptrEv:
-function _ZNKSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EE6_M_ptrEv called 54 returned 100% blocks executed 100%
-       54:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
-       54:  173-block  0
-call    0 returned 54
+function _ZNKSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EE6_M_ptrEv called 35 returned 100% blocks executed 100%
+       35:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
+       35:  173-block  0
+call    0 returned 35
 ------------------
 _ZNKSt15__uniq_ptr_implIN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EE6_M_ptrEv:
 function _ZNKSt15__uniq_ptr_implIN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -719,10 +719,10 @@ function _ZNKSt15__uniq_ptr_implIKN5Catch7IStreamESt14default_deleteIS2_EE6_M_pt
 call    0 returned 1
 ------------------
 _ZNKSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv:
-function _ZNKSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv called 44 returned 100% blocks executed 100%
-       44:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
-       44:  173-block  0
-call    0 returned 44
+function _ZNKSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
+    #####:  173:      pointer    _M_ptr() const { return std::get<0>(_M_t); }
+    %%%%%:  173-block  0
+call    0 never executed
 ------------------
 _ZNKSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE6_M_ptrEv:
 function _ZNKSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE6_M_ptrEv called 0 returned 0% blocks executed 0%
@@ -730,7 +730,7 @@ function _ZNKSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2
     %%%%%:  173-block  0
 call    0 never executed
 ------------------
-       5*:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
+       4*:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_EE10_M_deleterEv:
 function _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
@@ -739,10 +739,10 @@ function _ZNSt15__uniq_ptr_implIN5Catch15CompactReporterESt14default_deleteIS1_E
 call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE10_M_deleterEv:
-function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
-    #####:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
-    %%%%%:  174-block  0
-call    0 never executed
+function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE10_M_deleterEv called 1 returned 100% blocks executed 100%
+        1:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
+        1:  174-block  0
+call    0 returned 1
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE10_M_deleterEv:
 function _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
@@ -751,10 +751,10 @@ function _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE1
 call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE10_M_deleterEv:
-function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE10_M_deleterEv called 1 returned 100% blocks executed 100%
-        1:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
-        1:  174-block  0
-call    0 returned 1
+function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
+    #####:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
+    %%%%%:  174-block  0
+call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEE10_M_deleterEv:
 function _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEE10_M_deleterEv called 0 returned 0% blocks executed 0%
@@ -763,16 +763,16 @@ function _ZNSt15__uniq_ptr_implIbSt14default_deleteIA_bEE10_M_deleterEv called 0
 call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE10_M_deleterEv:
-function _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
+function _ZNSt15__uniq_ptr_implIN5Catch12TablePrinterESt14default_deleteIS1_EE10_M_deleterEv called 1 returned 100% blocks executed 100%
+        1:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
+        1:  174-block  0
+call    0 returned 1
+------------------
+_ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE10_M_deleterEv:
+function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
     #####:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
     %%%%%:  174-block  0
 call    0 never executed
-------------------
-_ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE10_M_deleterEv:
-function _ZNSt15__uniq_ptr_implINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE10_M_deleterEv called 2 returned 100% blocks executed 100%
-        2:  174:      _Dp&       _M_deleter() { return std::get<1>(_M_t); }
-        2:  174-block  0
-call    0 returned 2
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE10_M_deleterEv:
 function _ZNSt15__uniq_ptr_implIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE10_M_deleterEv called 0 returned 0% blocks executed 0%
@@ -877,15 +877,15 @@ call    0 never executed
         -:  190:      }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE7releaseEv:
-function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE7releaseEv called 0 returned 0% blocks executed 0%
-    #####:  185:      pointer release() noexcept
+function _ZNSt15__uniq_ptr_implIN5Catch15ConsoleReporterESt14default_deleteIS1_EE7releaseEv called 1 returned 100% blocks executed 100%
+        1:  185:      pointer release() noexcept
         -:  186:      {
-    #####:  187:	pointer __p = _M_ptr();
-    %%%%%:  187-block  0
-call    0 never executed
-    #####:  188:	_M_ptr() = nullptr;
-call    0 never executed
-    #####:  189:	return __p;
+        1:  187:	pointer __p = _M_ptr();
+        1:  187-block  0
+call    0 returned 1
+        1:  188:	_M_ptr() = nullptr;
+call    0 returned 1
+        1:  189:	return __p;
         -:  190:      }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch13JunitReporterESt14default_deleteIS1_EE7releaseEv:
@@ -901,15 +901,15 @@ call    0 never executed
         -:  190:      }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE7releaseEv:
-function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE7releaseEv called 1 returned 100% blocks executed 100%
-        1:  185:      pointer release() noexcept
+function _ZNSt15__uniq_ptr_implIN5Catch11XmlReporterESt14default_deleteIS1_EE7releaseEv called 0 returned 0% blocks executed 0%
+    #####:  185:      pointer release() noexcept
         -:  186:      {
-        1:  187:	pointer __p = _M_ptr();
-        1:  187-block  0
-call    0 returned 1
-        1:  188:	_M_ptr() = nullptr;
-call    0 returned 1
-        1:  189:	return __p;
+    #####:  187:	pointer __p = _M_ptr();
+    %%%%%:  187-block  0
+call    0 never executed
+    #####:  188:	_M_ptr() = nullptr;
+call    0 never executed
+    #####:  189:	return __p;
         -:  190:      }
 ------------------
 _ZNSt15__uniq_ptr_implIN5Catch18IStreamingReporterESt14default_deleteIS1_EE7releaseEv:
@@ -956,13 +956,13 @@ call    0 never executed
         -:  208:    struct __uniq_ptr_data : __uniq_ptr_impl<_Tp, _Dp>
         -:  209:    {
         -:  210:      using __uniq_ptr_impl<_Tp, _Dp>::__uniq_ptr_impl;
-       4*:  211:      __uniq_ptr_data(__uniq_ptr_data&&) = default;
+       1*:  211:      __uniq_ptr_data(__uniq_ptr_data&&) = default;
 ------------------
 _ZNSt15__uniq_ptr_dataINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_ELb1ELb1EEC1EOS8_:
-function _ZNSt15__uniq_ptr_dataINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_ELb1ELb1EEC1EOS8_ called 3 returned 100% blocks executed 100%
-        3:  211:      __uniq_ptr_data(__uniq_ptr_data&&) = default;
-        3:  211-block  0
-call    0 returned 3
+function _ZNSt15__uniq_ptr_dataINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_ELb1ELb1EEC1EOS8_ called 0 returned 0% blocks executed 0%
+    #####:  211:      __uniq_ptr_data(__uniq_ptr_data&&) = default;
+    %%%%%:  211-block  0
+call    0 never executed
 ------------------
 _ZNSt15__uniq_ptr_dataIKN5Catch20IExceptionTranslatorESt14default_deleteIS2_ELb1ELb1EEC1EOS5_:
 function _ZNSt15__uniq_ptr_dataIKN5Catch20IExceptionTranslatorESt14default_deleteIS2_ELb1ELb1EEC1EOS5_ called 0 returned 0% blocks executed 0%
@@ -1067,9 +1067,9 @@ call    0 never executed
         -:  278:       */
         -:  279:      template<typename _Del = _Dp, typename = _DeleterConstraint<_Del>>
         -:  280:	explicit
-       4*:  281:	unique_ptr(pointer __p) noexcept
-       4*:  282:	: _M_t(__p)
-       4*:  283:        { }
+       3*:  281:	unique_ptr(pointer __p) noexcept
+       3*:  282:	: _M_t(__p)
+       3*:  283:        { }
 ------------------
 _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_:
 function _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 0 returned 0% blocks executed 0%
@@ -1080,12 +1080,12 @@ call    0 never executed
     #####:  283:        { }
 ------------------
 _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_:
-function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 0 returned 0% blocks executed 0%
-    #####:  281:	unique_ptr(pointer __p) noexcept
-    #####:  282:	: _M_t(__p)
-    %%%%%:  282-block  0
-call    0 never executed
-    #####:  283:        { }
+function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 1 returned 100% blocks executed 100%
+        1:  281:	unique_ptr(pointer __p) noexcept
+        1:  282:	: _M_t(__p)
+        1:  282-block  0
+call    0 returned 1
+        1:  283:        { }
 ------------------
 _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_:
 function _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 0 returned 0% blocks executed 0%
@@ -1096,28 +1096,28 @@ call    0 never executed
     #####:  283:        { }
 ------------------
 _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_:
-function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 1 returned 100% blocks executed 100%
-        1:  281:	unique_ptr(pointer __p) noexcept
-        1:  282:	: _M_t(__p)
-        1:  282-block  0
-call    0 returned 1
-        1:  283:        { }
-------------------
-_ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEC1IS3_vEEPS1_:
-function _ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 0 returned 0% blocks executed 0%
+function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 0 returned 0% blocks executed 0%
     #####:  281:	unique_ptr(pointer __p) noexcept
     #####:  282:	: _M_t(__p)
     %%%%%:  282-block  0
 call    0 never executed
     #####:  283:        { }
 ------------------
+_ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEC1IS3_vEEPS1_:
+function _ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEC1IS3_vEEPS1_ called 1 returned 100% blocks executed 100%
+        1:  281:	unique_ptr(pointer __p) noexcept
+        1:  282:	: _M_t(__p)
+        1:  282-block  0
+call    0 returned 1
+        1:  283:        { }
+------------------
 _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC1IS7_vEEPS5_:
-function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC1IS7_vEEPS5_ called 2 returned 100% blocks executed 100%
-        2:  281:	unique_ptr(pointer __p) noexcept
-        2:  282:	: _M_t(__p)
-        2:  282-block  0
-call    0 returned 2
-        2:  283:        { }
+function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC1IS7_vEEPS5_ called 0 returned 0% blocks executed 0%
+    #####:  281:	unique_ptr(pointer __p) noexcept
+    #####:  282:	: _M_t(__p)
+    %%%%%:  282-block  0
+call    0 never executed
+    #####:  283:        { }
 ------------------
 _ZNSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEC2IS7_vEEPS5_:
 function _ZNSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEC2IS7_vEEPS5_ called 0 returned 0% blocks executed 0%
@@ -1205,13 +1205,13 @@ call    0 never executed
         -:  324:      // Move constructors.
         -:  325:
         -:  326:      /// Move constructor.
-       4*:  327:      unique_ptr(unique_ptr&&) = default;
+       1*:  327:      unique_ptr(unique_ptr&&) = default;
 ------------------
 _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC1EOS8_:
-function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC1EOS8_ called 3 returned 100% blocks executed 100%
-        3:  327:      unique_ptr(unique_ptr&&) = default;
-        3:  327-block  0
-call    0 returned 3
+function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEC1EOS8_ called 0 returned 0% blocks executed 0%
+    #####:  327:      unique_ptr(unique_ptr&&) = default;
+    %%%%%:  327-block  0
+call    0 never executed
 ------------------
 _ZNSt10unique_ptrIKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEC1EOS5_:
 function _ZNSt10unique_ptrIKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEC1EOS5_ called 0 returned 0% blocks executed 0%
@@ -1259,15 +1259,15 @@ call    3 never executed
     #####:  342:	{ }
 ------------------
 _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_15ConsoleReporterES2_IS6_EvEEOS_IT_T0_E:
-function _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_15ConsoleReporterES2_IS6_EvEEOS_IT_T0_E called 0 returned 0% blocks executed 0%
-    #####:  340:	unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
-    #####:  341:	: _M_t(__u.release(), std::forward<_Ep>(__u.get_deleter()))
-    %%%%%:  341-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-call    3 never executed
-    #####:  342:	{ }
+function _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_15ConsoleReporterES2_IS6_EvEEOS_IT_T0_E called 1 returned 100% blocks executed 100%
+        1:  340:	unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+        1:  341:	: _M_t(__u.release(), std::forward<_Ep>(__u.get_deleter()))
+        1:  341-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        1:  342:	{ }
 ------------------
 _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_13JunitReporterES2_IS6_EvEEOS_IT_T0_E:
 function _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_13JunitReporterES2_IS6_EvEEOS_IT_T0_E called 0 returned 0% blocks executed 0%
@@ -1281,15 +1281,15 @@ call    3 never executed
     #####:  342:	{ }
 ------------------
 _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_11XmlReporterES2_IS6_EvEEOS_IT_T0_E:
-function _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_11XmlReporterES2_IS6_EvEEOS_IT_T0_E called 1 returned 100% blocks executed 100%
-        1:  340:	unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
-        1:  341:	: _M_t(__u.release(), std::forward<_Ep>(__u.get_deleter()))
-        1:  341-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-call    3 returned 1
-        1:  342:	{ }
+function _ZNSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEC1INS0_11XmlReporterES2_IS6_EvEEOS_IT_T0_E called 0 returned 0% blocks executed 0%
+    #####:  340:	unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+    #####:  341:	: _M_t(__u.release(), std::forward<_Ep>(__u.get_deleter()))
+    %%%%%:  341-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####:  342:	{ }
 ------------------
         -:  343:
         -:  344:#if _GLIBCXX_USE_DEPRECATED
@@ -1303,15 +1303,15 @@ call    3 returned 1
         -:  352:#endif
         -:  353:
         -:  354:      /// Destructor, invokes the deleter if the stored pointer is not null.
-       9*:  355:      ~unique_ptr() noexcept
+       5*:  355:      ~unique_ptr() noexcept
         -:  356:      {
         -:  357:	static_assert(__is_invocable<deleter_type&, pointer>::value,
         -:  358:		      "unique_ptr's deleter must be invocable with a pointer");
-       9*:  359:	auto& __ptr = _M_t._M_ptr();
-       9*:  360:	if (__ptr != nullptr)
-       4*:  361:	  get_deleter()(std::move(__ptr));
-       9*:  362:	__ptr = pointer();
-       9*:  363:      }
+       5*:  359:	auto& __ptr = _M_t._M_ptr();
+       5*:  360:	if (__ptr != nullptr)
+       3*:  361:	  get_deleter()(std::move(__ptr));
+       5*:  362:	__ptr = pointer();
+       5*:  363:      }
 ------------------
 _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EED1Ev:
 function _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EED1Ev called 0 returned 0% blocks executed 0%
@@ -1334,24 +1334,24 @@ call    2 never executed
     #####:  363:      }
 ------------------
 _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EED1Ev:
-function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EED1Ev called 0 returned 0% blocks executed 0%
-    #####:  355:      ~unique_ptr() noexcept
+function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EED1Ev called 1 returned 100% blocks executed 50%
+        1:  355:      ~unique_ptr() noexcept
         -:  356:      {
         -:  357:	static_assert(__is_invocable<deleter_type&, pointer>::value,
         -:  358:		      "unique_ptr's deleter must be invocable with a pointer");
-    #####:  359:	auto& __ptr = _M_t._M_ptr();
-    %%%%%:  359-block  0
-call    0 never executed
-    #####:  360:	if (__ptr != nullptr)
-branch  0 never executed
-branch  1 never executed
+        1:  359:	auto& __ptr = _M_t._M_ptr();
+        1:  359-block  0
+call    0 returned 1
+        1:  360:	if (__ptr != nullptr)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
     #####:  361:	  get_deleter()(std::move(__ptr));
     %%%%%:  361-block  0
 call    0 never executed
 call    1 never executed
 call    2 never executed
-    #####:  362:	__ptr = pointer();
-    #####:  363:      }
+        1:  362:	__ptr = pointer();
+        1:  363:      }
 ------------------
 _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EED1Ev:
 function _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EED1Ev called 0 returned 0% blocks executed 0%
@@ -1374,27 +1374,7 @@ call    2 never executed
     #####:  363:      }
 ------------------
 _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EED1Ev:
-function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EED1Ev called 1 returned 100% blocks executed 50%
-        1:  355:      ~unique_ptr() noexcept
-        -:  356:      {
-        -:  357:	static_assert(__is_invocable<deleter_type&, pointer>::value,
-        -:  358:		      "unique_ptr's deleter must be invocable with a pointer");
-        1:  359:	auto& __ptr = _M_t._M_ptr();
-        1:  359-block  0
-call    0 returned 1
-        1:  360:	if (__ptr != nullptr)
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
-    #####:  361:	  get_deleter()(std::move(__ptr));
-    %%%%%:  361-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-        1:  362:	__ptr = pointer();
-        1:  363:      }
-------------------
-_ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EED1Ev:
-function _ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EED1Ev called 0 returned 0% blocks executed 0%
+function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EED1Ev called 0 returned 0% blocks executed 0%
     #####:  355:      ~unique_ptr() noexcept
         -:  356:      {
         -:  357:	static_assert(__is_invocable<deleter_type&, pointer>::value,
@@ -1413,25 +1393,45 @@ call    2 never executed
     #####:  362:	__ptr = pointer();
     #####:  363:      }
 ------------------
-_ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EED1Ev:
-function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EED1Ev called 5 returned 100% blocks executed 100%
-        5:  355:      ~unique_ptr() noexcept
+_ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EED1Ev:
+function _ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EED1Ev called 1 returned 100% blocks executed 100%
+        1:  355:      ~unique_ptr() noexcept
         -:  356:      {
         -:  357:	static_assert(__is_invocable<deleter_type&, pointer>::value,
         -:  358:		      "unique_ptr's deleter must be invocable with a pointer");
-        5:  359:	auto& __ptr = _M_t._M_ptr();
-        5:  359-block  0
-call    0 returned 5
-        5:  360:	if (__ptr != nullptr)
-branch  0 taken 2 (fallthrough)
-branch  1 taken 3
-        2:  361:	  get_deleter()(std::move(__ptr));
-        2:  361-block  0
-call    0 returned 2
-call    1 returned 2
-call    2 returned 2
-        5:  362:	__ptr = pointer();
-        5:  363:      }
+        1:  359:	auto& __ptr = _M_t._M_ptr();
+        1:  359-block  0
+call    0 returned 1
+        1:  360:	if (__ptr != nullptr)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  361:	  get_deleter()(std::move(__ptr));
+        1:  361-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        1:  362:	__ptr = pointer();
+        1:  363:      }
+------------------
+_ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EED1Ev:
+function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EED1Ev called 0 returned 0% blocks executed 0%
+    #####:  355:      ~unique_ptr() noexcept
+        -:  356:      {
+        -:  357:	static_assert(__is_invocable<deleter_type&, pointer>::value,
+        -:  358:		      "unique_ptr's deleter must be invocable with a pointer");
+    #####:  359:	auto& __ptr = _M_t._M_ptr();
+    %%%%%:  359-block  0
+call    0 never executed
+    #####:  360:	if (__ptr != nullptr)
+branch  0 never executed
+branch  1 never executed
+    #####:  361:	  get_deleter()(std::move(__ptr));
+    %%%%%:  361-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  362:	__ptr = pointer();
+    #####:  363:      }
 ------------------
 _ZNSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EED2Ev:
 function _ZNSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EED2Ev called 0 returned 0% blocks executed 0%
@@ -1648,14 +1648,24 @@ call    0 never executed
         -:  410:
         -:  411:      /// Return the stored pointer.
         -:  412:      pointer
-      76*:  413:      operator->() const noexcept
+      41*:  413:      operator->() const noexcept
         -:  414:      {
         -:  415:	_GLIBCXX_DEBUG_PEDASSERT(get() != pointer());
-      76*:  416:	return get();
+      41*:  416:	return get();
         -:  417:      }
 ------------------
 _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEptEv:
-function _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEptEv called 0 returned 0% blocks executed 0%
+function _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEptEv called 6 returned 100% blocks executed 100%
+        6:  413:      operator->() const noexcept
+        -:  414:      {
+        -:  415:	_GLIBCXX_DEBUG_PEDASSERT(get() != pointer());
+        6:  416:	return get();
+        6:  416-block  0
+call    0 returned 6
+        -:  417:      }
+------------------
+_ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEptEv:
+function _ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEptEv called 0 returned 0% blocks executed 0%
     #####:  413:      operator->() const noexcept
         -:  414:      {
         -:  415:	_GLIBCXX_DEBUG_PEDASSERT(get() != pointer());
@@ -1664,24 +1674,14 @@ function _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EEptEv c
 call    0 never executed
         -:  417:      }
 ------------------
-_ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEptEv:
-function _ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEptEv called 22 returned 100% blocks executed 100%
-       22:  413:      operator->() const noexcept
-        -:  414:      {
-        -:  415:	_GLIBCXX_DEBUG_PEDASSERT(get() != pointer());
-       22:  416:	return get();
-       22:  416-block  0
-call    0 returned 22
-        -:  417:      }
-------------------
 _ZNKSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEptEv:
-function _ZNKSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEptEv called 53 returned 100% blocks executed 100%
-       53:  413:      operator->() const noexcept
+function _ZNKSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EEptEv called 34 returned 100% blocks executed 100%
+       34:  413:      operator->() const noexcept
         -:  414:      {
         -:  415:	_GLIBCXX_DEBUG_PEDASSERT(get() != pointer());
-       53:  416:	return get();
-       53:  416-block  0
-call    0 returned 53
+       34:  416:	return get();
+       34:  416-block  0
+call    0 returned 34
         -:  417:      }
 ------------------
 _ZNKSt10unique_ptrIN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EEptEv:
@@ -1727,22 +1727,22 @@ call    0 returned 1
         -:  418:
         -:  419:      /// Return the stored pointer.
         -:  420:      pointer
-      99*:  421:      get() const noexcept
-      99*:  422:      { return _M_t._M_ptr(); }
+      42*:  421:      get() const noexcept
+      42*:  422:      { return _M_t._M_ptr(); }
 ------------------
 _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE3getEv:
-function _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE3getEv called 0 returned 0% blocks executed 0%
-    #####:  421:      get() const noexcept
-    #####:  422:      { return _M_t._M_ptr(); }
-    %%%%%:  422-block  0
-call    0 never executed
+function _ZNKSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE3getEv called 6 returned 100% blocks executed 100%
+        6:  421:      get() const noexcept
+        6:  422:      { return _M_t._M_ptr(); }
+        6:  422-block  0
+call    0 returned 6
 ------------------
 _ZNKSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EE3getEv:
-function _ZNKSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EE3getEv called 54 returned 100% blocks executed 100%
-       54:  421:      get() const noexcept
-       54:  422:      { return _M_t._M_ptr(); }
-       54:  422-block  0
-call    0 returned 54
+function _ZNKSt10unique_ptrIN5Catch18IStreamingReporterESt14default_deleteIS1_EE3getEv called 35 returned 100% blocks executed 100%
+       35:  421:      get() const noexcept
+       35:  422:      { return _M_t._M_ptr(); }
+       35:  422-block  0
+call    0 returned 35
 ------------------
 _ZNKSt10unique_ptrIN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EE3getEv:
 function _ZNKSt10unique_ptrIN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EE3getEv called 0 returned 0% blocks executed 0%
@@ -1773,11 +1773,11 @@ function _ZNKSt10unique_ptrIKN5Catch7IStreamESt14default_deleteIS2_EE3getEv call
 call    0 returned 1
 ------------------
 _ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE3getEv:
-function _ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE3getEv called 44 returned 100% blocks executed 100%
-       44:  421:      get() const noexcept
-       44:  422:      { return _M_t._M_ptr(); }
-       44:  422-block  0
-call    0 returned 44
+function _ZNKSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE3getEv called 0 returned 0% blocks executed 0%
+    #####:  421:      get() const noexcept
+    #####:  422:      { return _M_t._M_ptr(); }
+    %%%%%:  422-block  0
+call    0 never executed
 ------------------
 _ZNKSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE3getEv:
 function _ZNKSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE3getEv called 0 returned 0% blocks executed 0%
@@ -1789,8 +1789,8 @@ call    0 never executed
         -:  423:
         -:  424:      /// Return a reference to the stored deleter.
         -:  425:      deleter_type&
-       5*:  426:      get_deleter() noexcept
-       5*:  427:      { return _M_t._M_deleter(); }
+       4*:  426:      get_deleter() noexcept
+       4*:  427:      { return _M_t._M_deleter(); }
 ------------------
 _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EE11get_deleterEv:
 function _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EE11get_deleterEv called 0 returned 0% blocks executed 0%
@@ -1800,11 +1800,11 @@ function _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EE11ge
 call    0 never executed
 ------------------
 _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EE11get_deleterEv:
-function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EE11get_deleterEv called 0 returned 0% blocks executed 0%
-    #####:  426:      get_deleter() noexcept
-    #####:  427:      { return _M_t._M_deleter(); }
-    %%%%%:  427-block  0
-call    0 never executed
+function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EE11get_deleterEv called 1 returned 100% blocks executed 100%
+        1:  426:      get_deleter() noexcept
+        1:  427:      { return _M_t._M_deleter(); }
+        1:  427-block  0
+call    0 returned 1
 ------------------
 _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EE11get_deleterEv:
 function _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EE11get_deleterEv called 0 returned 0% blocks executed 0%
@@ -1814,25 +1814,25 @@ function _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EE11get_
 call    0 never executed
 ------------------
 _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EE11get_deleterEv:
-function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EE11get_deleterEv called 1 returned 100% blocks executed 100%
-        1:  426:      get_deleter() noexcept
-        1:  427:      { return _M_t._M_deleter(); }
-        1:  427-block  0
-call    0 returned 1
-------------------
-_ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE11get_deleterEv:
-function _ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE11get_deleterEv called 0 returned 0% blocks executed 0%
+function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EE11get_deleterEv called 0 returned 0% blocks executed 0%
     #####:  426:      get_deleter() noexcept
     #####:  427:      { return _M_t._M_deleter(); }
     %%%%%:  427-block  0
 call    0 never executed
 ------------------
+_ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE11get_deleterEv:
+function _ZNSt10unique_ptrIN5Catch12TablePrinterESt14default_deleteIS1_EE11get_deleterEv called 1 returned 100% blocks executed 100%
+        1:  426:      get_deleter() noexcept
+        1:  427:      { return _M_t._M_deleter(); }
+        1:  427-block  0
+call    0 returned 1
+------------------
 _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE11get_deleterEv:
-function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE11get_deleterEv called 2 returned 100% blocks executed 100%
-        2:  426:      get_deleter() noexcept
-        2:  427:      { return _M_t._M_deleter(); }
-        2:  427-block  0
-call    0 returned 2
+function _ZNSt10unique_ptrINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EE11get_deleterEv called 0 returned 0% blocks executed 0%
+    #####:  426:      get_deleter() noexcept
+    #####:  427:      { return _M_t._M_deleter(); }
+    %%%%%:  427-block  0
+call    0 never executed
 ------------------
 _ZNSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE11get_deleterEv:
 function _ZNSt10unique_ptrIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EE11get_deleterEv called 0 returned 0% blocks executed 0%
@@ -1916,11 +1916,11 @@ function _ZNSt10unique_ptrIN5Catch15CompactReporterESt14default_deleteIS1_EE7rel
 call    0 never executed
 ------------------
 _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EE7releaseEv:
-function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EE7releaseEv called 0 returned 0% blocks executed 0%
-    #####:  442:      release() noexcept
-    #####:  443:      { return _M_t.release(); }
-    %%%%%:  443-block  0
-call    0 never executed
+function _ZNSt10unique_ptrIN5Catch15ConsoleReporterESt14default_deleteIS1_EE7releaseEv called 1 returned 100% blocks executed 100%
+        1:  442:      release() noexcept
+        1:  443:      { return _M_t.release(); }
+        1:  443-block  0
+call    0 returned 1
 ------------------
 _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EE7releaseEv:
 function _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EE7releaseEv called 0 returned 0% blocks executed 0%
@@ -1930,11 +1930,11 @@ function _ZNSt10unique_ptrIN5Catch13JunitReporterESt14default_deleteIS1_EE7relea
 call    0 never executed
 ------------------
 _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EE7releaseEv:
-function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EE7releaseEv called 1 returned 100% blocks executed 100%
-        1:  442:      release() noexcept
-        1:  443:      { return _M_t.release(); }
-        1:  443-block  0
-call    0 returned 1
+function _ZNSt10unique_ptrIN5Catch11XmlReporterESt14default_deleteIS1_EE7releaseEv called 0 returned 0% blocks executed 0%
+    #####:  442:      release() noexcept
+    #####:  443:      { return _M_t.release(); }
+    %%%%%:  443-block  0
+call    0 never executed
 ------------------
         -:  444:
         -:  445:      /** @brief Replace the stored pointer.

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TicTacToe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TicTacToe-Debug-5962d66712529e3311d6.json",
+					"jsonFile" : "target-TicTacToe-Debug-4a5f1c5b5f6b3861a1a0.json",
 					"name" : "TicTacToe",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Lenovo/CLionProjects/CSC382/TicTacToe/cmake-build-debug",
+		"build" : "C:/Users/Lenovo/CLionProjects/CSC382/TicTacToe/cmake-build-debug-coverage",
 		"source" : "C:/Users/Lenovo/CLionProjects/CSC382/TicTacToe"
 	},
 	"version" : 

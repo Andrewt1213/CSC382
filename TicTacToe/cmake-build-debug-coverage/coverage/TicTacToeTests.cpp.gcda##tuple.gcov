@@ -81,8 +81,8 @@
         -:   77:  template<size_t _Idx, typename _Head>
         -:   78:    struct _Head_base<_Idx, _Head, true>
         -:   79:    {
-       4*:   80:      constexpr _Head_base()
-       4*:   81:      : _M_head_impl() { }
+       3*:   80:      constexpr _Head_base()
+       3*:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15CompactReporterEELb1EEC2Ev:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15CompactReporterEELb1EEC2Ev called 0 returned 0% blocks executed 0%
@@ -90,9 +90,9 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15CompactReporterEELb1E
     #####:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15ConsoleReporterEELb1EEC2Ev:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15ConsoleReporterEELb1EEC2Ev called 0 returned 0% blocks executed 0%
-    #####:   80:      constexpr _Head_base()
-    #####:   81:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15ConsoleReporterEELb1EEC2Ev called 1 returned 100% blocks executed 100%
+        1:   80:      constexpr _Head_base()
+        1:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch13JunitReporterEELb1EEC2Ev:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch13JunitReporterEELb1EEC2Ev called 0 returned 0% blocks executed 0%
@@ -100,9 +100,9 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch13JunitReporterEELb1EEC
     #####:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch11XmlReporterEELb1EEC2Ev:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch11XmlReporterEELb1EEC2Ev called 1 returned 100% blocks executed 100%
-        1:   80:      constexpr _Head_base()
-        1:   81:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch11XmlReporterEELb1EEC2Ev called 0 returned 0% blocks executed 0%
+    #####:   80:      constexpr _Head_base()
+    #####:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIA_bELb1EEC2Ev:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIA_bELb1EEC2Ev called 0 returned 0% blocks executed 0%
@@ -110,14 +110,14 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIA_bELb1EEC2Ev called 0 returne
     #####:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch12TablePrinterEELb1EEC2Ev:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch12TablePrinterEELb1EEC2Ev called 0 returned 0% blocks executed 0%
-    #####:   80:      constexpr _Head_base()
-    #####:   81:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch12TablePrinterEELb1EEC2Ev called 1 returned 100% blocks executed 100%
+        1:   80:      constexpr _Head_base()
+        1:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EEC2Ev:
-function _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EEC2Ev called 2 returned 100% blocks executed 100%
-        2:   80:      constexpr _Head_base()
-        2:   81:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EEC2Ev called 0 returned 0% blocks executed 0%
+    #####:   80:      constexpr _Head_base()
+    #####:   81:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEELb1EEC2Ev:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEELb1EEC2Ev called 0 returned 0% blocks executed 0%
@@ -157,8 +157,8 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEEL
         -:   87:      constexpr _Head_base(_Head_base&&) = default;
         -:   88:
         -:   89:      template<typename _UHead>
-       5*:   90:	constexpr _Head_base(_UHead&& __h)
-       5*:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
+       2*:   90:	constexpr _Head_base(_UHead&& __h)
+       2*:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_15CompactReporterEEEEOT_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_15CompactReporterEEEEOT_ called 0 returned 0% blocks executed 0%
@@ -169,12 +169,12 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_15ConsoleReporterEEEEOT_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_15ConsoleReporterEEEEOT_ called 0 returned 0% blocks executed 0%
-    #####:   90:	constexpr _Head_base(_UHead&& __h)
-    #####:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
-    %%%%%:   91-block  0
-call    0 never executed
-call    1 never executed
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_15ConsoleReporterEEEEOT_ called 1 returned 100% blocks executed 100%
+        1:   90:	constexpr _Head_base(_UHead&& __h)
+        1:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
+        1:   91-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_13JunitReporterEEEEOT_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_13JunitReporterEEEEOT_ called 0 returned 0% blocks executed 0%
@@ -185,19 +185,19 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_11XmlReporterEEEEOT_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_11XmlReporterEEEEOT_ called 1 returned 100% blocks executed 100%
-        1:   90:	constexpr _Head_base(_UHead&& __h)
-        1:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
-        1:   91-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch18IStreamingReporterEELb1EEC2IS0_INS1_11XmlReporterEEEEOT_ called 0 returned 0% blocks executed 0%
+    #####:   90:	constexpr _Head_base(_UHead&& __h)
+    #####:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
+    %%%%%:   91-block  0
+call    0 never executed
+call    1 never executed
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EEC2IS7_EEOT_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EEC2IS7_EEOT_ called 3 returned 100% blocks executed 100%
-        3:   90:	constexpr _Head_base(_UHead&& __h)
-        3:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
-        3:   91-block  0
-call    0 returned 3
+function _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EEC2IS7_EEOT_ called 0 returned 0% blocks executed 0%
+    #####:   90:	constexpr _Head_base(_UHead&& __h)
+    #####:   91:	: _M_head_impl(std::forward<_UHead>(__h)) { }
+    %%%%%:   91-block  0
+call    0 never executed
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIKN5Catch20IExceptionTranslatorEELb1EEC2IS4_EEOT_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIKN5Catch20IExceptionTranslatorEELb1EEC2IS4_EEOT_ called 0 returned 0% blocks executed 0%
@@ -248,7 +248,7 @@ call    0 never executed
         -:  117:	: _M_head_impl(std::forward<_UHead>(__uhead), *__a._M_a) { }
         -:  118:
         -:  119:      static constexpr _Head&
-       9*:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+       5*:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15CompactReporterEELb1EE7_M_headERS4_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15CompactReporterEELb1EE7_M_headERS4_ called 0 returned 0% blocks executed 0%
@@ -256,9 +256,9 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15CompactReporterEELb1E
     %%%%%:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15ConsoleReporterEELb1EE7_M_headERS4_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15ConsoleReporterEELb1EE7_M_headERS4_ called 0 returned 0% blocks executed 0%
-    #####:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-    %%%%%:  120-block  0
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch15ConsoleReporterEELb1EE7_M_headERS4_ called 1 returned 100% blocks executed 100%
+        1:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+        1:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch13JunitReporterEELb1EE7_M_headERS4_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch13JunitReporterEELb1EE7_M_headERS4_ called 0 returned 0% blocks executed 0%
@@ -266,9 +266,9 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch13JunitReporterEELb1EE7
     %%%%%:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch11XmlReporterEELb1EE7_M_headERS4_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch11XmlReporterEELb1EE7_M_headERS4_ called 1 returned 100% blocks executed 100%
-        1:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-        1:  120-block  0
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch11XmlReporterEELb1EE7_M_headERS4_ called 0 returned 0% blocks executed 0%
+    #####:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+    %%%%%:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIA_bELb1EE7_M_headERS3_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIA_bELb1EE7_M_headERS3_ called 0 returned 0% blocks executed 0%
@@ -276,14 +276,14 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIA_bELb1EE7_M_headERS3_ called 
     %%%%%:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch12TablePrinterEELb1EE7_M_headERS4_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch12TablePrinterEELb1EE7_M_headERS4_ called 0 returned 0% blocks executed 0%
-    #####:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-    %%%%%:  120-block  0
+function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch12TablePrinterEELb1EE7_M_headERS4_ called 1 returned 100% blocks executed 100%
+        1:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+        1:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EE7_M_headERS8_:
-function _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EE7_M_headERS8_ called 5 returned 100% blocks executed 100%
-        5:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-        5:  120-block  0
+function _ZNSt10_Head_baseILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEELb1EE7_M_headERS8_ called 0 returned 0% blocks executed 0%
+    #####:  120:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+    %%%%%:  120-block  0
 ------------------
 _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEELb1EE7_M_headERS8_:
 function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEELb1EE7_M_headERS8_ called 0 returned 0% blocks executed 0%
@@ -373,8 +373,8 @@ function _ZNSt10_Head_baseILy1ESt14default_deleteIN5Catch6Detail8EnumInfoEELb1EE
         -:  176:  template<size_t _Idx, typename _Head>
         -:  177:    struct _Head_base<_Idx, _Head, false>
         -:  178:    {
-       4*:  179:      constexpr _Head_base()
-       4*:  180:      : _M_head_impl() { }
+       3*:  179:      constexpr _Head_base()
+       3*:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch15CompactReporterELb0EEC2Ev:
 function _ZNSt10_Head_baseILy0EPN5Catch15CompactReporterELb0EEC2Ev called 0 returned 0% blocks executed 0%
@@ -382,9 +382,9 @@ function _ZNSt10_Head_baseILy0EPN5Catch15CompactReporterELb0EEC2Ev called 0 retu
     #####:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch15ConsoleReporterELb0EEC2Ev:
-function _ZNSt10_Head_baseILy0EPN5Catch15ConsoleReporterELb0EEC2Ev called 0 returned 0% blocks executed 0%
-    #####:  179:      constexpr _Head_base()
-    #####:  180:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy0EPN5Catch15ConsoleReporterELb0EEC2Ev called 1 returned 100% blocks executed 100%
+        1:  179:      constexpr _Head_base()
+        1:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch13JunitReporterELb0EEC2Ev:
 function _ZNSt10_Head_baseILy0EPN5Catch13JunitReporterELb0EEC2Ev called 0 returned 0% blocks executed 0%
@@ -392,9 +392,9 @@ function _ZNSt10_Head_baseILy0EPN5Catch13JunitReporterELb0EEC2Ev called 0 return
     #####:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch11XmlReporterELb0EEC2Ev:
-function _ZNSt10_Head_baseILy0EPN5Catch11XmlReporterELb0EEC2Ev called 1 returned 100% blocks executed 100%
-        1:  179:      constexpr _Head_base()
-        1:  180:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy0EPN5Catch11XmlReporterELb0EEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  179:      constexpr _Head_base()
+    #####:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPbLb0EEC2Ev:
 function _ZNSt10_Head_baseILy0EPbLb0EEC2Ev called 0 returned 0% blocks executed 0%
@@ -402,14 +402,14 @@ function _ZNSt10_Head_baseILy0EPbLb0EEC2Ev called 0 returned 0% blocks executed 
     #####:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EEC2Ev:
-function _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EEC2Ev called 0 returned 0% blocks executed 0%
-    #####:  179:      constexpr _Head_base()
-    #####:  180:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EEC2Ev called 1 returned 100% blocks executed 100%
+        1:  179:      constexpr _Head_base()
+        1:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EEC2Ev:
-function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EEC2Ev called 2 returned 100% blocks executed 100%
-        2:  179:      constexpr _Head_base()
-        2:  180:      : _M_head_impl() { }
+function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  179:      constexpr _Head_base()
+    #####:  180:      : _M_head_impl() { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEELb0EEC2Ev:
 function _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEELb0EEC2Ev called 0 returned 0% blocks executed 0%
@@ -450,8 +450,8 @@ function _ZNSt10_Head_baseILy0ERKlLb0EEC2ES1_ called 0 returned 0% blocks execut
         -:  186:      constexpr _Head_base(_Head_base&&) = default;
         -:  187:
         -:  188:      template<typename _UHead>
-       5*:  189:        constexpr _Head_base(_UHead&& __h)
-       5*:  190:	: _M_head_impl(std::forward<_UHead>(__h)) { }
+       2*:  189:        constexpr _Head_base(_UHead&& __h)
+       2*:  190:	: _M_head_impl(std::forward<_UHead>(__h)) { }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch18IStreamingReporterELb0EEC2IRS2_EEOT_:
 function _ZNSt10_Head_baseILy0EPN5Catch18IStreamingReporterELb0EEC2IRS2_EEOT_ called 1 returned 100% blocks executed 100%
@@ -461,11 +461,11 @@ function _ZNSt10_Head_baseILy0EPN5Catch18IStreamingReporterELb0EEC2IRS2_EEOT_ ca
 call    0 returned 1
 ------------------
 _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EEC2IS6_EEOT_:
-function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EEC2IS6_EEOT_ called 3 returned 100% blocks executed 100%
-        3:  189:        constexpr _Head_base(_UHead&& __h)
-        3:  190:	: _M_head_impl(std::forward<_UHead>(__h)) { }
-        3:  190-block  0
-call    0 returned 3
+function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EEC2IS6_EEOT_ called 0 returned 0% blocks executed 0%
+    #####:  189:        constexpr _Head_base(_UHead&& __h)
+    #####:  190:	: _M_head_impl(std::forward<_UHead>(__h)) { }
+    %%%%%:  190-block  0
+call    0 never executed
 ------------------
 _ZNSt10_Head_baseILy0EPKN5Catch20IExceptionTranslatorELb0EEC2IS3_EEOT_:
 function _ZNSt10_Head_baseILy0EPKN5Catch20IExceptionTranslatorELb0EEC2IS3_EEOT_ called 0 returned 0% blocks executed 0%
@@ -516,7 +516,7 @@ call    0 never executed
         -:  216:	: _M_head_impl(std::forward<_UHead>(__uhead), *__a._M_a) { }
         -:  217:
         -:  218:      static constexpr _Head&
-      23*:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+      12*:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch15CompactReporterELb0EE7_M_headERS3_:
 function _ZNSt10_Head_baseILy0EPN5Catch15CompactReporterELb0EE7_M_headERS3_ called 0 returned 0% blocks executed 0%
@@ -524,9 +524,9 @@ function _ZNSt10_Head_baseILy0EPN5Catch15CompactReporterELb0EE7_M_headERS3_ call
     %%%%%:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch15ConsoleReporterELb0EE7_M_headERS3_:
-function _ZNSt10_Head_baseILy0EPN5Catch15ConsoleReporterELb0EE7_M_headERS3_ called 0 returned 0% blocks executed 0%
-    #####:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-    %%%%%:  219-block  0
+function _ZNSt10_Head_baseILy0EPN5Catch15ConsoleReporterELb0EE7_M_headERS3_ called 4 returned 100% blocks executed 100%
+        4:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+        4:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch13JunitReporterELb0EE7_M_headERS3_:
 function _ZNSt10_Head_baseILy0EPN5Catch13JunitReporterELb0EE7_M_headERS3_ called 0 returned 0% blocks executed 0%
@@ -534,9 +534,9 @@ function _ZNSt10_Head_baseILy0EPN5Catch13JunitReporterELb0EE7_M_headERS3_ called
     %%%%%:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch11XmlReporterELb0EE7_M_headERS3_:
-function _ZNSt10_Head_baseILy0EPN5Catch11XmlReporterELb0EE7_M_headERS3_ called 4 returned 100% blocks executed 100%
-        4:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-        4:  219-block  0
+function _ZNSt10_Head_baseILy0EPN5Catch11XmlReporterELb0EE7_M_headERS3_ called 0 returned 0% blocks executed 0%
+    #####:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+    %%%%%:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0ERKlLb0EE7_M_headERS2_:
 function _ZNSt10_Head_baseILy0ERKlLb0EE7_M_headERS2_ called 0 returned 0% blocks executed 0%
@@ -549,14 +549,14 @@ function _ZNSt10_Head_baseILy0EPbLb0EE7_M_headERS1_ called 0 returned 0% blocks 
     %%%%%:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EE7_M_headERS3_:
-function _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EE7_M_headERS3_ called 0 returned 0% blocks executed 0%
-    #####:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-    %%%%%:  219-block  0
+function _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EE7_M_headERS3_ called 2 returned 100% blocks executed 100%
+        2:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+        2:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EE7_M_headERS7_:
-function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EE7_M_headERS7_ called 13 returned 100% blocks executed 100%
-       13:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
-       13:  219-block  0
+function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EE7_M_headERS7_ called 0 returned 0% blocks executed 0%
+    #####:  219:      _M_head(_Head_base& __b) noexcept { return __b._M_head_impl; }
+    %%%%%:  219-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEELb0EE7_M_headERS7_:
 function _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEELb0EE7_M_headERS7_ called 0 returned 0% blocks executed 0%
@@ -590,7 +590,7 @@ function _ZNSt10_Head_baseILy0EPN5Catch6Detail8EnumInfoELb0EE7_M_headERS4_ calle
 ------------------
         -:  220:
         -:  221:      static constexpr const _Head&
-      99*:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
+      42*:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
 ------------------
 _ZNSt10_Head_baseILy0EPbLb0EE7_M_headERKS1_:
 function _ZNSt10_Head_baseILy0EPbLb0EE7_M_headERKS1_ called 0 returned 0% blocks executed 0%
@@ -598,14 +598,14 @@ function _ZNSt10_Head_baseILy0EPbLb0EE7_M_headERKS1_ called 0 returned 0% blocks
     %%%%%:  222-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EE7_M_headERKS3_:
-function _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EE7_M_headERKS3_ called 0 returned 0% blocks executed 0%
-    #####:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
-    %%%%%:  222-block  0
+function _ZNSt10_Head_baseILy0EPN5Catch12TablePrinterELb0EE7_M_headERKS3_ called 6 returned 100% blocks executed 100%
+        6:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
+        6:  222-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch18IStreamingReporterELb0EE7_M_headERKS3_:
-function _ZNSt10_Head_baseILy0EPN5Catch18IStreamingReporterELb0EE7_M_headERKS3_ called 54 returned 100% blocks executed 100%
-       54:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
-       54:  222-block  0
+function _ZNSt10_Head_baseILy0EPN5Catch18IStreamingReporterELb0EE7_M_headERKS3_ called 35 returned 100% blocks executed 100%
+       35:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
+       35:  222-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch10Generators20GeneratorUntypedBaseELb0EE7_M_headERKS4_:
 function _ZNSt10_Head_baseILy0EPN5Catch10Generators20GeneratorUntypedBaseELb0EE7_M_headERKS4_ called 0 returned 0% blocks executed 0%
@@ -628,9 +628,9 @@ function _ZNSt10_Head_baseILy0EPKN5Catch7IStreamELb0EE7_M_headERKS4_ called 1 re
         1:  222-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EE7_M_headERKS7_:
-function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EE7_M_headERKS7_ called 44 returned 100% blocks executed 100%
-       44:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
-       44:  222-block  0
+function _ZNSt10_Head_baseILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEELb0EE7_M_headERKS7_ called 0 returned 0% blocks executed 0%
+    #####:  222:      _M_head(const _Head_base& __b) noexcept { return __b._M_head_impl; }
+    %%%%%:  222-block  0
 ------------------
 _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEELb0EE7_M_headERKS7_:
 function _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEELb0EE7_M_headERKS7_ called 0 returned 0% blocks executed 0%
@@ -668,7 +668,7 @@ function _ZNSt10_Head_baseILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_
         -:  251:      typedef _Head_base<_Idx, _Head> _Base;
         -:  252:
         -:  253:      static constexpr _Head&
-      23*:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+      12*:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEE7_M_headERS5_:
 function _ZNSt11_Tuple_implILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEE7_M_headERS5_ called 0 returned 0% blocks executed 0%
@@ -677,10 +677,10 @@ function _ZNSt11_Tuple_implILy0EJPN5Catch15CompactReporterESt14default_deleteIS1
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEE7_M_headERS5_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEE7_M_headERS5_ called 0 returned 0% blocks executed 0%
-    #####:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-    %%%%%:  254-block  0
-call    0 never executed
+function _ZNSt11_Tuple_implILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEE7_M_headERS5_ called 4 returned 100% blocks executed 100%
+        4:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+        4:  254-block  0
+call    0 returned 4
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEE7_M_headERS5_:
 function _ZNSt11_Tuple_implILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEE7_M_headERS5_ called 0 returned 0% blocks executed 0%
@@ -689,10 +689,10 @@ function _ZNSt11_Tuple_implILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_E
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEE7_M_headERS5_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEE7_M_headERS5_ called 4 returned 100% blocks executed 100%
-        4:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-        4:  254-block  0
-call    0 returned 4
+function _ZNSt11_Tuple_implILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEE7_M_headERS5_ called 0 returned 0% blocks executed 0%
+    #####:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+    %%%%%:  254-block  0
+call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEE7_M_headERS4_:
 function _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEE7_M_headERS4_ called 0 returned 0% blocks executed 0%
@@ -701,16 +701,16 @@ function _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEE7_M_headERS4_ called
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEE7_M_headERS5_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEE7_M_headERS5_ called 0 returned 0% blocks executed 0%
+function _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEE7_M_headERS5_ called 2 returned 100% blocks executed 100%
+        2:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+        2:  254-block  0
+call    0 returned 2
+------------------
+_ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERS9_:
+function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERS9_ called 0 returned 0% blocks executed 0%
     #####:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
     %%%%%:  254-block  0
 call    0 never executed
-------------------
-_ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERS9_:
-function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERS9_ called 13 returned 100% blocks executed 100%
-       13:  254:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-       13:  254-block  0
-call    0 returned 13
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEE7_M_headERS9_:
 function _ZNSt11_Tuple_implILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEE7_M_headERS9_ called 0 returned 0% blocks executed 0%
@@ -750,7 +750,7 @@ call    0 never executed
 ------------------
         -:  255:
         -:  256:      static constexpr const _Head&
-      99*:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+      42*:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
 ------------------
 _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEE7_M_headERKS4_:
 function _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEE7_M_headERKS4_ called 0 returned 0% blocks executed 0%
@@ -759,16 +759,16 @@ function _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEE7_M_headERKS4_ calle
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEE7_M_headERKS5_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEE7_M_headERKS5_ called 0 returned 0% blocks executed 0%
-    #####:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-    %%%%%:  257-block  0
-call    0 never executed
+function _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEE7_M_headERKS5_ called 6 returned 100% blocks executed 100%
+        6:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+        6:  257-block  0
+call    0 returned 6
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEE7_M_headERKS5_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEE7_M_headERKS5_ called 54 returned 100% blocks executed 100%
-       54:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-       54:  257-block  0
-call    0 returned 54
+function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEE7_M_headERKS5_ called 35 returned 100% blocks executed 100%
+       35:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+       35:  257-block  0
+call    0 returned 35
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EEE7_M_headERKS6_:
 function _ZNSt11_Tuple_implILy0EJPN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EEE7_M_headERKS6_ called 0 returned 0% blocks executed 0%
@@ -795,10 +795,10 @@ function _ZNSt11_Tuple_implILy0EJPKN5Catch7IStreamESt14default_deleteIS2_EEE7_M_
 call    0 returned 1
 ------------------
 _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERKS9_:
-function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERKS9_ called 44 returned 100% blocks executed 100%
-       44:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-       44:  257-block  0
-call    0 returned 44
+function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_headERKS9_ called 0 returned 0% blocks executed 0%
+    #####:  257:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+    %%%%%:  257-block  0
+call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEE7_M_headERKS9_:
 function _ZNSt11_Tuple_implILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEE7_M_headERKS9_ called 0 returned 0% blocks executed 0%
@@ -808,12 +808,12 @@ call    0 never executed
 ------------------
         -:  258:
         -:  259:      static constexpr _Inherited&
-       4*:  260:      _M_tail(_Tuple_impl& __t) noexcept { return __t; }
+       1*:  260:      _M_tail(_Tuple_impl& __t) noexcept { return __t; }
 ------------------
 _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_tailERS9_:
-function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_tailERS9_ called 3 returned 100% blocks executed 100%
-        3:  260:      _M_tail(_Tuple_impl& __t) noexcept { return __t; }
-        3:  260-block  0
+function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEE7_M_tailERS9_ called 0 returned 0% blocks executed 0%
+    #####:  260:      _M_tail(_Tuple_impl& __t) noexcept { return __t; }
+    %%%%%:  260-block  0
 ------------------
 _ZNSt11_Tuple_implILy0EJPKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEE7_M_tailERS6_:
 function _ZNSt11_Tuple_implILy0EJPKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEE7_M_tailERS6_ called 0 returned 0% blocks executed 0%
@@ -834,8 +834,8 @@ function _ZNSt11_Tuple_implILy0EJPN5Catch6Detail8EnumInfoESt14default_deleteIS2_
         -:  262:      static constexpr const _Inherited&
         -:  263:      _M_tail(const _Tuple_impl& __t) noexcept { return __t; }
         -:  264:
-       4*:  265:      constexpr _Tuple_impl()
-       4*:  266:      : _Inherited(), _Base() { }
+       3*:  265:      constexpr _Tuple_impl()
+       3*:  266:      : _Inherited(), _Base() { }
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEEC2Ev:
 function _ZNSt11_Tuple_implILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEEC2Ev called 0 returned 0% blocks executed 0%
@@ -846,12 +846,12 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEEC2Ev:
-function _ZNSt11_Tuple_implILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEEC2Ev called 0 returned 0% blocks executed 0%
-    #####:  265:      constexpr _Tuple_impl()
-    #####:  266:      : _Inherited(), _Base() { }
-    %%%%%:  266-block  0
-call    0 never executed
-call    1 never executed
+function _ZNSt11_Tuple_implILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEEC2Ev called 1 returned 100% blocks executed 100%
+        1:  265:      constexpr _Tuple_impl()
+        1:  266:      : _Inherited(), _Base() { }
+        1:  266-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEEC2Ev:
 function _ZNSt11_Tuple_implILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEEC2Ev called 0 returned 0% blocks executed 0%
@@ -862,12 +862,12 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEEC2Ev:
-function _ZNSt11_Tuple_implILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEEC2Ev called 1 returned 100% blocks executed 100%
-        1:  265:      constexpr _Tuple_impl()
-        1:  266:      : _Inherited(), _Base() { }
-        1:  266-block  0
-call    0 returned 1
-call    1 returned 1
+function _ZNSt11_Tuple_implILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  265:      constexpr _Tuple_impl()
+    #####:  266:      : _Inherited(), _Base() { }
+    %%%%%:  266-block  0
+call    0 never executed
+call    1 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEEC2Ev:
 function _ZNSt11_Tuple_implILy0EJPbSt14default_deleteIA_bEEEC2Ev called 0 returned 0% blocks executed 0%
@@ -878,20 +878,20 @@ call    0 never executed
 call    1 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEEC2Ev:
-function _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEEC2Ev called 0 returned 0% blocks executed 0%
+function _ZNSt11_Tuple_implILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEEC2Ev called 1 returned 100% blocks executed 100%
+        1:  265:      constexpr _Tuple_impl()
+        1:  266:      : _Inherited(), _Base() { }
+        1:  266-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev:
+function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev called 0 returned 0% blocks executed 0%
     #####:  265:      constexpr _Tuple_impl()
     #####:  266:      : _Inherited(), _Base() { }
     %%%%%:  266-block  0
 call    0 never executed
 call    1 never executed
-------------------
-_ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev:
-function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2Ev called 2 returned 100% blocks executed 100%
-        2:  265:      constexpr _Tuple_impl()
-        2:  266:      : _Inherited(), _Base() { }
-        2:  266-block  0
-call    0 returned 2
-call    1 returned 2
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEEC2Ev:
 function _ZNSt11_Tuple_implILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEEC2Ev called 0 returned 0% blocks executed 0%
@@ -968,16 +968,16 @@ call    3 never executed
     #####:  279:	{ }
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_15ConsoleReporterEEEvEEOT_DpOT0_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_15ConsoleReporterEEEvEEOT_DpOT0_ called 0 returned 0% blocks executed 0%
-    #####:  276:	_Tuple_impl(_UHead&& __head, _UTail&&... __tail)
+function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_15ConsoleReporterEEEvEEOT_DpOT0_ called 1 returned 100% blocks executed 100%
+        1:  276:	_Tuple_impl(_UHead&& __head, _UTail&&... __tail)
         -:  277:	: _Inherited(std::forward<_UTail>(__tail)...),
-    #####:  278:	  _Base(std::forward<_UHead>(__head))
-    %%%%%:  278-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-call    3 never executed
-    #####:  279:	{ }
+        1:  278:	  _Base(std::forward<_UHead>(__head))
+        1:  278-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        1:  279:	{ }
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_13JunitReporterEEEvEEOT_DpOT0_:
 function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_13JunitReporterEEEvEEOT_DpOT0_ called 0 returned 0% blocks executed 0%
@@ -992,16 +992,16 @@ call    3 never executed
     #####:  279:	{ }
 ------------------
 _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_11XmlReporterEEEvEEOT_DpOT0_:
-function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_11XmlReporterEEEvEEOT_DpOT0_ called 1 returned 100% blocks executed 100%
-        1:  276:	_Tuple_impl(_UHead&& __head, _UTail&&... __tail)
+function _ZNSt11_Tuple_implILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC2IRS2_JS3_INS0_11XmlReporterEEEvEEOT_DpOT0_ called 0 returned 0% blocks executed 0%
+    #####:  276:	_Tuple_impl(_UHead&& __head, _UTail&&... __tail)
         -:  277:	: _Inherited(std::forward<_UTail>(__tail)...),
-        1:  278:	  _Base(std::forward<_UHead>(__head))
-        1:  278-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-call    3 returned 1
-        1:  279:	{ }
+    #####:  278:	  _Base(std::forward<_UHead>(__head))
+    %%%%%:  278-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####:  279:	{ }
 ------------------
         -:  280:
         -:  281:      constexpr _Tuple_impl(const _Tuple_impl&) = default;
@@ -1011,28 +1011,28 @@ call    3 returned 1
         -:  285:      _Tuple_impl& operator=(const _Tuple_impl&) = delete;
         -:  286:
         -:  287:      constexpr
-       4*:  288:      _Tuple_impl(_Tuple_impl&& ___in)
+       1*:  288:      _Tuple_impl(_Tuple_impl&& ___in)
         -:  289:      noexcept(__and_<is_nothrow_move_constructible<_Head>,
         -:  290:		      is_nothrow_move_constructible<_Inherited>>::value)
-       4*:  291:      : _Inherited(std::move(_M_tail(___in))),
-       4*:  292:	_Base(std::forward<_Head>(_M_head(___in)))
-       4*:  293:      { }
+       1*:  291:      : _Inherited(std::move(_M_tail(___in))),
+       1*:  292:	_Base(std::forward<_Head>(_M_head(___in)))
+       1*:  293:      { }
 ------------------
 _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2EOS9_:
-function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2EOS9_ called 3 returned 100% blocks executed 100%
-        3:  288:      _Tuple_impl(_Tuple_impl&& ___in)
+function _ZNSt11_Tuple_implILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC2EOS9_ called 0 returned 0% blocks executed 0%
+    #####:  288:      _Tuple_impl(_Tuple_impl&& ___in)
         -:  289:      noexcept(__and_<is_nothrow_move_constructible<_Head>,
         -:  290:		      is_nothrow_move_constructible<_Inherited>>::value)
-        3:  291:      : _Inherited(std::move(_M_tail(___in))),
-        3:  291-block  0
-call    0 returned 3
-call    1 returned 3
-        3:  292:	_Base(std::forward<_Head>(_M_head(___in)))
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-call    3 returned 3
-        3:  293:      { }
+    #####:  291:      : _Inherited(std::move(_M_tail(___in))),
+    %%%%%:  291-block  0
+call    0 never executed
+call    1 never executed
+    #####:  292:	_Base(std::forward<_Head>(_M_head(___in)))
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####:  293:      { }
 ------------------
 _ZNSt11_Tuple_implILy0EJPKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEEC2EOS6_:
 function _ZNSt11_Tuple_implILy0EJPKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEEC2EOS6_ called 0 returned 0% blocks executed 0%
@@ -1203,7 +1203,7 @@ call    3 never executed
         -:  412:      typedef _Head_base<_Idx, _Head> _Base;
         -:  413:
         -:  414:      static constexpr _Head&
-       9*:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+       5*:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15CompactReporterEEEE7_M_headERS4_:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15CompactReporterEEEE7_M_headERS4_ called 0 returned 0% blocks executed 0%
@@ -1212,10 +1212,10 @@ function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15CompactReporterEEEE
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15ConsoleReporterEEEE7_M_headERS4_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15ConsoleReporterEEEE7_M_headERS4_ called 0 returned 0% blocks executed 0%
-    #####:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-    %%%%%:  415-block  0
-call    0 never executed
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15ConsoleReporterEEEE7_M_headERS4_ called 1 returned 100% blocks executed 100%
+        1:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+        1:  415-block  0
+call    0 returned 1
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch13JunitReporterEEEE7_M_headERS4_:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch13JunitReporterEEEE7_M_headERS4_ called 0 returned 0% blocks executed 0%
@@ -1224,10 +1224,10 @@ function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch13JunitReporterEEEE7_
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch11XmlReporterEEEE7_M_headERS4_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch11XmlReporterEEEE7_M_headERS4_ called 1 returned 100% blocks executed 100%
-        1:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-        1:  415-block  0
-call    0 returned 1
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch11XmlReporterEEEE7_M_headERS4_ called 0 returned 0% blocks executed 0%
+    #####:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+    %%%%%:  415-block  0
+call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy0EJRKlEE7_M_headERS2_:
 function _ZNSt11_Tuple_implILy0EJRKlEE7_M_headERS2_ called 0 returned 0% blocks executed 0%
@@ -1242,16 +1242,16 @@ function _ZNSt11_Tuple_implILy1EJSt14default_deleteIA_bEEE7_M_headERS3_ called 0
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch12TablePrinterEEEE7_M_headERS4_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch12TablePrinterEEEE7_M_headERS4_ called 0 returned 0% blocks executed 0%
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch12TablePrinterEEEE7_M_headERS4_ called 1 returned 100% blocks executed 100%
+        1:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
+        1:  415-block  0
+call    0 returned 1
+------------------
+_ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEE7_M_headERS8_:
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEE7_M_headERS8_ called 0 returned 0% blocks executed 0%
     #####:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
     %%%%%:  415-block  0
 call    0 never executed
-------------------
-_ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEE7_M_headERS8_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEE7_M_headERS8_ called 5 returned 100% blocks executed 100%
-        5:  415:      _M_head(_Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
-        5:  415-block  0
-call    0 returned 5
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEEEE7_M_headERS8_:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEEEE7_M_headERS8_ called 0 returned 0% blocks executed 0%
@@ -1294,8 +1294,8 @@ call    0 never executed
         -:  418:      _M_head(const _Tuple_impl& __t) noexcept { return _Base::_M_head(__t); }
         -:  419:
         -:  420:      constexpr
-       4*:  421:      _Tuple_impl()
-       4*:  422:      : _Base() { }
+       3*:  421:      _Tuple_impl()
+       3*:  422:      : _Base() { }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15CompactReporterEEEEC2Ev:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15CompactReporterEEEEC2Ev called 0 returned 0% blocks executed 0%
@@ -1305,11 +1305,11 @@ function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15CompactReporterEEEE
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15ConsoleReporterEEEEC2Ev:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15ConsoleReporterEEEEC2Ev called 0 returned 0% blocks executed 0%
-    #####:  421:      _Tuple_impl()
-    #####:  422:      : _Base() { }
-    %%%%%:  422-block  0
-call    0 never executed
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch15ConsoleReporterEEEEC2Ev called 1 returned 100% blocks executed 100%
+        1:  421:      _Tuple_impl()
+        1:  422:      : _Base() { }
+        1:  422-block  0
+call    0 returned 1
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch13JunitReporterEEEEC2Ev:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch13JunitReporterEEEEC2Ev called 0 returned 0% blocks executed 0%
@@ -1319,11 +1319,11 @@ function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch13JunitReporterEEEEC2
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch11XmlReporterEEEEC2Ev:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch11XmlReporterEEEEC2Ev called 1 returned 100% blocks executed 100%
-        1:  421:      _Tuple_impl()
-        1:  422:      : _Base() { }
-        1:  422-block  0
-call    0 returned 1
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch11XmlReporterEEEEC2Ev called 0 returned 0% blocks executed 0%
+    #####:  421:      _Tuple_impl()
+    #####:  422:      : _Base() { }
+    %%%%%:  422-block  0
+call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIA_bEEEC2Ev:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIA_bEEEC2Ev called 0 returned 0% blocks executed 0%
@@ -1333,18 +1333,18 @@ function _ZNSt11_Tuple_implILy1EJSt14default_deleteIA_bEEEC2Ev called 0 returned
 call    0 never executed
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch12TablePrinterEEEEC2Ev:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch12TablePrinterEEEEC2Ev called 0 returned 0% blocks executed 0%
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch12TablePrinterEEEEC2Ev called 1 returned 100% blocks executed 100%
+        1:  421:      _Tuple_impl()
+        1:  422:      : _Base() { }
+        1:  422-block  0
+call    0 returned 1
+------------------
+_ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2Ev:
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2Ev called 0 returned 0% blocks executed 0%
     #####:  421:      _Tuple_impl()
     #####:  422:      : _Base() { }
     %%%%%:  422-block  0
 call    0 never executed
-------------------
-_ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2Ev:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2Ev called 2 returned 100% blocks executed 100%
-        2:  421:      _Tuple_impl()
-        2:  422:      : _Base() { }
-        2:  422-block  0
-call    0 returned 2
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEEEEC2Ev:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEEEEC2Ev called 0 returned 0% blocks executed 0%
@@ -1413,13 +1413,13 @@ call    1 never executed
     #####:  433:	{ }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_15ConsoleReporterEEEEOT_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_15ConsoleReporterEEEEOT_ called 0 returned 0% blocks executed 0%
-    #####:  431:	_Tuple_impl(_UHead&& __head)
-    #####:  432:	: _Base(std::forward<_UHead>(__head))
-    %%%%%:  432-block  0
-call    0 never executed
-call    1 never executed
-    #####:  433:	{ }
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_15ConsoleReporterEEEEOT_ called 1 returned 100% blocks executed 100%
+        1:  431:	_Tuple_impl(_UHead&& __head)
+        1:  432:	: _Base(std::forward<_UHead>(__head))
+        1:  432-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  433:	{ }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_13JunitReporterEEEEOT_:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_13JunitReporterEEEEOT_ called 0 returned 0% blocks executed 0%
@@ -1431,13 +1431,13 @@ call    1 never executed
     #####:  433:	{ }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_11XmlReporterEEEEOT_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_11XmlReporterEEEEOT_ called 1 returned 100% blocks executed 100%
-        1:  431:	_Tuple_impl(_UHead&& __head)
-        1:  432:	: _Base(std::forward<_UHead>(__head))
-        1:  432-block  0
-call    0 returned 1
-call    1 returned 1
-        1:  433:	{ }
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteIN5Catch18IStreamingReporterEEEEC2IS0_INS1_11XmlReporterEEEEOT_ called 0 returned 0% blocks executed 0%
+    #####:  431:	_Tuple_impl(_UHead&& __head)
+    #####:  432:	: _Base(std::forward<_UHead>(__head))
+    %%%%%:  432-block  0
+call    0 never executed
+call    1 never executed
+    #####:  433:	{ }
 ------------------
         -:  434:
         -:  435:      constexpr _Tuple_impl(const _Tuple_impl&) = default;
@@ -1447,10 +1447,10 @@ call    1 returned 1
         -:  439:      _Tuple_impl& operator=(const _Tuple_impl&) = delete;
         -:  440:
         -:  441:      constexpr
-       4*:  442:      _Tuple_impl(_Tuple_impl&& ___in)
+       1*:  442:      _Tuple_impl(_Tuple_impl&& ___in)
         -:  443:      noexcept(is_nothrow_move_constructible<_Head>::value)
-       4*:  444:      : _Base(std::forward<_Head>(_M_head(___in)))
-       4*:  445:      { }
+       1*:  444:      : _Base(std::forward<_Head>(_M_head(___in)))
+       1*:  445:      { }
 ------------------
 _ZNSt11_Tuple_implILy0EJRKlEEC2EOS2_:
 function _ZNSt11_Tuple_implILy0EJRKlEEC2EOS2_ called 0 returned 0% blocks executed 0%
@@ -1464,15 +1464,15 @@ call    2 never executed
     #####:  445:      { }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2EOS8_:
-function _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2EOS8_ called 3 returned 100% blocks executed 100%
-        3:  442:      _Tuple_impl(_Tuple_impl&& ___in)
+function _ZNSt11_Tuple_implILy1EJSt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEEEC2EOS8_ called 0 returned 0% blocks executed 0%
+    #####:  442:      _Tuple_impl(_Tuple_impl&& ___in)
         -:  443:      noexcept(is_nothrow_move_constructible<_Head>::value)
-        3:  444:      : _Base(std::forward<_Head>(_M_head(___in)))
-        3:  444-block  0
-call    0 returned 3
-call    1 returned 3
-call    2 returned 3
-        3:  445:      { }
+    #####:  444:      : _Base(std::forward<_Head>(_M_head(___in)))
+    %%%%%:  444-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  445:      { }
 ------------------
 _ZNSt11_Tuple_implILy1EJSt14default_deleteIKN5Catch20IExceptionTranslatorEEEEC2EOS5_:
 function _ZNSt11_Tuple_implILy1EJSt14default_deleteIKN5Catch20IExceptionTranslatorEEEEC2EOS5_ called 0 returned 0% blocks executed 0%
@@ -2105,9 +2105,9 @@ call    0 never executed
         -: 1035:      template<bool _Dummy = true,
         -: 1036:	       _ImplicitDefaultCtor<_Dummy, _T1, _T2> = true>
         -: 1037:	constexpr
-       4*: 1038:	tuple()
+       3*: 1038:	tuple()
         -: 1039:	noexcept(__nothrow_default_constructible())
-       4*: 1040:	: _Inherited() { }
+       3*: 1040:	: _Inherited() { }
 ------------------
 _ZNSt5tupleIJPN5Catch15CompactReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv:
 function _ZNSt5tupleIJPN5Catch15CompactReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
@@ -2118,12 +2118,12 @@ function _ZNSt5tupleIJPN5Catch15CompactReporterESt14default_deleteIS1_EEEC1ILb1E
 call    0 never executed
 ------------------
 _ZNSt5tupleIJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv:
-function _ZNSt5tupleIJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
-    #####: 1038:	tuple()
+function _ZNSt5tupleIJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 1 returned 100% blocks executed 100%
+        1: 1038:	tuple()
         -: 1039:	noexcept(__nothrow_default_constructible())
-    #####: 1040:	: _Inherited() { }
-    %%%%%: 1040-block  0
-call    0 never executed
+        1: 1040:	: _Inherited() { }
+        1: 1040-block  0
+call    0 returned 1
 ------------------
 _ZNSt5tupleIJPN5Catch13JunitReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv:
 function _ZNSt5tupleIJPN5Catch13JunitReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
@@ -2134,12 +2134,12 @@ function _ZNSt5tupleIJPN5Catch13JunitReporterESt14default_deleteIS1_EEEC1ILb1ELb
 call    0 never executed
 ------------------
 _ZNSt5tupleIJPN5Catch11XmlReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv:
-function _ZNSt5tupleIJPN5Catch11XmlReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 1 returned 100% blocks executed 100%
-        1: 1038:	tuple()
+function _ZNSt5tupleIJPN5Catch11XmlReporterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
+    #####: 1038:	tuple()
         -: 1039:	noexcept(__nothrow_default_constructible())
-        1: 1040:	: _Inherited() { }
-        1: 1040-block  0
-call    0 returned 1
+    #####: 1040:	: _Inherited() { }
+    %%%%%: 1040-block  0
+call    0 never executed
 ------------------
 _ZNSt5tupleIJPbSt14default_deleteIA_bEEEC1ILb1ELb1EEEv:
 function _ZNSt5tupleIJPbSt14default_deleteIA_bEEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
@@ -2150,20 +2150,20 @@ function _ZNSt5tupleIJPbSt14default_deleteIA_bEEEC1ILb1ELb1EEEv called 0 returne
 call    0 never executed
 ------------------
 _ZNSt5tupleIJPN5Catch12TablePrinterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv:
-function _ZNSt5tupleIJPN5Catch12TablePrinterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
+function _ZNSt5tupleIJPN5Catch12TablePrinterESt14default_deleteIS1_EEEC1ILb1ELb1EEEv called 1 returned 100% blocks executed 100%
+        1: 1038:	tuple()
+        -: 1039:	noexcept(__nothrow_default_constructible())
+        1: 1040:	: _Inherited() { }
+        1: 1040-block  0
+call    0 returned 1
+------------------
+_ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1ILb1ELb1EEEv:
+function _ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
     #####: 1038:	tuple()
         -: 1039:	noexcept(__nothrow_default_constructible())
     #####: 1040:	: _Inherited() { }
     %%%%%: 1040-block  0
 call    0 never executed
-------------------
-_ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1ILb1ELb1EEEv:
-function _ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1ILb1ELb1EEEv called 2 returned 100% blocks executed 100%
-        2: 1038:	tuple()
-        -: 1039:	noexcept(__nothrow_default_constructible())
-        2: 1040:	: _Inherited() { }
-        2: 1040-block  0
-call    0 returned 2
 ------------------
 _ZNSt5tupleIJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEEC2ILb1ELb1EEEv:
 function _ZNSt5tupleIJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEEC2ILb1ELb1EEEv called 0 returned 0% blocks executed 0%
@@ -2253,14 +2253,14 @@ call    1 never executed
 call    2 never executed
 ------------------
 _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_15ConsoleReporterEELb1EEEOT_OT0_:
-function _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_15ConsoleReporterEELb1EEEOT_OT0_ called 0 returned 0% blocks executed 0%
-    #####: 1066:	tuple(_U1&& __a1, _U2&& __a2)
+function _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_15ConsoleReporterEELb1EEEOT_OT0_ called 1 returned 100% blocks executed 100%
+        1: 1066:	tuple(_U1&& __a1, _U2&& __a2)
         -: 1067:	noexcept(__nothrow_constructible<_U1, _U2>())
-    #####: 1068:	: _Inherited(std::forward<_U1>(__a1), std::forward<_U2>(__a2)) { }
-    %%%%%: 1068-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
+        1: 1068:	: _Inherited(std::forward<_U1>(__a1), std::forward<_U2>(__a2)) { }
+        1: 1068-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
 ------------------
 _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_13JunitReporterEELb1EEEOT_OT0_:
 function _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_13JunitReporterEELb1EEEOT_OT0_ called 0 returned 0% blocks executed 0%
@@ -2273,14 +2273,14 @@ call    1 never executed
 call    2 never executed
 ------------------
 _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_11XmlReporterEELb1EEEOT_OT0_:
-function _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_11XmlReporterEELb1EEEOT_OT0_ called 1 returned 100% blocks executed 100%
-        1: 1066:	tuple(_U1&& __a1, _U2&& __a2)
+function _ZNSt5tupleIJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEEC1IRS2_S3_INS0_11XmlReporterEELb1EEEOT_OT0_ called 0 returned 0% blocks executed 0%
+    #####: 1066:	tuple(_U1&& __a1, _U2&& __a2)
         -: 1067:	noexcept(__nothrow_constructible<_U1, _U2>())
-        1: 1068:	: _Inherited(std::forward<_U1>(__a1), std::forward<_U2>(__a2)) { }
-        1: 1068-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
+    #####: 1068:	: _Inherited(std::forward<_U1>(__a1), std::forward<_U2>(__a2)) { }
+    %%%%%: 1068-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
 ------------------
         -: 1069:
         -: 1070:      template<typename _U1, typename _U2,
@@ -2292,13 +2292,13 @@ call    2 returned 1
         -: 1076:
         -: 1077:      constexpr tuple(const tuple&) = default;
         -: 1078:
-       4*: 1079:      constexpr tuple(tuple&&) = default;
+       1*: 1079:      constexpr tuple(tuple&&) = default;
 ------------------
 _ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1EOS9_:
-function _ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1EOS9_ called 3 returned 100% blocks executed 100%
-        3: 1079:      constexpr tuple(tuple&&) = default;
-        3: 1079-block  0
-call    0 returned 3
+function _ZNSt5tupleIJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEEC1EOS9_ called 0 returned 0% blocks executed 0%
+    #####: 1079:      constexpr tuple(tuple&&) = default;
+    %%%%%: 1079-block  0
+call    0 never executed
 ------------------
 _ZNSt5tupleIJPKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEEC1EOS6_:
 function _ZNSt5tupleIJPKN5Catch20IExceptionTranslatorESt14default_deleteIS2_EEEC1EOS6_ called 0 returned 0% blocks executed 0%
@@ -2604,8 +2604,8 @@ call    0 never executed
         -: 1363:
         -: 1364:  template<size_t __i, typename _Head, typename... _Tail>
         -: 1365:    constexpr _Head&
-      24*: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-      24*: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+      15*: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+      15*: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
 ------------------
 _ZSt12__get_helperILy1ESt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEEJEERT0_RSt11_Tuple_implIXT_EJS8_DpT1_EE:
 function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS3_17OutputDebugWriterELy256EEEEJEERT0_RSt11_Tuple_implIXT_EJS8_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2664,18 +2664,18 @@ function _ZSt12__get_helperILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEJSt14default_deleteIS5_EEERT0_RSt11_Tuple_implIXT_EJS9_DpT1_EE:
-function _ZSt12__get_helperILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEJSt14default_deleteIS5_EEERT0_RSt11_Tuple_implIXT_EJS9_DpT1_EE called 10 returned 100% blocks executed 100%
-       10: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-       10: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-       10: 1367-block  0
-call    0 returned 10
-------------------
-_ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE:
-function _ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 0 returned 0% blocks executed 0%
+function _ZSt12__get_helperILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEJSt14default_deleteIS5_EEERT0_RSt11_Tuple_implIXT_EJS9_DpT1_EE called 0 returned 0% blocks executed 0%
     #####: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
     #####: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
     %%%%%: 1367-block  0
 call    0 never executed
+------------------
+_ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE:
+function _ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 2 returned 100% blocks executed 100%
+        2: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+        2: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+        2: 1367-block  0
+call    0 returned 2
 ------------------
 _ZSt12__get_helperILy1ESt14default_deleteIN5Catch18IStreamingReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
 function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch18IStreamingReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 1 returned 100% blocks executed 100%
@@ -2713,18 +2713,18 @@ function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch15CompactReporterEEJEE
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEJEERT0_RSt11_Tuple_implIXT_EJS8_DpT1_EE:
-function _ZSt12__get_helperILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEJEERT0_RSt11_Tuple_implIXT_EJS8_DpT1_EE called 2 returned 100% blocks executed 100%
-        2: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-        2: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-        2: 1367-block  0
-call    0 returned 2
-------------------
-_ZSt12__get_helperILy1ESt14default_deleteIN5Catch12TablePrinterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
-function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch12TablePrinterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 0 returned 0% blocks executed 0%
+function _ZSt12__get_helperILy1ESt14default_deleteINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEEJEERT0_RSt11_Tuple_implIXT_EJS8_DpT1_EE called 0 returned 0% blocks executed 0%
     #####: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
     #####: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
     %%%%%: 1367-block  0
 call    0 never executed
+------------------
+_ZSt12__get_helperILy1ESt14default_deleteIN5Catch12TablePrinterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
+function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch12TablePrinterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 1 returned 100% blocks executed 100%
+        1: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+        1: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+        1: 1367-block  0
+call    0 returned 1
 ------------------
 _ZSt12__get_helperILy0EPbJSt14default_deleteIA_bEEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
 function _ZSt12__get_helperILy0EPbJSt14default_deleteIA_bEEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2748,11 +2748,11 @@ function _ZSt12__get_helperILy0ERKlJEERT0_RSt11_Tuple_implIXT_EJS2_DpT1_EE calle
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy0EPN5Catch11XmlReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE:
-function _ZSt12__get_helperILy0EPN5Catch11XmlReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 4 returned 100% blocks executed 100%
-        4: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-        4: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-        4: 1367-block  0
-call    0 returned 4
+function _ZSt12__get_helperILy0EPN5Catch11XmlReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 0 returned 0% blocks executed 0%
+    #####: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+    #####: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+    %%%%%: 1367-block  0
+call    0 never executed
 ------------------
 _ZSt12__get_helperILy0EPN5Catch13JunitReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE:
 function _ZSt12__get_helperILy0EPN5Catch13JunitReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2762,11 +2762,11 @@ function _ZSt12__get_helperILy0EPN5Catch13JunitReporterEJSt14default_deleteIS1_E
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy0EPN5Catch15ConsoleReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE:
-function _ZSt12__get_helperILy0EPN5Catch15ConsoleReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 0 returned 0% blocks executed 0%
-    #####: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-    #####: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-    %%%%%: 1367-block  0
-call    0 never executed
+function _ZSt12__get_helperILy0EPN5Catch15ConsoleReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 4 returned 100% blocks executed 100%
+        4: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+        4: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+        4: 1367-block  0
+call    0 returned 4
 ------------------
 _ZSt12__get_helperILy0EPN5Catch15CompactReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE:
 function _ZSt12__get_helperILy0EPN5Catch15CompactReporterEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2776,11 +2776,11 @@ function _ZSt12__get_helperILy0EPN5Catch15CompactReporterEJSt14default_deleteIS1
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy1ESt14default_deleteIN5Catch11XmlReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
-function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch11XmlReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 1 returned 100% blocks executed 100%
-        1: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-        1: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-        1: 1367-block  0
-call    0 returned 1
+function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch11XmlReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 0 returned 0% blocks executed 0%
+    #####: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+    #####: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+    %%%%%: 1367-block  0
+call    0 never executed
 ------------------
 _ZSt12__get_helperILy1ESt14default_deleteIN5Catch13JunitReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
 function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch13JunitReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2790,17 +2790,17 @@ function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch13JunitReporterEEJEERT
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy1ESt14default_deleteIN5Catch15ConsoleReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE:
-function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch15ConsoleReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 0 returned 0% blocks executed 0%
-    #####: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-    #####: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-    %%%%%: 1367-block  0
-call    0 never executed
+function _ZSt12__get_helperILy1ESt14default_deleteIN5Catch15ConsoleReporterEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE called 1 returned 100% blocks executed 100%
+        1: 1366:    __get_helper(_Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+        1: 1367:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+        1: 1367-block  0
+call    0 returned 1
 ------------------
         -: 1368:
         -: 1369:  template<size_t __i, typename _Head, typename... _Tail>
         -: 1370:    constexpr const _Head&
-      99*: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-      99*: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+      42*: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+      42*: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
 ------------------
 _ZSt12__get_helperILy0EPbJSt14default_deleteIA_bEEERKT0_RKSt11_Tuple_implIXT_EJS4_DpT1_EE:
 function _ZSt12__get_helperILy0EPbJSt14default_deleteIA_bEEERKT0_RKSt11_Tuple_implIXT_EJS4_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2810,18 +2810,18 @@ function _ZSt12__get_helperILy0EPbJSt14default_deleteIA_bEEERKT0_RKSt11_Tuple_im
 call    0 never executed
 ------------------
 _ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERKT0_RKSt11_Tuple_implIXT_EJS5_DpT1_EE:
-function _ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERKT0_RKSt11_Tuple_implIXT_EJS5_DpT1_EE called 0 returned 0% blocks executed 0%
-    #####: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-    #####: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-    %%%%%: 1372-block  0
-call    0 never executed
+function _ZSt12__get_helperILy0EPN5Catch12TablePrinterEJSt14default_deleteIS1_EEERKT0_RKSt11_Tuple_implIXT_EJS5_DpT1_EE called 6 returned 100% blocks executed 100%
+        6: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+        6: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+        6: 1372-block  0
+call    0 returned 6
 ------------------
 _ZSt12__get_helperILy0EPN5Catch18IStreamingReporterEJSt14default_deleteIS1_EEERKT0_RKSt11_Tuple_implIXT_EJS5_DpT1_EE:
-function _ZSt12__get_helperILy0EPN5Catch18IStreamingReporterEJSt14default_deleteIS1_EEERKT0_RKSt11_Tuple_implIXT_EJS5_DpT1_EE called 54 returned 100% blocks executed 100%
-       54: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-       54: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-       54: 1372-block  0
-call    0 returned 54
+function _ZSt12__get_helperILy0EPN5Catch18IStreamingReporterEJSt14default_deleteIS1_EEERKT0_RKSt11_Tuple_implIXT_EJS5_DpT1_EE called 35 returned 100% blocks executed 100%
+       35: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+       35: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+       35: 1372-block  0
+call    0 returned 35
 ------------------
 _ZSt12__get_helperILy0EPN5Catch10Generators20GeneratorUntypedBaseEJSt14default_deleteIS2_EEERKT0_RKSt11_Tuple_implIXT_EJS6_DpT1_EE:
 function _ZSt12__get_helperILy0EPN5Catch10Generators20GeneratorUntypedBaseEJSt14default_deleteIS2_EEERKT0_RKSt11_Tuple_implIXT_EJS6_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2852,11 +2852,11 @@ function _ZSt12__get_helperILy0EPKN5Catch7IStreamEJSt14default_deleteIS2_EEERKT0
 call    0 returned 1
 ------------------
 _ZSt12__get_helperILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEJSt14default_deleteIS5_EEERKT0_RKSt11_Tuple_implIXT_EJS9_DpT1_EE:
-function _ZSt12__get_helperILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEJSt14default_deleteIS5_EEERKT0_RKSt11_Tuple_implIXT_EJS9_DpT1_EE called 44 returned 100% blocks executed 100%
-       44: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
-       44: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
-       44: 1372-block  0
-call    0 returned 44
+function _ZSt12__get_helperILy0EPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEEJSt14default_deleteIS5_EEERKT0_RKSt11_Tuple_implIXT_EJS9_DpT1_EE called 0 returned 0% blocks executed 0%
+    #####: 1371:    __get_helper(const _Tuple_impl<__i, _Head, _Tail...>& __t) noexcept
+    #####: 1372:    { return _Tuple_impl<__i, _Head, _Tail...>::_M_head(__t); }
+    %%%%%: 1372-block  0
+call    0 never executed
 ------------------
 _ZSt12__get_helperILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEEJSt14default_deleteIS5_EEERKT0_RKSt11_Tuple_implIXT_EJS9_DpT1_EE:
 function _ZSt12__get_helperILy0EPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEEJSt14default_deleteIS5_EEERKT0_RKSt11_Tuple_implIXT_EJS9_DpT1_EE called 0 returned 0% blocks executed 0%
@@ -2874,8 +2874,8 @@ call    0 never executed
         -: 1379:  /// Return a reference to the ith element of a tuple.
         -: 1380:  template<size_t __i, typename... _Elements>
         -: 1381:    constexpr __tuple_element_t<__i, tuple<_Elements...>>&
-      24*: 1382:    get(tuple<_Elements...>& __t) noexcept
-      24*: 1383:    { return std::__get_helper<__i>(__t); }
+      15*: 1382:    get(tuple<_Elements...>& __t) noexcept
+      15*: 1383:    { return std::__get_helper<__i>(__t); }
 ------------------
 _ZSt3getILy1EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_:
 function _ZSt3getILy1EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_ called 0 returned 0% blocks executed 0%
@@ -2934,18 +2934,18 @@ function _ZSt3getILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17Output
 call    0 never executed
 ------------------
 _ZSt3getILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_:
-function _ZSt3getILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_ called 10 returned 100% blocks executed 100%
-       10: 1382:    get(tuple<_Elements...>& __t) noexcept
-       10: 1383:    { return std::__get_helper<__i>(__t); }
-       10: 1383-block  0
-call    0 returned 10
-------------------
-_ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
-function _ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
+function _ZSt3getILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_ called 0 returned 0% blocks executed 0%
     #####: 1382:    get(tuple<_Elements...>& __t) noexcept
     #####: 1383:    { return std::__get_helper<__i>(__t); }
     %%%%%: 1383-block  0
 call    0 never executed
+------------------
+_ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
+function _ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 2 returned 100% blocks executed 100%
+        2: 1382:    get(tuple<_Elements...>& __t) noexcept
+        2: 1383:    { return std::__get_helper<__i>(__t); }
+        2: 1383-block  0
+call    0 returned 2
 ------------------
 _ZSt3getILy1EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
 function _ZSt3getILy1EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 1 returned 100% blocks executed 100%
@@ -2983,18 +2983,18 @@ function _ZSt3getILy1EJPN5Catch15CompactReporterESt14default_deleteIS1_EEERNSt13
 call    0 never executed
 ------------------
 _ZSt3getILy1EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_:
-function _ZSt3getILy1EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_ called 2 returned 100% blocks executed 100%
-        2: 1382:    get(tuple<_Elements...>& __t) noexcept
-        2: 1383:    { return std::__get_helper<__i>(__t); }
-        2: 1383-block  0
-call    0 returned 2
-------------------
-_ZSt3getILy1EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
-function _ZSt3getILy1EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
+function _ZSt3getILy1EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERSD_ called 0 returned 0% blocks executed 0%
     #####: 1382:    get(tuple<_Elements...>& __t) noexcept
     #####: 1383:    { return std::__get_helper<__i>(__t); }
     %%%%%: 1383-block  0
 call    0 never executed
+------------------
+_ZSt3getILy1EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
+function _ZSt3getILy1EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 1 returned 100% blocks executed 100%
+        1: 1382:    get(tuple<_Elements...>& __t) noexcept
+        1: 1383:    { return std::__get_helper<__i>(__t); }
+        1: 1383-block  0
+call    0 returned 1
 ------------------
 _ZSt3getILy0EJPbSt14default_deleteIA_bEEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS8_:
 function _ZSt3getILy0EJPbSt14default_deleteIA_bEEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS8_ called 0 returned 0% blocks executed 0%
@@ -3018,11 +3018,11 @@ function _ZSt3getILy0EJRKlEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS6_
 call    0 never executed
 ------------------
 _ZSt3getILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
-function _ZSt3getILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 4 returned 100% blocks executed 100%
-        4: 1382:    get(tuple<_Elements...>& __t) noexcept
-        4: 1383:    { return std::__get_helper<__i>(__t); }
-        4: 1383-block  0
-call    0 returned 4
+function _ZSt3getILy0EJPN5Catch11XmlReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
+    #####: 1382:    get(tuple<_Elements...>& __t) noexcept
+    #####: 1383:    { return std::__get_helper<__i>(__t); }
+    %%%%%: 1383-block  0
+call    0 never executed
 ------------------
 _ZSt3getILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
 function _ZSt3getILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
@@ -3032,11 +3032,11 @@ function _ZSt3getILy0EJPN5Catch13JunitReporterESt14default_deleteIS1_EEERNSt13tu
 call    0 never executed
 ------------------
 _ZSt3getILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
-function _ZSt3getILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
-    #####: 1382:    get(tuple<_Elements...>& __t) noexcept
-    #####: 1383:    { return std::__get_helper<__i>(__t); }
-    %%%%%: 1383-block  0
-call    0 never executed
+function _ZSt3getILy0EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 4 returned 100% blocks executed 100%
+        4: 1382:    get(tuple<_Elements...>& __t) noexcept
+        4: 1383:    { return std::__get_helper<__i>(__t); }
+        4: 1383-block  0
+call    0 returned 4
 ------------------
 _ZSt3getILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
 function _ZSt3getILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
@@ -3046,11 +3046,11 @@ function _ZSt3getILy0EJPN5Catch15CompactReporterESt14default_deleteIS1_EEERNSt13
 call    0 never executed
 ------------------
 _ZSt3getILy1EJPN5Catch11XmlReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
-function _ZSt3getILy1EJPN5Catch11XmlReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 1 returned 100% blocks executed 100%
-        1: 1382:    get(tuple<_Elements...>& __t) noexcept
-        1: 1383:    { return std::__get_helper<__i>(__t); }
-        1: 1383-block  0
-call    0 returned 1
+function _ZSt3getILy1EJPN5Catch11XmlReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
+    #####: 1382:    get(tuple<_Elements...>& __t) noexcept
+    #####: 1383:    { return std::__get_helper<__i>(__t); }
+    %%%%%: 1383-block  0
+call    0 never executed
 ------------------
 _ZSt3getILy1EJPN5Catch13JunitReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
 function _ZSt3getILy1EJPN5Catch13JunitReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
@@ -3060,18 +3060,18 @@ function _ZSt3getILy1EJPN5Catch13JunitReporterESt14default_deleteIS1_EEERNSt13tu
 call    0 never executed
 ------------------
 _ZSt3getILy1EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_:
-function _ZSt3getILy1EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 0 returned 0% blocks executed 0%
-    #####: 1382:    get(tuple<_Elements...>& __t) noexcept
-    #####: 1383:    { return std::__get_helper<__i>(__t); }
-    %%%%%: 1383-block  0
-call    0 never executed
+function _ZSt3getILy1EJPN5Catch15ConsoleReporterESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_ called 1 returned 100% blocks executed 100%
+        1: 1382:    get(tuple<_Elements...>& __t) noexcept
+        1: 1383:    { return std::__get_helper<__i>(__t); }
+        1: 1383-block  0
+call    0 returned 1
 ------------------
         -: 1384:
         -: 1385:  /// Return a const reference to the ith element of a const tuple.
         -: 1386:  template<size_t __i, typename... _Elements>
         -: 1387:    constexpr const __tuple_element_t<__i, tuple<_Elements...>>&
-      99*: 1388:    get(const tuple<_Elements...>& __t) noexcept
-      99*: 1389:    { return std::__get_helper<__i>(__t); }
+      42*: 1388:    get(const tuple<_Elements...>& __t) noexcept
+      42*: 1389:    { return std::__get_helper<__i>(__t); }
 ------------------
 _ZSt3getILy0EJPbSt14default_deleteIA_bEEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS8_:
 function _ZSt3getILy0EJPbSt14default_deleteIA_bEEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS8_ called 0 returned 0% blocks executed 0%
@@ -3081,18 +3081,18 @@ function _ZSt3getILy0EJPbSt14default_deleteIA_bEEERKNSt13tuple_elementIXT_ESt5tu
 call    0 never executed
 ------------------
 _ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS9_:
-function _ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS9_ called 0 returned 0% blocks executed 0%
-    #####: 1388:    get(const tuple<_Elements...>& __t) noexcept
-    #####: 1389:    { return std::__get_helper<__i>(__t); }
-    %%%%%: 1389-block  0
-call    0 never executed
+function _ZSt3getILy0EJPN5Catch12TablePrinterESt14default_deleteIS1_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS9_ called 6 returned 100% blocks executed 100%
+        6: 1388:    get(const tuple<_Elements...>& __t) noexcept
+        6: 1389:    { return std::__get_helper<__i>(__t); }
+        6: 1389-block  0
+call    0 returned 6
 ------------------
 _ZSt3getILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS9_:
-function _ZSt3getILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS9_ called 54 returned 100% blocks executed 100%
-       54: 1388:    get(const tuple<_Elements...>& __t) noexcept
-       54: 1389:    { return std::__get_helper<__i>(__t); }
-       54: 1389-block  0
-call    0 returned 54
+function _ZSt3getILy0EJPN5Catch18IStreamingReporterESt14default_deleteIS1_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKS9_ called 35 returned 100% blocks executed 100%
+       35: 1388:    get(const tuple<_Elements...>& __t) noexcept
+       35: 1389:    { return std::__get_helper<__i>(__t); }
+       35: 1389-block  0
+call    0 returned 35
 ------------------
 _ZSt3getILy0EJPN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSA_:
 function _ZSt3getILy0EJPN5Catch10Generators20GeneratorUntypedBaseESt14default_deleteIS2_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSA_ called 0 returned 0% blocks executed 0%
@@ -3123,11 +3123,11 @@ function _ZSt3getILy0EJPKN5Catch7IStreamESt14default_deleteIS2_EEERKNSt13tuple_e
 call    0 returned 1
 ------------------
 _ZSt3getILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSD_:
-function _ZSt3getILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSD_ called 44 returned 100% blocks executed 100%
-       44: 1388:    get(const tuple<_Elements...>& __t) noexcept
-       44: 1389:    { return std::__get_helper<__i>(__t); }
-       44: 1389-block  0
-call    0 returned 44
+function _ZSt3getILy0EJPNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEESt14default_deleteIS5_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSD_ called 0 returned 0% blocks executed 0%
+    #####: 1388:    get(const tuple<_Elements...>& __t) noexcept
+    #####: 1389:    { return std::__get_helper<__i>(__t); }
+    %%%%%: 1389-block  0
+call    0 never executed
 ------------------
 _ZSt3getILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSD_:
 function _ZSt3getILy0EJPN5Catch6Detail12_GLOBAL__N_113StreamBufImplINS2_17OutputDebugWriterELy256EEESt14default_deleteIS5_EEERKNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERKSD_ called 0 returned 0% blocks executed 0%

@@ -354,8 +354,8 @@ call    0 never executed
 ------------------
         -:  236:
         -:  237:      const _Val*
-      39*:  238:      _M_valptr() const
-      39*:  239:      { return _M_storage._M_ptr(); }
+      34*:  238:      _M_valptr() const
+      34*:  239:      { return _M_storage._M_ptr(); }
 ------------------
 _ZNKSt13_Rb_tree_nodeISt4pairIKllEE9_M_valptrEv:
 function _ZNKSt13_Rb_tree_nodeISt4pairIKllEE9_M_valptrEv called 0 returned 0% blocks executed 0%
@@ -400,11 +400,11 @@ function _ZNKSt13_Rb_tree_nodeIPKN5Catch8TestCaseEE9_M_valptrEv called 8 returne
 call    0 returned 8
 ------------------
 _ZNKSt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEE9_M_valptrEv:
-function _ZNKSt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEE9_M_valptrEv called 27 returned 100% blocks executed 100%
-       27:  238:      _M_valptr() const
-       27:  239:      { return _M_storage._M_ptr(); }
-       27:  239-block  0
-call    0 returned 27
+function _ZNKSt13_Rb_tree_nodeISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEE9_M_valptrEv called 22 returned 100% blocks executed 100%
+       22:  238:      _M_valptr() const
+       22:  239:      { return _M_storage._M_ptr(); }
+       22:  239-block  0
+call    0 returned 22
 ------------------
 _ZNKSt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE9_M_valptrEv:
 function _ZNKSt13_Rb_tree_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE9_M_valptrEv called 0 returned 0% blocks executed 0%
@@ -763,8 +763,8 @@ function _ZStneRKSt17_Rb_tree_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11c
         -:  344:      : _M_node() { }
         -:  345:
         -:  346:      explicit
-      11*:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      11*:  348:      : _M_node(__x) { }
+       8*:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+       8*:  348:      : _M_node(__x) { }
 ------------------
 _ZNSt23_Rb_tree_const_iteratorISt4pairIKllEEC1EPKSt18_Rb_tree_node_base:
 function _ZNSt23_Rb_tree_const_iteratorISt4pairIKllEEC1EPKSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
@@ -792,9 +792,9 @@ function _ZNSt23_Rb_tree_const_iteratorINSt7__cxx1112basic_stringIcSt11char_trai
     #####:  348:      : _M_node(__x) { }
 ------------------
 _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEEC1EPKSt18_Rb_tree_node_base:
-function _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEEC1EPKSt18_Rb_tree_node_base called 6 returned 100% blocks executed 100%
-        6:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        6:  348:      : _M_node(__x) { }
+function _ZNSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEEC1EPKSt18_Rb_tree_node_base called 3 returned 100% blocks executed 100%
+        3:  347:      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+        3:  348:      : _M_node(__x) { }
 ------------------
         -:  349:
        5*:  350:      _Rb_tree_const_iterator(const iterator& __it) _GLIBCXX_NOEXCEPT
@@ -979,8 +979,8 @@ function _ZNSt23_Rb_tree_const_iteratorINSt7__cxx1112basic_stringIcSt11char_trai
         -:  393:      }
         -:  394:
         -:  395:      friend bool
-       5*:  396:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
-       5*:  397:      { return __x._M_node == __y._M_node; }
+       4*:  396:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+       4*:  397:      { return __x._M_node == __y._M_node; }
 ------------------
 _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKllEES5_:
 function _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKllEES5_ called 0 returned 0% blocks executed 0%
@@ -1001,16 +1001,16 @@ function _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringI
     %%%%%:  397-block  0
 ------------------
 _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEESF_:
-function _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEESF_ called 3 returned 100% blocks executed 100%
-        3:  396:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
-        3:  397:      { return __x._M_node == __y._M_node; }
-        3:  397-block  0
+function _ZSteqRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEESF_ called 2 returned 100% blocks executed 100%
+        2:  396:      operator==(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+        2:  397:      { return __x._M_node == __y._M_node; }
+        2:  397-block  0
 ------------------
         -:  398:
         -:  399:#if ! __cpp_lib_three_way_comparison
         -:  400:      friend bool
-       4*:  401:      operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
-       4*:  402:      { return __x._M_node != __y._M_node; }
+       3*:  401:      operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+       3*:  402:      { return __x._M_node != __y._M_node; }
 ------------------
 _ZStneRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEESD_:
 function _ZStneRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN5Catch8TagAliasEEESD_ called 0 returned 0% blocks executed 0%
@@ -1031,10 +1031,10 @@ function _ZStneRKSt23_Rb_tree_const_iteratorINSt7__cxx1112basic_stringIcSt11char
     %%%%%:  402-block  0
 ------------------
 _ZStneRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEESF_:
-function _ZStneRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEESF_ called 1 returned 100% blocks executed 100%
-        1:  401:      operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
-        1:  402:      { return __x._M_node != __y._M_node; }
-        1:  402-block  0
+function _ZStneRKSt23_Rb_tree_const_iteratorISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrIN5Catch16IReporterFactoryEEEESF_ called 0 returned 0% blocks executed 0%
+    #####:  401:      operator!=(const _Self& __x, const _Self& __y) _GLIBCXX_NOEXCEPT
+    #####:  402:      { return __x._M_node != __y._M_node; }
+    %%%%%:  402-block  0
 ------------------
         -:  403:#endif
         -:  404:
@@ -2496,10 +2496,10 @@ call    0 never executed
 ------------------
         -:  740:
         -:  741:      _Const_Link_type
-       3*:  742:      _M_begin() const _GLIBCXX_NOEXCEPT
+       2*:  742:      _M_begin() const _GLIBCXX_NOEXCEPT
         -:  743:      {
         -:  744:	return static_cast<_Const_Link_type>
-       3*:  745:	  (this->_M_impl._M_header._M_parent);
+       2*:  745:	  (this->_M_impl._M_header._M_parent);
         -:  746:      }
 ------------------
 _ZNKSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_M_beginEv:
@@ -2530,12 +2530,12 @@ function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4
         -:  746:      }
 ------------------
 _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_M_beginEv:
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_M_beginEv called 2 returned 100% blocks executed 100%
-        2:  742:      _M_begin() const _GLIBCXX_NOEXCEPT
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_M_beginEv called 1 returned 100% blocks executed 100%
+        1:  742:      _M_begin() const _GLIBCXX_NOEXCEPT
         -:  743:      {
         -:  744:	return static_cast<_Const_Link_type>
-        2:  745:	  (this->_M_impl._M_header._M_parent);
-        2:  745-block  0
+        1:  745:	  (this->_M_impl._M_header._M_parent);
+        1:  745-block  0
         -:  746:      }
 ------------------
         -:  747:
@@ -2593,8 +2593,8 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
 ------------------
         -:  751:
         -:  752:      _Const_Base_ptr
-       3*:  753:      _M_end() const _GLIBCXX_NOEXCEPT
-       3*:  754:      { return &this->_M_impl._M_header; }
+       2*:  753:      _M_end() const _GLIBCXX_NOEXCEPT
+       2*:  754:      { return &this->_M_impl._M_header; }
 ------------------
 _ZNKSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE6_M_endEv:
 function _ZNKSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE6_M_endEv called 0 returned 0% blocks executed 0%
@@ -2615,14 +2615,14 @@ function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4
     %%%%%:  754-block  0
 ------------------
 _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_M_endEv:
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_M_endEv called 2 returned 100% blocks executed 100%
-        2:  753:      _M_end() const _GLIBCXX_NOEXCEPT
-        2:  754:      { return &this->_M_impl._M_header; }
-        2:  754-block  0
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_M_endEv called 1 returned 100% blocks executed 100%
+        1:  753:      _M_end() const _GLIBCXX_NOEXCEPT
+        1:  754:      { return &this->_M_impl._M_header; }
+        1:  754-block  0
 ------------------
         -:  755:
         -:  756:      static const _Key&
-      36*:  757:      _S_key(_Const_Link_type __x)
+      31*:  757:      _S_key(_Const_Link_type __x)
         -:  758:      {
         -:  759:#if __cplusplus >= 201103L
         -:  760:	// If we're asking for the key we're presumably using the comparison
@@ -2640,7 +2640,7 @@ function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4
         -:  772:# endif // C++17
         -:  773:#endif // C++11
         -:  774:
-      36*:  775:	return _KeyOfValue()(*__x->_M_valptr());
+      31*:  775:	return _KeyOfValue()(*__x->_M_valptr());
         -:  776:      }
 ------------------
 _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE6_S_keyEPKSt13_Rb_tree_nodeIS2_E:
@@ -2800,8 +2800,8 @@ call    1 returned 6
         -:  776:      }
 ------------------
 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_S_keyEPKSt13_Rb_tree_nodeISC_E:
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_S_keyEPKSt13_Rb_tree_nodeISC_E called 26 returned 100% blocks executed 100%
-       26:  757:      _S_key(_Const_Link_type __x)
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_S_keyEPKSt13_Rb_tree_nodeISC_E called 21 returned 100% blocks executed 100%
+       21:  757:      _S_key(_Const_Link_type __x)
         -:  758:      {
         -:  759:#if __cplusplus >= 201103L
         -:  760:	// If we're asking for the key we're presumably using the comparison
@@ -2819,10 +2819,10 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
         -:  772:# endif // C++17
         -:  773:#endif // C++11
         -:  774:
-       26:  775:	return _KeyOfValue()(*__x->_M_valptr());
-       26:  775-block  0
-call    0 returned 26
-call    1 returned 26
+       21:  775:	return _KeyOfValue()(*__x->_M_valptr());
+       21:  775-block  0
+call    0 returned 21
+call    1 returned 21
         -:  776:      }
 ------------------
 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Catch7TagInfoEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE6_S_keyEPKSt13_Rb_tree_nodeISA_E:
@@ -2906,8 +2906,8 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
 ------------------
         -:  781:
         -:  782:      static _Const_Link_type
-       3*:  783:      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-       3*:  784:      { return static_cast<_Const_Link_type>(__x->_M_left); }
+       2*:  783:      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+       2*:  784:      { return static_cast<_Const_Link_type>(__x->_M_left); }
 ------------------
 _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE7_S_leftEPKSt18_Rb_tree_node_base:
 function _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE7_S_leftEPKSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
@@ -2928,10 +2928,10 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
     %%%%%:  784-block  0
 ------------------
 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE7_S_leftEPKSt18_Rb_tree_node_base:
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE7_S_leftEPKSt18_Rb_tree_node_base called 2 returned 100% blocks executed 100%
-        2:  783:      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        2:  784:      { return static_cast<_Const_Link_type>(__x->_M_left); }
-        2:  784-block  0
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE7_S_leftEPKSt18_Rb_tree_node_base called 1 returned 100% blocks executed 100%
+        1:  783:      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+        1:  784:      { return static_cast<_Const_Link_type>(__x->_M_left); }
+        1:  784-block  0
 ------------------
         -:  785:
         -:  786:      static _Link_type
@@ -2988,8 +2988,8 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
 ------------------
         -:  789:
         -:  790:      static _Const_Link_type
-       4*:  791:      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-       4*:  792:      { return static_cast<_Const_Link_type>(__x->_M_right); }
+       1*:  791:      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+       1*:  792:      { return static_cast<_Const_Link_type>(__x->_M_right); }
 ------------------
 _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_S_rightEPKSt18_Rb_tree_node_base:
 function _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_S_rightEPKSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
@@ -3010,15 +3010,15 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
     %%%%%:  792-block  0
 ------------------
 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_S_rightEPKSt18_Rb_tree_node_base:
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_S_rightEPKSt18_Rb_tree_node_base called 4 returned 100% blocks executed 100%
-        4:  791:      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-        4:  792:      { return static_cast<_Const_Link_type>(__x->_M_right); }
-        4:  792-block  0
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_S_rightEPKSt18_Rb_tree_node_base called 1 returned 100% blocks executed 100%
+        1:  791:      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+        1:  792:      { return static_cast<_Const_Link_type>(__x->_M_right); }
+        1:  792-block  0
 ------------------
         -:  793:
         -:  794:      static const _Key&
-      12*:  795:      _S_key(_Const_Base_ptr __x)
-      12*:  796:      { return _S_key(static_cast<_Const_Link_type>(__x)); }
+      11*:  795:      _S_key(_Const_Base_ptr __x)
+      11*:  796:      { return _S_key(static_cast<_Const_Link_type>(__x)); }
 ------------------
 _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE6_S_keyEPKSt18_Rb_tree_node_base:
 function _ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE6_S_keyEPKSt18_Rb_tree_node_base called 0 returned 0% blocks executed 0%
@@ -3070,11 +3070,11 @@ function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4p
 call    0 never executed
 ------------------
 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_S_keyEPKSt18_Rb_tree_node_base:
-function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_S_keyEPKSt18_Rb_tree_node_base called 8 returned 100% blocks executed 100%
-        8:  795:      _S_key(_Const_Base_ptr __x)
-        8:  796:      { return _S_key(static_cast<_Const_Link_type>(__x)); }
-        8:  796-block  0
-call    0 returned 8
+function _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE6_S_keyEPKSt18_Rb_tree_node_base called 7 returned 100% blocks executed 100%
+        7:  795:      _S_key(_Const_Base_ptr __x)
+        7:  796:      { return _S_key(static_cast<_Const_Link_type>(__x)); }
+        7:  796-block  0
+call    0 returned 7
 ------------------
         -:  797:
         -:  798:      static _Base_ptr
@@ -3538,8 +3538,8 @@ call    0 never executed
 ------------------
         -: 1005:
         -: 1006:      const_iterator
-       7*: 1007:      end() const _GLIBCXX_NOEXCEPT
-       7*: 1008:      { return const_iterator(&this->_M_impl._M_header); }
+       5*: 1007:      end() const _GLIBCXX_NOEXCEPT
+       5*: 1008:      { return const_iterator(&this->_M_impl._M_header); }
 ------------------
 _ZNKSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE3endEv:
 function _ZNKSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE3endEv called 0 returned 0% blocks executed 0%
@@ -3577,11 +3577,11 @@ function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_
 call    0 never executed
 ------------------
 _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE3endEv:
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE3endEv called 4 returned 100% blocks executed 100%
-        4: 1007:      end() const _GLIBCXX_NOEXCEPT
-        4: 1008:      { return const_iterator(&this->_M_impl._M_header); }
-        4: 1008-block  0
-call    0 returned 4
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE3endEv called 2 returned 100% blocks executed 100%
+        2: 1007:      end() const _GLIBCXX_NOEXCEPT
+        2: 1008:      { return const_iterator(&this->_M_impl._M_header); }
+        2: 1008-block  0
+call    0 returned 2
 ------------------
         -: 1009:
         -: 1010:      reverse_iterator
@@ -5009,16 +5009,16 @@ call    0 never executed
         -: 1911:	   typename _Compare, typename _Alloc>
         -: 1912:    typename _Rb_tree<_Key, _Val, _KeyOfValue,
         -: 1913:		      _Compare, _Alloc>::const_iterator
-       3*: 1914:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+       2*: 1914:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 1915:    _M_lower_bound(_Const_Link_type __x, _Const_Base_ptr __y,
         -: 1916:		   const _Key& __k) const
         -: 1917:    {
-      10*: 1918:      while (__x != 0)
-       7*: 1919:	if (!_M_impl._M_key_compare(_S_key(__x), __k))
-       3*: 1920:	  __y = __x, __x = _S_left(__x);
+       5*: 1918:      while (__x != 0)
+       3*: 1919:	if (!_M_impl._M_key_compare(_S_key(__x), __k))
+       2*: 1920:	  __y = __x, __x = _S_left(__x);
         -: 1921:	else
-       4*: 1922:	  __x = _S_right(__x);
-       3*: 1923:      return const_iterator(__y);
+       1*: 1922:	  __x = _S_right(__x);
+       2*: 1923:      return const_iterator(__y);
         -: 1924:    }
 ------------------
 _ZNKSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE14_M_lower_boundEPKSt13_Rb_tree_nodeIS2_EPKSt18_Rb_tree_node_baseRS1_:
@@ -5109,32 +5109,32 @@ call    0 never executed
         -: 1924:    }
 ------------------
 _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE14_M_lower_boundEPKSt13_Rb_tree_nodeISC_EPKSt18_Rb_tree_node_baseRS7_:
-function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE14_M_lower_boundEPKSt13_Rb_tree_nodeISC_EPKSt18_Rb_tree_node_baseRS7_ called 2 returned 100% blocks executed 100%
-        2: 1914:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+function _ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN5Catch16IReporterFactoryEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE14_M_lower_boundEPKSt13_Rb_tree_nodeISC_EPKSt18_Rb_tree_node_baseRS7_ called 1 returned 100% blocks executed 100%
+        1: 1914:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 1915:    _M_lower_bound(_Const_Link_type __x, _Const_Base_ptr __y,
         -: 1916:		   const _Key& __k) const
         -: 1917:    {
-        8: 1918:      while (__x != 0)
-        2: 1918-block  0
-        8: 1918-block  1
-branch  0 taken 6
-branch  1 taken 2 (fallthrough)
-        6: 1919:	if (!_M_impl._M_key_compare(_S_key(__x), __k))
-        6: 1919-block  0
-call    0 returned 6
-call    1 returned 6
-branch  2 taken 2 (fallthrough)
-branch  3 taken 4
-        2: 1920:	  __y = __x, __x = _S_left(__x);
-        2: 1920-block  0
+        3: 1918:      while (__x != 0)
+        1: 1918-block  0
+        3: 1918-block  1
+branch  0 taken 2
+branch  1 taken 1 (fallthrough)
+        2: 1919:	if (!_M_impl._M_key_compare(_S_key(__x), __k))
+        2: 1919-block  0
 call    0 returned 2
+call    1 returned 2
+branch  2 taken 1 (fallthrough)
+branch  3 taken 1
+        1: 1920:	  __y = __x, __x = _S_left(__x);
+        1: 1920-block  0
+call    0 returned 1
         -: 1921:	else
-        4: 1922:	  __x = _S_right(__x);
-        4: 1922-block  0
-call    0 returned 4
-        2: 1923:      return const_iterator(__y);
-        2: 1923-block  0
-call    0 returned 2
+        1: 1922:	  __x = _S_right(__x);
+        1: 1922-block  0
+call    0 returned 1
+        1: 1923:      return const_iterator(__y);
+        1: 1923-block  0
+call    0 returned 1
         -: 1924:    }
 ------------------
         -: 1925:
@@ -7458,13 +7458,13 @@ call    5 never executed
         -: 2528:	   typename _Compare, typename _Alloc>
         -: 2529:    typename _Rb_tree<_Key, _Val, _KeyOfValue,
         -: 2530:		      _Compare, _Alloc>::const_iterator
-       3*: 2531:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+       2*: 2531:    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
         -: 2532:    find(const _Key& __k) const
         -: 2533:    {
-       3*: 2534:      const_iterator __j = _M_lower_bound(_M_begin(), _M_end(), __k);
-       6*: 2535:      return (__j == end()
-       3*: 2536:	      || _M_impl._M_key_compare(__k,
-       9*: 2537:					_S_key(__j._M_node))) ? end() : __j;
+       2*: 2534:      const_iterator __j = _M_lower_bound(_M_begin(), _M_end(), __k);
+       4*: 2535:      return (__j == end()
+       2*: 2536:	      || _M_impl._M_key_compare(__k,
+       6*: 2537:					_S_key(__j._M_node))) ? end() : __j;
         -: 2538:    }
         -: 2539:
         -: 2540:  template<typename _Key, typename _Val, typename _KeyOfValue,

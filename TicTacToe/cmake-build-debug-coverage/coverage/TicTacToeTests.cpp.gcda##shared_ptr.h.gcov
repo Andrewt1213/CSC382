@@ -182,7 +182,7 @@ function _ZNSt10shared_ptrIN5Catch16TestCaseTracking8ITrackerEEC1Ev called 3 ret
 call    0 returned 3
 ------------------
         -:  149:
-    1217*:  150:      shared_ptr(const shared_ptr&) noexcept = default; ///< Copy constructor
+    1219*:  150:      shared_ptr(const shared_ptr&) noexcept = default; ///< Copy constructor
 ------------------
 _ZNSt10shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEEEC1ERKSC_:
 function _ZNSt10shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEEEC1ERKSC_ called 0 returned 0% blocks executed 0%
@@ -257,10 +257,10 @@ function _ZNSt10shared_ptrIN5Catch6ConfigEEC1ERKS2_ called 1 returned 100% block
 call    0 returned 1
 ------------------
 _ZNSt10shared_ptrIKN5Catch7IConfigEEC1ERKS3_:
-function _ZNSt10shared_ptrIKN5Catch7IConfigEEC1ERKS3_ called 3 returned 100% blocks executed 100%
-        3:  150:      shared_ptr(const shared_ptr&) noexcept = default; ///< Copy constructor
-        3:  150-block  0
-call    0 returned 3
+function _ZNSt10shared_ptrIKN5Catch7IConfigEEC1ERKS3_ called 5 returned 100% blocks executed 100%
+        5:  150:      shared_ptr(const shared_ptr&) noexcept = default; ///< Copy constructor
+        5:  150-block  0
+call    0 returned 5
 ------------------
         -:  151:
         -:  152:      /**
@@ -455,8 +455,8 @@ call    0 returned 3
         -:  301:       *  @param  __r  A %shared_ptr rvalue.
         -:  302:       *  @post   *this contains the old value of @a __r, @a __r is empty.
         -:  303:       */
-     467*:  304:      shared_ptr(shared_ptr&& __r) noexcept
-     467*:  305:      : __shared_ptr<_Tp>(std::move(__r)) { }
+     466*:  304:      shared_ptr(shared_ptr&& __r) noexcept
+     466*:  305:      : __shared_ptr<_Tp>(std::move(__r)) { }
 ------------------
 _ZNSt10shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEEEC1EOSC_:
 function _ZNSt10shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE4NodeINS0_12TestRunStatsENS4_INS0_14TestGroupStatsENS4_INS0_13TestCaseStatsENS3_11SectionNodeEEEEEEEEC1EOSC_ called 0 returned 0% blocks executed 0%
@@ -523,12 +523,12 @@ call    0 returned 465
 call    1 returned 465
 ------------------
 _ZNSt10shared_ptrIN5Catch12ITestInvokerEEC1EOS2_:
-function _ZNSt10shared_ptrIN5Catch12ITestInvokerEEC1EOS2_ called 2 returned 100% blocks executed 100%
-        2:  304:      shared_ptr(shared_ptr&& __r) noexcept
-        2:  305:      : __shared_ptr<_Tp>(std::move(__r)) { }
-        2:  305-block  0
-call    0 returned 2
-call    1 returned 2
+function _ZNSt10shared_ptrIN5Catch12ITestInvokerEEC1EOS2_ called 1 returned 100% blocks executed 100%
+        1:  304:      shared_ptr(shared_ptr&& __r) noexcept
+        1:  305:      : __shared_ptr<_Tp>(std::move(__r)) { }
+        1:  305-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
         -:  306:
         -:  307:      /**
@@ -842,10 +842,10 @@ call    0 returned 1
         -:  380:#endif
         -:  381:
         -:  382:      shared_ptr&
-       7*:  383:      operator=(shared_ptr&& __r) noexcept
+       5*:  383:      operator=(shared_ptr&& __r) noexcept
         -:  384:      {
-       7*:  385:	this->__shared_ptr<_Tp>::operator=(std::move(__r));
-       7*:  386:	return *this;
+       5*:  385:	this->__shared_ptr<_Tp>::operator=(std::move(__r));
+       5*:  386:	return *this;
         -:  387:      }
 ------------------
 _ZNSt10shared_ptrIN5Catch22CumulativeReporterBaseINS0_13JunitReporterEE11SectionNodeEEaSEOS5_:
@@ -860,14 +860,14 @@ call    1 never executed
         -:  387:      }
 ------------------
 _ZNSt10shared_ptrIN5Catch12ITestInvokerEEaSEOS2_:
-function _ZNSt10shared_ptrIN5Catch12ITestInvokerEEaSEOS2_ called 2 returned 100% blocks executed 100%
-        2:  383:      operator=(shared_ptr&& __r) noexcept
+function _ZNSt10shared_ptrIN5Catch12ITestInvokerEEaSEOS2_ called 0 returned 0% blocks executed 0%
+    #####:  383:      operator=(shared_ptr&& __r) noexcept
         -:  384:      {
-        2:  385:	this->__shared_ptr<_Tp>::operator=(std::move(__r));
-        2:  385-block  0
-call    0 returned 2
-call    1 returned 2
-        2:  386:	return *this;
+    #####:  385:	this->__shared_ptr<_Tp>::operator=(std::move(__r));
+    %%%%%:  385-block  0
+call    0 never executed
+call    1 never executed
+    #####:  386:	return *this;
         -:  387:      }
 ------------------
 _ZNSt10shared_ptrIN5Catch16TestCaseTracking14SectionTrackerEEaSEOS3_:
