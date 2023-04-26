@@ -21,6 +21,7 @@ private:
 public:
     MyModel() {
         newGame();
+        srand(time(0));
     }
 
     void computerRandomMove(){
