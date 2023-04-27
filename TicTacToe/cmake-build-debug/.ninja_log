@@ -1,6 +1,15 @@
 # ninja log v5
-5	1195	7037614300238196	CMakeFiles/TicTacToe.dir/main.cpp.obj	c8a5b0b793144bc2
-2173	124843	7038105940362212	TicTacToe.exe	aace4dc07df712a1
+13	4441	7043313925813698	CMakeFiles/TicTacToe.dir/main.cpp.obj	33d0f6ef6e459cb6
 8	25960	7037628381918604	CMakeFiles/TicTacToe.dir/TicTacToeTests.cpp.obj	687e5cb126295dd5
+4442	4697	7043313928317000	TicTacToe.exe	db3cb329b5b31975
+6	643	7043338657887791	build.ninja	5c79775b22a57dbc
 4	762	7037616139074194	CMakeFiles/TicTacToe.dir/myModel.cpp.obj	7fd9dc514118b652
+11	4648	7043313404653389	CMakeFiles/TicTacToe.dir/GUIview.cpp.obj	54aa9d3d9017e5c0
 9	2171	7038104713786558	CMakeFiles/TicTacToe.dir/myController.cpp.obj	e710ca0b1db962e9
+25	6122	7043306908142766	CMakeFiles/TicTacToe.dir/ButtonWindow.cpp.obj	ba29944e37cb1a64
+8	3859	7043340613195163	CMakeFiles/TicTacToe.dir/GUIview.cpp.obj	54aa9d3d9017e5c0
+14	4237	7043340616965357	CMakeFiles/TicTacToe.dir/main.cpp.obj	33d0f6ef6e459cb6
+4237	4519	7043340619731750	TicTacToe.exe	db3cb329b5b31975
+14	6856	7043342691907110	CMakeFiles/TicTacToe.dir/GUIview.cpp.obj	54aa9d3d9017e5c0
+24	7390	7043342697204157	CMakeFiles/TicTacToe.dir/main.cpp.obj	33d0f6ef6e459cb6
+7390	7807	7043342701313175	TicTacToe.exe	db3cb329b5b31975

@@ -1,8 +1,14 @@
-// Andrew Tapia
-#include <iostream>
-#include "myController.cpp"
-using namespace std;
-int main() {
-    myController controller;
-    return 0;
+#include <QApplication>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsLineItem>
+#include "GUIview.cpp"
+int main(int argc, char *argv[]) {
+    QApplication a(argc, argv);
+    QGraphicsScene scene;
+
+    GUIview window;
+    window.show();
+
+    return a.exec();
 }
