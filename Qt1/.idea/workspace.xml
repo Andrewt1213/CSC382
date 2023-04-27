@@ -21,36 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="026e1137-7c7a-4185-b5be-ab74022bc09b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TicTacToe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/cache-v2-c817588eb89526808f2a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/cmakeFiles-v1-40179b51862b4b64f31b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/codemodel-v2-b47506eadbd30ba2e9b1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/index-2023-04-26T19-00-05-0107.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/target-TicTacToe-Debug-4a5f1c5b5f6b3861a1a0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/clion-Debug-Coverage-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/clion-Debug-Coverage-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/TicTacToe.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/TicTacToe.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/cache-v2-f11bca1c371a8cc2eb59.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-5eaef9371743d3ada461.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-692cb9bd97376db674df.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-26T19-00-05-0110.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/target-TicTacToe-Debug-7538be38c85859563a66.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +75,7 @@
       <updated>1682035380766</updated>
       <workItem from="1682035382619" duration="256000" />
       <workItem from="1682624952847" duration="11000" />
-      <workItem from="1682625026903" duration="2000" />
+      <workItem from="1682625026903" duration="254000" />
     </task>
     <servers />
   </component>
