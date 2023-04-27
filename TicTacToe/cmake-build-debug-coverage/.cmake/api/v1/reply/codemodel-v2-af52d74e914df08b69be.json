@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.25"
+						"string" : "3.16"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TicTacToe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TicTacToe-Debug-4a5f1c5b5f6b3861a1a0.json",
+					"jsonFile" : "target-TicTacToe-Debug-c9162f49564f9f51ce73.json",
 					"name" : "TicTacToe",
 					"projectIndex" : 0
 				}

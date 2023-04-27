@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -20,7 +20,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="026e1137-7c7a-4185-b5be-ab74022bc09b" name="Changes" comment="" />
+    <list default="true" id="026e1137-7c7a-4185-b5be-ab74022bc09b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/cache-v2-c817588eb89526808f2a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/cmakeFiles-v1-40179b51862b4b64f31b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/codemodel-v2-b47506eadbd30ba2e9b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/index-2023-04-26T19-00-05-0107.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.cmake/api/v1/reply/target-TicTacToe-Debug-4a5f1c5b5f6b3861a1a0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myController.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.gcno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/TicTacToe.dir/myModel.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/clion-Debug-Coverage-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/CMakeFiles/clion-Debug-Coverage-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/TicTacToe.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/TicTacToe.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug-coverage/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/cache-v2-f11bca1c371a8cc2eb59.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-5eaef9371743d3ada461.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-692cb9bd97376db674df.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-26T19-00-05-0110.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.cmake/api/v1/reply/target-TicTacToe-Debug-7538be38c85859563a66.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/build.ninja" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,25 +74,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Qt1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/../../../../../Qt/6.5.0/mingw_64/bin" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Qt1" TARGET_NAME="Qt1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Qt1" RUN_TARGET_NAME="Qt1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -77,6 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1682035380766</updated>
       <workItem from="1682035382619" duration="256000" />
+      <workItem from="1682624952847" duration="11000" />
+      <workItem from="1682625026903" duration="2000" />
     </task>
     <servers />
   </component>
