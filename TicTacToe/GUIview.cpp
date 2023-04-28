@@ -117,7 +117,7 @@ private:
     void checkWinner(){
         if (model.gameOver()) {
             if (model.getWinner() == 2) {
-                messageBox.setText("You Lose!");
+                messageBox.setText("You Lose!");s
                 messageBox.exec();
             }
             else if (model.getWinner() == 1) {

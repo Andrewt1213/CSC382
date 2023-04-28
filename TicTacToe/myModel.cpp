@@ -45,13 +45,13 @@ public:
         return {-1,-1};*/
         switch(move){
             case 0:
-                setBoard(0,0,2);
+                setBoard(0,1,2);
                 move++;
-                return {0,0};
+                return {0,1};
             case 1:
-                setBoard(0,2,2);
+                setBoard(1,0,2);
                 move++;
-                return {0,2};
+                return {1,0};
             case 2:
                 setBoard(2,0,2);
                 move++;
@@ -60,10 +60,6 @@ public:
                 setBoard(2,2,2);
                 move++;
                 return {2,2};
-            case 4:
-                setBoard(1,1,2);
-                move++;
-                return {1,1};
         }
     }
 
@@ -94,7 +90,14 @@ public:
             winner = board[0][2];
             return true;
         }
-        return false;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; i < 3; i++) {
+                if (board[i][j] == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     bool validMove(int x, int y) {
