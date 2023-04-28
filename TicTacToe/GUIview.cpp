@@ -8,6 +8,8 @@
 #include <QGridLayout>
 #include <iostream>
 #include <QGraphicsLineItem>
+#include <tuple>
+#include "myModel.cpp"
 class GUIview : public QWidget {
 public:
     GUIview(){
@@ -16,11 +18,15 @@ public:
     }
 
 private:
+    MyModel model;
     int playerType = 0;
     QPushButton   *button00, *button01, *button02
                 , *button10, *button11, *button12
                 , *button20, *button21, *button22;
     QMessageBox messageBox;
+    QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
+    QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
+
 
     void layoutGUI(){
         // Create 9 buttons named according to their coordinates on the board
@@ -33,13 +39,6 @@ private:
         button20 = new QPushButton();
         button21 = new QPushButton();
         button22 = new QPushButton();
-
-/*
-        button1 = new QPushButton();
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        button1->setIcon(*letterO);
-        button1->setFixedWidth(50);
-        button1->setFixedHeight(50);*/
 
         auto *layout = new QGridLayout();
         layout->addWidget(button00, 0, 0);
@@ -83,143 +82,146 @@ private:
 
         QObject::connect(button22, &QPushButton::clicked,
                             this, &GUIview::button22Clicked);
+    }
+
+    void computerMove(int x, int y){
+        if (x == 0 && y == 0){
+            button00->setIcon(*letterX);
+        }
+        if (x == 0 && y == 1){
+            button01->setIcon(*letterX);
+        }
+        if (x == 0 && y == 2){
+            button02->setIcon(*letterX);
+        }
+        if (x == 1 && y == 0){
+            button10->setIcon(*letterX);
+        }
+        if (x == 1 && y == 1){
+            button11->setIcon(*letterX);
+        }
+        if (x == 1 && y == 2){
+            button12->setIcon(*letterX);
+        }
+        if (x == 2 && y == 0){
+            button20->setIcon(*letterX);
+        }
+        if (x == 2 && y == 1){
+            button21->setIcon(*letterX);
+        }
+        if (x == 2 && y == 2) {
+            button22->setIcon(*letterX);
+        }
+    }
+
+    void checkWinner(){
+        if (model.gameOver()) {
+            if (model.getWinner() == 2) {
+                messageBox.setText("You Lose!");
+                messageBox.exec();
+            }
+            else if (model.getWinner() == 1) {
+                messageBox.setText("You Win!");
+                messageBox.exec();
+            }
+            else {
+                messageBox.setText("Tie!");
+                messageBox.exec();
+            }
+        }
 
     }
 
+    void checkComputerMove(){
+        if (!model.gameOver()) {
+            tuple<int, int> move = model.computerRandomMove();
+            computerMove(get<0>(move), get<1>(move));
+            checkWinner();
+        }
+    }
+
     void button00Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
         // check icon of button is null before applying icon
-        if(button00->icon().isNull()){
-            if(playerType == 0){
-                button00->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button00->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button00->icon().isNull()) {
+            button00->setIcon(*letterO);
+            model.setBoard(0, 0, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button01Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button01->icon().isNull()){
-            if(playerType == 0){
-                button01->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button01->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button01->icon().isNull()) {
+            button01->setIcon(*letterO);
+            model.setBoard(0, 1, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button02Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button02->icon().isNull()){
-            if(playerType == 0){
-                button02->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button02->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button02->icon().isNull()) {
+            button02->setIcon(*letterO);
+            model.setBoard(0, 2, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button10Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button10->icon().isNull()){
-            if(playerType == 0){
-                button10->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button10->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button10->icon().isNull()) {
+            button10->setIcon(*letterO);
+            model.setBoard(1, 0, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button11Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button11->icon().isNull()){
-            if(playerType == 0){
-                button11->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button11->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button11->icon().isNull()) {
+            button11->setIcon(*letterO);
+            model.setBoard(1, 1, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button12Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button12->icon().isNull()){
-            if(playerType == 0){
-                button12->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button12->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button12->icon().isNull()) {
+            button12->setIcon(*letterO);
+            model.setBoard(1, 2, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button20Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button20->icon().isNull()){
-            if(playerType == 0){
-                button20->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button20->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button20->icon().isNull()) {
+            button20->setIcon(*letterO);
+            model.setBoard(2, 0, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button21Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-        // check icon of button is null before applying icon
-        if(button21->icon().isNull()){
-            if(playerType == 0){
-                button21->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button21->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button21->icon().isNull()) {
+            button21->setIcon(*letterO);
+            model.setBoard(2, 1, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
 
     void button22Clicked(){
-        QIcon *letterO = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\O.png");
-        QIcon *letterX = new QIcon("C:\\Users\\Lenovo\\CLionProjects\\CSC382\\TicTacToe\\cmake-build-debug-coverage\\X.png");
-
-        // check icon of button is null before applying icon
-        if(button22->icon().isNull()){
-            if(playerType == 0){
-                button22->setIcon(*letterO);
-                playerType = 1;
-            } else {
-                button22->setIcon(*letterX);
-                playerType = 0;
-            }
+        if(button22->icon().isNull()) {
+            button22->setIcon(*letterO);
+            model.setBoard(2, 2, 1);
+            checkWinner();
+            checkComputerMove();
         }
     }
+
+
 
 };
