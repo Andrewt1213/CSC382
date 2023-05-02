@@ -1,12 +1,14 @@
-//
+// GUIview.cpp
 // Created by Andrew Tapia on 4/27/2023.
+// This class represents the view of a tik tak toe game.
+// It is responsible for displaying the state of the game.
+// It uses QT in order to dipslay the game.
 //
 #include <QWidget>
 #include <QIcon>
 #include <QPushButton>
 #include <QMessageBox>
 #include <QGridLayout>
-#include <iostream>
 #include <QGraphicsLineItem>
 #include <tuple>
 #include "myModel.cpp"
@@ -19,7 +21,6 @@ public:
 
 private:
     MyModel model;
-    int playerType = 0;
     QPushButton   *button00, *button01, *button02
                 , *button10, *button11, *button12
                 , *button20, *button21, *button22;
@@ -114,111 +115,127 @@ private:
         }
     }
 
-    void checkWinner(){
+    bool isWinner(){
         if (model.gameOver()) {
             if (model.getWinner() == 2) {
-                messageBox.setText("You Lose!");s
+                messageBox.setText("You Lose!");
                 messageBox.exec();
             }
             else if (model.getWinner() == 1) {
                 messageBox.setText("You Win!");
                 messageBox.exec();
             }
-            else {
+            else if (model.getWinner() == 0) {
                 messageBox.setText("Tie!");
                 messageBox.exec();
             }
+            return true;
         }
-
+        return false;
     }
 
     void checkComputerMove(){
-        if (!model.gameOver()) {
-            tuple<int, int> move = model.computerRandomMove();
-            computerMove(get<0>(move), get<1>(move));
-            checkWinner();
-        }
+        tuple<int, int> move = model.computerRandomMove();
+        computerMove(get<0>(move), get<1>(move));
     }
 
     void button00Clicked(){
         // check icon of button is null before applying icon
-        if(button00->icon().isNull()) {
+        if(button00->icon().isNull() && !model.gameOver()) {
             button00->setIcon(*letterO);
             model.setBoard(0, 0, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button01Clicked(){
-        if(button01->icon().isNull()) {
+        if(button01->icon().isNull() && !model.gameOver()) {
             button01->setIcon(*letterO);
             model.setBoard(0, 1, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button02Clicked(){
-        if(button02->icon().isNull()) {
+        if(button02->icon().isNull() && !model.gameOver()) {
             button02->setIcon(*letterO);
             model.setBoard(0, 2, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button10Clicked(){
-        if(button10->icon().isNull()) {
+        if(button10->icon().isNull() && !model.gameOver()) {
             button10->setIcon(*letterO);
             model.setBoard(1, 0, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button11Clicked(){
-        if(button11->icon().isNull()) {
+        if(button11->icon().isNull() && !model.gameOver()) {
             button11->setIcon(*letterO);
             model.setBoard(1, 1, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button12Clicked(){
-        if(button12->icon().isNull()) {
+        if(button12->icon().isNull() && !model.gameOver()) {
             button12->setIcon(*letterO);
             model.setBoard(1, 2, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button20Clicked(){
-        if(button20->icon().isNull()) {
+        if(button20->icon().isNull() && !model.gameOver()) {
             button20->setIcon(*letterO);
             model.setBoard(2, 0, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button21Clicked(){
-        if(button21->icon().isNull()) {
+        if(button21->icon().isNull() && !model.gameOver()) {
             button21->setIcon(*letterO);
             model.setBoard(2, 1, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
     void button22Clicked(){
-        if(button22->icon().isNull()) {
+        if(button22->icon().isNull() && !model.gameOver()) {
             button22->setIcon(*letterO);
             model.setBoard(2, 2, 1);
-            checkWinner();
-            checkComputerMove();
+            if (!isWinner()){
+                checkComputerMove();
+                isWinner();
+            }
         }
     }
 
