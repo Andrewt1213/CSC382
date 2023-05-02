@@ -1,5 +1,7 @@
 //
 // Created by Andrew Tapia on 4/20/2023.
+// This class represents the controller of a tik tak toe game.
+// Only used in console view for testing purposes.
 //
 #include "myModel.cpp"
 class myController {
